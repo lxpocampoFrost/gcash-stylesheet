@@ -1,0 +1,14 @@
+/* Font rendering settings */
+body,
+html {
+	font-variant-ligatures: common-ligatures;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern"; /* standard */
+	font-kerning: normal; /* Safari 7+, Firefox 24+, Chrome 33(?)+, Opera 21+*/
+	font-size: 14px; /* Base font +*/
+}
+
+/* Use this on top of the element to apply this to everything inside */
+.go_container * {
+	box-sizing: border-box;
+}

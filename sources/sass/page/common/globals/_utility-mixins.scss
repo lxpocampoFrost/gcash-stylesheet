@@ -1,0 +1,26 @@
+
+/*---------------------------------------------------
+ GLOBAL MIXINS AND UTILITIES
+ Only use if you have access to this file during compile
+----------------------------------------------------*/
+
+/*
+    For responsive definition
+*/
+@mixin on($media) {
+    @if $media == large-display {
+        @media all and (min-width : 1921px) { @content; }
+    } @else if $media == small-desktop {
+        @media all and (max-width : 1024px) { @content; }
+    } @else if $media == tablet {
+        @media all and (max-width : 768px) { @content; }
+    } @else if $media == mobile {
+        @media all and (max-width : 620px) { @content; }
+    } @else if $media == medium-mobile {
+        @media all and (max-width : 375px) { @content; }
+    } @else if $media == small-mobile {
+        @media all and (max-width : 320px) { @content; }
+    } @else {
+        @media all and (max-width : $media) { @content; }
+    }
+}

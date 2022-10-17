@@ -1,0 +1,221 @@
+/*---------------------------------------------------
+Base Typesetting
+----------------------------------------------------*/
+$gotham-rounded-medium: "Gotham Rounded Medium", Arial, Helvetica, sans-serif;
+$gotham-rounded-bold: "Gotham Rounded Bold", Arial, Helvetica, sans-serif;
+$gilroy-medium: "Gilroy Medium", Arial, Helvetica, sans-serif;
+$gilroy-bold: "Gilroy Bold", Arial, Helvetica, sans-serif;
+
+// HEADLINE
+// 48px
+$headline-epic: 350 3.43rem/1.2 $gotham-rounded-medium;
+// 32px
+$headline-spotlight: 400 2.29rem/1.25 $gotham-rounded-bold;
+$headline-spotlight-light: 350 2.29rem/1.25 $gotham-rounded-medium;
+// 24px
+$headline-region: 400 1.71rem/1.3 $gotham-rounded-bold;
+$headline-region-light: 350 1.71rem/1.3 $gotham-rounded-medium;
+// 20px
+$headline-section: 400 1.43rem/1.35 $gotham-rounded-bold;
+$headline-section-light: 350 1.43rem/1.35 $gotham-rounded-medium;
+// 18px
+$headline-segment: 400 1.29rem/1.4 $gotham-rounded-bold;
+$headline-segment-light: 350 1.29rem/1.4 $gotham-rounded-medium;
+// 16px
+$headline-block: 400 1.14rem/1.45 $gotham-rounded-bold;
+$headline-block-light: 350 1.14rem/1.45 $gotham-rounded-medium;
+
+// LABEL
+// 16px
+$label-large: 400 1.14rem/1 $gotham-rounded-bold;
+$label-large-light: 350 1.14rem/1 $gotham-rounded-medium;
+// 14px
+$label-base: 400 1rem/1 $gotham-rounded-bold;
+$label-base-light: 350 1rem/1 $gotham-rounded-medium;
+// 12px
+$label-small: 400 0.86rem/1 $gotham-rounded-bold;
+$label-small-light: 350 0.86rem/1 $gotham-rounded-medium;
+// 10px
+$label-fine: 400 0.72rem/1 $gotham-rounded-bold;
+$label-fine-light: 350 0.72rem/1 $gotham-rounded-medium;
+// 8px
+$label-tiny: 400 0.57rem/1 $gotham-rounded-bold;
+$label-tiny-light: 350 0.57rem/1 $gotham-rounded-medium;
+
+// CONTENT
+// 16px
+$content-large: 500 1.14rem/1.4 $gilroy-medium;
+$content-large-bold: 600 1.14rem/1.4 $gilroy-bold;
+// 14px
+$content-base: 500 1rem/1.4 $gilroy-medium;
+$content-base-bold: 600 1rem/1.4 $gilroy-bold;
+// 12px
+$content-caption: 500 0.86rem/1.4 $gilroy-medium;
+$content-caption-bold: 600 0.86rem/1.4 $gilroy-bold;
+// 10px
+$content-small-caption: 500 0.72rem/1.5 $gilroy-medium;
+$content-small-caption-bold: 600 0.72rem/1.5 $gilroy-bold;
+// 8px
+$content-fine-caption: 500 0.57rem/1.5 $gilroy-medium;
+$content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
+
+.text {
+	&-headline {
+		&-epic {
+			font: $headline-epic;
+			letter-spacing: -0.03em;
+		}
+
+		&-spotlight {
+			font: $headline-spotlight;
+			letter-spacing: -0.03em;
+
+			&.-light {
+				font: $headline-spotlight-light;
+			}
+		}
+
+		&-region {
+			font: $headline-region;
+			letter-spacing: -0.03em;
+
+			&.-light {
+				font: $headline-region-light;
+			}
+		}
+
+		&-section {
+			font: $headline-section;
+			letter-spacing: -0.03em;
+
+			&.-light {
+				font: $headline-section-light;
+			}
+		}
+
+		&-segment {
+			font: $headline-segment;
+			letter-spacing: -0.03em;
+
+			&.-light {
+				font: $headline-segment-light;
+			}
+		}
+
+		&-block {
+			font: $headline-block;
+			letter-spacing: -0.03em;
+
+			&.-light {
+				font: $headline-block-light;
+			}
+		}
+	}
+
+	&-label {
+		&-large {
+			font: $label-large;
+			letter-spacing: -0.01em;
+
+			&.-light {
+				font: $label-large-light;
+			}
+
+			&.-multiline {
+				line-height: 1.3;
+			}
+		}
+
+		&-base {
+			font: $label-base;
+			letter-spacing: -0.01em;
+
+			&.-light {
+				font: $label-base-light;
+			}
+
+			&.-multiline {
+				line-height: 1.3;
+			}
+		}
+
+		&-small {
+			font: $label-small;
+			letter-spacing: -0.01em;
+
+			&.-light {
+				font: $label-small-light;
+			}
+
+			&.-multiline {
+				line-height: 1.3;
+			}
+		}
+
+		&-fine {
+			font: $label-fine;
+
+			&.-light {
+				font: $label-fine-light;
+			}
+
+			&.-multiline {
+				line-height: 1.3;
+			}
+		}
+
+		&-tiny {
+			font: $label-tiny;
+
+			&.-light {
+				font: $label-tiny-light;
+			}
+
+			&.-multiline {
+				line-height: 1.3;
+			}
+		}
+	}
+
+	&-content {
+		&-large {
+			font: $content-large;
+
+			&.-bold {
+				font: $content-large-bold;
+			}
+		}
+
+		&-base {
+			font: $content-base;
+
+			&.-bold {
+				font: $content-base-bold;
+			}
+		}
+
+		&-caption {
+			font: $content-caption;
+
+			&.-bold {
+				font: $content-caption-bold;
+			}
+		}
+
+		&-small-caption {
+			font: $content-small-caption;
+
+			&.-bold {
+				font: $content-small-caption-bold;
+			}
+		}
+
+		&-fine-caption {
+			font: $content-fine-caption;
+
+			&.-bold {
+				font: $content-fine-caption-bold;
+			}
+		}
+	}
+}

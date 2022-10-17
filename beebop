@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Run the beebop script
+node beebop.js $@

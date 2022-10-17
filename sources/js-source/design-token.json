@@ -1,0 +1,99 @@
+{
+    "color": {
+        "blue": "#0035AD"
+
+    },
+
+    "border": {
+        "faint-dark-hairline": "1px solid #000"
+
+    },
+
+    "space": {
+        "quarter": "2px",
+        "half": "4px",
+        "default": "8px",
+        "secondary": "12px",
+        "double": "16px",
+        "triple": "24px",
+        "quad": "32px",
+        "double-triple": "48px",
+        "double-quad": "64px",
+        "big": "72px",
+        "wide": "96px"
+    },
+
+    "padding": {
+        "clear": "0",
+        "full": "$quad-space"
+    },
+
+    "position": {
+        "centered": "auto",
+        "lateral-centered": "0 auto",
+        "vertically-centered": "auto 0",
+        "push-the-right": "0 0 0 auto",
+        "push-the-left": "0 auto 0 0"
+    },
+
+    "font": {
+        "ui": "\"Libre Baskerville\", Helvetica, sans-serif",
+        "body": "\"Karla\", Arial, sans-serif"
+    },
+
+    "font-weight": {
+        "light": 300,
+        "regular": 400,
+        "semi-bold": 600,
+        "bold": 700
+    },
+
+    "font-size": {
+        "triple-xl"    : "4rem",
+        "dobule-xl"    : "3.250rem",
+        "xl"     : "2.875rem",
+        "large"  : "2em",
+        "medium" : "1.750em",
+        "small"  : "1.375em",
+        "base"   : "1.125em",
+        "xs"     : "1em",
+        "double-xs"    : "0.875em"
+    },
+
+    "letter-tracking": {
+        "wide": "0.18em",
+        "tight": "0.12em"
+    },
+
+    "icon-size": {
+        "tiny": "8px",
+        "smallest": "10px",
+        "small": "12px",
+        "default": "16px",
+        "medium": "18px",
+        "double-medium": "36px",
+        "large": "24px",
+        "largest": "32px"
+    },
+
+    "": {
+        "wrapper-width" : "1440px",
+        "max-container-width": "1600px",
+        "icon-size": "24px",
+        "icon-sprite-file": "'../images/icons-sprite-sheet.svg'",
+        "icon-column-count": 12,
+        "icon-row-count": 12,
+
+        "fully-opaque": 1,
+        "opaque": 0.8,
+        "slightly-opaque": 0.5,
+        "transparent": 0.2,
+        "almost-transparent": 0.1,
+        "fully-transparent": 0,
+        "amount": 0,
+        "gradient-spread": "100%",
+        "overlay-height": "40%",
+        "overlay-transparency": 1,
+        "content-limit": "768px"
+    }
+}

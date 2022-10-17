@@ -1,0 +1,15 @@
+@import 'page/common/globals/utility-mixins';
+@import 'page/common/globals/reset';
+@import 'page/common/globals/tokens';
+@import 'page/common/globals/fonts';
+@import 'page/common/globals/typeset';
+@import 'page/common/globals/structure';
+
+/* Global component list */
+@import 'page/components/global-components/global-components-list';
+@import 'page/components/components-list';
+
+/* Page templates scss */
+@import 'page/page';
+
+* { box-sizing: border-box; }

@@ -1,0 +1,836 @@
+@import "page/common/globals/mixins";
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+
+/*---------------------------------------------------
+ SPACES
+----------------------------------------------------*/
+
+$gap: 8px;
+
+$quarter-gap: $gap * 0.25; // 2px
+$half-gap: $gap * 0.5; // 4px
+$secondary-gap: $half-gap * 3; // 12px
+$double-gap: $gap * 2; // 16px
+$triple-gap: $gap * 3; // 24px
+$quad-gap: $gap * 4; // 32px
+$double-quad-gap: $quad-gap * 2; // 64px
+$big-gap: $gap * 9; // 72px;
+
+$index-pane: 320px;
+
+$icon-image-size: 24px;
+$icon-sprite-file: "../images/component-viewer-icons.svg";
+$icon-column-count: 10;
+$icon-row-count: 10;
+
+$small-icon-size: 16px;
+
+/*---------------------------------------------------
+ COLORS
+----------------------------------------------------*/
+
+$color-white: #fff;
+$color-black: #000;
+$color-dark-blue: #0c0a20;
+$color-blue: #0035ad;
+$color-green: #00985a;
+$color-grey: #5a5a5a;
+
+/*---------------------------------------------------
+ FONT SIZES
+----------------------------------------------------*/
+$font-size-smallest: 0.67rem; // 12
+$font-size-small: 0.85rem;
+
+/*---------------------------------------------------
+ FONTS
+----------------------------------------------------*/
+
+$sans-serif: Arial, Helvetica, sans-serif;
+$body-sans: "Open Sans", $sans-serif;
+$monospaced: "IBM Plex Mono", monospace;
+
+/*---------------------------------------------------
+ ADDITIONAL STYLES
+----------------------------------------------------*/
+
+$hairline-border: 1px solid
+	transparentize(
+		$color: #000000,
+		$amount: 0.95,
+	);
+
+%section-title {
+	font-size: 2.214rem;
+	line-height: 1.5;
+	color: $color-blue;
+
+	&:after {
+		content: "";
+		width: $triple-gap;
+		border-top: 2px $color-blue solid;
+		display: block;
+		margin: $quad-gap 0 0;
+	}
+}
+
+%code-label {
+	display: inline-block;
+	margin-bottom: $double-gap;
+	font: 0.75rem / 1 #{$sans-serif};
+	opacity: 0.5;
+}
+
+.-full-width {
+	width: 100%;
+}
+
+/*---------------------------------------------------
+ MODIFIERS
+----------------------------------------------------*/
+@mixin variable-name--padded {
+	padding: $double-gap 0;
+}
+
+/*---------------------------------------------------
+ CONTENT ELEMENT STYLING
+----------------------------------------------------*/
+
+.section-heading {
+	font: 600 1.61rem / 1.5 $body-sans;
+	color: $color-blue;
+
+	&:after {
+		content: "";
+		width: $triple-gap;
+		border-top: 2px $color-blue solid;
+		display: block;
+		margin: $triple-gap 0 0;
+	}
+}
+
+.section-sub-heading {
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font: 600 #{$font-size-small} / 1.5 $body-sans;
+	background: transparentize($color-dark-blue, 0.95);
+	padding: $gap $secondary-gap;
+}
+
+.variable-name,
+.variable-value {
+	font: 600 #{$font-size-small} / 1.6 $monospaced;
+	color: $color-dark-blue;
+}
+
+.variable-value {
+	font-weight: 400;
+	color: $color-blue;
+}
+
+.class-name {
+	font: #{$font-size-small} / 1.5 $monospaced;
+	color: $color-grey;
+}
+
+.ds-description {
+	color: $color-grey;
+	font: 1rem / 1.6 $body-sans;
+	max-width: 520px;
+
+	> p {
+		margin-bottom: 1.6em;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.short-description {
+	@extend .ds-description;
+	font-size: $font-size-small;
+	opacity: 0.6;
+}
+
+.table-group {
+	display: flex;
+	flex-wrap: wrap;
+
+	> .item {
+		flex: 1 50%;
+		padding: $gap 0;
+		border-bottom: $hairline-border;
+		display: flex;
+		margin: auto 0;
+
+		> .name {
+			@extend .variable-name;
+			flex: 1 50%;
+			padding-right: $double-gap;
+			max-width: 300px;
+		}
+
+		> .value {
+			@extend .variable-value;
+			flex: 1 50%;
+		}
+
+		> .parameters {
+			@extend .variable-value;
+			display: flex;
+			margin-right: $gap;
+			padding: 0 $quarter-gap;
+
+			> span {
+				font-size: $font-size-smallest;
+				margin-right: $half-gap;
+				background: transparentize($color-blue, 0.95);
+				color: $color-dark-blue;
+				padding: $quarter-gap $gap;
+				border-radius: 4px;
+
+				&:first-of-type {
+					margin-left: $half-gap;
+				}
+			}
+
+			&:before,
+			&:after {
+				color: $color-dark-blue;
+				opacity: 0.3;
+			}
+
+			&:before {
+				content: "(";
+			}
+			&:after {
+				content: ")";
+			}
+		}
+	}
+}
+
+.mixins .table-group {
+	> .item {
+		> .name {
+			flex-grow: 0;
+			align-items: flex-start;
+			flex-basis: auto;
+			padding-right: 2px;
+		}
+	}
+}
+
+/*---------------------------------------------------*/
+
+.section-block {
+	display: flex;
+	flex-direction: column;
+	padding: 80px;
+	box-shadow: inset 12px 0 $color-blue;
+
+	&.-section-is-hidden {
+		display: none;
+	}
+
+	> .name {
+		@extend .section-heading;
+		margin-bottom: $quad-gap;
+		order: 1;
+	}
+
+	> .ds-description {
+		order: 2;
+		margin-bottom: $quad-gap;
+	}
+
+	> .section-content {
+		order: 3;
+	}
+}
+
+/*---------------------------------------------------
+ INDEXES
+----------------------------------------------------*/
+
+.index-item {
+	> a {
+		text-decoration: none;
+		color: transparentize($color: $color-white, $amount: 0.5);
+		font: 0.85rem / 1 Arial, Helvetica, sans-serif;
+		display: block;
+		padding: 2px 0;
+	}
+}
+
+.index-list {
+	&:before {
+		font: #{$font-size-smallest} / 1 Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.18em;
+		content: attr(data-label);
+		color: $color-white;
+		margin-bottom: $double-gap;
+		margin-top: $quad-gap;
+		display: block;
+	}
+}
+
+.index-group {
+	padding: 0 $quad-gap $quad-gap;
+	overflow-y: auto;
+	background: $color-dark-blue;
+	z-index: 10;
+
+	> .index-list {
+		margin-bottom: $quad-gap;
+	}
+}
+
+/*---------------------------------------------------
+    Code wrappers:
+    Use for display html code template to
+    show how the html is structure
+----------------------------------------------------*/
+
+@mixin code-viewer--active {
+	background: $color-green;
+	border-radius: 4px 4px 0 0;
+
+	&:before {
+		@include icon(2, 1, $small-icon-size);
+		opacity: 1;
+		position: relative;
+	}
+}
+
+.code-viewer {
+	display: flex;
+	@include square(32px);
+	border-radius: 100%;
+	cursor: pointer;
+
+	&:before {
+		content: "";
+		@include square-icon(3, 1, $small-icon-size);
+		opacity: 0.6;
+		display: block;
+		margin: auto;
+	}
+
+	&:hover {
+		background: transparentize($color: $color-black, $amount: 0.6);
+
+		&:before {
+			@include icon(2, 1, $small-icon-size);
+			opacity: 1;
+		}
+	}
+}
+
+.--code {
+	padding: $double-gap $quad-gap;
+	background: transparentize($color-black, 0.98);
+	border-left: 8px $color-green solid; //transparentize($color-dark-blue, 0.8) solid;
+	font: 16px / 1.4 monospace;
+	width: 100%;
+
+	> pre {
+		white-space: pre-wrap;
+	}
+
+	&:before {
+		content: "html";
+		text-transform: uppercase;
+		font: #{$font-size-smallest} / 1em Arial, san-serif;
+		font-weight: bold;
+		color: $color-dark-blue;
+		display: inline-block;
+		margin-bottom: $double-gap;
+		padding-bottom: $double-gap;
+		border-bottom: 3px solid;
+	}
+}
+
+/*---------------------------------------------------
+    Element wrapper
+----------------------------------------------------*/
+.--wrap {
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	flex-direction: column;
+}
+
+.--components .--wrap {
+	align-items: normal;
+}
+
+/*---------------------------------------------------
+    Element snippet
+----------------------------------------------------*/
+.--element {
+	padding: 18px 0;
+	border-bottom: $hairline-border;
+
+	&:before {
+		content: attr(data-class-name);
+		margin-bottom: $secondary-gap;
+		display: block;
+		@extend .class-name;
+	}
+
+	.code-viewer {
+		margin-top: $double-gap;
+	}
+
+	&.-code-visible {
+		.--code {
+			display: block !important;
+		}
+		.code-viewer {
+			@include code-viewer--active;
+		}
+	}
+
+	.--wrap > div {
+		position: relative;
+	}
+}
+
+/*---------------------------------------------------
+    Elements
+----------------------------------------------------*/
+.element {
+	> .--element:last-of-type {
+		border-bottom: 0;
+	}
+}
+
+/*---------------------------------------------------
+    Element Group
+----------------------------------------------------*/
+.element-group {
+	> .element {
+		order: 3;
+	}
+}
+
+/*---------------------------------------------------
+    TOGGLE SWITCH
+----------------------------------------------------*/
+.switch {
+	position: relative;
+	width: 48px;
+	cursor: pointer;
+
+	&.-active {
+		&:after {
+			transform: translate(140%, -2px);
+		}
+		&:before {
+			background: $color-green;
+		}
+	}
+
+	&:before,
+	&:after {
+		display: block;
+		transition: all cubic-bezier(0.19, 1, 0.22, 1) 400ms;
+	}
+
+	&:before {
+		content: "";
+		width: 100%;
+		height: 16px;
+		border-radius: 16px;
+		background: transparentize($color: $color-black, $amount: 0.95);
+		border: 1px transparentize($color: $color-black, $amount: 0.8);
+		box-shadow: inset 0px 0px 2px
+			transparentize($color: $color-black, $amount: 0.8);
+	}
+
+	&:after {
+		content: "";
+		top: 0;
+		transform: translate(0, -2px);
+		border-radius: 100%;
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		background: #fafafa;
+		border: 1px transparentize($color: $color-black, $amount: 0.9) solid;
+		box-shadow: 2px 2px 5px transparentize($color: $color-black, $amount: 0.8);
+	}
+}
+
+.toggle-switch {
+	display: flex;
+
+	> .label {
+		font-weight: bold;
+		margin: auto 12px auto 0;
+		font-size: 0.85rem;
+		color: #0035ad;
+	}
+
+	> .switch {
+		margin: auto 0;
+	}
+
+	> label {
+		margin-right: $secondary-gap;
+		font: 600 0.875em / 1 $sans-serif;
+		color: #6a6a6a;
+	}
+}
+
+/*---------------------------------------------------
+    TOGGLE GLOBAL CODE VIEW
+----------------------------------------------------*/
+.toggle-code-view {
+	> label:before {
+		content: "";
+		display: block;
+		@include square-icon(1, 1, 32px);
+	}
+}
+
+/*---------------------------------------------------
+    FIX CONTROL BAR
+----------------------------------------------------*/
+.section-link {
+	color: $color-dark-blue;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 0.85rem;
+	opacity: 0.25;
+
+	&.-active,
+	&:hover {
+		color: $color-blue;
+		opacity: 1;
+	}
+}
+
+.section-link-group {
+	display: flex;
+
+	> .section-link {
+		margin-right: $quad-gap;
+	}
+}
+
+.control-bar {
+	position: fixed;
+	padding: $double-gap $quad-gap;
+	display: flex;
+	top: 0;
+	left: 0;
+	height: 64px;
+	background: $color-white;
+	border-bottom: 1px transparentize($color: $color-black, $amount: 0.9) solid;
+	z-index: 100;
+
+	font: 16px/1 $body-sans;
+
+	> .section-link-group {
+		margin: auto 0;
+	}
+
+	> .toggle-switch {
+		margin: 0 0 0 20px;
+	}
+
+	> .toggle-sidebar {
+		margin-left: auto;
+	}
+}
+
+.api-item {
+	padding: $gap 0;
+	border-bottom: 1px solid transparentize($color: #000000, $amount: 0.96);
+	display: flex;
+
+	> .name {
+		width: 60%;
+	}
+}
+
+.preview-pane {
+	padding-top: $quad-gap;
+	position: relative;
+
+	> .section-block {
+		border-bottom: 16px solid $color-dark-blue;
+	}
+
+	&.-hide-code .--code {
+		display: none;
+	}
+
+	&:not(.-hide-code) {
+		.code-viewer {
+			@include code-viewer--active;
+		}
+	}
+}
+
+// Grid area definition
+.display-panels {
+	.control-bar,
+	.preview-pane {
+		width: 100vw;
+	}
+
+	> .index-group {
+		position: fixed;
+		width: $index-pane + $double-quad-gap;
+		height: 100vh;
+		right: -#{$double-quad-gap};
+		top: 0;
+		display: none;
+	}
+
+	.toggle-code-view {
+		display: none;
+	}
+
+	&.-show-index {
+		> .control-bar,
+		> .preview-pane {
+			width: calc(100% - #{$index-pane});
+		}
+
+		> .control-bar.-full-width,
+		> .preview-pane.-full-width {
+			width: 100%;
+		}
+
+		.toggle-code-view {
+			display: flex;
+		}
+
+		> .index-group {
+			display: block;
+
+			&.-hide-index {
+				display: none;
+			}
+		}
+	}
+}
+
+/*---------------------------------------------------
+    STYLE OVERRIDES
+----------------------------------------------------*/
+$panel-sizes: (
+	"small": 320px,
+	"medium": 640px,
+	"large": 1024px,
+);
+
+@each $label, $width in $panel-sizes {
+	.view-panel.-#{$label} .--wrap {
+		max-width: $width;
+	}
+}
+
+.--offset-at-72 .--wrap {
+	// 72 + offset
+	padding-top: 84px;
+}
+
+.wrap-in-blue-background .--wrap {
+	background: $color-blue;
+	padding: $double-gap;
+}
+
+.wrap-in-dark-background .--wrap {
+	background: $color-dark-blue;
+	padding: $double-gap;
+}
+
+/*---------------------------------------------------
+    COLOR SWATCHES
+----------------------------------------------------*/
+.section-block > .section-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+[data-token-index="color"] {
+	.data {
+		height: 180px;
+		display: flex;
+		background: #0c0a20;
+		flex-direction: column;
+
+		&:before {
+			@extend .variable-name;
+			@include variable-name--padded;
+			content: attr(data-name);
+			background: $color-white;
+			display: block;
+		}
+
+		> span {
+			display: block;
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+
+			&:before {
+				content: attr(data-value);
+				@extend .variable-value;
+				position: absolute;
+				padding: $secondary-gap $double-gap;
+				color: white;
+			}
+		}
+
+		// Color overrides
+		&[data-name="$faint-black-color"],
+		&[data-name="$subtle-black-color"],
+		&[data-name="$faint-grey-color"],
+		&[data-name="$light-grey-color"],
+		&[data-name="$mid-grey-color"],
+		&[data-name="$white-color"] {
+			> span:before {
+				color: #03112b;
+			}
+		}
+
+		&[data-name="$faint-black-color"],
+		&[data-name="$subtle-black-color"],
+		&[data-name="$transparent-black-color"] {
+			background: $color-white;
+		}
+
+		&[data-name="$black-color"] {
+			> span:before {
+				color: $color-white;
+			}
+		}
+	}
+
+	> .section-content {
+		> .data {
+			flex: 1 320px;
+		}
+	}
+}
+
+[data-token-index="icon-size"],
+[data-token-index="space"] {
+	.data {
+		display: flex;
+		flex-direction: column;
+		border-bottom: $hairline-border;
+		padding: 0 0 $triple-gap;
+
+		&:before {
+			content: attr(data-name);
+			@extend .variable-name;
+			@include variable-name--padded;
+		}
+
+		&:after {
+			content: attr(data-value);
+			@extend .variable-value;
+			display: block;
+			margin-top: auto;
+		}
+
+		> span {
+			display: block;
+			background: transparentize($color-black, 0.85);
+			margin-bottom: $double-gap;
+		}
+	}
+
+	> .section-content {
+		> .data {
+			flex: 1 20%;
+		}
+	}
+}
+
+[data-token-index="icon-size"] {
+	.data {
+		> span {
+			background: url(../images/icon-list.svg) no-repeat;
+			background-size: contain;
+			display: block;
+		}
+	}
+
+	.section-content {
+		> .data {
+			flex: 0 25%;
+		}
+	}
+}
+
+[data-token-index="font-size"] {
+	.data {
+		padding: $triple-gap 0;
+		border-bottom: $hairline-border;
+		line-height: 1;
+
+		&:before {
+			@extend .variable-name;
+			@include variable-name--padded();
+			content: attr(data-name);
+			display: block;
+		}
+
+		> span {
+			display: flex;
+			line-height: 2;
+			white-space: nowrap;
+			padding-right: $quad-gap;
+			width: calc(100% - #{$quad-gap});
+			overflow: hidden;
+
+			&:before {
+				content: attr(data-value);
+				@extend .variable-value;
+				margin: auto $double-gap auto 0;
+				min-width: 80px;
+			}
+		}
+	}
+
+	> .section-content {
+		flex-wrap: wrap;
+
+		> .data {
+			flex: 1 50%;
+		}
+	}
+}
+
+.mixins,
+.global-variables {
+	.section-content {
+		flex-direction: column;
+
+		> .section-sub-heading {
+			margin-bottom: $double-gap;
+		}
+
+		> .table-group {
+			margin-bottom: $quad-gap;
+		}
+	}
+}
+
+.mixins {
+	.item > .name {
+		width: auto;
+		max-width: 100%;
+	}
+}
