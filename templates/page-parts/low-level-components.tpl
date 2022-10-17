@@ -70,6 +70,10 @@
     <span class="icon" style="background-image: url(./assets/images/services-card-send-icon.svg);"></span>
     <div class="title" style="color: #2B3990;">Send Money</div>
   </div>
+
+  <div class="services-card -bottom-left -no-padding-bottom" style="background-image: url(./assets/images/services-card-finger-print-bg.jpg);">
+    <div class="title" style="color: #C4DEFD;">We care about your security.</div>
+  </div>
 </div>
 
 

@@ -10,8 +10,17 @@
 	}
 
 	> .title {
-		font-size: 1.56rem;
+		font-size: 1.86rem;
 		margin-top: 6.5px;
+	}
+
+	&.-no-padding-bottom {
+		padding-left: 31px;
+		border-radius: 13.8031px;
+
+		> .title {
+			font-size: 2.79rem;
+		}
 	}
 }
 
@@ -27,8 +36,17 @@
 	}
 
 	> .title {
-		font-size: 1.47rem;
+		font-size: 1.57rem;
 		margin-top: 5.55px;
+	}
+
+	&.-no-padding-bottom {
+		padding-left: 27px;
+		border-radius: 11.7931px;
+
+		> .title {
+			font-size: 2.36rem;
+		}
 	}
 }
 
@@ -44,8 +62,17 @@
 	}
 
 	> .title {
-		font-size: 0.86rem;
+		font-size: 0.93rem;
 		margin-top: 3.17px;
+	}
+
+	&.-no-padding-bottom {
+		padding: 26px 15px;
+		border-radius: 6.74387px;
+
+		> .title {
+			font-size: 1.29rem;
+		}
 	}
 }
 
@@ -63,18 +90,27 @@
 		height: 62px;
 		background-size: 100%;
 		display: block;
+		margin-bottom: $spacing-default;
 	}
 
 	> .title {
 		font: 400 2.29rem/1.3 $gotham-bold;
 		letter-spacing: -0.03em;
-		margin-top: $spacing-default;
 	}
 
 	&.-bottom-left {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+	}
+
+	&.-no-padding-bottom {
+		padding-bottom: 0;
+		border-radius: 17px;
+
+		> .title {
+			font: 400 3.43rem/1.2 $gotham-bold;
+		}
 	}
 
 	@include on(small-desktop) {
