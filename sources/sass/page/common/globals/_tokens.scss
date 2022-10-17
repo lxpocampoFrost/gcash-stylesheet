@@ -1,14 +1,13 @@
-/* CSS Variables */
-:root {
-	--spacing-quarter: 2px;
-	--spacing-half: 4px;
-	--spacing-default: 8px;
-	--spacing-secondary: 12px;
-	--spacing-double: 16px;
-	--spacing-triple: 24px;
-	--spacing-quad: 32px;
-	--spacing-double-triple: 48px;
-	--spacing-double-quad: 64px;
-	--spacing-big: 72px;
-	--spacing-wide: 96px;
-}
+/* SCSS Variables */
+
+$spacing-quarter: 2px;
+$spacing-half: 4px;
+$spacing-default: 8px;
+$spacing-secondary: 12px;
+$spacing-double: 16px;
+$spacing-triple: 24px;
+$spacing-quad: 32px;
+$spacing-double-triple: 48px;
+$spacing-double-quad: 64px;
+$spacing-big: 72px;
+$spacing-wide: 96px;

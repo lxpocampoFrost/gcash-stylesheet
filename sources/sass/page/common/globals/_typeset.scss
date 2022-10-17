@@ -1,46 +1,46 @@
 /*---------------------------------------------------
 Base Typesetting
 ----------------------------------------------------*/
-$gotham-rounded-medium: "Gotham Rounded Medium", Arial, Helvetica, sans-serif;
-$gotham-rounded-bold: "Gotham Rounded Bold", Arial, Helvetica, sans-serif;
+$gotham-medium: "Gotham Medium", Arial, Helvetica, sans-serif;
+$gotham-bold: "Gotham Bold", Arial, Helvetica, sans-serif;
 $gilroy-medium: "Gilroy Medium", Arial, Helvetica, sans-serif;
 $gilroy-bold: "Gilroy Bold", Arial, Helvetica, sans-serif;
 
 // HEADLINE
 // 48px
-$headline-epic: 350 3.43rem/1.2 $gotham-rounded-medium;
+$headline-epic: 350 3.43rem/1.2 $gotham-medium;
 // 32px
-$headline-spotlight: 400 2.29rem/1.25 $gotham-rounded-bold;
-$headline-spotlight-light: 350 2.29rem/1.25 $gotham-rounded-medium;
+$headline-spotlight: 400 2.29rem/1.25 $gotham-bold;
+$headline-spotlight-light: 350 2.29rem/1.25 $gotham-medium;
 // 24px
-$headline-region: 400 1.71rem/1.3 $gotham-rounded-bold;
-$headline-region-light: 350 1.71rem/1.3 $gotham-rounded-medium;
+$headline-region: 400 1.71rem/1.3 $gotham-bold;
+$headline-region-light: 350 1.71rem/1.3 $gotham-medium;
 // 20px
-$headline-section: 400 1.43rem/1.35 $gotham-rounded-bold;
-$headline-section-light: 350 1.43rem/1.35 $gotham-rounded-medium;
+$headline-section: 400 1.43rem/1.35 $gotham-bold;
+$headline-section-light: 350 1.43rem/1.35 $gotham-medium;
 // 18px
-$headline-segment: 400 1.29rem/1.4 $gotham-rounded-bold;
-$headline-segment-light: 350 1.29rem/1.4 $gotham-rounded-medium;
+$headline-segment: 400 1.29rem/1.4 $gotham-bold;
+$headline-segment-light: 350 1.29rem/1.4 $gotham-medium;
 // 16px
-$headline-block: 400 1.14rem/1.45 $gotham-rounded-bold;
-$headline-block-light: 350 1.14rem/1.45 $gotham-rounded-medium;
+$headline-block: 400 1.14rem/1.45 $gotham-bold;
+$headline-block-light: 350 1.14rem/1.45 $gotham-medium;
 
 // LABEL
 // 16px
-$label-large: 400 1.14rem/1 $gotham-rounded-bold;
-$label-large-light: 350 1.14rem/1 $gotham-rounded-medium;
+$label-large: 400 1.14rem/1 $gotham-bold;
+$label-large-light: 350 1.14rem/1 $gotham-medium;
 // 14px
-$label-base: 400 1rem/1 $gotham-rounded-bold;
-$label-base-light: 350 1rem/1 $gotham-rounded-medium;
+$label-base: 400 1rem/1 $gotham-bold;
+$label-base-light: 350 1rem/1 $gotham-medium;
 // 12px
-$label-small: 400 0.86rem/1 $gotham-rounded-bold;
-$label-small-light: 350 0.86rem/1 $gotham-rounded-medium;
+$label-small: 400 0.86rem/1 $gotham-bold;
+$label-small-light: 350 0.86rem/1 $gotham-medium;
 // 10px
-$label-fine: 400 0.72rem/1 $gotham-rounded-bold;
-$label-fine-light: 350 0.72rem/1 $gotham-rounded-medium;
+$label-fine: 400 0.72rem/1 $gotham-bold;
+$label-fine-light: 350 0.72rem/1 $gotham-medium;
 // 8px
-$label-tiny: 400 0.57rem/1 $gotham-rounded-bold;
-$label-tiny-light: 350 0.57rem/1 $gotham-rounded-medium;
+$label-tiny: 400 0.57rem/1 $gotham-bold;
+$label-tiny-light: 350 0.57rem/1 $gotham-medium;
 
 // CONTENT
 // 16px
