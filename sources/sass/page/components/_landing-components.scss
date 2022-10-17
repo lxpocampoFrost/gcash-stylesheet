@@ -1,0 +1,85 @@
+@mixin services-card--small-desktop {
+	max-width: 276.06px;
+	height: 389.73px;
+	border-radius: 6.49556px;
+	padding: $spacing-quad;
+
+	> .icon {
+		max-width: 50.34px;
+		height: 50.34px;
+	}
+
+	> .title {
+		font-size: 1.56rem;
+		margin-top: 6.5px;
+	}
+}
+
+@mixin services-card--tablet {
+	max-width: 235.86px;
+	height: 332.98px;
+	border-radius: 5.54971px;
+	padding: 27.5px;
+
+	> .icon {
+		max-width: 43.01px;
+		height: 43.01px;
+	}
+
+	> .title {
+		font-size: 1.47rem;
+		margin-top: 5.55px;
+	}
+}
+
+@mixin services-card--mobile {
+	max-width: 134.88px;
+	height: 190.42px;
+	border-radius: 3.17358px;
+	padding: $spacing-double;
+
+	> .icon {
+		max-width: 24.6px;
+		height: 24.6px;
+	}
+
+	> .title {
+		font-size: 0.86rem;
+		margin-top: 3.17px;
+	}
+}
+
+.services-card {
+	width: 100%;
+	max-width: 340px;
+	height: 480px;
+	border-radius: 8px;
+	padding: 40px;
+	background-size: 100%;
+
+	> .icon {
+		width: 100%;
+		max-width: 62px;
+		height: 62px;
+		background-size: 100%;
+		display: block;
+	}
+
+	> .title {
+		font: 400 2.29rem/1.3 $gotham-bold;
+		letter-spacing: -0.03em;
+		margin-top: $spacing-default;
+	}
+
+	@include on(small-desktop) {
+		@include services-card--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include services-card--tablet;
+	}
+
+	@include on(mobile) {
+		@include services-card--mobile;
+	}
+}
