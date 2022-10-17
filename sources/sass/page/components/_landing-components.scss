@@ -71,6 +71,12 @@
 		margin-top: $spacing-default;
 	}
 
+	&.-bottom-left {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
 	@include on(small-desktop) {
 		@include services-card--small-desktop;
 	}

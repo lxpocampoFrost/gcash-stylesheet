@@ -61,6 +61,15 @@
   <div class="services-card" style="background: #112C88;"></div>
 
   <div class="services-card" style="background: #08153F;"></div>
+
+  <div class="services-card -bottom-left" style="background-image: url(./assets/images/services-card-invest-bg.jpg);">
+    <div class="title" style="color: #D6F5FF;">Invest</div>
+  </div>
+
+  <div class="services-card -bottom-left" style="background-image: url(./assets/images/services-card-send-bg.jpg);">
+    <span class="icon" style="background-image: url(./assets/images/services-card-send-icon.svg);"></span>
+    <div class="title" style="color: #2B3990;">Send Money</div>
+  </div>
 </div>
 
 
