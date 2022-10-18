@@ -74,6 +74,10 @@
   <div class="services-card -bottom-left -no-padding-bottom" style="background-image: url(./assets/images/services-card-finger-print-bg.jpg);">
     <div class="title" style="color: #C4DEFD;">We care about your security.</div>
   </div>
+
+  <div class="services-card -content-only" style="background: transparent;">
+    <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
+  </div>
 </div>
 
 
