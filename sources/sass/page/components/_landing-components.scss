@@ -390,7 +390,7 @@
 
 // bubble-message -- avatar-left
 @mixin message-bubble--avatar-left {
-	max-width: max-content;
+	height: 108px;
 	padding: $spacing-triple $spacing-triple $spacing-triple 40px;
 	background: #ffffff;
 	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
@@ -421,6 +421,8 @@
 }
 
 @mixin message-bubble--small-desktop--avatar-left {
+	max-width: 190px;
+	height: 78px;
 	padding: 17.57px 17.57px 17.57px 29.29px;
 	box-shadow: 0 5.85714px 8.78571px -5.85714px rgba(15, 37, 69, 0.2);
 	border-radius: 5.85714px;
@@ -490,7 +492,7 @@
 	max-width: 260px;
 	width: 100%;
 	background: #ffffff;
-	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
 	border-radius: 8px;
 
 	> .title {
