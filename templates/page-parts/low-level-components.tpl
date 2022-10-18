@@ -79,6 +79,14 @@
     <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
   </div>
 
+  <div class="message-bubble -avatar-top">
+    <img class="avatar" src="./assets/images/message-bubble-avatar-top.png"/>
+    <div class="title">You received money from Mama</div>
+    <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-top-currency.svg) center/contain no-repeat;"></span>2,500</div>
+    <div class="separator"></div>
+    <div class="description">Happy birthday anak! Eto pang-celebrate. ‘Wag ubusin agad, ok? Love you!</div>
+  </div>
+
   <ul class="indicator">
     <li class="item -active"></li>
     <li class="item"></li>
