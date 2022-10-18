@@ -604,6 +604,17 @@
 	}
 }
 
+@mixin shop-item--small-desktop--vase {
+	max-width: 281px;
+	height: 286px;
+	box-shadow: 0px 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
+	border-radius: 10.5474px;
+
+	> .image {
+		border-radius: 10.5474px;
+	}
+}
+
 @mixin shop-item--small-desktop {
 	border-radius: 11px;
 
@@ -633,6 +644,10 @@
 
 	&.-cream {
 		@include shop-item--small-desktop--cream;
+	}
+
+	&.-vase {
+		@include shop-item--small-desktop--vase;
 	}
 }
 
@@ -722,6 +737,37 @@
 	}
 }
 
+@mixin shop-item--vase {
+	max-width: 329px;
+	height: 335px;
+	position: relative;
+	display: flex;
+	justify-content: end;
+	padding: 20px 26px 0 0;
+	background: #ffffff;
+	box-shadow: 0px 38px 26px -21px rgba(15, 37, 69, 0.5);
+	border-radius: 12.3704px;
+
+	> .image {
+		width: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		border-radius: 12.3704px;
+	}
+
+	> .content {
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		> .icon {
+			margin-right: -4px;
+		}
+	}
+}
+
 .shop-item {
 	width: 100%;
 	border-radius: 12px;
@@ -758,6 +804,10 @@
 
 	&.-cream {
 		@include shop-item--cream;
+	}
+
+	&.-vase {
+		@include shop-item--vase;
 	}
 
 	@include on(small-desktop) {
