@@ -74,7 +74,7 @@
   <div class="services-card -bottom-left -no-padding-bottom" style="background-image: url(./assets/images/services-card-finger-print-bg.jpg);">
     <div class="title" style="color: #C4DEFD;">We care about your security.</div>
   </div>
-
+  
   <div class="message-bubble -avatar-top">
     <img class="avatar" src="./assets/images/avatar.png"/>
     <div class="title">You received money from Mama</div>
@@ -82,6 +82,19 @@
     <div class="separator"></div>
     <div class="description">Happy birthday anak! Eto pang-celebrate. ‘Wag ubusin agad, ok? Love you!</div>
   </div>
+
+  <div class="services-card -content-only" style="background: transparent;">
+    <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
+  </div>
+
+  <ul class="indicator">
+    <li class="item -active"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+    <li class="item"></li>
+  </ul>
 </div>
 
 
