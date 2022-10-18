@@ -398,10 +398,6 @@
 	position: relative;
 	isolation: isolate;
 
-	> .title {
-		font: 500 1rem/1.4 $gotham-medium;
-	}
-
 	> .amount {
 		display: flex;
 		justify-content: flex-start;
@@ -498,7 +494,7 @@
 	border-radius: 8px;
 
 	> .title {
-		font: 500 1rem/1.4 $gotham-bold;
+		font: 500 1rem/1.4 $gotham-medium;
 		letter-spacing: -0.01em;
 		color: #2044a5;
 		opacity: 0.8;
