@@ -1,0 +1,36 @@
+.main-nav {
+	background: #f6f9fd;
+	border-width: 0px 1px;
+	border-style: solid;
+	border-color: #e0e8f3;
+	padding: $spacing-triple $spacing-double $spacing-triple $spacing-default;
+
+	> .item {
+		position: absolute;
+
+		&.-active {
+			z-index: 1;
+		}
+	}
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+	box-shadow: 0px 15px 14px -13px rgba(6, 35, 79, 0.1);
+	border-radius: 76px;
+
+	> .logo-wrapper {
+		padding: 0 $spacing-secondary;
+
+		> .logo-icon {
+			width: 37.93px;
+			height: 32px;
+			display: block;
+		}
+	}
+
+	> .main-nav {
+	}
+}
