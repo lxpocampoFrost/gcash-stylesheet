@@ -117,6 +117,14 @@
       <div class="amount">PHP 25,000</div>
     </div>
   </div>
+
+  <div class="shop-item -tote" style="background: url(./assets/images/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
+    <div class="content">
+      <span class="icon" style="background: url(./assets/images/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
+      <div class="label">Tote</div>
+      <div class="amount">PHP 100</div>
+    </div>
+  </div>
 </div>
 
 
