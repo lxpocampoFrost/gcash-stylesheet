@@ -1,21 +1,60 @@
+.sub-nav {
+	height: 64px;
+	display: flex;
+
+	> a.item {
+		width: max-content;
+		height: 100%;
+		letter-spacing: -0.01em;
+		color: #002cb8;
+		display: flex;
+		align-items: center;
+
+		&:not(:first-of-type) {
+			margin-left: $spacing-triple;
+		}
+	}
+}
+
 .main-nav {
-	position: relative;
-	padding: $spacing-triple $spacing-double $spacing-triple $spacing-default;
+	width: 100%;
+	max-width: 128px;
+	height: 64px;
+	display: flex;
+	flex-direction: column;
 
 	> .item {
 		width: 100%;
-		position: absolute;
+		height: 100%;
+		padding: $spacing-triple $spacing-default $spacing-triple
+			$spacing-double;
 		background: #ffffff;
 		border: 1px solid #e0e8f3;
-		box-shadow: 0px 15px 14px -13px rgba(0, 0, 0, 0.1);
-		border-radius: 0px 0px 4px 4px;
+		box-shadow: 0 15px 14px -13px rgba(0, 0, 0, 0.1);
+		border-radius: 0 0 4px 4px;
+		display: flex;
+		align-items: center;
+		order: 2;
+		// display: none;
 
 		&.-active {
+			font-family: $gotham-bold;
 			background: #f6f9fd;
-			border-width: 0px 1px;
+			border-width: 0 1px;
+			border-radius: 0;
 			border-style: solid;
 			border-color: #e0e8f3;
-			z-index: 1;
+			display: flex;
+			order: 1;
+
+			&:after {
+				content: "";
+				min-width: 24px;
+				height: 24px;
+				background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.93417 10.5L12.9342 14.5L16.9342 10.5' stroke='%23002CB8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+					center/cover no-repeat;
+				margin-left: $spacing-default;
+			}
 		}
 	}
 }
@@ -24,8 +63,11 @@
 	display: flex;
 	align-items: center;
 	background: #ffffff;
-	box-shadow: 0px 15px 14px -13px rgba(6, 35, 79, 0.1);
+	box-shadow: 0 15px 14px -13px rgba(6, 35, 79, 0.1);
 	border-radius: 76px;
+	font: 500 1rem/1 $gotham-medium;
+	letter-spacing: -0.01em;
+	color: #002cb8;
 
 	> .logo-wrapper {
 		padding: 0 $spacing-secondary;
@@ -38,5 +80,9 @@
 	}
 
 	> .main-nav {
+	}
+
+	> .sub-nav {
+		margin: 0 20px 0 $spacing-quad;
 	}
 }
