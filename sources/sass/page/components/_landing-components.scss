@@ -307,3 +307,39 @@
 		@include services-card--mobile;
 	}
 }
+
+.shop-item {
+	width: 100%;
+	max-width: 160.05px;
+	height: 268.26px;
+	border: 1px solid blue;
+	padding: 0 10px $spacing-default;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+	position: relative;
+
+	> .image {
+		width: 100%;
+		max-width: 96.93px;
+		height: 241.21px;
+		position: absolute;
+		top: -50px;
+	}
+
+	> .content {
+		display: flex;
+		align-items: center;
+
+		> .icon {
+			min-width: 48px;
+			height: 48px;
+		}
+
+		> .details {
+			width: 100%;
+			margin-left: $spacing-half;
+		}
+	}
+}

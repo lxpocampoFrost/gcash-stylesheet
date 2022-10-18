@@ -95,6 +95,17 @@
     <li class="item"></li>
   </ul>
 
+  <div class="shop-item -cream">
+    <img class="image" src="./assets/images/shop-item-cream-img.png"/>
+    <div class="content">
+        <span class="icon" style="background: url(./assets/images/shop-item-cream-icon.svg) center/contain no-repeat;"></span>
+        <div class="details">
+            <div class="title">Daily Cream</div>
+            <div class="amount">PHP 250</div>
+        </div>
+    </div>
+  </div>
+
 </div>
 
 
