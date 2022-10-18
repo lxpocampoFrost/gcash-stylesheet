@@ -85,6 +85,13 @@
       <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-left-currency.svg) center/contain no-repeat;"></span>2,500</div>
       <img class="avatar" src="./assets/images/message-bubble-avatar-left.png"/>
   </div>
+  <div class="message-bubble -avatar-top">
+    <img class="avatar" src="./assets/images/message-bubble-avatar-top.png"/>
+    <div class="title">You received money from Mama</div>
+    <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-top-currency.svg) center/contain no-repeat;"></span>2,500</div>
+    <div class="separator"></div>
+    <div class="description">Happy birthday anak! Eto pang-celebrate. ‘Wag ubusin agad, ok? Love you!</div>
+  </div>
 
   <ul class="indicator">
     <li class="item -active"></li>
@@ -95,6 +102,12 @@
     <li class="item"></li>
   </ul>
 
+  <div class="use-case-bubble -amount-received" style="background-image: url(./assets/images/use-case-bubble-amount-received-bg.jpg);">
+    <div class="label">Amount received</div>
+    <div class="amount">
+      <span class="currency" style="background-image: url(./assets/images/use-case-bubble-amount-received-currency.svg);"></span>5,000
+    </div>
+  </div>
 </div>
 
 

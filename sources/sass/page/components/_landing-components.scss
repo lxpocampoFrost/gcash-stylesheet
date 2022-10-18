@@ -1,110 +1,96 @@
-// bubble-message -- avatar-left
-@mixin message-bubble--avatar-left {
-	max-width: max-content;
-	padding: $spacing-triple $spacing-triple $spacing-triple 40px;
-	background: #ffffff;
-	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
+@mixin use-case-bubble--amount-received {
+	max-width: 260px;
+	height: 86px;
+	color: #2044a5;
+	padding: 20px $spacing-triple $spacing-double;
+	background-size: cover;
+	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
 	border-radius: 8px;
-	position: relative;
-	isolation: isolate;
 
-	> .amount {
-		display: flex;
-		align-items: center;
-		font: 400 2.29rem/1 $gotham-bold;
-		letter-spacing: -0.02em;
-		color: #2044a5;
-		margin-top: $spacing-default;
-
-		> .icon {
-			min-width: 23px;
-			height: 32px;
-			margin-right: $spacing-half;
-		}
-	}
-
-	> .avatar {
-		left: -29px;
-		top: calc(50% - 58px / 2);
-	}
-}
-
-@mixin message-bubble--small-desktop--avatar-left {
-	padding: 17.57px 17.57px 17.57px 29.29px;
-	box-shadow: 0 5.85714px 8.78571px -5.85714px rgba(15, 37, 69, 0.2);
-	border-radius: 5.85714px;
-
-	> .title {
-		font: 400 0.72rem/1.4 $gotham-bold;
-	}
-
-	> .amount {
-		font: 400 1.71rem/1 $gotham-bold;
-		align-items: center;
-
-		> .icon {
-			width: 16.66px;
-			height: 23.43px;
-			margin-right: 3px;
-		}
-	}
-
-	> .avatar {
-		max-width: 42.46px;
-		height: 42.46px;
-		left: -21.23px;
-		top: calc(50% - 42.46px / 2 - 0.68px);
-	}
-}
-
-@mixin message-bubble--small-desktop {
-	&.-avatar-left {
-		@include message-bubble--small-desktop--avatar-left;
-	}
-}
-
-.message-bubble {
-	width: 100%;
-
-	&.-avatar-left {
-		@include message-bubble--avatar-left;
-	}
-
-	> .title {
-		font: 400 1rem/1.4 $gotham-bold;
-		color: #2044a5;
+	> .label {
+		font: 700 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
 		opacity: 0.8;
 	}
 
 	> .amount {
-		text-align: center;
-		display: flex;
-		align-items: center;
 		font: 700 2.29rem/1 $gotham-bold;
 		letter-spacing: -0.02em;
-		color: #2044a5;
-		margin-top: $spacing-default;
+		margin-top: $spacing-half;
 
-		> .icon {
-			min-width: 23px;
-			height: 32px;
+		> .currency {
+			display: inline-block;
+			width: 22.75px;
+			height: 28.44px;
+			padding: 1px 0 2.5px;
 			margin-right: $spacing-half;
+			background-size: 100%;
 		}
 	}
+}
 
-	> .avatar {
-		position: absolute;
-		width: 100%;
-		max-width: 58px;
-		height: 58px;
-		background: #ffffff;
-		box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
-		border-radius: 50%;
-		padding: 5px;
+@mixin use-case-bubble--small-desktop {
+	&.-amount-received {
+		max-width: 151px;
+		height: 50.23px;
+		border-radius: 4.64615px;
+		padding: $spacing-secondary 14px 9px;
+
+		> .label {
+			font-size: 0.57rem;
+		}
+
+		> .amount {
+			font-size: 1.36rem;
+			margin-top: $spacing-quarter;
+
+			> .currency {
+				width: 13.21px;
+				height: 16.52px;
+				padding: 0.5px 0 1.5px;
+				margin-right: $spacing-quarter;
+			}
+		}
+	}
+}
+
+@mixin use-case-bubble--mobile {
+	&.-amount-received {
+		max-width: 127px;
+		height: 42.54px;
+		border-radius: 3.90769px;
+		padding: 9px $spacing-secondary $spacing-default;
+
+		> .label {
+			font-size: 0.5rem;
+		}
+
+		> .amount {
+			font-size: 1.14rem;
+			margin-top: 1.95px;
+
+			> .currency {
+				width: 11.11px;
+				height: 13.89px;
+				margin-right: 1.95px;
+			}
+		}
+	}
+}
+
+.use-case-bubble {
+	width: 100%;
+
+	&.-amount-received {
+		@include use-case-bubble--amount-received;
 	}
 
 	@include on(small-desktop) {
-		@include message-bubble--small-desktop;
+		@include use-case-bubble--small-desktop;
+	}
+
+	@include on(mobile) {
+		@include use-case-bubble--mobile;
 	}
 }
 
@@ -268,7 +254,7 @@
 	}
 
 	> .title {
-		font: 400 2.29rem/1.3 $gotham-bold;
+		font: 700 2.29rem/1.3 $gotham-bold;
 		letter-spacing: -0.03em;
 	}
 
@@ -283,7 +269,7 @@
 		border-radius: 17px;
 
 		> .title {
-			font: 400 3.43rem/1.2 $gotham-bold;
+			font: 700 3.43rem/1.2 $gotham-bold;
 		}
 	}
 
@@ -308,5 +294,253 @@
 
 	@include on(mobile) {
 		@include services-card--mobile;
+	}
+}
+
+@mixin message-bubble--small-desktop--avatar-top {
+	max-width: 199px;
+	height: 207px;
+	padding: 37px 18px 18px;
+
+	> .avatar {
+		width: 44px;
+		height: 44px;
+	}
+
+	> .title,
+	> .description {
+		font-size: 0.78rem;
+	}
+
+	> .amount {
+		font-size: 1.78rem;
+	}
+
+	> .amount,
+	> .separator,
+	> .description {
+		margin-top: $spacing-secondary;
+	}
+}
+
+@mixin message-bubble--small-desktop {
+	box-shadow: 0 6px 9px -6px rgba(15, 37, 69, 0.2);
+	border-radius: 6px;
+
+	> .avatar {
+		padding: $spacing-half;
+		box-shadow: 0px 6px 9px -6px rgba(15, 37, 69, 0.2);
+	}
+
+	> .amount > .icon {
+		width: 17px;
+		height: 25px;
+		margin-right: 3px;
+	}
+
+	&.-avatar-top {
+		@include message-bubble--small-desktop--avatar-top;
+	}
+
+	&.-avatar-left {
+		@include message-bubble--small-desktop--avatar-left;
+	}
+}
+
+@mixin message-bubble--mobile--avatar-top--amount {
+	font-size: 1.57rem;
+
+	> .icon {
+		width: 16px;
+		height: 22px;
+	}
+}
+
+@mixin message-bubble--mobile {
+	&.-avatar-top {
+		max-width: 177px;
+		height: 182px;
+		padding: 33px $spacing-double $spacing-double;
+		box-shadow: 0px 5px 8px -5px rgba(15, 37, 69, 0.2);
+		border-radius: 5px;
+
+		> .avatar {
+			width: 40px;
+			height: 40px;
+			padding: 3px;
+			box-shadow: 0px 5px 8px -5px rgba(15, 37, 69, 0.2);
+		}
+
+		> .title,
+		> .description {
+			font-size: 0.71rem;
+		}
+
+		> .amount {
+			@include message-bubble--mobile--avatar-top--amount;
+		}
+
+		> .amount,
+		> .separator,
+		> .description {
+			margin-top: 11px;
+		}
+	}
+}
+
+// bubble-message -- avatar-left
+@mixin message-bubble--avatar-left {
+	max-width: max-content;
+	padding: $spacing-triple $spacing-triple $spacing-triple 40px;
+	background: #ffffff;
+	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
+	border-radius: 8px;
+	position: relative;
+	isolation: isolate;
+
+	> .amount {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		font: 400 2.29rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
+		color: #2044a5;
+		margin-top: $spacing-default;
+
+		> .icon {
+			min-width: 23px;
+			height: 32px;
+			margin-right: $spacing-half;
+		}
+	}
+
+	> .avatar {
+		left: -29px;
+		top: calc(50% - 58px / 2);
+	}
+}
+
+@mixin message-bubble--small-desktop--avatar-left {
+	padding: 17.57px 17.57px 17.57px 29.29px;
+	box-shadow: 0 5.85714px 8.78571px -5.85714px rgba(15, 37, 69, 0.2);
+	border-radius: 5.85714px;
+
+	> .title {
+		font: 500 0.72rem/1.4 $gotham-bold;
+	}
+
+	> .amount {
+		font: 700 1.71rem/1 $gotham-bold;
+		align-items: center;
+
+		> .icon {
+			min-width: 16.66px;
+			height: 23.43px;
+			margin: 0 3px $spacing-quarter 0;
+		}
+	}
+
+	> .avatar {
+		max-width: 42.46px;
+		height: 42.46px;
+		left: -21.23px;
+		top: calc(50% - 42.46px / 2 - 0.68px);
+	}
+}
+
+@mixin message-bubble--avatar-top {
+	height: 272px;
+	padding: $spacing-double-triple $spacing-triple $spacing-triple;
+	position: relative;
+
+	> .title {
+		max-width: 16ch;
+		text-align: center;
+		margin: auto;
+	}
+
+	> .avatar {
+		left: 50%;
+		transform: translate(-50%, -120%);
+	}
+
+	> .amount,
+	> .separator {
+		margin-top: $spacing-double;
+	}
+
+	> .amount {
+		color: #0058e5;
+	}
+
+	> .separator {
+		width: 100%;
+		height: 1px;
+		background: #ececec;
+	}
+
+	> .description {
+		font: 600 1rem/1.4 $gilroy-bold;
+		text-align: center;
+		color: #445c85;
+		margin: $spacing-double auto 0;
+		max-width: 18ch;
+	}
+}
+
+.message-bubble {
+	max-width: 260px;
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+	border-radius: 8px;
+
+	> .title {
+		font: 500 1rem/1.4 $gotham-bold;
+		letter-spacing: -0.01em;
+		color: #2044a5;
+		opacity: 0.8;
+	}
+
+	> .avatar {
+		width: 58px;
+		height: 58px;
+		position: absolute;
+		border-radius: 50%;
+		padding: 5px;
+		background: #ffffff;
+		box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
+	}
+
+	> .amount {
+		font: 700 2.29rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
+		color: #2044a5;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		margin-top: $spacing-default;
+
+		> .icon {
+			width: 23px;
+			height: 32px;
+			margin-right: $spacing-half;
+		}
+	}
+
+	&.-avatar-top {
+		@include message-bubble--avatar-top;
+	}
+
+	&.-avatar-left {
+		@include message-bubble--avatar-left;
+	}
+
+	@include on(small-desktop) {
+		@include message-bubble--small-desktop;
+	}
+
+	@include on(mobile) {
+		@include message-bubble--mobile;
 	}
 }
