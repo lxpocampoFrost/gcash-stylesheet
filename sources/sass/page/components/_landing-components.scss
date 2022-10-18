@@ -1,3 +1,43 @@
+@mixin indicator--mobile {
+	> .item {
+		width: 8px;
+		height: 8px;
+
+		&:not(:first-of-type) {
+			margin-top: 10px;
+		}
+
+		&.-active {
+			height: 30px;
+		}
+	}
+}
+
+.indicator {
+	> .item {
+		width: 15px;
+		height: 15px;
+		background: #ececec;
+		opacity: 0.4;
+		border-radius: 50%;
+
+		&:not(:first-of-type) {
+			margin-top: 18px;
+		}
+
+		&.-active {
+			height: 37px;
+			background: #e9e9e9;
+			opacity: 0.8;
+			border-radius: 59px;
+		}
+	}
+
+	@include on(mobile) {
+		@include indicator--mobile;
+	}
+}
+
 @mixin services-card--small-desktop {
 	max-width: 276.06px;
 	height: 389.73px;
