@@ -1,14 +1,20 @@
 .main-nav {
-	background: #f6f9fd;
-	border-width: 0px 1px;
-	border-style: solid;
-	border-color: #e0e8f3;
+	position: relative;
 	padding: $spacing-triple $spacing-double $spacing-triple $spacing-default;
 
 	> .item {
+		width: 100%;
 		position: absolute;
+		background: #ffffff;
+		border: 1px solid #e0e8f3;
+		box-shadow: 0px 15px 14px -13px rgba(0, 0, 0, 0.1);
+		border-radius: 0px 0px 4px 4px;
 
 		&.-active {
+			background: #f6f9fd;
+			border-width: 0px 1px;
+			border-style: solid;
+			border-color: #e0e8f3;
 			z-index: 1;
 		}
 	}
