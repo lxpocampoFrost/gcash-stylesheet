@@ -592,7 +592,7 @@
 	border: 0.961042px solid #edf3fb;
 	box-shadow: 0px 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
 	border-radius: 9.61042px;
-	padding: 0 9px 17px;
+	padding: 0 9px 7px;
 
 	> .image {
 		max-width: 82.65px;
@@ -700,7 +700,7 @@
 @mixin shop-item--cream {
 	max-width: max-content;
 	height: 268px;
-	padding: 0 10px 19px;
+	padding: 0 10px $spacing-default;
 	background: linear-gradient(180deg, #ffffff 23.92%, #dbd7e1 169.83%);
 	border: 1.12715px solid #edf3fb;
 	box-shadow: 0 9.01718px 13.5258px -9.01718px rgba(15, 37, 69, 0.2);
@@ -714,7 +714,7 @@
 		width: 100%;
 		max-width: 96.93px;
 		height: 241.21px;
-		transform: translate(1%, -7%);
+		transform: translate(1%, -8%);
 	}
 
 	> .content {
