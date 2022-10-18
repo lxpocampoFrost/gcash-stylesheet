@@ -40,10 +40,12 @@
 
 	> .amount {
 		font: 400 1.71rem/1 $gotham-bold;
+		align-items: center;
 
 		> .icon {
-			min-width: 16.66px;
+			width: 16.66px;
 			height: 23.43px;
+			margin-right: 3px;
 		}
 	}
 
@@ -75,9 +77,10 @@
 	}
 
 	> .amount {
+		text-align: center;
 		display: flex;
 		align-items: center;
-		font: 400 2.29rem/1 $gotham-bold;
+		font: 700 2.29rem/1 $gotham-bold;
 		letter-spacing: -0.02em;
 		color: #2044a5;
 		margin-top: $spacing-default;

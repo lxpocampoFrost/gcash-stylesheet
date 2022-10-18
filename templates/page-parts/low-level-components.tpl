@@ -82,7 +82,7 @@
 
   <div class="message-bubble -avatar-left">
       <div class="title">Send money to Trisha</div>
-      <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-peso.svg) center/contain no-repeat;"></span>2,500</div>
+      <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-left-currency.svg) center/contain no-repeat;"></span>2,500</div>
       <img class="avatar" src="./assets/images/message-bubble-avatar-left.png"/>
   </div>
 
