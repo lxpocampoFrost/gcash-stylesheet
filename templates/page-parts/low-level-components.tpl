@@ -129,6 +129,12 @@
     </div>
   </div>
 
+  <div class="shop-item -vase" style="background: url(./assets/images/shop-item-vase-bg.jpg) center/contain no-repeat;">
+      <span class="icon" style="background: url(./assets/images/shop-item-watch-category.svg) center/contain no-repeat;"></span>
+      <div class="label">Digital Watch: Sports Edition</div>
+      <div class="amount">PHP 25,000</div>
+  </div>
+
 </div>
 
 
