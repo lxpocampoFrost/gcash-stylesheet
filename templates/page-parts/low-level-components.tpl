@@ -108,6 +108,15 @@
       <span class="currency" style="background-image: url(./assets/images/use-case-bubble-amount-received-currency.svg);"></span>5,000
     </div>
   </div>
+
+  <div class="shop-item -watch">
+    <img class="image" src="./assets/images/shop-item-watch.png"/>
+    <div class="content">
+      <span class="icon" style="background: url(./assets/images/shop-item-watch-category.svg) center/contain no-repeat;"></span>
+      <div class="label">Digital Watch: Sports Edition</div>
+      <div class="amount">PHP 25,000</div>
+    </div>
+  </div>
 </div>
 
 
