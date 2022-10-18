@@ -476,3 +476,115 @@
 		@include message-bubble--mobile;
 	}
 }
+
+@mixin shop-item--small-desktop--watch {
+	max-width: 281px;
+	height: 142px;
+
+	> .image {
+		width: 104px;
+		height: 142px;
+		margin-left: 20px;
+	}
+
+	> .content {
+		margin: auto 25px 19px 20px;
+
+		> .label,
+		> .amount {
+			margin-left: 7px;
+		}
+	}
+}
+
+@mixin shop-item--small-desktop {
+	> .content {
+		> .icon {
+			width: 41px;
+			height: 41px;
+		}
+
+		> .label {
+			font-size: 0.72rem;
+		}
+
+		> .amount {
+			font-size: 1.21rem;
+		}
+
+		> .label,
+		> .amount {
+			margin-top: 3px;
+		}
+	}
+
+	&.-watch {
+		@include shop-item--small-desktop--watch;
+	}
+}
+
+@mixin shop-item--watch {
+	max-width: 329px;
+	height: 167px;
+	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
+	box-shadow: 0px 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
+	display: flex;
+
+	> .image {
+		width: 122px;
+		height: 167px;
+		margin-left: 24px;
+	}
+
+	> .content {
+		margin: auto 29px 20px $spacing-triple;
+
+		> .label {
+			max-width: 14ch;
+		}
+
+		> .label,
+		> .amount {
+			margin-left: $spacing-default;
+		}
+	}
+}
+
+.shop-item {
+	width: 100%;
+	border-radius: 12px;
+
+	> .content {
+		> .icon {
+			width: 48px;
+			height: 48px;
+			display: block;
+		}
+
+		> .label {
+			font: 700 0.86rem/1.3 $gilroy-bold;
+			letter-spacing: -0.02em;
+			color: #1c6b9e;
+			opacity: 0.4;
+		}
+
+		> .amount {
+			font: 700 1.43rem/1.3 $gotham-bold;
+			letter-spacing: -0.04em;
+			color: #0e517c;
+		}
+
+		> .label,
+		> .amount {
+			margin-top: $spacing-half;
+		}
+	}
+
+	&.-watch {
+		@include shop-item--watch;
+	}
+
+	@include on(small-desktop) {
+		@include shop-item--small-desktop;
+	}
+}
