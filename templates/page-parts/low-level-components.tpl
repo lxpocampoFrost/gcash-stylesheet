@@ -100,7 +100,7 @@
     <div class="content">
         <span class="icon" style="background: url(./assets/images/shop-item-cream-icon.svg) center/contain no-repeat;"></span>
         <div class="details">
-            <div class="title">Daily Cream</div>
+            <div class="label">Daily Cream</div>
             <div class="amount">PHP 250</div>
         </div>
     </div>
