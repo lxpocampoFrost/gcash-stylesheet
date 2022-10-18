@@ -480,6 +480,8 @@
 @mixin shop-item--small-desktop--watch {
 	max-width: 281px;
 	height: 142px;
+	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
+	box-shadow: 0px 8.4379px 12.6568px -8.4379px rgba(15, 37, 69, 0.2);
 
 	> .image {
 		width: 104px;
@@ -498,6 +500,8 @@
 }
 
 @mixin shop-item--small-desktop {
+	border-radius: 10.5474px;
+
 	> .content {
 		> .icon {
 			width: 41px;
