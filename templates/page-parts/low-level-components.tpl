@@ -5,7 +5,7 @@
   <div class="message-bubble -avatar-left">
       <div class="title">Send money to Trisha</div>
       <div class="amount"><span class="icon"></span>2,500</div>
-      <div class="avatar" style="background: url('./assets/images/avatar-left.svg');"></div>
+      <img class="avatar" src="./assets/images/avatar-left.png"/>
   </div>
 </div>
 
