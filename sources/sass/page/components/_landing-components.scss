@@ -398,6 +398,10 @@
 	position: relative;
 	isolation: isolate;
 
+	> .title {
+		font: 500 1rem/1.4 $gotham-medium;
+	}
+
 	> .amount {
 		display: flex;
 		justify-content: flex-start;
@@ -415,8 +419,8 @@
 	}
 
 	> .avatar {
-		left: -29px;
-		top: calc(50% - 58px / 2);
+		left: 0;
+		transform: translate(-50%, -105%);
 	}
 }
 
@@ -426,7 +430,7 @@
 	border-radius: 5.85714px;
 
 	> .title {
-		font: 500 0.72rem/1.4 $gotham-bold;
+		font: 500 0.72rem/1.4 $gotham-medium;
 	}
 
 	> .amount {
@@ -443,8 +447,6 @@
 	> .avatar {
 		max-width: 42.46px;
 		height: 42.46px;
-		left: -21.23px;
-		top: calc(50% - 42.46px / 2 - 0.68px);
 	}
 }
 
