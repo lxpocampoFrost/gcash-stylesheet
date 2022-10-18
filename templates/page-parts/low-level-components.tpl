@@ -2,6 +2,7 @@
   Low-level component are component types composed of 2 or more elements. They are the building blocks of high-level components or contextual components.
 </p>
 <div class="element">
+
   <div class="services-card" style="background-image: url(./assets/images/services-card-save-bg.jpg);">
     <span class="icon" style="background-image: url(./assets/images/services-card-save-icon.svg);"></span>
     <div class="title" style="color: #2B3990;">Save</div>
@@ -79,6 +80,11 @@
     <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
   </div>
 
+  <div class="message-bubble -avatar-left">
+      <div class="title">Send money to Trisha</div>
+      <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-left-currency.svg) center/contain no-repeat;"></span>2,500</div>
+      <img class="avatar" src="./assets/images/message-bubble-avatar-left.png"/>
+  </div>
   <div class="message-bubble -avatar-top">
     <img class="avatar" src="./assets/images/message-bubble-avatar-top.png"/>
     <div class="title">You received money from Mama</div>

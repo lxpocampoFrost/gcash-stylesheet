@@ -324,7 +324,7 @@
 }
 
 @mixin message-bubble--small-desktop {
-	box-shadow: 0px 6px 9px -6px rgba(15, 37, 69, 0.2);
+	box-shadow: 0 6px 9px -6px rgba(15, 37, 69, 0.2);
 	border-radius: 6px;
 
 	> .avatar {
@@ -340,6 +340,10 @@
 
 	&.-avatar-top {
 		@include message-bubble--small-desktop--avatar-top;
+	}
+
+	&.-avatar-left {
+		@include message-bubble--small-desktop--avatar-left;
 	}
 }
 
@@ -381,6 +385,67 @@
 		> .description {
 			margin-top: 11px;
 		}
+	}
+}
+
+// bubble-message -- avatar-left
+@mixin message-bubble--avatar-left {
+	height: 108px;
+	padding: $spacing-triple $spacing-triple $spacing-triple 40px;
+	background: #ffffff;
+	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
+	border-radius: 8px;
+	position: relative;
+	isolation: isolate;
+
+	> .amount {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		font: 400 2.29rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
+		color: #2044a5;
+		margin-top: $spacing-default;
+
+		> .icon {
+			min-width: 23px;
+			height: 32px;
+			margin-right: $spacing-half;
+		}
+	}
+
+	> .avatar {
+		left: 0;
+		transform: translate(-50%, -105%);
+	}
+}
+
+@mixin message-bubble--small-desktop--avatar-left {
+	max-width: 190px;
+	height: 78px;
+	padding: 17.57px 17.57px 17.57px 29.29px;
+	box-shadow: 0 5.85714px 8.78571px -5.85714px rgba(15, 37, 69, 0.2);
+	border-radius: 5.85714px;
+
+	> .title {
+		font: 500 0.72rem/1.4 $gotham-medium;
+	}
+
+	> .amount {
+		font: 700 1.71rem/1 $gotham-bold;
+		align-items: center;
+		margin-top: 6px;
+
+		> .icon {
+			min-width: 16.66px;
+			height: 23.43px;
+			margin: 0 3px $spacing-quarter 0;
+		}
+	}
+
+	> .avatar {
+		max-width: 42.46px;
+		height: 42.46px;
 	}
 }
 
@@ -428,11 +493,11 @@
 	max-width: 260px;
 	width: 100%;
 	background: #ffffff;
-	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
 	border-radius: 8px;
 
 	> .title {
-		font: 500 1rem/1.4 $gotham-bold;
+		font: 500 1rem/1.4 $gotham-medium;
 		letter-spacing: -0.01em;
 		color: #2044a5;
 		opacity: 0.8;
@@ -445,7 +510,7 @@
 		border-radius: 50%;
 		padding: 5px;
 		background: #ffffff;
-		box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+		box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
 	}
 
 	> .amount {
@@ -466,6 +531,10 @@
 
 	&.-avatar-top {
 		@include message-bubble--avatar-top;
+	}
+
+	&.-avatar-left {
+		@include message-bubble--avatar-left;
 	}
 
 	@include on(small-desktop) {
