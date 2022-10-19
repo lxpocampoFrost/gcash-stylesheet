@@ -892,3 +892,20 @@
 		@include shop-item--small-desktop;
 	}
 }
+
+.landing_text-display {
+	font: 700 6.57rem/1.1 $gotham-bold;
+
+	@include on(small-desktop) {
+		font: 700 5.36rem/1.2 $gotham-bold;
+	}
+
+	@include on(tablet) {
+		font: 700 3.43rem/1.2 $gotham-bold;
+	}
+
+	@include on(mobile) {
+		max-width: 8ch;
+		margin: 0 auto;
+	}
+}
