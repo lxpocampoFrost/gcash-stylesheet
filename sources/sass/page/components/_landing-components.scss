@@ -547,7 +547,6 @@
 }
 
 @mixin shop-item--small-desktop--watch {
-	max-width: 281px;
 	height: 142px;
 	box-shadow: 0px 8.4379px 12.6568px -8.4379px rgba(15, 37, 69, 0.2);
 
@@ -563,6 +562,18 @@
 		> .label,
 		> .amount {
 			margin-left: 7px;
+		}
+	}
+}
+
+@mixin shop-item--small-desktop--tote {
+	height: 160px;
+	box-shadow: 0px 32.4px 22.1684px -36.6632px rgba(15, 37, 69, 0.5);
+
+	> .content {
+		> .label,
+		> .amount {
+			margin-left: 3px;
 		}
 	}
 }
@@ -615,8 +626,17 @@
 		}
 	}
 
+	&.-watch,
+	&.-tote {
+		max-width: 281px;
+	}
+
 	&.-watch {
 		@include shop-item--small-desktop--watch;
+	}
+
+	&.-tote {
+		@include shop-item--small-desktop--tote;
 	}
 
 	&.-cream {
@@ -624,8 +644,23 @@
 	}
 }
 
+@mixin shop-item--tote {
+	height: 188px;
+	box-shadow: 0px 38px 26px -43px rgba(15, 37, 69, 0.5);
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	padding: 0 14px 20px 0;
+
+	> .content {
+		> .label,
+		> .amount {
+			margin-left: $spacing-half;
+		}
+	}
+}
+
 @mixin shop-item--watch {
-	max-width: 329px;
 	height: 167px;
 	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
 	box-shadow: 0px 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
@@ -727,8 +762,17 @@
 		}
 	}
 
+	&.-watch,
+	&.-tote {
+		max-width: 329px;
+	}
+
 	&.-watch {
 		@include shop-item--watch;
+	}
+
+	&.-tote {
+		@include shop-item--tote;
 	}
 
 	&.-cream {
