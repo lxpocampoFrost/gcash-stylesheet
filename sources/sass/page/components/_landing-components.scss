@@ -1,4 +1,34 @@
-@mixin use-case-bubble--amount-received {
+.landing_text-snowflake {
+	font: 700 14.29rem/1.3 $gotham-bold;
+	letter-spacing: -0.04em;
+
+	@include on(small-desktop) {
+		font-size: 10.71rem;
+	}
+
+	@include on(tablet) {
+		font-size: 8.57rem;
+	}
+}
+
+.landing_text-heading-1 {
+	font: 700 5.14rem/1.2 $gotham-bold;
+	letter-spacing: -0.04em;
+
+	@include on(small-desktop) {
+		font-size: 4rem;
+	}
+
+	@include on(tablet) {
+		font-size: 3.43rem;
+	}
+
+	@include on(mobile) {
+		font-size: 2.86rem;
+	}
+}
+
+@mixin landing_use-case-bubble--amount-received {
 	max-width: 260px;
 	height: 86px;
 	color: #2044a5;
@@ -27,7 +57,7 @@
 	}
 }
 
-@mixin use-case-bubble--wmp--details {
+@mixin landing_use-case-bubble--wmp--details {
 	color: #0a2757;
 	margin-left: $spacing-triple;
 
@@ -56,7 +86,7 @@
 	}
 }
 
-@mixin use-case-bubble--wmp {
+@mixin landing_use-case-bubble--wmp {
 	max-width: 390px;
 	width: 100%;
 	display: flex;
@@ -70,7 +100,7 @@
 	}
 
 	> .details {
-		@include use-case-bubble--wmp--details;
+		@include landing_use-case-bubble--wmp--details;
 	}
 
 	> .icon {
@@ -81,20 +111,22 @@
 	}
 }
 
-@mixin use-case-bubble--large-display--wmp--details {
+@mixin landing_use-case-bubble--large-display--wmp--details {
 	margin-left: 20px;
 
 	> .label {
+		margin-top: 7px;
 		font-size: 0.96rem;
 	}
 
 	> .description,
 	> .amount {
 		font-size: 0.72rem;
+		margin-top: $spacing-quarter;
 	}
 }
 
-@mixin use-case-bubble--large-display {
+@mixin landing_use-case-bubble--large-display {
 	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
 	border-radius: 7px;
 
@@ -109,7 +141,7 @@
 		}
 
 		> .details {
-			@include use-case-bubble--large-display--wmp--details;
+			@include landing_use-case-bubble--large-display--wmp--details;
 		}
 
 		> .icon {
@@ -119,92 +151,90 @@
 	}
 }
 
-@mixin use-case-bubble--small-desktop--wmp--details {
+@mixin landing_use-case-bubble--small-desktop--wmp--details {
 	margin-left: 18px;
 
 	> .label {
-		margin-top: 7px;
+		margin-top: $spacing-half;
 		font-size: 0.86rem;
-	}
-
-	> .description {
-		margin-top: 1px;
 	}
 
 	> .description,
 	> .amount {
 		font-size: 0.7rem;
-	}
-
-	> .amount {
-		margin-top: 3px;
+		margin-top: $spacing-quarter;
 	}
 }
 
-@mixin use-case-bubble--small-desktop {
+@mixin landing_use-case-bubble--small-desktop--amount-received {
+	max-width: 151px;
+	height: 50.23px;
+	border-radius: 4.64615px;
+	padding: $spacing-secondary 14px 9px;
+
+	> .label {
+		font-size: 0.57rem;
+	}
+
+	> .amount {
+		font-size: 1.36rem;
+		margin-top: $spacing-quarter;
+
+		> .currency {
+			width: 13.21px;
+			height: 16.52px;
+			padding: 0.5px 0 1.5px;
+			margin-right: $spacing-quarter;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--small-desktop--wmp {
+	max-width: 300px;
+	padding: $spacing-secondary 9px $spacing-secondary $spacing-secondary;
+	border: 0.769231px solid #e0ecff;
+
+	> .image {
+		width: 40px;
+		height: 40px;
+	}
+
+	> .details {
+		@include landing_use-case-bubble--small-desktop--wmp--details;
+	}
+
+	> .icon {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@mixin landing_use-case-bubble--small-desktop {
 	&.-amount-received {
-		max-width: 151px;
-		height: 50.23px;
-		border-radius: 4.64615px;
-		padding: $spacing-secondary 14px 9px;
-
-		> .label {
-			font-size: 0.57rem;
-		}
-
-		> .amount {
-			font-size: 1.36rem;
-			margin-top: $spacing-quarter;
-
-			> .currency {
-				width: 13.21px;
-				height: 16.52px;
-				padding: 0.5px 0 1.5px;
-				margin-right: $spacing-quarter;
-			}
-		}
+		@include landing_use-case-bubble--small-desktop--amount-received;
 	}
 
 	&.-wmp {
-		max-width: 300px;
-		padding: 12px 9px 12px 12px;
-		border: 0.769231px solid #e0ecff;
-
-		> .image {
-			width: 40px;
-			height: 40px;
-		}
-
-		> .details {
-			@include use-case-bubble--small-desktop--wmp--details;
-		}
-
-		> .icon {
-			width: 25px;
-			height: 25px;
-		}
+		@include landing_use-case-bubble--small-desktop--wmp;
 	}
 }
 
-@mixin use-case-bubble--tablet--wmp--details {
-	margin-left: 16px;
+@mixin landing_use-case-bubble--tablet--wmp--details {
+	margin-left: $spacing-double;
 
 	> .label {
 		margin-top: 6px;
-		font-size: 0.86rem;
+		font-size: 0.79rem;
 	}
 
 	> .description,
 	> .amount {
-		font-size: 0.7rem;
-	}
-
-	> .amount {
-		margin-top: 3px;
+		font-size: 0.58rem;
+		margin-top: 1px;
 	}
 }
 
-@mixin use-case-bubble--tablet {
+@mixin landing_use-case-bubble--tablet {
 	&.-wmp {
 		max-width: 268px;
 		padding: 11px 8px 11px 11px;
@@ -215,103 +245,108 @@
 		}
 
 		> .details {
-			@include use-case-bubble--tablet--wmp--details;
+			@include landing_use-case-bubble--tablet--wmp--details;
 		}
 
 		> .icon {
-			width: 25px;
-			height: 25px;
+			width: 22px;
+			height: 22px;
 		}
 	}
 }
 
-@mixin use-case-bubble--mobile--wmp--details {
-	margin-left: 16px;
+@mixin landing_use-case-bubble--mobile--amount-received {
+	max-width: 127px;
+	height: 42.54px;
+	border-radius: 3.90769px;
+	padding: 9px $spacing-secondary $spacing-default;
 
 	> .label {
-		margin-top: 6px;
-		font-size: 0.86rem;
+		font-size: 0.5rem;
+	}
+
+	> .amount {
+		font-size: 1.14rem;
+		margin-top: 1.95px;
+
+		> .currency {
+			width: 11.11px;
+			height: 13.89px;
+			margin-right: 1.95px;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--mobile--wmp--details {
+	margin-left: 15px;
+
+	> .label {
+		margin-top: 3px;
+		font-size: 0.72rem;
 	}
 
 	> .description,
 	> .amount {
-		font-size: 0.7rem;
-	}
-
-	> .amount {
-		margin-top: 3px;
+		font-size: 0.5rem;
 	}
 }
 
-@mixin use-case-bubble--mobile {
+@mixin landing_use-case-bubble--mobile--wmp {
+	max-width: 183px;
+	padding: 10px 7px 10px 10px;
+
+	> .image {
+		width: 32px;
+		height: 32px;
+	}
+
+	> .details {
+		@include landing_use-case-bubble--mobile--wmp--details;
+	}
+
+	> .icon {
+		width: 19px;
+		height: 19px;
+	}
+}
+
+@mixin landing_use-case-bubble--mobile {
 	&.-amount-received {
-		max-width: 127px;
-		height: 42.54px;
-		border-radius: 3.90769px;
-		padding: 9px $spacing-secondary $spacing-default;
-
-		> .label {
-			font-size: 0.5rem;
-		}
-
-		> .amount {
-			font-size: 1.14rem;
-			margin-top: 1.95px;
-
-			> .currency {
-				width: 11.11px;
-				height: 13.89px;
-				margin-right: 1.95px;
-			}
-		}
+		@include landing_use-case-bubble--mobile--amount-received;
 	}
 
 	&.-wmp {
-		max-width: 183px;
-
-		> .image {
-			width: 32px;
-			height: 32px;
-		}
-
-		> .details {
-			@include use-case-bubble--mobile--wmp--details;
-		}
-
-		> .icon {
-			width: 25px;
-			height: 25px;
-		}
+		@include landing_use-case-bubble--mobile--wmp;
 	}
 }
 
-.use-case-bubble {
+.landing_use-case-bubble {
 	width: 100%;
 	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
 	border-radius: 8px;
 
 	&.-amount-received {
-		@include use-case-bubble--amount-received;
+		@include landing_use-case-bubble--amount-received;
 	}
 
 	&.-wmp {
-		@include use-case-bubble--wmp;
+		@include landing_use-case-bubble--wmp;
 	}
 
 	@include on(large-display) {
-		@include use-case-bubble--large-display;
+		@include landing_use-case-bubble--large-display;
 	}
 
 	@include on(small-desktop) {
-		@include use-case-bubble--small-desktop;
+		@include landing_use-case-bubble--small-desktop;
 	}
 
 	@include on(tablet) {
-		@include use-case-bubble--tablet;
+		@include landing_use-case-bubble--tablet;
 	}
 
 	@include on(mobile) {
-		@include use-case-bubble--mobile;
+		@include landing_use-case-bubble--mobile;
 	}
 }
 
@@ -330,7 +365,7 @@
 	}
 }
 
-.indicator {
+.landing_indicator {
 	> .item {
 		width: 15px;
 		height: 15px;
@@ -457,7 +492,7 @@
 	}
 }
 
-.services-card {
+.landing_services-card {
 	width: 100%;
 	max-width: 340px;
 	height: 480px;
