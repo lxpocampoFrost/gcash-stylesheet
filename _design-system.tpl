@@ -38,6 +38,11 @@
                 data-name="High Level Components">
                 {$high-level-components}
             </div>
+
+            <div class="section-block element-group --show-code -reference -component" 
+                data-name="Landing Page Components">
+                {$landing-components}
+            </div>
         </div>
         
         <div class="index-group">
