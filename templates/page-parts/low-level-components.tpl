@@ -125,6 +125,15 @@
       <div class="amount">PHP 100</div>
     </div>
   </div>
+
+  <div class="shop-item -headphones">
+    <img class="image" src="./assets/images/shop-item-headphones.png"/>
+    <div class="content">
+      <span class="icon" style="background: url(./assets/images/shop-item-headphones-gadget.svg) center/contain no-repeat;"></span>
+      <div class="label">Headphones</div>
+      <div class="amount">PHP 6,500</div>
+    </div>
+  </div>
 </div>
 
 
