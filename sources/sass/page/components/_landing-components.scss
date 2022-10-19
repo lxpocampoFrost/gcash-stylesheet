@@ -897,11 +897,11 @@
 	font: 700 6.57rem/1.1 $gotham-bold;
 
 	@include on(small-desktop) {
-		font: 700 5.36rem/1.2 $gotham-bold;
+		font-size: 5.36rem;
 	}
 
 	@include on(tablet) {
-		font: 700 3.43rem/1.2 $gotham-bold;
+		font-size: 3.43rem;
 	}
 
 	@include on(mobile) {
