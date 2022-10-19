@@ -156,12 +156,8 @@
 
     <div class="landing_text-snowflake" style="color: #ffffff;">Save</div>
 
-     <div class="landing_text-display" 
- style="background: linear-gradient(180deg, #1777C1 -10.91%, #0954AA 50.87%, #07489B 100%);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- background-clip: text;
- text-fill-color: transparent;">
- Gcash para sa lahat
- </div>
+    <div class="landing_text-display" style="background: linear-gradient(180deg, #1777C1 -10.91%, #0954AA 50.87%, #07489B 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;">
+    GCash para sa lahat
+    </div>
+
 </div>
