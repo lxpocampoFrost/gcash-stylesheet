@@ -607,7 +607,7 @@
 @mixin shop-item--small-desktop--vase {
 	max-width: 281px;
 	height: 286px;
-	box-shadow: 0px 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
+	box-shadow: 0 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
 	border-radius: 10.5474px;
 
 	> .image {
@@ -745,7 +745,7 @@
 	justify-content: end;
 	padding: 20px 26px 0 0;
 	background: #ffffff;
-	box-shadow: 0px 38px 26px -21px rgba(15, 37, 69, 0.5);
+	box-shadow: 0 38px 26px -21px rgba(15, 37, 69, 0.5);
 	border-radius: 12.3704px;
 
 	> .image {
@@ -763,7 +763,7 @@
 		align-items: flex-end;
 
 		> .icon {
-			margin-right: -4px;
+			margin-right: -$spacing-half;
 		}
 	}
 }
