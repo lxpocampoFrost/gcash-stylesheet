@@ -549,7 +549,7 @@
 @mixin shop-item--small-desktop--headphones {
 	max-width: 229px;
 	height: 115px;
-	box-shadow: 0px 24.7263px 17.9053px -6.82105px rgba(15, 37, 69, 0.4);
+	box-shadow: 0 24.7263px 17.9053px -6.82105px rgba(15, 37, 69, 0.4);
 	border-radius: 9px;
 
 	> .image {
@@ -804,7 +804,7 @@
 	max-width: 268px;
 	height: 135px;
 	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
-	box-shadow: 0px 29px 21px -8px rgba(15, 37, 69, 0.4);
+	box-shadow: 0 29px 21px -8px rgba(15, 37, 69, 0.4);
 	border-radius: 10px;
 
 	> .image {
@@ -816,7 +816,6 @@
 	> .content {
 		padding: 17px 17px 20px 21px;
 		display: flex;
-		justify-content: flex-end;
 		align-items: flex-end;
 		flex-direction: column;
 
