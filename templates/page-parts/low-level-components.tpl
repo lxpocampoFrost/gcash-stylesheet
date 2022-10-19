@@ -109,26 +109,6 @@
     </div>
   </div>
 
-  <div class="shop-item -watch" style="background: url(./assets/images/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
-      <div class="content">
-        <span class="icon" style="background: url(./assets/images/shop-item-watch-category.svg) center/contain no-repeat;"></span>
-          <div class="details">
-            <div class="label">Digital Watch: Sports Edition</div>
-            <div class="amount">PHP 25,000</div>
-          </div>
-      </div>
-    </div>
-
-  <div class="shop-item -tote" style="background: url(./assets/images/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
-      <div class="content">
-        <span class="icon" style="background: url(./assets/images/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
-          <div class="details">
-            <div class="label">Tote</div>
-            <div class="amount">PHP 100</div>
-          </div>
-      </div>
-    </div>
-
   <div class="shop-item -cream">
     <img class="image" src="./assets/images/shop-item-cream-img.png"/>
     <div class="content">
@@ -140,6 +120,16 @@
     </div>
   </div>
 
+  <div class="shop-item -watch" style="background: url(./assets/images/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
+      <div class="content">
+        <span class="icon" style="background: url(./assets/images/shop-item-watch-category.svg) center/contain no-repeat;"></span>
+          <div class="details">
+            <div class="label">Digital Watch: Sports Edition</div>
+            <div class="amount">PHP 25,000</div>
+          </div>
+      </div>
+  </div>
+
   <div class="shop-item -vase" style="background: url(./assets/images/shop-item-vase-img.jpg)center/contain no-repeat;">
       <div class="content">
           <span class="icon" style="background: url(./assets/images/shop-item-vase-icon.svg) center/contain no-repeat;"></span>
@@ -149,6 +139,17 @@
           </div>
       </div>
   </div>
+
+  <div class="shop-item -tote" style="background: url(./assets/images/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
+      <div class="content">
+        <span class="icon" style="background: url(./assets/images/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
+          <div class="details">
+            <div class="label">Tote</div>
+            <div class="amount">PHP 100</div>
+          </div>
+      </div>
+    </div>
+
 </div>
 
 
