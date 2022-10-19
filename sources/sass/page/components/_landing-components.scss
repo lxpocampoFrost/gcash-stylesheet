@@ -1,3 +1,50 @@
+@mixin use-case-bubble--total-savings {
+	max-width: 390px;
+	height: 76px;
+	background: #1972f9;
+	padding: $spacing-double $spacing-secondary $spacing-secondary
+		$spacing-secondary;
+	display: flex;
+	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+	border-radius: 8px;
+
+	> .details {
+		width: 100%;
+
+		> .label {
+			font: 400 0.72rem/1 $gotham-bold;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #ffffff;
+			opacity: 0.6;
+		}
+
+		> .amount {
+			font: 500 2.29rem/1 $gotham-medium;
+			letter-spacing: -0.02em;
+			margin-top: 6px;
+			color: #ffffff;
+			display: flex;
+
+			> .currency {
+				width: 24px;
+				height: 23.49px;
+				margin: $spacing-quarter $spacing-half 0 0;
+				display: inline-block;
+				background-size: 100%;
+			}
+		}
+	}
+
+	> .refresh-btn {
+		min-width: 32px;
+		height: 32px;
+		cursor: pointer;
+		align-self: flex-end;
+		margin-left: $spacing-double;
+	}
+}
+
 @mixin use-case-bubble--amount-received {
 	max-width: 260px;
 	height: 86px;
@@ -29,6 +76,38 @@
 	}
 }
 
+@mixin use-case-bubble--large-display {
+	&.-total-savings {
+		max-width: 328px;
+		height: 63.59px;
+		padding: 13.46px 10.09px 10.09px 13.46px;
+		box-shadow: 0px 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
+		border-radius: 6.72821px;
+
+		> .details {
+			> .label {
+				font-size: 0.57rem;
+			}
+
+			> .amount {
+				font-size: 1.92rem;
+				margin-top: 5.05px;
+
+				> .currency {
+					width: 20.18px;
+					height: 19.75px;
+					margin: 3.41px 3.36px 0 0;
+				}
+			}
+		}
+
+		> .refresh-btn {
+			min-width: 26.91px;
+			height: 26.91px;
+		}
+	}
+}
+
 @mixin use-case-bubble--small-desktop {
 	&.-amount-received {
 		max-width: 151px;
@@ -50,6 +129,70 @@
 				padding: 0.5px 0 1.5px;
 				margin-right: $spacing-quarter;
 			}
+		}
+	}
+
+	&.-total-savings {
+		max-width: 300px;
+		height: 59.15px;
+		padding: 12.31px 9.23px 9.23px 12.31px;
+		box-shadow: 0px 6.15385px 9.23077px -6.15385px rgba(15, 37, 69, 0.2);
+		border-radius: 6.15385px;
+
+		> .details {
+			> .label {
+				font-size: 0.57rem;
+			}
+
+			> .amount {
+				font-size: 1.759rem;
+				margin-top: 4.62px;
+
+				> .currency {
+					width: 18.46px;
+					height: 18.07px;
+					margin-right: 3.54px;
+				}
+			}
+		}
+
+		> .refresh-btn {
+			min-width: 24.62px;
+			height: 24.62px;
+			margin-left: 12.31px;
+		}
+	}
+}
+
+@mixin use-case-bubble--tablet {
+	&.-total-savings {
+		max-width: 268px;
+		height: 52.36px;
+		box-shadow: 0px 5.49744px 8.24615px -5.49744px rgba(15, 37, 69, 0.2);
+		border-radius: 5.49744px;
+		padding: 10.99px 8.25px 8.25px 10.99px;
+
+		> .details {
+			> .label {
+				font-size: 0.491rem;
+			}
+
+			> .amount {
+				font-size: 1.57rem;
+				margin-top: 4.12px;
+
+				> .currency {
+					width: 16.49px;
+					height: 16.14px;
+					margin-right: 3.24px;
+				}
+			}
+		}
+
+		> .refresh-btn {
+			min-width: 21.99px;
+			height: 21.99px;
+			margin-left: 11px;
 		}
 	}
 }
@@ -76,6 +219,36 @@
 			}
 		}
 	}
+
+	&.-total-savings {
+		max-width: 182.61px;
+		height: 45.68px;
+		box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+		border-radius: 4.86471px;
+		padding: 9.73px 7.3px 7.3px 9.73px;
+
+		> .details {
+			> .label {
+				font-size: 0.434rem;
+			}
+
+			> .amount {
+				font-size: 1.39rem;
+				margin-top: 3.65px;
+
+				> .currency {
+					width: 14.59px;
+					height: 14.28px;
+					margin: 0 3.03px 0 0;
+				}
+			}
+		}
+
+		> .refresh-btn {
+			min-width: 19.46px;
+			height: 19.46px;
+		}
+	}
 }
 
 .use-case-bubble {
@@ -85,8 +258,20 @@
 		@include use-case-bubble--amount-received;
 	}
 
+	&.-total-savings {
+		@include use-case-bubble--total-savings;
+	}
+
+	@include on(large-display) {
+		@include use-case-bubble--large-display;
+	}
+
 	@include on(small-desktop) {
 		@include use-case-bubble--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include use-case-bubble--tablet;
 	}
 
 	@include on(mobile) {
