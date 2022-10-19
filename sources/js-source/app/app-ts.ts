@@ -4,17 +4,21 @@ $(".header-menu > .close-button").click(function() {
 	$(".header-menu").addClass("-closed");
 });
 
-$(".main-nav > .item:not(.-active)").click(function() {
+$(".header-menu > .logo-wrapper").click(function() {
+	$(".header-menu").removeClass("-closed");
+});
+
+$(".main-nav > .item").click(function() {
 	let el = $(this);
 	let subnavId = el.data("id");
 
-	$(".main-nav > .item").removeClass("-show");
-	$(".main-nav > .item").removeClass("-active");
-	el.addClass("-active");
-	$(".sub-nav-wrapper > .sub-nav").removeClass("-active");
-	$("#" + subnavId).addClass("-active");
-});
-
-$(".main-nav > .item.-active").click(function() {
-	$(".main-nav > .item").addClass("-show");
+	if (this.classList.contains("-active")) {
+		$(".main-nav > .item").toggleClass("-show");
+	} else {
+		$(".main-nav > .item").removeClass("-show");
+		$(".main-nav > .item").removeClass("-active");
+		el.addClass("-active");
+		$(".sub-nav-wrapper > .sub-nav").removeClass("-active");
+		$("#" + subnavId).addClass("-active");
+	}
 });

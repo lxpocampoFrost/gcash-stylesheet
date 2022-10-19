@@ -45,6 +45,7 @@
 	flex-direction: row;
 	max-width: 100%;
 	height: max-content;
+	pointer-events: none;
 
 	> .item,
 	> .item.-active {
@@ -55,6 +56,7 @@
 		box-shadow: none;
 		border-radius: 0;
 		justify-content: center;
+		display: flex;
 
 		&:after {
 			display: none;
@@ -150,6 +152,7 @@
 	> .logo-wrapper {
 		height: 48px;
 		padding: 0 $spacing-secondary;
+		pointer-events: initial;
 	}
 
 	> .sub-nav-wrapper {
@@ -231,6 +234,7 @@
 		display: flex;
 		align-items: center;
 		padding: 0 $spacing-secondary;
+		pointer-events: none;
 
 		> .logo-icon {
 			width: 37.93px;
