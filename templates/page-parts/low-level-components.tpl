@@ -80,12 +80,12 @@
     <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
   </div>
 
-  <div class="message-bubble -avatar-left">
+  <div class="landing_message-bubble -avatar-left">
       <div class="title">Send money to Trisha</div>
       <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-left-currency.svg) center/contain no-repeat;"></span>2,500</div>
       <img class="avatar" src="./assets/images/message-bubble-avatar-left.png"/>
   </div>
-  <div class="message-bubble -avatar-top">
+  <div class="landing_message-bubble -avatar-top">
     <img class="avatar" src="./assets/images/message-bubble-avatar-top.png"/>
     <div class="title">You received money from Mama</div>
     <div class="amount"><span class="icon" style="background: url(./assets/images/message-bubble-avatar-top-currency.svg) center/contain no-repeat;"></span>2,500</div>
@@ -108,6 +108,17 @@
       <span class="currency" style="background-image: url(./assets/images/use-case-bubble-amount-received-currency.svg);"></span>5,000
     </div>
   </div>
+
+  <div class="use-case-bubble -wmp">
+    <img class="image"src="./assets/images/bank-products-cimb.png"/>
+    <div class="details">
+      <div class="label">GSave by CIMB</div>
+      <div class="description"><span class="text">Account No. </span>0012345678</div>
+      <div class="amount">PHP 5,000.00</div>
+    </div>
+     <span class="icon" style="background: url(./assets/images/bank-products-icon.svg) center/contain no-repeat;"></span>
+  </div>
+
 
   <div class="shop-item -cream">
     <img class="image" src="./assets/images/shop-item-cream-img.png"/>

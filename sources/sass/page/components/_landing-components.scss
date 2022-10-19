@@ -4,8 +4,6 @@
 	color: #2044a5;
 	padding: 20px $spacing-triple $spacing-double;
 	background-size: cover;
-	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
-	border-radius: 8px;
 
 	> .label {
 		font: 700 1rem/1 $gotham-bold;
@@ -26,6 +24,120 @@
 			margin-right: $spacing-half;
 			background-size: 100%;
 		}
+	}
+}
+
+@mixin use-case-bubble--wmp--details {
+	color: #0a2757;
+	margin-left: $spacing-triple;
+
+	> .label {
+		margin-top: 9px;
+		font: 700 1.14rem/1.3 $gotham-bold;
+		letter-spacing: -0.01em;
+	}
+
+	> .description {
+		margin-top: 2px;
+		font: 600 0.86rem/1.5 $gilroy-bold;
+
+		> .text {
+			color: #6d7b92;
+			opacity: 0.8;
+			margin-right: $spacing-half;
+		}
+	}
+
+	> .amount {
+		font: 700 0.86rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		margin-top: $spacing-half;
+		color: #0057e4;
+	}
+}
+
+@mixin use-case-bubble--wmp {
+	max-width: 390px;
+	width: 100%;
+	display: flex;
+	background: #ffffff;
+	border: 1px solid #e0ecff;
+	padding: $spacing-double $spacing-secondary $spacing-double $spacing-double;
+
+	> .image {
+		width: 52px;
+		height: 52px;
+	}
+
+	> .details {
+		@include use-case-bubble--wmp--details;
+	}
+
+	> .icon {
+		display: block;
+		width: 32px;
+		height: 32px;
+		margin: auto 0 auto auto;
+	}
+}
+
+@mixin use-case-bubble--large-display--wmp--details {
+	margin-left: 20px;
+
+	> .label {
+		font-size: 0.96rem;
+	}
+
+	> .description,
+	> .amount {
+		font-size: 0.72rem;
+	}
+}
+
+@mixin use-case-bubble--large-display {
+	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
+	border-radius: 7px;
+
+	&.-wmp {
+		max-width: 328px;
+		border: 0.8px;
+		padding: 13px 10px 13px 13px;
+
+		> .image {
+			width: 44px;
+			height: 44px;
+		}
+
+		> .details {
+			@include use-case-bubble--large-display--wmp--details;
+		}
+
+		> .icon {
+			width: 27px;
+			height: 27px;
+		}
+	}
+}
+
+@mixin use-case-bubble--small-desktop--wmp--details {
+	margin-left: 18px;
+
+	> .label {
+		margin-top: 7px;
+		font-size: 0.86rem;
+	}
+
+	> .description {
+		margin-top: 1px;
+	}
+
+	> .description,
+	> .amount {
+		font-size: 0.7rem;
+	}
+
+	> .amount {
+		margin-top: 3px;
 	}
 }
 
@@ -52,6 +164,83 @@
 			}
 		}
 	}
+
+	&.-wmp {
+		max-width: 300px;
+		padding: 12px 9px 12px 12px;
+		border: 0.769231px solid #e0ecff;
+
+		> .image {
+			width: 40px;
+			height: 40px;
+		}
+
+		> .details {
+			@include use-case-bubble--small-desktop--wmp--details;
+		}
+
+		> .icon {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}
+
+@mixin use-case-bubble--tablet--wmp--details {
+	margin-left: 16px;
+
+	> .label {
+		margin-top: 6px;
+		font-size: 0.86rem;
+	}
+
+	> .description,
+	> .amount {
+		font-size: 0.7rem;
+	}
+
+	> .amount {
+		margin-top: 3px;
+	}
+}
+
+@mixin use-case-bubble--tablet {
+	&.-wmp {
+		max-width: 268px;
+		padding: 11px 8px 11px 11px;
+
+		> .image {
+			width: 36px;
+			height: 36px;
+		}
+
+		> .details {
+			@include use-case-bubble--tablet--wmp--details;
+		}
+
+		> .icon {
+			width: 25px;
+			height: 25px;
+		}
+	}
+}
+
+@mixin use-case-bubble--mobile--wmp--details {
+	margin-left: 16px;
+
+	> .label {
+		margin-top: 6px;
+		font-size: 0.86rem;
+	}
+
+	> .description,
+	> .amount {
+		font-size: 0.7rem;
+	}
+
+	> .amount {
+		margin-top: 3px;
+	}
 }
 
 @mixin use-case-bubble--mobile {
@@ -76,17 +265,49 @@
 			}
 		}
 	}
+
+	&.-wmp {
+		max-width: 183px;
+
+		> .image {
+			width: 32px;
+			height: 32px;
+		}
+
+		> .details {
+			@include use-case-bubble--mobile--wmp--details;
+		}
+
+		> .icon {
+			width: 25px;
+			height: 25px;
+		}
+	}
 }
 
 .use-case-bubble {
 	width: 100%;
+	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+	border-radius: 8px;
 
 	&.-amount-received {
 		@include use-case-bubble--amount-received;
 	}
 
+	&.-wmp {
+		@include use-case-bubble--wmp;
+	}
+
+	@include on(large-display) {
+		@include use-case-bubble--large-display;
+	}
+
 	@include on(small-desktop) {
 		@include use-case-bubble--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include use-case-bubble--tablet;
 	}
 
 	@include on(mobile) {
@@ -297,7 +518,7 @@
 	}
 }
 
-@mixin message-bubble--small-desktop--avatar-top {
+@mixin landing_message-bubble--small-desktop--avatar-top {
 	max-width: 199px;
 	height: 207px;
 	padding: 37px 18px 18px;
@@ -323,7 +544,7 @@
 	}
 }
 
-@mixin message-bubble--small-desktop {
+@mixin landing_message-bubble--small-desktop {
 	box-shadow: 0 6px 9px -6px rgba(15, 37, 69, 0.2);
 	border-radius: 6px;
 
@@ -339,15 +560,15 @@
 	}
 
 	&.-avatar-top {
-		@include message-bubble--small-desktop--avatar-top;
+		@include landing_message-bubble--small-desktop--avatar-top;
 	}
 
 	&.-avatar-left {
-		@include message-bubble--small-desktop--avatar-left;
+		@include landing_message-bubble--small-desktop--avatar-left;
 	}
 }
 
-@mixin message-bubble--mobile--avatar-top--amount {
+@mixin landing_message-bubble--mobile--avatar-top--amount {
 	font-size: 1.57rem;
 
 	> .icon {
@@ -356,7 +577,7 @@
 	}
 }
 
-@mixin message-bubble--mobile {
+@mixin landing_message-bubble--mobile {
 	&.-avatar-top {
 		max-width: 177px;
 		height: 182px;
@@ -377,7 +598,7 @@
 		}
 
 		> .amount {
-			@include message-bubble--mobile--avatar-top--amount;
+			@include landing_message-bubble--mobile--avatar-top--amount;
 		}
 
 		> .amount,
@@ -389,7 +610,7 @@
 }
 
 // bubble-message -- avatar-left
-@mixin message-bubble--avatar-left {
+@mixin landing_message-bubble--avatar-left {
 	height: 108px;
 	padding: $spacing-triple $spacing-triple $spacing-triple 40px;
 	background: #ffffff;
@@ -420,7 +641,7 @@
 	}
 }
 
-@mixin message-bubble--small-desktop--avatar-left {
+@mixin landing_message-bubble--small-desktop--avatar-left {
 	max-width: 190px;
 	height: 78px;
 	padding: 17.57px 17.57px 17.57px 29.29px;
@@ -449,7 +670,7 @@
 	}
 }
 
-@mixin message-bubble--avatar-top {
+@mixin landing_message-bubble--avatar-top {
 	height: 272px;
 	padding: $spacing-double-triple $spacing-triple $spacing-triple;
 	position: relative;
@@ -489,7 +710,7 @@
 	}
 }
 
-.message-bubble {
+.landing_message-bubble {
 	max-width: 260px;
 	width: 100%;
 	background: #ffffff;
@@ -530,19 +751,19 @@
 	}
 
 	&.-avatar-top {
-		@include message-bubble--avatar-top;
+		@include landing_message-bubble--avatar-top;
 	}
 
 	&.-avatar-left {
-		@include message-bubble--avatar-left;
+		@include landing_message-bubble--avatar-left;
 	}
 
 	@include on(small-desktop) {
-		@include message-bubble--small-desktop;
+		@include landing_message-bubble--small-desktop;
 	}
 
 	@include on(mobile) {
-		@include message-bubble--mobile;
+		@include landing_message-bubble--mobile;
 	}
 }
 
