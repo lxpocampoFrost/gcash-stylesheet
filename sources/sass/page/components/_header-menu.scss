@@ -85,7 +85,12 @@
 		display: flex;
 		align-items: center;
 		order: 2;
-		// display: none;
+		cursor: pointer;
+		display: none;
+
+		&.-show {
+			display: flex;
+		}
 
 		&.-active {
 			font-family: $gotham-bold;
@@ -116,6 +121,14 @@
 @mixin header-menu--closed {
 	box-shadow: 0 8px 12px -8px rgba(15, 37, 69, 0.2);
 
+	> .logo-wrapper {
+		padding-left: $spacing-secondary;
+
+		> .current-page {
+			display: block;
+		}
+	}
+
 	> .main-nav {
 		display: none;
 	}
@@ -123,12 +136,8 @@
 	> .sub-nav-wrapper {
 		margin: 0 $spacing-double 0 0;
 
-		> .sub-nav > .item {
+		> .sub-nav {
 			display: none;
-
-			&.-active {
-				display: flex;
-			}
 		}
 	}
 }
@@ -136,21 +145,32 @@
 @mixin header-menu--closed--tablet {
 	flex-direction: row;
 	max-width: max-content;
+	padding-bottom: 0;
 
 	> .logo-wrapper {
+		height: 48px;
 		padding: 0 $spacing-secondary;
 	}
 
-	> .sub-nav-wrapper > .sub-nav {
-		height: 48px;
+	> .sub-nav-wrapper {
+		padding-bottom: 0;
 
-		> .item {
-			margin-top: 0;
-		}
+		> .sub-nav {
+			height: 48px;
+			padding-bottom: 0;
 
-		&:first-of-type {
-			border-right: 0;
+			> .item {
+				margin-top: 0;
+			}
+
+			&:first-of-type {
+				border-right: 0;
+			}
 		}
+	}
+
+	> .close-button {
+		display: none;
 	}
 }
 
@@ -161,20 +181,32 @@
 		0px 9px 19px rgba(4, 8, 62, 0.1), 0px 0px 0px rgba(4, 8, 62, 0.1);
 	border-radius: 0 0 24px 24px;
 	flex-direction: column;
+	padding-bottom: 16px;
 
 	> .logo-wrapper {
+		height: 100px;
 		padding: 36px 0 $spacing-double;
+
+		> .current-page {
+			display: block;
+		}
 	}
 
 	> .sub-nav-wrapper {
 		display: flex;
 		justify-content: center;
 		margin: 0;
+		padding-bottom: $spacing-double;
 		width: 100%;
 
 		> .sub-nav {
 			display: flex;
+			padding-bottom: 14px;
 		}
+	}
+
+	> .close-button {
+		display: flex;
 	}
 
 	&.-closed {
@@ -195,12 +227,20 @@
 	color: #002cb8;
 
 	> .logo-wrapper {
+		height: 64px;
+		display: flex;
+		align-items: center;
 		padding: 0 $spacing-secondary;
 
 		> .logo-icon {
 			width: 37.93px;
 			height: 32px;
 			display: block;
+		}
+
+		> .current-page {
+			margin-left: $spacing-secondary;
+			display: none;
 		}
 	}
 
@@ -213,6 +253,23 @@
 			&.-active {
 				display: flex;
 			}
+		}
+	}
+
+	> .close-button {
+		padding: $spacing-secondary $spacing-triple;
+		background: #eef2f9;
+		border-radius: 31px;
+		font: 700 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		color: rgba(10, 39, 87, 0.4);
+		align-items: center;
+		display: none;
+
+		> .icon {
+			min-width: 24px;
+			height: 24px;
+			margin-right: $spacing-default;
 		}
 	}
 
