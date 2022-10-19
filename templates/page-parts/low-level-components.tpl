@@ -137,12 +137,13 @@
     </div>
   </div>
 
-  <div class="shop-item -vase">
-      <img class="image" src="./assets/images/shop-item-vase-img.jpg"/>
+  <div class="shop-item -vase" style="background: url(./assets/images/shop-item-vase-img.jpg)center/contain no-repeat;">
       <div class="content">
           <span class="icon" style="background: url(./assets/images/shop-item-vase-icon.svg) center/contain no-repeat;"></span>
-          <div class="label">Vase</div>
-          <div class="amount">PHP 320</div>
+          <div class="details">
+              <div class="label">Vase</div>
+              <div class="amount">PHP 320</div>
+          </div>
       </div>
   </div>
 </div>
