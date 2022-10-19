@@ -130,7 +130,7 @@
   </div>
 
   <div class="shop-item -vase">
-      <img class="image" src="./assets/images/shop-item-vase-bg.jpg"/>
+      <img class="image" src="./assets/images/shop-item-vase-img.jpg"/>
       <div class="content">
           <span class="icon" style="background: url(./assets/images/shop-item-vase-icon.svg) center/contain no-repeat;"></span>
           <div class="label">Vase</div>
