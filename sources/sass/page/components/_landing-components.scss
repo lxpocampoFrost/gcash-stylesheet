@@ -550,10 +550,7 @@
 	padding: 28px 25px 19px 20px;
 
 	> .details {
-		> .label,
-		> .amount {
-			margin-left: 7px;
-		}
+		margin-left: 7px;
 	}
 }
 
@@ -576,13 +573,8 @@
 	height: 160px;
 	box-shadow: 0px 32.4px 22.1684px -36.6632px rgba(15, 37, 69, 0.5);
 
-	> .content {
-		> .details {
-			> .label,
-			> .amount {
-				margin-left: 3px;
-			}
-		}
+	> .content > .details {
+		margin-left: 3px;
 	}
 }
 
@@ -665,10 +657,7 @@
 
 @mixin shop-item--tote--content {
 	> .details {
-		> .label,
-		> .amount {
-			margin-left: $spacing-half;
-		}
+		margin-left: $spacing-half;
 	}
 }
 
@@ -689,20 +678,17 @@
 	padding: 33px 29px 20px $spacing-triple;
 
 	> .details {
+		margin-left: $spacing-default;
+
 		> .label {
 			max-width: 14ch;
-		}
-
-		> .label,
-		> .amount {
-			margin-left: $spacing-default;
 		}
 	}
 }
 
 @mixin shop-item--watch {
 	height: 167px;
-	box-shadow: 0px 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
+	box-shadow: 0 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
 	display: flex;
 
 	> .image {
