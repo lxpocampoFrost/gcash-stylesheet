@@ -546,6 +546,27 @@
 	}
 }
 
+@mixin shop-item--small-desktop--headphones {
+	max-width: 229px;
+	height: 115px;
+	box-shadow: 0 24.7263px 17.9053px -6.82105px rgba(15, 37, 69, 0.4);
+	border-radius: 9px;
+
+	> .image {
+		width: 124px;
+		height: 133px;
+		margin: -6px 0 0 -25px;
+	}
+
+	> .content {
+		padding: 14px 14px 17px 18px;
+
+		> .details {
+			margin-right: 5px;
+		}
+	}
+}
+
 @mixin shop-item--small-desktop--watch--content {
 	padding: 28px 25px 19px 20px;
 
@@ -653,6 +674,9 @@
 	&.-vase {
 		@include shop-item--small-desktop--vase;
 	}
+	&.-headphones {
+		@include shop-item--small-desktop--headphones;
+	}
 }
 
 @mixin shop-item--tote--content {
@@ -664,9 +688,6 @@
 @mixin shop-item--tote {
 	height: 188px;
 	box-shadow: 0px 38px 26px -43px rgba(15, 37, 69, 0.5);
-	display: flex;
-	justify-content: end;
-	align-items: end;
 	padding: 0 14px 20px 0;
 
 	> .content {
@@ -690,6 +711,10 @@
 	height: 167px;
 	box-shadow: 0 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
 	display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: end;
 
 	> .image {
 		width: 122px;
@@ -775,6 +800,33 @@
 	}
 }
 
+@mixin shop-item--headphones {
+	max-width: 268px;
+	height: 135px;
+	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
+	box-shadow: 0 29px 21px -8px rgba(15, 37, 69, 0.4);
+	border-radius: 10px;
+
+	> .image {
+		width: 145px;
+		height: 156px;
+		transform: translateY(8%);
+	}
+
+	> .content {
+		padding: 17px 17px 20px 21px;
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+
+		> .details {
+			width: max-content;
+			text-align: right;
+			margin-right: 6px;
+		}
+	}
+}
+
 @mixin shop-item--content {
 	> .icon {
 		width: 48px;
@@ -822,6 +874,10 @@
 
 	&.-tote {
 		@include shop-item--tote;
+	}
+
+	&.-headphones {
+		@include shop-item--headphones;
 	}
 
 	&.-cream {
