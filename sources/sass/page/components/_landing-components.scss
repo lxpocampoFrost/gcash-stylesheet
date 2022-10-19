@@ -582,7 +582,7 @@
 	max-width: 137px;
 	height: 229px;
 	border: 0.961042px solid #edf3fb;
-	box-shadow: 0px 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
+	box-shadow: 0 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
 	border-radius: 9.61042px;
 	padding: 0 9px 7px;
 
@@ -595,7 +595,6 @@
 		width: 119.37px;
 
 		> .icon {
-			min-width: 41px;
 			margin-bottom: 5px;
 		}
 	}
@@ -612,29 +611,30 @@
 	}
 }
 
+@mixin shop-item--small-desktop--content {
+	> .icon {
+		min-width: 41px;
+		height: 41px;
+	}
+
+	> .details {
+		> .label {
+			font-size: 0.72rem;
+			margin-top: 3px;
+		}
+
+		> .amount {
+			font-size: 1.21rem;
+			margin-top: 3px;
+		}
+	}
+}
+
 @mixin shop-item--small-desktop {
 	border-radius: 11px;
 
 	> .content {
-		> .icon {
-			width: 41px;
-			height: 41px;
-		}
-
-		> .label,
-		> .details > .label {
-			font-size: 0.72rem;
-		}
-
-		> .amount,
-		> .details > .amount {
-			font-size: 1.21rem;
-		}
-
-		> .label,
-		> .amount {
-			margin-top: 3px;
-		}
+		@include shop-item--small-desktop--content;
 	}
 
 	&.-watch,
@@ -701,6 +701,23 @@
 	}
 }
 
+@mixin shop-item--cream--content {
+	display: flex;
+	align-items: center;
+
+	> .icon {
+		margin-bottom: 6px;
+	}
+
+	> .details {
+		margin-left: $spacing-half;
+
+		> .label {
+			margin-top: 0;
+		}
+	}
+}
+
 @mixin shop-item--cream {
 	max-width: max-content;
 	height: 268px;
@@ -722,16 +739,7 @@
 	}
 
 	> .content {
-		display: flex;
-		align-items: center;
-
-		> .icon {
-			margin-bottom: 6px;
-		}
-
-		> .details {
-			margin-left: $spacing-half;
-		}
+		@include shop-item--cream--content;
 	}
 }
 
@@ -777,6 +785,7 @@
 				letter-spacing: -0.02em;
 				color: #1c6b9e;
 				opacity: 0.4;
+				margin-top: $spacing-half;
 			}
 
 			> .amount {
