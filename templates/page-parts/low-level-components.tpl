@@ -109,7 +109,7 @@
     </div>
   </div>
 
-  <div class="shop-item -watch" style="background: url(./assets/images/shop-item-watch.png) 24px/contain no-repeat;">
+  <div class="shop-item -watch" style="background: url(./assets/images/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
     <div class="content">
       <span class="icon" style="background: url(./assets/images/shop-item-watch-category.svg) center/contain no-repeat;"></span>
         <div class="details">
