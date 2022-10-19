@@ -145,7 +145,6 @@
           <div class="amount">PHP 320</div>
       </div>
   </div>
-
 </div>
 
 
