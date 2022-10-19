@@ -10,7 +10,7 @@ $(".header-menu > .logo-wrapper").click(function() {
 
 $(".main-nav > .item").click(function() {
 	let el = $(this);
-	let subnavId = el.data("id");
+	let index = el.data("index");
 
 	if (this.classList.contains("-active")) {
 		$(".main-nav > .item").toggleClass("-show");
@@ -19,6 +19,6 @@ $(".main-nav > .item").click(function() {
 		$(".main-nav > .item").removeClass("-active");
 		el.addClass("-active");
 		$(".sub-nav-wrapper > .sub-nav").removeClass("-active");
-		$("#" + subnavId).addClass("-active");
+		$(".sub-nav-wrapper > .sub-nav:nth-child(" + index + ")").addClass("-active");
 	}
 });

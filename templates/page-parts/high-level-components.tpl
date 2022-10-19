@@ -9,12 +9,12 @@
     </div>
     
     <div class="main-nav">
-      <a class="item -active" data-id="sub-nav-customer">Customer</a>
-      <a class="item" data-id="sub-nav-business">Business</a>
+      <a class="item -active" data-index="1">Customer</a>
+      <a class="item" data-index="2">Business</a>
     </div>
 
     <div class="sub-nav-wrapper">
-      <div class="sub-nav -active" id="sub-nav-customer">
+      <div class="sub-nav -active">
         <a href="#" class="item">Home</a>
         <a href="#" class="item">Get Started</a>
         <a href="#" class="item">GCash Jr.</a>
@@ -25,7 +25,7 @@
         <a href="#" class="item">Help Center</a>
       </div>
 
-      <div class="sub-nav" id="sub-nav-business">
+      <div class="sub-nav">
         <a href="#" class="item">MSME</a>
         <a href="#" class="item">Enterprise</a>
         <a href="#" class="item">Partner Marketing</a>
