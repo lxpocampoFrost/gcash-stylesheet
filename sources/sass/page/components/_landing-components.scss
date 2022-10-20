@@ -173,7 +173,6 @@
 
 	> .title {
 		font: 400 1rem/1 $gotham-bold;
-		letter-spacing: -0.01em;
 		opacity: 0.8;
 	}
 
@@ -189,6 +188,15 @@
 			height: 28px;
 			margin-right: $spacing-half;
 		}
+	}
+
+	> .title,
+	> .product-name {
+		letter-spacing: -0.01em;
+	}
+
+	> .product-name {
+		font: 700 0.86rem/1.3 $gotham-bold;
 	}
 }
 
@@ -289,6 +297,10 @@
 			height: 25px;
 			margin-right: 3px;
 		}
+	}
+
+	> .product-name {
+		font-size: 0.72rem;
 	}
 }
 
@@ -392,6 +404,10 @@
 			width: 18px;
 			height: 22px;
 		}
+	}
+
+	> .product-name {
+		font-size: 0.65rem;
 	}
 }
 
@@ -591,6 +607,10 @@
 			height: 17px;
 			margin-right: $spacing-quarter;
 		}
+	}
+
+	> .product-name {
+		font-size: 0.5rem;
 	}
 }
 
