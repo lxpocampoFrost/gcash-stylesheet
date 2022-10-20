@@ -28,6 +28,63 @@
 	}
 }
 
+.landing_text-content-block {
+	> .preamble {
+		font: 500 0.86rem/1 $gotham-medium;
+		letter-spacing: -0.01em;
+		margin-bottom: $spacing-secondary;
+	}
+
+	> .title {
+		font: 700 3.43rem/1.2 $gotham-bold;
+		letter-spacing: -0.03em;
+	}
+
+	> .description {
+		font: 600 1.29rem/1.4 $gilroy-bold;
+		letter-spacing: -0.02em;
+		margin-top: 26px;
+	}
+
+	> .link {
+		font: 700 1rem/1.5 $gilroy-bold;
+		margin-top: $spacing-triple;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		> .icon {
+			min-width: 24px;
+			height: 24px;
+		}
+	}
+
+	@include on(small-desktop) {
+		> .preamble {
+			font-size: 0.86rem;
+		}
+
+		> .title {
+			font-size: 2.29rem;
+		}
+
+		> .description {
+			font-size: 1.29rem;
+		}
+	}
+
+	@include on(mobile) {
+		> .title {
+			font-size: 1.71rem;
+		}
+
+		> .description {
+			font-size: 1.14rem;
+			margin-top: $spacing-double;
+		}
+	}
+}
+
 @mixin landing_use-case-bubble--amount-received {
 	max-width: 260px;
 	height: 86px;
@@ -358,7 +415,7 @@
 	}
 }
 
-@mixin indicator--mobile {
+@mixin landing_indicator--mobile {
 	> .item {
 		width: 8px;
 		height: 8px;
@@ -394,11 +451,11 @@
 	}
 
 	@include on(mobile) {
-		@include indicator--mobile;
+		@include landing_indicator--mobile;
 	}
 }
 
-@mixin services-card--small-desktop {
+@mixin landing_services-card--small-desktop {
 	max-width: 276.06px;
 	height: 389.73px;
 	border-radius: 6.49556px;
@@ -432,7 +489,7 @@
 	}
 }
 
-@mixin services-card--tablet {
+@mixin landing_services-card--tablet {
 	max-width: 235.86px;
 	height: 332.98px;
 	border-radius: 5.54971px;
@@ -466,7 +523,7 @@
 	}
 }
 
-@mixin services-card--mobile {
+@mixin landing_services-card--mobile {
 	max-width: 134.88px;
 	height: 190.42px;
 	border-radius: 3.17358px;
@@ -549,15 +606,15 @@
 	}
 
 	@include on(small-desktop) {
-		@include services-card--small-desktop;
+		@include landing_services-card--small-desktop;
 	}
 
 	@include on(tablet) {
-		@include services-card--tablet;
+		@include landing_services-card--tablet;
 	}
 
 	@include on(mobile) {
-		@include services-card--mobile;
+		@include landing_services-card--mobile;
 	}
 }
 
