@@ -169,17 +169,18 @@
 }
 
 @mixin landing_use-case-bubble--investment-profile {
+	color: #2044a5;
+	font: 400 1rem/1 $gotham-bold;
+
 	> .title {
-		font: 400 1rem/1 $gotham-bold;
 		letter-spacing: -0.01em;
-		color: #2044a5;
 		opacity: 0.8;
 	}
 
 	> .amount {
-		font: 700 2.29rem/1 $gotham-bold;
+		font-size: 2.29rem;
+		font-weight: 700;
 		letter-spacing: -0.02em;
-		color: #2044a5;
 		display: flex;
 		align-items: center;
 		margin-top: $spacing-default;
