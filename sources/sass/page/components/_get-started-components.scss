@@ -1,10 +1,94 @@
+@mixin get-started_message-bubble--get-verified {
+	max-width: 444px;
+	height: 72.52px;
+	padding: 22.26px;
+	box-shadow: 0 175.873px 70.1267px rgba(10, 13, 41, 0.01),
+		0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
+		0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
+		0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(17.81px);
+	border-radius: 13.3575px;
+	position: relative;
+
+	> .icon {
+		position: absolute;
+		width: 26px;
+		height: 20px;
+		top: 0;
+		transform: translate(315px, -18px);
+	}
+
+	> .label {
+		font: 600 1.429rem/1.4 $gilroy-medium;
+		color: rgba(10, 39, 87, 0.6);
+		max-width: 32ch;
+
+		> .highlight {
+			font: 600 1.429rem/1.4 $gilroy-bold;
+			color: #005ce5;
+		}
+	}
+}
+
 @mixin get-started_message-bubble--small-desktop {
+	&.-get-verified {
+		max-width: 338.54px;
+		height: 54.95px;
+		box-shadow: 0px 134.1px 53.4701px rgba(10, 13, 41, 0.01),
+			0px 75.5371px 44.9828px rgba(10, 13, 41, 0.05),
+			0px 33.1005px 33.1005px rgba(10, 13, 41, 0.09),
+			0px 8.48732px 18.6721px rgba(10, 13, 41, 0.1),
+			0px 0px 0px rgba(10, 13, 41, 0.1);
+		backdrop-filter: blur(13.5797px);
+		border-radius: 10.1848px;
+		padding: 16.97px;
+
+		> .icon {
+			width: 19.82px;
+			height: 15.25px;
+			transform: translate(239px, -14px);
+		}
+
+		> .label {
+			font-size: 1.089rem;
+
+			> .highlight {
+				font-size: 1.089rem;
+			}
+		}
+	}
 }
 
 @mixin get-started_message-bubble--tablet {
 }
 
 @mixin get-started_message-bubble--mobile {
+	&.-get-verified {
+		max-width: 319.46px;
+		height: 52px.04px;
+		box-shadow: 0px 126.541px 50.4564px rgba(10, 13, 41, 0.01),
+			0px 71.2796px 42.4474px rgba(10, 13, 41, 0.05),
+			0px 31.2349px 31.2349px rgba(10, 13, 41, 0.09),
+			0px 8.00895px 17.6197px rgba(10, 13, 41, 0.1),
+			0px 0px 0px rgba(10, 13, 41, 0.1);
+		backdrop-filter: blur(12.8143px);
+		border-radius: 9.61074px;
+		padding: 16.02px;
+
+		> .icon {
+			width: 18.71px;
+			height: 14.39px;
+			transform: translate(228px, -12px);
+		}
+
+		> .label {
+			font-size: 1.028rem;
+
+			> .highlight {
+				font-size: 1.028rem;
+			}
+		}
+	}
 }
 
 .get-started_message-bubble {
@@ -12,25 +96,7 @@
 	width: 100%;
 
 	&.-get-verified {
-		padding: 22.26px;
-		box-shadow: 0 175.873px 70.1267px rgba(10, 13, 41, 0.01),
-			0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
-			0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
-			0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
-		backdrop-filter: blur(17.81px);
-		border-radius: 13.3575px;
-		position: relative;
-
-		> .label {
-			font: 600 1.429rem/1.4 $gilroy-medium;
-			color: rgba(10, 39, 87, 0.6);
-			max-width: 32ch;
-
-			> .highlight {
-				font: 600 1.429rem/1.4 $gilroy-bold;
-				color: #005ce5;
-			}
-		}
+		@include get-started_message-bubble--get-verified;
 	}
 
 	@include on(small-desktop) {
