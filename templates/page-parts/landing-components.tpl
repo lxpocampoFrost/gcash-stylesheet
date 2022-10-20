@@ -156,6 +156,15 @@
         <div class="title">My Investment Portfolio</div>
     </div>
 
+    <div class="landing_use-case-bubble -investment-profile">
+        <div class="fund-name">
+            <div class="preamble">ATRAM</div>
+            <div class="performance">
+                <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
+             </div>
+        </div>
+    </div>
+
     <div class="landing_use-case-bubble -wmp">
         <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>
         <div class="details">
