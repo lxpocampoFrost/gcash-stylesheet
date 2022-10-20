@@ -229,6 +229,11 @@
 	> .product-name {
 		font: 700 0.86rem/1.3 $gotham-bold;
 	}
+
+	> .chart-label {
+		font: 600 0.57rem/1.5 $gilroy-bold;
+		color: #a1a8b4;
+	}
 }
 
 @mixin landing_use-case-bubble--total-savings--details {
@@ -352,6 +357,10 @@
 	}
 	> .product-name {
 		font-size: 0.72rem;
+	}
+
+	> .chart-label {
+		font-size: 0.5rem;
 	}
 }
 
@@ -480,6 +489,10 @@
 
 	> .product-name {
 		font-size: 0.65rem;
+	}
+
+	> .chart-label {
+		font-size: 0.43rem;
 	}
 }
 
@@ -704,6 +717,10 @@
 
 	> .product-name {
 		font-size: 0.5rem;
+	}
+
+	> .chart-label {
+		font-size: 0.36rem;
 	}
 }
 

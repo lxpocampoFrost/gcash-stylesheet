@@ -162,6 +162,7 @@
                 <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
              </div>
         </div>
+        <div class="chart-label">Performance for the past 12W</div>
     </div>
 
     <div class="landing_use-case-bubble -wmp">
