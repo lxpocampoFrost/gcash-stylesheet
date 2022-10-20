@@ -1681,7 +1681,7 @@
 		letter-spacing: -0.02em;
 		display: flex;
 		align-items: center;
-		color:  #F2F8FF;
+		color: #f2f8ff;
 
 		> .currency {
 			width: 36px;
@@ -1696,8 +1696,8 @@
 		letter-spacing: -0.03em;
 		width: 130px;
 		padding: 13px 0px 9px;
-		background: #DDEEFF;
-		color: #0057E4;
+		background: #ddeeff;
+		color: #0057e4;
 		border-radius: 25px;
 		text-align: center;
 	}
@@ -1708,19 +1708,19 @@
 	padding: 22px 9px 20px 22px;
 
 	> .preamble {
-		font-size: 1.01rem; 
+		font-size: 1.01rem;
 	}
 
 	> .content {
 		> .price {
-			font-size: 3.24rem; 
+			font-size: 3.24rem;
 
 			> .currency {
 				width: 32px;
 				height: 45px;
 			}
 		}
-	
+
 		> .btn {
 			width: 118px;
 			font-size: 1.42rem;
@@ -1733,12 +1733,12 @@
 	padding: $spacing-triple 68px 22px 17px;
 
 	> .preamble {
-		font-size: 0.77rem; 
+		font-size: 0.77rem;
 	}
 
 	> .content {
 		> .price {
-			font-size: 2.46rem; 
+			font-size: 2.46rem;
 
 			> .currency {
 				width: 25px;
@@ -1746,7 +1746,7 @@
 				margin-right: $spacing-default;
 			}
 		}
-	
+
 		> .btn {
 			width: 89px;
 			font-size: 1.07rem;
@@ -1759,20 +1759,20 @@
 	padding: 18px 51px 17px 13px;
 
 	> .preamble {
-		font-size: 0.59rem; 
+		font-size: 0.59rem;
 	}
 
 	> .content {
 		> .price {
-			font-size: 1.88rem; 
-			
+			font-size: 1.88rem;
+
 			> .currency {
 				width: 19px;
 				height: 26px;
 				margin-left: $spacing-half;
 			}
 		}
-	
+
 		> .btn {
 			width: 68px;
 			font-size: 0.82rem;
@@ -1784,7 +1784,7 @@
 	width: 100%;
 	max-width: 611px;
 	padding: 25px 11px 22px 25px;
-	background: #1972F9;
+	background: #1972f9;
 	border-radius: 12.58px;
 
 	> .preamble {
