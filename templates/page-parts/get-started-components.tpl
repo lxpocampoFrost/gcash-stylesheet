@@ -7,4 +7,6 @@
     
 </div>
 
+<div class="get-started_message-bubble -get-verified"
+
 </div>
