@@ -28,7 +28,64 @@
 	}
 }
 
-@mixin use-case-bubble--total-savings {
+.landing_text-content-block {
+	> .preamble {
+		font: 500 0.86rem/1 $gotham-medium;
+		letter-spacing: -0.01em;
+		margin-bottom: $spacing-secondary;
+	}
+
+	> .title {
+		font: 700 3.43rem/1.2 $gotham-bold;
+		letter-spacing: -0.03em;
+	}
+
+	> .description {
+		font: 600 1.29rem/1.4 $gilroy-bold;
+		letter-spacing: -0.02em;
+		margin-top: 26px;
+	}
+
+	> .link {
+		font: 700 1rem/1.5 $gilroy-bold;
+		margin-top: $spacing-triple;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+
+		> .icon {
+			min-width: 24px;
+			height: 24px;
+		}
+	}
+
+	@include on(small-desktop) {
+		> .preamble {
+			font-size: 0.86rem;
+		}
+
+		> .title {
+			font-size: 2.29rem;
+		}
+
+		> .description {
+			font-size: 1.29rem;
+		}
+	}
+
+	@include on(mobile) {
+		> .title {
+			font-size: 1.71rem;
+		}
+
+		> .description {
+			font-size: 1.14rem;
+			margin-top: $spacing-double;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--total-savings {
 	max-width: 390px;
 	height: 76px;
 	background: #1972f9;
@@ -73,7 +130,7 @@
 	}
 }
 
-@mixin use-case-bubble--amount-received {
+@mixin landing_use-case-bubble--amount-received {
 	max-width: 260px;
 	height: 86px;
 	color: #2044a5;
@@ -104,7 +161,7 @@
 	}
 }
 
-@mixin use-case-bubble--large-display {
+@mixin landing_use-case-bubble--large-display {
 	box-shadow: 0px 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
 	border-radius: 6.72821px;
 
@@ -137,7 +194,7 @@
 	}
 }
 
-@mixin use-case-bubble--small-desktop {
+@mixin landing_use-case-bubble--small-desktop {
 	box-shadow: 0px 6.15385px 9.23077px -6.15385px rgba(15, 37, 69, 0.2);
 	border-radius: 6.15385px;
 
@@ -194,7 +251,7 @@
 	}
 }
 
-@mixin use-case-bubble--tablet {
+@mixin landing_use-case-bubble--tablet {
 	box-shadow: 0px 5.49744px 8.24615px -5.49744px rgba(15, 37, 69, 0.2);
 	border-radius: 5.49744px;
 
@@ -228,7 +285,7 @@
 	}
 }
 
-@mixin use-case-bubble--mobile {
+@mixin landing_use-case-bubble--mobile {
 	&.-amount-received {
 		max-width: 127px;
 		height: 42.54px;
@@ -288,31 +345,31 @@
 	border-radius: 8px;
 
 	&.-amount-received {
-		@include use-case-bubble--amount-received;
+		@include landing_use-case-bubble--amount-received;
 	}
 
 	&.-total-savings {
-		@include use-case-bubble--total-savings;
+		@include landing_use-case-bubble--total-savings;
 	}
 
 	@include on(large-display) {
-		@include use-case-bubble--large-display;
+		@include landing_use-case-bubble--large-display;
 	}
 
 	@include on(small-desktop) {
-		@include use-case-bubble--small-desktop;
+		@include landing_use-case-bubble--small-desktop;
 	}
 
 	@include on(tablet) {
-		@include use-case-bubble--tablet;
+		@include landing_use-case-bubble--tablet;
 	}
 
 	@include on(mobile) {
-		@include use-case-bubble--mobile;
+		@include landing_use-case-bubble--mobile;
 	}
 }
 
-@mixin indicator--mobile {
+@mixin landing_indicator--mobile {
 	> .item {
 		width: 8px;
 		height: 8px;
@@ -348,11 +405,11 @@
 	}
 
 	@include on(mobile) {
-		@include indicator--mobile;
+		@include landing_indicator--mobile;
 	}
 }
 
-@mixin services-card--small-desktop {
+@mixin landing_services-card--small-desktop {
 	max-width: 276.06px;
 	height: 389.73px;
 	border-radius: 6.49556px;
@@ -386,7 +443,7 @@
 	}
 }
 
-@mixin services-card--tablet {
+@mixin landing_services-card--tablet {
 	max-width: 235.86px;
 	height: 332.98px;
 	border-radius: 5.54971px;
@@ -420,7 +477,7 @@
 	}
 }
 
-@mixin services-card--mobile {
+@mixin landing_services-card--mobile {
 	max-width: 134.88px;
 	height: 190.42px;
 	border-radius: 3.17358px;
@@ -503,15 +560,15 @@
 	}
 
 	@include on(small-desktop) {
-		@include services-card--small-desktop;
+		@include landing_services-card--small-desktop;
 	}
 
 	@include on(tablet) {
-		@include services-card--tablet;
+		@include landing_services-card--tablet;
 	}
 
 	@include on(mobile) {
-		@include services-card--mobile;
+		@include landing_services-card--mobile;
 	}
 }
 
@@ -764,7 +821,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--headphones {
+@mixin landing_shop-item--small-desktop--headphones {
 	max-width: 229px;
 	height: 115px;
 	box-shadow: 0 24.7263px 17.9053px -6.82105px rgba(15, 37, 69, 0.4);
@@ -785,7 +842,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--watch--content {
+@mixin landing_shop-item--small-desktop--watch--content {
 	padding: 28px 25px 19px 20px;
 
 	> .details {
@@ -793,7 +850,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--watch {
+@mixin landing_shop-item--small-desktop--watch {
 	height: 142px;
 	box-shadow: 0px 8.4379px 12.6568px -8.4379px rgba(15, 37, 69, 0.2);
 
@@ -804,11 +861,11 @@
 	}
 
 	> .content {
-		@include shop-item--small-desktop--watch--content;
+		@include landing_shop-item--small-desktop--watch--content;
 	}
 }
 
-@mixin shop-item--small-desktop--tote {
+@mixin landing_shop-item--small-desktop--tote {
 	height: 160px;
 	box-shadow: 0px 32.4px 22.1684px -36.6632px rgba(15, 37, 69, 0.5);
 
@@ -817,7 +874,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--cream {
+@mixin landing_shop-item--small-desktop--cream {
 	max-width: max-content;
 	height: 229px;
 	border: 0.961042px solid #edf3fb;
@@ -835,7 +892,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--vase {
+@mixin landing_shop-item--small-desktop--vase {
 	max-width: 281px;
 	height: 286px;
 	box-shadow: 0 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
@@ -846,7 +903,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--content {
+@mixin landing_shop-item--small-desktop--content {
 	> .icon {
 		width: 41px;
 		height: 41px;
@@ -865,11 +922,11 @@
 	}
 }
 
-@mixin shop-item--small-desktop {
+@mixin landing_shop-item--small-desktop {
 	border-radius: 11px;
 
 	> .content {
-		@include shop-item--small-desktop--content;
+		@include landing_shop-item--small-desktop--content;
 	}
 
 	&.-watch,
@@ -878,42 +935,42 @@
 	}
 
 	&.-watch {
-		@include shop-item--small-desktop--watch;
+		@include landing_shop-item--small-desktop--watch;
 	}
 
 	&.-tote {
-		@include shop-item--small-desktop--tote;
+		@include landing_shop-item--small-desktop--tote;
 	}
 
 	&.-cream {
-		@include shop-item--small-desktop--cream;
+		@include landing_shop-item--small-desktop--cream;
 	}
 
 	&.-vase {
-		@include shop-item--small-desktop--vase;
+		@include landing_shop-item--small-desktop--vase;
 	}
 	&.-headphones {
-		@include shop-item--small-desktop--headphones;
+		@include landing_shop-item--small-desktop--headphones;
 	}
 }
 
-@mixin shop-item--tote--content {
+@mixin landing_shop-item--tote--content {
 	> .details {
 		margin-left: $spacing-half;
 	}
 }
 
-@mixin shop-item--tote {
+@mixin landing_shop-item--tote {
 	height: 188px;
 	box-shadow: 0px 38px 26px -43px rgba(15, 37, 69, 0.5);
 	padding: 0 14px 20px 0;
 
 	> .content {
-		@include shop-item--tote--content;
+		@include landing_shop-item--tote--content;
 	}
 }
 
-@mixin shop-item--watch--content {
+@mixin landing_shop-item--watch--content {
 	padding: 33px 29px 20px $spacing-triple;
 
 	> .details {
@@ -925,7 +982,7 @@
 	}
 }
 
-@mixin shop-item--watch {
+@mixin landing_shop-item--watch {
 	height: 167px;
 	box-shadow: 0 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
 	display: flex;
@@ -941,11 +998,11 @@
 	}
 
 	> .content {
-		@include shop-item--watch--content;
+		@include landing_shop-item--watch--content;
 	}
 }
 
-@mixin shop-item--cream--content {
+@mixin landing_shop-item--cream--content {
 	display: flex;
 	align-items: center;
 
@@ -962,7 +1019,7 @@
 	}
 }
 
-@mixin shop-item--cream {
+@mixin landing_shop-item--cream {
 	max-width: max-content;
 	height: 268px;
 	padding: 0 10px $spacing-default;
@@ -983,11 +1040,11 @@
 	}
 
 	> .content {
-		@include shop-item--cream--content;
+		@include landing_shop-item--cream--content;
 	}
 }
 
-@mixin shop-item--vase {
+@mixin landing_shop-item--vase {
 	max-width: 329px;
 	height: 335px;
 	position: relative;
@@ -1018,7 +1075,7 @@
 	}
 }
 
-@mixin shop-item--headphones {
+@mixin landing_shop-item--headphones {
 	max-width: 268px;
 	height: 135px;
 	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
@@ -1045,7 +1102,7 @@
 	}
 }
 
-@mixin shop-item--content {
+@mixin landing_shop-item--content {
 	> .icon {
 		width: 48px;
 		height: 48px;
@@ -1078,7 +1135,7 @@
 	align-items: end;
 
 	> .content {
-		@include shop-item--content;
+		@include landing_shop-item--content;
 	}
 
 	&.-watch,
@@ -1087,26 +1144,26 @@
 	}
 
 	&.-watch {
-		@include shop-item--watch;
+		@include landing_shop-item--watch;
 	}
 
 	&.-tote {
-		@include shop-item--tote;
+		@include landing_shop-item--tote;
 	}
 
 	&.-headphones {
-		@include shop-item--headphones;
+		@include landing_shop-item--headphones;
 	}
 
 	&.-cream {
-		@include shop-item--cream;
+		@include landing_shop-item--cream;
 	}
 
 	&.-vase {
-		@include shop-item--vase;
+		@include landing_shop-item--vase;
 	}
 
 	@include on(small-desktop) {
-		@include shop-item--small-desktop;
+		@include landing_shop-item--small-desktop;
 	}
 }
