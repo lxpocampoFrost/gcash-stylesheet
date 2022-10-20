@@ -173,12 +173,12 @@
 
 	> .title {
 		font: 400 1rem/1 $gotham-bold;
-		letter-spacing: -0.01em;
 		opacity: 0.8;
 	}
 
 	> .amount {
 		font: 700 2.29rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
 		display: flex;
 		align-items: center;
 		margin-top: $spacing-default;
@@ -190,9 +190,9 @@
 		}
 	}
 
-	> .amount,
+	> .title,
 	> .product-name {
-		letter-spacing: -0.02em;
+		letter-spacing: -0.01em;
 	}
 
 	> .product-name {
@@ -253,7 +253,6 @@
 
 	> .product-name {
 		font-size: 0.72rem;
-		letter-spacing: -0.01em;
 	}
 }
 
