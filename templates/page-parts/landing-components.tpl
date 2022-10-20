@@ -156,6 +156,13 @@
         <div class="title">My Investment Portfolio</div>
         <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
         <div class="product-name">Equity Smart Index Fund</div>
+        <div class="fund-name">
+            <div class="preamble">ATRAM</div>
+            <div class="performance">
+                <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
+             </div>
+        </div>
+        <div class="chart-label">Performance for the past 12W</div>
     </div>
 
     <div class="landing_use-case-bubble -wmp">
@@ -242,4 +249,16 @@
             <div class="title">Save</div>
         </div>
     </div>
+
+    <div class="landing_section-9-bubble">
+        <div class="preamble">available balance</div>
+        <div class="content">
+            <div class="price">
+                <span class="currency" style="background: url(./assets/images/landing/use-case-bubble-total-savings-currency.svg) center / contain no-repeat;"></span>
+                7,500.00
+            </div>
+            <span class="btn">Cash In</span>
+        </div>
+    </div>
+
 </div>
