@@ -170,4 +170,16 @@
 	@include on(large-desktop) {
 		@include get-started_message-bubble--large-desktop;
 	}
+
+	@include on(small-desktop) {
+		@include get-started_message-bubble--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_message-bubble--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_message-bubble--mobile;
+	}
 }
