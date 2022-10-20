@@ -979,3 +979,16 @@
 		@include shop-item--small-desktop;
 	}
 }
+
+.landing_text-display {
+	font: 700 6.57rem/1.2 $gotham-bold;
+	letter-spacing: -0.04em;
+
+	@include on(small-desktop) {
+		font-size: 5.36rem;
+	}
+
+	@include on(tablet) {
+		font-size: 3.43rem;
+	}
+}
