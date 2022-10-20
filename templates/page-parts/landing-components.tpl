@@ -154,6 +154,8 @@
 
     <div class="landing_use-case-bubble -investment-profile">
         <div class="title">My Investment Portfolio</div>
+        <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
+        <div class="product-name">Equity Smart Index Fund</div>
     </div>
 
     <div class="landing_use-case-bubble -wmp">
@@ -222,5 +224,22 @@
         </a>
     </div>
 
-    
+    <div class="landing_use-case-tabs" style="background: gray;">
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-send-icon.svg)  no-repeat;"></span>
+            <div class="title">Send Money</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-PayQR-icon.svg)  no-repeat;"></span>
+            <div class="title">Pay Bills</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-GInvest-icon.svg)  no-repeat;"></span>
+            <div class="title">Invest</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-save-icon.svg)  no-repeat;"></span>
+            <div class="title">Save</div>
+        </div>
+    </div>
 </div>

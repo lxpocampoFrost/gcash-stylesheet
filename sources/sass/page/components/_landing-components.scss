@@ -168,6 +168,38 @@
 	}
 }
 
+@mixin landing_use-case-bubble--investment-profile {
+	color: #2044a5;
+
+	> .title {
+		font: 400 1rem/1 $gotham-bold;
+		opacity: 0.8;
+	}
+
+	> .amount {
+		font: 700 2.29rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
+		display: flex;
+		align-items: center;
+		margin-top: $spacing-default;
+
+		> .currency {
+			width: 23px;
+			height: 28px;
+			margin-right: $spacing-half;
+		}
+	}
+
+	> .title,
+	> .product-name {
+		letter-spacing: -0.01em;
+	}
+
+	> .product-name {
+		font: 700 0.86rem/1.3 $gotham-bold;
+	}
+}
+
 @mixin landing_use-case-bubble--total-savings--details {
 	width: 100%;
 
@@ -254,6 +286,21 @@
 @mixin landing_use-case-bubble--large-desktop--investment-profile {
 	> .title {
 		font-size: 0.86rem;
+	}
+
+	> .amount {
+		font-size: 2rem;
+		margin-top: 7px;
+
+		> .currency {
+			width: 20px;
+			height: 25px;
+			margin-right: 3px;
+		}
+	}
+
+	> .product-name {
+		font-size: 0.72rem;
 	}
 }
 
@@ -347,6 +394,20 @@
 @mixin landing_use-case-bubble--small-desktop--investment-profile {
 	> .title {
 		font-size: 0.79rem;
+	}
+
+	> .amount {
+		font-size: 1.79rem;
+		margin-top: 6px;
+
+		> .currency {
+			width: 18px;
+			height: 22px;
+		}
+	}
+
+	> .product-name {
+		font-size: 0.65rem;
 	}
 }
 
@@ -536,6 +597,21 @@
 	> .title {
 		font-size: 0.64rem;
 	}
+
+	> .amount {
+		font-size: 1.44rem;
+		margin-top: 5px;
+
+		> .currency {
+			width: 14px;
+			height: 17px;
+			margin-right: $spacing-quarter;
+		}
+	}
+
+	> .product-name {
+		font-size: 0.5rem;
+	}
 }
 
 @mixin landing_use-case-bubble--mobile--wmp--details {
@@ -619,15 +695,6 @@
 
 	&.-investment-profile {
 		@include landing_use-case-bubble--mobile--investment-profile;
-	}
-}
-
-@mixin landing_use-case-bubble--investment-profile {
-	> .title {
-		font: 400 1rem/1 $gotham-bold;
-		letter-spacing: -0.01em;
-		color: #2044a5;
-		opacity: 0.8;
 	}
 }
 
@@ -1481,7 +1548,7 @@
 	}
 }
 
-.landing_tabs {
+.landing_use-case-tabs {
 	display: flex;
 
 	> .item {
