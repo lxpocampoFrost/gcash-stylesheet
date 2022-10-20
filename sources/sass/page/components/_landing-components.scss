@@ -1226,3 +1226,31 @@
 		font-size: 3.43rem;
 	}
 }
+
+.landing_tabs {
+	display: flex;
+
+	> .item {
+		border-bottom: 2px solid #ffffff;
+		padding-bottom: 30px;
+		color: #ffffff;
+		cursor: pointer;
+
+		&:not(:first-of-type) {
+			margin-left: $spacing-quad;
+		}
+
+		> .icon {
+			width: 40px;
+			height: 40px;
+			display: block;
+			margin: 0 auto;
+		}
+
+		> .title {
+			margin-top: 6px;
+			font: 700 1.14rem/1 $gotham-bold;
+			letter-spacing: -0.01em;
+		}
+	}
+}
