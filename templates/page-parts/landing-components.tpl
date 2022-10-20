@@ -153,13 +153,13 @@
     </div>
 
     <div class="landing_use-case-bubble -wmp">
-        <img class="image"src="./assets/images/landing/bank-products-cimb.png"/>
+        <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>
         <div class="details">
             <div class="label">GSave by CIMB</div>
             <div class="description"><span class="text">Account No. </span>0012345678</div>
             <div class="amount">PHP 5,000.00</div>
             </div>
-        <span class="icon" style="background: url(./assets/images/landing/bank-products-icon.svg) center/contain no-repeat;"></span>
+        <span class="icon" style="background: url(./assets/images/landing/use-case-bubble-wmp-icon.svg) center/contain no-repeat;"></span>
     </div>
 
     <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
