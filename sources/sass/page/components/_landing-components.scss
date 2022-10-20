@@ -57,112 +57,11 @@
 	}
 }
 
-@mixin landing_use-case-bubble--wmp--details {
-	color: #0a2757;
-	margin-left: $spacing-triple;
-
-	> .label {
-		margin-top: 9px;
-		font: 700 1.14rem/1.3 $gotham-bold;
-		letter-spacing: -0.01em;
-	}
-
-	> .description {
-		margin-top: 2px;
-		font: 600 0.86rem/1.5 $gilroy-bold;
-
-		> .text {
-			color: #6d7b92;
-			opacity: 0.8;
-			margin-right: $spacing-half;
-		}
-	}
-
-	> .amount {
-		font: 700 0.86rem/1 $gotham-bold;
-		letter-spacing: -0.01em;
-		margin-top: $spacing-half;
-		color: #0057e4;
-	}
-}
-
-@mixin landing_use-case-bubble--wmp {
-	max-width: 390px;
-	width: 100%;
-	display: flex;
-	background: #ffffff;
-	border: 1px solid #e0ecff;
-	padding: $spacing-double $spacing-secondary $spacing-double $spacing-double;
-
-	> .image {
-		width: 52px;
-		height: 52px;
-	}
-
-	> .details {
-		@include landing_use-case-bubble--wmp--details;
-	}
-
-	> .icon {
-		display: block;
-		width: 32px;
-		height: 32px;
-		margin: auto 0 auto auto;
-	}
-}
-
-@mixin landing_use-case-bubble--large-display--wmp--details {
-	margin-left: 20px;
-
-	> .label {
-		margin-top: 7px;
-		font-size: 0.96rem;
-	}
-
-	> .description,
-	> .amount {
-		font-size: 0.72rem;
-		margin-top: $spacing-quarter;
-	}
-}
-
 @mixin landing_use-case-bubble--large-display {
-	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
-	border-radius: 7px;
-
-	&.-wmp {
-		max-width: 328px;
-		border: 0.8px;
-		padding: 13px 10px 13px 13px;
-
-		> .image {
-			width: 44px;
-			height: 44px;
+	&.-investment-profile {
+		> .title {
+			font-size: 0.86rem;
 		}
-
-		> .details {
-			@include landing_use-case-bubble--large-display--wmp--details;
-		}
-
-		> .icon {
-			width: 27px;
-			height: 27px;
-		}
-	}
-}
-
-@mixin landing_use-case-bubble--small-desktop--wmp--details {
-	margin-left: 18px;
-
-	> .label {
-		margin-top: $spacing-half;
-		font-size: 0.86rem;
-	}
-
-	> .description,
-	> .amount {
-		font-size: 0.7rem;
-		margin-top: $spacing-quarter;
 	}
 }
 
@@ -189,25 +88,9 @@
 	}
 }
 
-@mixin landing_use-case-bubble--small-desktop--wmp {
-	max-width: 300px;
-	padding: $spacing-secondary 9px $spacing-secondary $spacing-secondary;
-	border: 0.769231px solid #e0ecff;
-	box-shadow: 0 6.15385px 9.23077px -6.15385px rgba(15, 37, 69, 0.2);
-	border-radius: 6px;
-
-	> .image {
-		width: 40px;
-		height: 40px;
-	}
-
-	> .details {
-		@include landing_use-case-bubble--small-desktop--wmp--details;
-	}
-
-	> .icon {
-		width: 25px;
-		height: 25px;
+@mixin landing_use-case-bubble--small-desktop--investment-profile {
+	> .title {
+		font-size: 0.79rem;
 	}
 }
 
@@ -216,47 +99,8 @@
 		@include landing_use-case-bubble--small-desktop--amount-received;
 	}
 
-	&.-wmp {
-		@include landing_use-case-bubble--small-desktop--wmp;
-	}
-}
-
-@mixin landing_use-case-bubble--tablet--wmp--details {
-	margin-left: $spacing-double;
-
-	> .label {
-		margin-top: 6px;
-		font-size: 0.79rem;
-	}
-
-	> .description,
-	> .amount {
-		font-size: 0.58rem;
-		margin-top: 1px;
-	}
-}
-
-@mixin landing_use-case-bubble--tablet {
-	&.-wmp {
-		max-width: 268px;
-		padding: 11px 8px 11px 11px;
-		border: 0.687179px solid #e0ecff;
-		box-shadow: 0 5.49744px 8.24615px -5.49744px rgba(15, 37, 69, 0.2);
-		border-radius: 5px;
-
-		> .image {
-			width: 36px;
-			height: 36px;
-		}
-
-		> .details {
-			@include landing_use-case-bubble--tablet--wmp--details;
-		}
-
-		> .icon {
-			width: 22px;
-			height: 22px;
-		}
+	&.-investment-profile {
+		@include landing_use-case-bubble--small-desktop--investment-profile;
 	}
 }
 
@@ -282,39 +126,9 @@
 	}
 }
 
-@mixin landing_use-case-bubble--mobile--wmp--details {
-	margin-left: 15px;
-
-	> .label {
-		margin-top: 3px;
-		font-size: 0.72rem;
-	}
-
-	> .description,
-	> .amount {
-		font-size: 0.5rem;
-	}
-}
-
-@mixin landing_use-case-bubble--mobile--wmp {
-	max-width: 183px;
-	padding: 10px 7px 10px 10px;
-	border: 0.608089px solid #e0ecff;
-	box-shadow: 0px 4.86471px 7.29707px -4.86471px rgba(15, 37, 69, 0.2);
-	border-radius: 5px;
-
-	> .image {
-		width: 32px;
-		height: 32px;
-	}
-
-	> .details {
-		@include landing_use-case-bubble--mobile--wmp--details;
-	}
-
-	> .icon {
-		width: 19px;
-		height: 19px;
+@mixin landing_use-case-bubble--mobile--investment-profile {
+	> .title {
+		font-size: 0.62rem;
 	}
 }
 
@@ -323,8 +137,17 @@
 		@include landing_use-case-bubble--mobile--amount-received;
 	}
 
-	&.-wmp {
-		@include landing_use-case-bubble--mobile--wmp;
+	&.-investment-profile {
+		@include landing_use-case-bubble--mobile--investment-profile;
+	}
+}
+
+@mixin landing_use-case-bubble--investment-profile {
+	> .title {
+		font: 400 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		color: #2044a5;
+		opacity: 0.8;
 	}
 }
 
@@ -337,8 +160,8 @@
 		@include landing_use-case-bubble--amount-received;
 	}
 
-	&.-wmp {
-		@include landing_use-case-bubble--wmp;
+	&.-investment-profile {
+		@include landing_use-case-bubble--investment-profile;
 	}
 
 	@include on(large-display) {
@@ -347,10 +170,6 @@
 
 	@include on(small-desktop) {
 		@include landing_use-case-bubble--small-desktop;
-	}
-
-	@include on(tablet) {
-		@include landing_use-case-bubble--tablet;
 	}
 
 	@include on(mobile) {
