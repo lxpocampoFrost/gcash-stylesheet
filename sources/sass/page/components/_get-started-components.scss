@@ -1,35 +1,101 @@
+/****
+start --get-started_message-bubble--cash-in-success
+****/
+@mixin get-started_message-bubble--small-desktop--cash-in-success {
+	> .title {
+		font-size: 1.08rem;
+	}
+
+	> .amount {
+		font-size: 1.9rem;
+
+		> .currency {
+			width: 18px;
+			height: 23px;
+			margin-right: 3px;
+		}
+	}
+}
+
+@mixin get-started_message-bubble--tablet--cash-in-success {
+	> .title {
+		font-size: 1.15rem;
+	}
+
+	> .amount {
+		font-size: 2rem;
+
+		> .currency {
+			width: 20px;
+			height: 24px;
+		}
+	}
+}
+
+@mixin get-started_message-bubble--mobile--cash-in-success {
+	> .title {
+		font-size: 0.79rem;
+	}
+
+	> .amount {
+		font-size: 1.29rem;
+
+		> .currency {
+			width: 13px;
+			height: 16px;
+			margin-right: $spacing-quarter;
+		}
+	}
+}
+
+@mixin get-started_message-bubble--cash-in-success {
+	> .title {
+		font: 500 1.22rem/1.4 $gilroy-medium;
+		letter-spacing: -0.01em;
+		color: #2044a5;
+		opacity: 0.8;
+	}
+
+	> .amount {
+		font: 700 2.15rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
+		color: #0058e5;
+		display: flex;
+		align-items: center;
+
+		> .currency {
+			width: 21px;
+			height: 26px;
+			margin-right: $spacing-half;
+		}
+	}
+}
+
+/****
+end --get-started_message-bubble--cash-in-success
+****/
+
 @mixin get-started_message-bubble--small-desktop {
 	&.-cash-in-success {
-		> .title {
-			font-size: 1.08rem;
-		}
+		@include get-started_message-bubble--small-desktop--cash-in-success;
 	}
 }
 
 @mixin get-started_message-bubble--tablet {
 	&.-cash-in-success {
-		> .title {
-			font-size: 1.15rem;
-		}
+		@include get-started_message-bubble--tablet--cash-in-success;
 	}
 }
 
 @mixin get-started_message-bubble--mobile {
 	&.-cash-in-success {
-		> .title {
-			font-size: 0.79rem;
-		}
+		@include get-started_message-bubble--mobile--cash-in-success;
 	}
 }
 
 .get-started_message-bubble {
 	&.-cash-in-success {
-		> .title {
-			font: 500 1.22rem/1.4 $gilroy-medium;
-			letter-spacing: -0.01em;
-			color: #2044a5;
-			opacity: 0.8;
-		}
+		@include get-started_message-bubble--cash-in-success;
 	}
 
 	@include on(small-desktop) {
