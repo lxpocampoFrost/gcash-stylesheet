@@ -93,7 +93,7 @@
         <div class="description">Happy birthday anak! Eto pang-celebrate. ‘Wag ubusin agad, ok? Love you!</div>
     </div>
 
-    <div class="shop-item -cream">
+    <div class="landing_shop-item -cream">
         <img class="image" src="./assets/images/landing/shop-item-cream-img.png"/>
         <div class="content">
             <span class="icon" style="background: url(./assets/images/landing/shop-item-cream-icon.svg) center/contain no-repeat;"></span>
@@ -104,7 +104,7 @@
         </div>
     </div>
     
-    <div class="shop-item -watch" style="background: url(./assets/images/landing/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
+    <div class="landing_shop-item -watch" style="background: url(./assets/images/landing/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
         <div class="content">
         <span class="icon" style="background: url(./assets/images/landing/shop-item-watch-category.svg) center/contain no-repeat;"></span>
             <div class="details">
@@ -114,7 +114,7 @@
         </div>
     </div>
     
-    <div class="shop-item -vase" style="background: url(./assets/images/landing/shop-item-vase-img.jpg)center/contain no-repeat;">
+    <div class="landing_shop-item -vase" style="background: url(./assets/images/landing/shop-item-vase-img.jpg)center/contain no-repeat;">
         <div class="content">
             <span class="icon" style="background: url(./assets/images/landing/shop-item-vase-icon.svg) center/contain no-repeat;"></span>
             <div class="details">
@@ -124,7 +124,7 @@
         </div>
     </div>
     
-    <div class="shop-item -tote" style="background: url(./assets/images/landing/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
+    <div class="landing_shop-item -tote" style="background: url(./assets/images/landing/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
         <div class="content">
         <span class="icon" style="background: url(./assets/images/landing/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
             <div class="details">
@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <div class="shop-item -headphones">
+    <div class="landing_shop-item -headphones">
         <img class="image" src="./assets/images/landing/shop-item-headphones.png"/>
         <div class="content">
             <span class="icon" style="background: url(./assets/images/landing/shop-item-headphones-gadget.svg) center/contain no-repeat;"></span>
@@ -152,6 +152,19 @@
         </div>
     </div>
 
+    <div class="landing_use-case-bubble -investment-profile">
+        <div class="title">My Investment Portfolio</div>
+        <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
+        <div class="product-name">Equity Smart Index Fund</div>
+        <div class="fund-name">
+            <div class="preamble">ATRAM</div>
+            <div class="performance">
+                <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
+             </div>
+        </div>
+        <div class="chart-label">Performance for the past 12W</div>
+    </div>
+
     <div class="landing_use-case-bubble -wmp">
         <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>
         <div class="details">
@@ -160,6 +173,16 @@
             <div class="amount">PHP 5,000.00</div>
             </div>
         <span class="icon" style="background: url(./assets/images/landing/use-case-bubble-wmp-icon.svg) center/contain no-repeat;"></span>
+    </div>
+
+    <div class="landing_use-case-bubble -total-savings">
+      <div class="details">
+          <div class="label">Total savings balance</div>
+          <div class="amount">
+            <span class="currency" style="background-image: url(./assets/images/landing/use-case-bubble-total-savings-currency.svg);"></span>5,000.00
+          </div>
+      </div>
+      <div class="refresh-btn" style="background: url(./assets/images/landing/use-case-bubble-total-savings-refresh-btn.svg) no-repeat center;"></div>
     </div>
 
     <div class="landing_text-display" style="background: linear-gradient(180deg, #1777C1 -10.91%, #0954AA 50.87%, #07489B 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;">
@@ -207,4 +230,35 @@
             <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
         </a>
     </div>
+
+    <div class="landing_use-case-tabs" style="background: gray;">
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-send-icon.svg)  no-repeat;"></span>
+            <div class="title">Send Money</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-PayQR-icon.svg)  no-repeat;"></span>
+            <div class="title">Pay Bills</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-GInvest-icon.svg)  no-repeat;"></span>
+            <div class="title">Invest</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-save-icon.svg)  no-repeat;"></span>
+            <div class="title">Save</div>
+        </div>
+    </div>
+
+    <div class="landing_section-9-bubble">
+        <div class="preamble">available balance</div>
+        <div class="content">
+            <div class="price">
+                <span class="currency" style="background: url(./assets/images/landing/use-case-bubble-total-savings-currency.svg) center / contain no-repeat;"></span>
+                7,500.00
+            </div>
+            <span class="btn">Cash In</span>
+        </div>
+    </div>
+
 </div>
