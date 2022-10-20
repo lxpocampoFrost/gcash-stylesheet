@@ -1575,3 +1575,145 @@
 		}
 	}
 }
+
+@mixin landing_section-9-bubble--content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 9px;
+
+	> .price {
+		font: 500 3.58rem/1 $gotham-medium;
+		letter-spacing: -0.02em;
+		display: flex;
+		align-items: center;
+		color:  #F2F8FF;
+
+		> .currency {
+			width: 36px;
+			height: 50px;
+			display: inline-block;
+			margin-right: $spacing-default;
+		}
+	}
+
+	> .btn {
+		font: 700 1.57rem/1 $gotham-bold;
+		letter-spacing: -0.03em;
+		width: 130px;
+		padding: 13px 0px 9px;
+		background: #DDEEFF;
+		color: #0057E4;
+		border-radius: 25px;
+		text-align: center;
+	}
+}
+
+@mixin landing_section-9-bubble--small-desktop {
+	max-width: 552px;
+	padding: 22px 9px 20px 22px;
+
+	> .preamble {
+		font-size: 1.01rem; 
+	}
+
+	> .content {
+		> .price {
+			font-size: 3.24rem; 
+
+			> .currency {
+				width: 32px;
+				height: 45px;
+			}
+		}
+	
+		> .btn {
+			width: 118px;
+			font-size: 1.42rem;
+		}
+	}
+}
+
+@mixin landing_section-9-bubble--tablet {
+	max-width: 480px;
+	padding: $spacing-triple 68px 22px 17px;
+
+	> .preamble {
+		font-size: 0.77rem; 
+	}
+
+	> .content {
+		> .price {
+			font-size: 2.46rem; 
+
+			> .currency {
+				width: 25px;
+				height: 34px;
+				margin-right: $spacing-default;
+			}
+		}
+	
+		> .btn {
+			width: 89px;
+			font-size: 1.07rem;
+		}
+	}
+}
+
+@mixin landing_section-9-bubble--mobile {
+	max-width: 366px;
+	padding: 18px 51px 17px 13px;
+
+	> .preamble {
+		font-size: 0.59rem; 
+	}
+
+	> .content {
+		> .price {
+			font-size: 1.88rem; 
+			
+			> .currency {
+				width: 19px;
+				height: 26px;
+				margin-left: $spacing-half;
+			}
+		}
+	
+		> .btn {
+			width: 68px;
+			font-size: 0.82rem;
+		}
+	}
+}
+
+.landing_section-9-bubble {
+	width: 100%;
+	max-width: 611px;
+	padding: 25px 11px 22px 25px;
+	background: #1972F9;
+	border-radius: 12.58px;
+
+	> .preamble {
+		font: 700 1.12rem/1 $gotham-bold;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: rgba(242, 248, 255, 0.8);
+	}
+
+	> .content {
+		@include landing_section-9-bubble--content;
+	}
+
+	@include on(small-desktop) {
+		@include landing_section-9-bubble--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include landing_section-9-bubble--tablet;
+	}
+
+	@include on(mobile) {
+		@include landing_section-9-bubble--mobile;
+	}
+}
