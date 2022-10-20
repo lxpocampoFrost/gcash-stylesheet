@@ -168,40 +168,43 @@
 	}
 }
 
+@mixin landing_use-case-bubble--total-savings--details {
+	width: 100%;
+
+	> .label {
+		font: 400 0.72rem/1 $gotham-bold;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #ffffff;
+		opacity: 0.6;
+	}
+
+	> .amount {
+		font: 500 2.29rem/1 $gotham-medium;
+		letter-spacing: -0.02em;
+		margin-top: 6px;
+		color: #ffffff;
+		display: flex;
+
+		> .currency {
+			width: 24px;
+			height: 23.49px;
+			margin: $spacing-quarter $spacing-half 0 0;
+			display: inline-block;
+			background-size: 100%;
+		}
+	}
+}
+
 @mixin landing_use-case-bubble--total-savings {
 	max-width: 390px;
 	height: 76px;
 	background: #1972f9;
-	padding: $spacing-double $spacing-secondary $spacing-secondary
-		$spacing-secondary;
+	padding: $spacing-double $spacing-secondary $spacing-secondary;
 	display: flex;
 
 	> .details {
-		width: 100%;
-
-		> .label {
-			font: 400 0.72rem/1 $gotham-bold;
-			letter-spacing: 0.1em;
-			text-transform: uppercase;
-			color: #ffffff;
-			opacity: 0.6;
-		}
-
-		> .amount {
-			font: 500 2.29rem/1 $gotham-medium;
-			letter-spacing: -0.02em;
-			margin-top: 6px;
-			color: #ffffff;
-			display: flex;
-
-			> .currency {
-				width: 24px;
-				height: 23.49px;
-				margin: $spacing-quarter $spacing-half 0 0;
-				display: inline-block;
-				background-size: 100%;
-			}
-		}
+		@include landing_use-case-bubble--total-savings--details;
 	}
 
 	> .refresh-btn {
@@ -213,7 +216,7 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--wmp--details {
+@mixin landing_use-case-bubble--large-desktop--wmp--details {
 	margin-left: 20px;
 
 	> .label {
@@ -228,7 +231,7 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--wmp {
+@mixin landing_use-case-bubble--large-desktop--wmp {
 	max-width: 328px;
 	border: 0.8px;
 	padding: 13px 10px 13px 13px;
@@ -239,7 +242,7 @@
 	}
 
 	> .details {
-		@include landing_use-case-bubble--large-display--wmp--details;
+		@include landing_use-case-bubble--large-desktop--wmp--details;
 	}
 
 	> .icon {
@@ -248,13 +251,13 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--investment-profile--fund-name {
+@mixin landing_use-case-bubble--large-desktop--investment-profile--fund-name {
 	> .preamble {
-		font-size: 0.648rem;
+		font-size: 0.741rem;
 	}
 
 	> .performance {
-		font-size: 0.648rem;
+		font-size: 0.741rem;
 		margin-left: 13.82px;
 
 		> .arrow-up {
@@ -265,54 +268,62 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--investment-profile {
+@mixin landing_use-case-bubble--large-desktop--investment-profile {
 	> .title {
 		font-size: 0.86rem;
 	}
 
 	> .fund-name {
-		@include landing_use-case-bubble--large-display--investment-profile--fund-name;
+		@include landing_use-case-bubble--large-desktop--investment-profile--fund-name;
 	}
 }
 
-@mixin landing_use-case-bubble--large-display {
+@mixin landing_use-case-bubble--large-desktop--total-savings--details {
+	> .label {
+		font-size: 0.57rem;
+	}
+
+	> .amount {
+		font-size: 1.92rem;
+		margin-top: 5.05px;
+
+		> .currency {
+			width: 20.18px;
+			height: 19.75px;
+			margin: 3.41px 3.36px 0 0;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--large-desktop--total-savings {
+	max-width: 328px;
+	height: 63.59px;
+	padding: 13.46px 10.09px 10.09px 13.46px;
+
+	> .details {
+		@include landing_use-case-bubble--large-desktop--total-savings--details;
+	}
+
+	> .refresh-btn {
+		min-width: 26.91px;
+		height: 26.91px;
+	}
+}
+
+@mixin landing_use-case-bubble--large-desktop {
 	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
 	border-radius: 7px;
 
 	&.-wmp {
-		@include landing_use-case-bubble--large-display--wmp;
+		@include landing_use-case-bubble--large-desktop--wmp;
 	}
 
 	&.-investment-profile {
-		@include landing_use-case-bubble--large-display--investment-profile;
+		@include landing_use-case-bubble--large-desktop--investment-profile;
 	}
 
 	&.-total-savings {
-		max-width: 328px;
-		height: 63.59px;
-		padding: 13.46px 10.09px 10.09px 13.46px;
-
-		> .details {
-			> .label {
-				font-size: 0.57rem;
-			}
-
-			> .amount {
-				font-size: 1.92rem;
-				margin-top: 5.05px;
-
-				> .currency {
-					width: 20.18px;
-					height: 19.75px;
-					margin: 3.41px 3.36px 0 0;
-				}
-			}
-		}
-
-		> .refresh-btn {
-			min-width: 26.91px;
-			height: 26.91px;
-		}
+		@include landing_use-case-bubble--large-desktop--total-savings;
 	}
 }
 
@@ -461,6 +472,37 @@
 	}
 }
 
+@mixin landing_use-case-bubble--tablet--total-savings {
+	max-width: 268px;
+	height: 52.36px;
+	padding: 10.99px 8.25px 8.25px 10.99px;
+	box-shadow: 0px 5.49744px 8.24615px -5.49744px rgba(15, 37, 69, 0.2);
+	border-radius: 5.49744px;
+
+	> .details {
+		> .label {
+			font-size: 0.491rem;
+		}
+
+		> .amount {
+			font-size: 1.57rem;
+			margin-top: 4.12px;
+
+			> .currency {
+				width: 16.49px;
+				height: 16.14px;
+				margin-right: 3.24px;
+			}
+		}
+	}
+
+	> .refresh-btn {
+		min-width: 21.99px;
+		height: 21.99px;
+		margin-left: 11px;
+	}
+}
+
 @mixin landing_use-case-bubble--tablet {
 	&.-wmp {
 		max-width: 268px;
@@ -485,34 +527,7 @@
 	}
 
 	&.-total-savings {
-		max-width: 268px;
-		height: 52.36px;
-		padding: 10.99px 8.25px 8.25px 10.99px;
-		box-shadow: 0px 5.49744px 8.24615px -5.49744px rgba(15, 37, 69, 0.2);
-		border-radius: 5.49744px;
-
-		> .details {
-			> .label {
-				font-size: 0.491rem;
-			}
-
-			> .amount {
-				font-size: 1.57rem;
-				margin-top: 4.12px;
-
-				> .currency {
-					width: 16.49px;
-					height: 16.14px;
-					margin-right: 3.24px;
-				}
-			}
-		}
-
-		> .refresh-btn {
-			min-width: 21.99px;
-			height: 21.99px;
-			margin-left: 11px;
-		}
+		@include landing_use-case-bubble--tablet--total-savings;
 	}
 }
 
@@ -689,8 +704,8 @@
 		@include landing_use-case-bubble--investment-profile;
 	}
 
-	@include on(large-display) {
-		@include landing_use-case-bubble--large-display;
+	@include on(large-desktop) {
+		@include landing_use-case-bubble--large-desktop;
 	}
 
 	@include on(small-desktop) {
