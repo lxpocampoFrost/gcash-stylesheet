@@ -9,6 +9,29 @@
 
 .get-started_message-bubble {
 	background: #ffffff;
+	width: 100%;
+
+	&.-get-verified {
+		padding: 22.26px;
+		box-shadow: 0 175.873px 70.1267px rgba(10, 13, 41, 0.01),
+			0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
+			0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
+			0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
+		backdrop-filter: blur(17.81px);
+		border-radius: 13.3575px;
+		position: relative;
+
+		> .label {
+			font: 600 1.429rem/1.4 $gilroy-medium;
+			color: rgba(10, 39, 87, 0.6);
+			max-width: 32ch;
+
+			> .highlight {
+				font: 600 1.429rem/1.4 $gilroy-bold;
+				color: #005ce5;
+			}
+		}
+	}
 
 	@include on(small-desktop) {
 		@include get-started_message-bubble--small-desktop;
