@@ -89,8 +89,9 @@
 	overflow-x: clip;
 
 	> .header-menu {
-		margin: 36px auto 120px;
+		margin: 0 auto 120px;
 		position: sticky;
+		top: 36px;
 	}
 
 	> .get-started_panel-1 {
