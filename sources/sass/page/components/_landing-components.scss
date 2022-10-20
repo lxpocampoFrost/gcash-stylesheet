@@ -1538,7 +1538,16 @@
 	> .price {
 		font: 500 3.58rem/1 $gotham-medium;
 		letter-spacing: -0.02em;
+		display: flex;
+		align-items: center;
 		color:  #F2F8FF;
+
+		> .currency {
+			width: 36px;
+			height: 50px;
+			display: inline-block;
+			margin-right: $spacing-default;
+		}
 	}
 
 	> .btn {
@@ -1555,6 +1564,7 @@
 
 @mixin landing_section-9-bubble--small-desktop {
 	max-width: 552px;
+	padding: 22px 9px 20px 22px;
 
 	> .preamble {
 		font-size: 1.01rem; 
@@ -1563,6 +1573,11 @@
 	> .content {
 		> .price {
 			font-size: 3.24rem; 
+
+			> .currency {
+				width: 32px;
+				height: 45px;
+			}
 		}
 	
 		> .btn {
@@ -1574,6 +1589,7 @@
 
 @mixin landing_section-9-bubble--tablet {
 	max-width: 480px;
+	padding: $spacing-triple 68px 22px 17px;
 
 	> .preamble {
 		font-size: 0.77rem; 
@@ -1582,6 +1598,12 @@
 	> .content {
 		> .price {
 			font-size: 2.46rem; 
+
+			> .currency {
+				width: 25px;
+				height: 34px;
+				margin-right: $spacing-default;
+			}
 		}
 	
 		> .btn {
@@ -1593,6 +1615,7 @@
 
 @mixin landing_section-9-bubble--mobile {
 	max-width: 366px;
+	padding: 18px 51px 17px 13px;
 
 	> .preamble {
 		font-size: 0.59rem; 
@@ -1601,6 +1624,12 @@
 	> .content {
 		> .price {
 			font-size: 1.88rem; 
+			
+			> .currency {
+				width: 19px;
+				height: 26px;
+				margin-left: $spacing-half;
+			}
 		}
 	
 		> .btn {

@@ -226,7 +226,10 @@
     <div class="landing_section-9-bubble">
         <div class="preamble">available balance</div>
         <div class="content">
-            <span class="price">₱7,500.00</span>
+            <div class="price">
+                <span class="currency" style="background: url(./assets/images/landing/use-case-bubble-total-savings-currency.svg) center / contain no-repeat;"></span>
+                7,500.00
+            </div>
             <span class="btn">Cash In</span>
         </div>
     </div>
