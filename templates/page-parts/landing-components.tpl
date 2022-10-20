@@ -79,13 +79,13 @@
         <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
     </div>
 
-    <div class="message-bubble -avatar-left">
+    <div class="landing_message-bubble -avatar-left">
         <div class="title">Send money to Trisha</div>
         <div class="amount"><span class="icon" style="background: url(./assets/images/landing/message-bubble-avatar-left-currency.svg) center/contain no-repeat;"></span>2,500</div>
         <img class="avatar" src="./assets/images/landing/message-bubble-avatar-left.png"/>
     </div>
 
-    <div class="message-bubble -avatar-top">
+    <div class="landing_message-bubble -avatar-top">
         <img class="avatar" src="./assets/images/landing/message-bubble-avatar-top.png"/>
         <div class="title">You received money from Mama</div>
         <div class="amount"><span class="icon" style="background: url(./assets/images/landing/message-bubble-avatar-top-currency.svg) center/contain no-repeat;"></span>2,500</div>
@@ -152,6 +152,16 @@
         </div>
     </div>
 
+    <div class="landing_use-case-bubble -wmp">
+        <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>
+        <div class="details">
+            <div class="label">GSave by CIMB</div>
+            <div class="description"><span class="text">Account No. </span>0012345678</div>
+            <div class="amount">PHP 5,000.00</div>
+            </div>
+        <span class="icon" style="background: url(./assets/images/landing/use-case-bubble-wmp-icon.svg) center/contain no-repeat;"></span>
+    </div>
+
     <div class="landing_use-case-bubble -total-savings">
       <div class="details">
           <div class="label">Total savings balance</div>
@@ -161,8 +171,6 @@
       </div>
       <div class="refresh-btn" style="background: url(./assets/images/landing/use-case-bubble-total-savings-refresh-btn.svg) no-repeat center;"></div>
     </div>
-
-    <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
 
     <div class="landing_text-display" style="background: linear-gradient(180deg, #1777C1 -10.91%, #0954AA 50.87%, #07489B 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;">
     GCash para sa lahat
@@ -209,5 +217,4 @@
             <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
         </a>
     </div>
-
 </div>
