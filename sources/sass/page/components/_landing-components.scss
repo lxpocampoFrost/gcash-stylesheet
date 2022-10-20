@@ -119,7 +119,7 @@
 	margin-left: $spacing-triple;
 
 	> .label {
-		margin-top: 9px;
+		padding-top: 9px;
 		font: 700 1.14rem/1.3 $gotham-bold;
 		letter-spacing: -0.01em;
 	}
@@ -172,7 +172,7 @@
 	margin-left: 20px;
 
 	> .label {
-		margin-top: 7px;
+		padding-top: 7px;
 		font-size: 0.96rem;
 	}
 
@@ -212,7 +212,7 @@
 	margin-left: 18px;
 
 	> .label {
-		margin-top: $spacing-half;
+		padding-top: $spacing-half;
 		font-size: 0.86rem;
 	}
 
@@ -282,7 +282,7 @@
 	margin-left: $spacing-double;
 
 	> .label {
-		margin-top: 6px;
+		padding-top: 6px;
 		font-size: 0.79rem;
 	}
 
@@ -343,7 +343,7 @@
 	margin-left: 15px;
 
 	> .label {
-		margin-top: 3px;
+		padding-top: 3px;
 		font-size: 0.72rem;
 	}
 
