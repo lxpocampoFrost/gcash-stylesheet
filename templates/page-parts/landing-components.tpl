@@ -211,4 +211,12 @@
             <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
         </a>
     </div>
+
+    <div class="landing_section-9-bubble">
+        <div class="preamble">available balance</div>
+        <div class="content">
+            <span class="price">₱7,500.00</span>
+            <span class="btn">Cash In</span>
+        </div>
+    </div>
 </div>
