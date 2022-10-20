@@ -240,7 +240,7 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--wmp--details {
+@mixin landing_use-case-bubble--large-desktop--wmp--details {
 	margin-left: 20px;
 
 	> .label {
@@ -255,7 +255,7 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--wmp {
+@mixin landing_use-case-bubble--large-desktop--wmp {
 	max-width: 328px;
 	border: 0.8px;
 	padding: 13px 10px 13px 13px;
@@ -266,7 +266,7 @@
 	}
 
 	> .details {
-		@include landing_use-case-bubble--large-display--wmp--details;
+		@include landing_use-case-bubble--large-desktop--wmp--details;
 	}
 
 	> .icon {
@@ -275,7 +275,7 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--investment-profile {
+@mixin landing_use-case-bubble--large-desktop--investment-profile {
 	> .title {
 		font-size: 0.86rem;
 	}
@@ -292,7 +292,7 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--total-savings--details {
+@mixin landing_use-case-bubble--large-desktop--total-savings--details {
 	> .label {
 		font-size: 0.57rem;
 	}
@@ -309,13 +309,13 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display--total-savings {
+@mixin landing_use-case-bubble--large-desktop--total-savings {
 	max-width: 328px;
 	height: 63.59px;
 	padding: 13.46px 10.09px 10.09px 13.46px;
 
 	> .details {
-		@include landing_use-case-bubble--large-display--total-savings--details;
+		@include landing_use-case-bubble--large-desktop--total-savings--details;
 	}
 
 	> .refresh-btn {
@@ -324,20 +324,20 @@
 	}
 }
 
-@mixin landing_use-case-bubble--large-display {
+@mixin landing_use-case-bubble--large-desktop {
 	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
 	border-radius: 7px;
 
 	&.-wmp {
-		@include landing_use-case-bubble--large-display--wmp;
+		@include landing_use-case-bubble--large-desktop--wmp;
 	}
 
 	&.-investment-profile {
-		@include landing_use-case-bubble--large-display--investment-profile;
+		@include landing_use-case-bubble--large-desktop--investment-profile;
 	}
 
 	&.-total-savings {
-		@include landing_use-case-bubble--large-display--total-savings;
+		@include landing_use-case-bubble--large-desktop--total-savings;
 	}
 }
 
@@ -700,8 +700,8 @@
 		@include landing_use-case-bubble--investment-profile;
 	}
 
-	@include on(large-display) {
-		@include landing_use-case-bubble--large-display;
+	@include on(large-desktop) {
+		@include landing_use-case-bubble--large-desktop;
 	}
 
 	@include on(small-desktop) {
