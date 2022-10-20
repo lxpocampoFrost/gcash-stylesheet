@@ -1,0 +1,38 @@
+.landing_container {
+	width: 100%;
+	overflow-x: clip;
+}
+
+.landing_panel {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.landing_wrapper {
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+.landing_wrapper-bounding-box {
+	width: 100%;
+	height: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.landing_wrapper-floating {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+}
