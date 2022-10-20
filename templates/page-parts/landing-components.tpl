@@ -157,15 +157,23 @@
             <div class="title">My Investment Portfolio</div>
             <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
         </div>
-        <div class="product-name">Equity Smart Index Fund</div>
-        <div class="fund-name">
-            <div class="preamble">ATRAM</div>
-            <div class="performance">
-                <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
-             </div>
+        <div class="details">
+            <div class="wrapper">
+                <div class="fund-name">
+                    <div class="preamble">ATRAM</div>
+                    <div class="performance">
+                        <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
+                    </div>
+                </div>
+                <div class="product-name">Equity Smart Index Fund</div>
+            </div>
+            <span class="icon" style="background: url(./assets/images/landing/use-case-bubble-investment-profile-tech-feeder-fun.svg) center/contain no-repeat;"></span>
         </div>
-        <div class="chart-label">Performance for the past 12W</div>
+        <div class="chart" style="background: url(./assets/images/landing/use-case-bubble-investment-profile-chart.svg) center no-repeat;">
+        <div class="label">Performance for the past 12W</div>
+        </div>
     </div>
+
 
     <div class="landing_use-case-bubble -wmp">
         <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>

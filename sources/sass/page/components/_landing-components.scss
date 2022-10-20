@@ -85,208 +85,166 @@
 	}
 }
 
-@mixin landing_use-case-bubble--amount-received {
-	max-width: 260px;
-	height: 86px;
-	color: #2044a5;
-	padding: 20px $spacing-triple $spacing-double;
-	background-size: cover;
+/**
 
-	> .label {
-		font: 700 1rem/1 $gotham-bold;
-		letter-spacing: -0.01em;
-		opacity: 0.8;
-	}
+	:: use-case-bubble --------------------------------------------------------
 
-	> .amount {
-		font: 700 2.29rem/1 $gotham-bold;
-		letter-spacing: -0.02em;
-		margin-top: $spacing-half;
+**/
 
-		> .currency {
-			display: inline-block;
-			width: 22.75px;
-			height: 28.44px;
-			padding: 1px 0 2.5px;
-			margin-right: $spacing-half;
-			background-size: 100%;
-		}
-	}
-}
-
-@mixin landing_use-case-bubble--wmp--details {
-	color: #0a2757;
-	margin-left: $spacing-triple;
-
-	> .label {
-		padding-top: 9px;
-		font: 700 1.14rem/1.3 $gotham-bold;
-		letter-spacing: -0.01em;
-	}
-
-	> .description {
-		margin-top: 2px;
-		font: 600 0.86rem/1.5 $gilroy-bold;
-
-		> .text {
-			color: #6d7b92;
-			opacity: 0.8;
-			margin-right: $spacing-half;
-		}
-	}
-
-	> .amount {
-		font: 700 0.86rem/1 $gotham-bold;
-		letter-spacing: -0.01em;
-		margin-top: $spacing-half;
-		color: #0057e4;
-	}
-}
-
-@mixin landing_use-case-bubble--wmp {
-	max-width: 390px;
-	width: 100%;
-	display: flex;
-	background: #ffffff;
-	border: 1px solid #e0ecff;
-	padding: $spacing-double $spacing-secondary $spacing-double $spacing-double;
-
-	> .image {
-		width: 52px;
-		height: 52px;
-	}
-
-	> .details {
-		@include landing_use-case-bubble--wmp--details;
-	}
-
-	> .icon {
-		display: block;
-		width: 32px;
-		height: 32px;
-		margin: auto 0 auto auto;
-	}
-}
-
-@mixin landing_use-case-bubble--investment-profile--fund-name {
-	width: 100%;
-	display: flex;
-	align-items: center;
-
+@mixin landing_use-case-bubble--large-desktop--investment-profile--details--wrapper--fund-name {
 	> .preamble {
-		font: 400 0.86rem/1.3 $gotham-bold;
-		color: #a1a8b4;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
+		font-size: 0.741rem;
 	}
 
 	> .performance {
-		font: 400 0.86rem/1.3 $gotham-bold;
-		display: flex;
-		align-items: center;
-		color: #11b051;
-		margin-left: $spacing-double;
+		font-size: 0.741rem;
+		margin-left: 13.82px;
 
 		> .arrow-up {
-			width: 8px;
-			height: 8px;
-			margin-right: $spacing-half;
+			min-width: 6.91px;
+			height: 6.91px;
+			margin-right: 3.46px;
 		}
 	}
 }
 
-@mixin landing_use-case-bubble--investment-profile {
-	// main
-	color: #2044a5;
-	max-width: 272px;
+@mixin landing_use-case-bubble--large-desktop--investment-profile--details--wrapper {
+	> .fund-name {
+		@include landing_use-case-bubble--large-desktop--investment-profile--details--wrapper--fund-name;
+	}
+
+	> .product-name {
+		font-size: 0.72rem;
+	}
+}
+
+@mixin landing_use-case-bubble--large-desktop--investment-profile--details {
+	padding: 10px 12px 10px 14px;
+
+	> .wrapper {
+		@include landing_use-case-bubble--large-desktop--investment-profile--details--wrapper;
+	}
+
+	> .icon {
+		margin-left: 7px;
+		min-width: 27.65px;
+		height: 27.65px;
+	}
+}
+
+@mixin landing_use-case-bubble--large-desktop--investment-profile--loanable {
+	padding: 14px 14px 10px;
+
+	> .title {
+		font-size: 0.86rem;
+	}
+
+	> .amount {
+		font-size: 2rem;
+		margin-top: 7px;
+
+		> .currency {
+			width: 20px;
+			height: 25px;
+			margin-right: 3px;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--large-desktop--investment-profile {
+	max-width: 235px;
 
 	> .loanable {
-		padding: $spacing-double $spacing-double $spacing-secondary;
-		background: #eef4ff;
-		> .title {
-			font: 400 1rem/1 $gotham-bold;
-			opacity: 0.8;
+		@include landing_use-case-bubble--large-desktop--investment-profile--loanable;
+	}
+
+	> .details {
+		@include landing_use-case-bubble--large-desktop--investment-profile--details;
+	}
+
+	> .chart {
+		height: 71px;
+
+		> .label {
+			font-size: 0.5rem;
+			padding-left: 14px;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--small-desktop--investment-profile--details--wrapper {
+	> .fund-name {
+		> .preamble {
+			font-size: 0.665rem;
 		}
 
-		> .amount {
-			font: 700 2.29rem/1 $gotham-bold;
-			letter-spacing: -0.02em;
-			display: flex;
-			align-items: center;
-			margin-top: $spacing-default;
+		> .performance {
+			font-size: 0.665rem;
+			margin-left: 12.41px;
 
-			> .currency {
-				width: 23px;
-				height: 28px;
-				margin-right: $spacing-half;
+			> .arrow-up {
+				min-width: 6.21px;
+				height: 6.21px;
+				margin-right: 3.1px;
 			}
 		}
 	}
 
-	> .fund-name {
-		@include landing_use-case-bubble--investment-profile--fund-name;
-	}
-
-	> .title,
 	> .product-name {
-		letter-spacing: -0.01em;
-	}
-
-	> .product-name {
-		font: 700 0.86rem/1.3 $gotham-bold;
-	}
-
-	> .chart-label {
-		font: 600 0.57rem/1.5 $gilroy-bold;
-		color: #a1a8b4;
+		font-size: 0.65rem;
 	}
 }
 
-@mixin landing_use-case-bubble--total-savings--details {
-	width: 100%;
+@mixin landing_use-case-bubble--small-desktop--investment-profile--details {
+	padding: 9px 11px 9px 12px;
 
-	> .label {
-		font: 400 0.72rem/1 $gotham-bold;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: #ffffff;
-		opacity: 0.6;
+	> .wrapper {
+		@include landing_use-case-bubble--small-desktop--investment-profile--details--wrapper;
+	}
+
+	> .icon {
+		margin-left: 6px;
+		min-width: 24.82px;
+		height: 24.82px;
+	}
+}
+
+@mixin landing_use-case-bubble--small-desktop--investment-profile--loanable {
+	padding: 12px 12px 9px;
+
+	> .title {
+		font-size: 0.79rem;
 	}
 
 	> .amount {
-		font: 500 2.29rem/1 $gotham-medium;
-		letter-spacing: -0.02em;
+		font-size: 1.79rem;
 		margin-top: 6px;
-		color: #ffffff;
-		display: flex;
 
 		> .currency {
-			width: 24px;
-			height: 23.49px;
-			margin: $spacing-quarter $spacing-half 0 0;
-			display: inline-block;
-			background-size: 100%;
+			width: 18px;
+			height: 22px;
 		}
 	}
 }
 
-@mixin landing_use-case-bubble--total-savings {
-	max-width: 390px;
-	height: 76px;
-	background: #1972f9;
-	padding: $spacing-double $spacing-secondary $spacing-secondary;
-	display: flex;
+@mixin landing_use-case-bubble--small-desktop--investment-profile {
+	max-width: 211px;
 
-	> .details {
-		@include landing_use-case-bubble--total-savings--details;
+	> .loanable {
+		@include landing_use-case-bubble--small-desktop--investment-profile--loanable;
 	}
 
-	> .refresh-btn {
-		min-width: 32px;
-		height: 32px;
-		cursor: pointer;
-		align-self: flex-end;
-		margin-left: $spacing-double;
+	> .details {
+		@include landing_use-case-bubble--small-desktop--investment-profile--details;
+	}
+
+	> .chart {
+		height: 63px;
+
+		> .label {
+			font-size: 0.43rem;
+			padding-left: $spacing-secondary;
+		}
 	}
 }
 
@@ -322,52 +280,6 @@
 	> .icon {
 		width: 27px;
 		height: 27px;
-	}
-}
-
-@mixin landing_use-case-bubble--large-desktop--investment-profile--fund-name {
-	> .preamble {
-		font-size: 0.741rem;
-	}
-
-	> .performance {
-		font-size: 0.741rem;
-		margin-left: 13.82px;
-
-		> .arrow-up {
-			min-width: 6.91px;
-			height: 6.91px;
-			margin-right: 3.46px;
-		}
-	}
-}
-
-@mixin landing_use-case-bubble--large-desktop--investment-profile {
-	> .title {
-		font-size: 0.86rem;
-	}
-
-	> .amount {
-		font-size: 2rem;
-		margin-top: 7px;
-
-		> .currency {
-			width: 20px;
-			height: 25px;
-			margin-right: 3px;
-		}
-	}
-
-	> .fund-name {
-		@include landing_use-case-bubble--large-desktop--investment-profile--fund-name;
-	}
-
-	> .product-name {
-		font-size: 0.72rem;
-	}
-
-	> .chart-label {
-		font-size: 0.5rem;
 	}
 }
 
@@ -455,51 +367,6 @@
 			padding: 0.5px 0 1.5px;
 			margin-right: $spacing-quarter;
 		}
-	}
-}
-
-@mixin landing_use-case-bubble--small-desktop--investment-profile--fund-name {
-	> .preamble {
-		font-size: 0.665rem;
-	}
-
-	> .performance {
-		font-size: 0.665rem;
-		margin-left: 12.41px;
-
-		> .arrow-up {
-			min-width: 6.21px;
-			height: 6.21px;
-			margin-right: 3.1px;
-		}
-	}
-}
-
-@mixin landing_use-case-bubble--small-desktop--investment-profile {
-	> .title {
-		font-size: 0.79rem;
-	}
-
-	> .amount {
-		font-size: 1.79rem;
-		margin-top: 6px;
-
-		> .currency {
-			width: 18px;
-			height: 22px;
-		}
-	}
-
-	> .fund-name {
-		@include landing_use-case-bubble--small-desktop--investment-profile--fund-name;
-	}
-
-	> .product-name {
-		font-size: 0.65rem;
-	}
-
-	> .chart-label {
-		font-size: 0.43rem;
 	}
 }
 
@@ -702,7 +569,9 @@
 	}
 }
 
-@mixin landing_use-case-bubble--mobile--investment-profile {
+@mixin landing_use-case-bubble--mobile--investment-profile--loanable {
+	padding: 10px 10px 7px;
+
 	> .title {
 		font-size: 0.64rem;
 	}
@@ -717,17 +586,40 @@
 			margin-right: $spacing-quarter;
 		}
 	}
+}
 
-	> .fund-name {
-		@include landing_use-case-bubble--mobile--investment-profile--fund-name;
+@mixin landing_use-case-bubble--mobile--investment-profile {
+	max-width: 166px;
+
+	> .loanable {
+		@include landing_use-case-bubble--mobile--investment-profile--loanable;
 	}
 
-	> .product-name {
-		font-size: 0.5rem;
+	> .details {
+		padding: 7px 8px 7px 10px;
+
+		> .wrapper {
+			> .fund-name {
+				@include landing_use-case-bubble--mobile--investment-profile--fund-name;
+			}
+
+			> .product-name {
+				font-size: 0.5rem;
+			}
+		}
+
+		> .icon {
+			margin-left: 5px;
+			min-width: 19.55px;
+			height: 19.55px;
+		}
 	}
 
-	> .chart-label {
-		font-size: 0.36rem;
+	> .chart {
+		> .label {
+			font-size: 0.36rem;
+			padding-left: 10px;
+		}
 	}
 }
 
@@ -815,6 +707,284 @@
 	}
 }
 
+/**
+
+	:: use-case-bubble -investment-profile 
+
+**/
+
+@mixin landing_use-case-bubble--investment-profile--fund-name {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	> .preamble {
+		font: 400 0.86rem/1.3 $gotham-bold;
+		color: #a1a8b4;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+	}
+
+	> .performance {
+		font: 400 0.86rem/1.3 $gotham-bold;
+		display: flex;
+		align-items: center;
+		color: #11b051;
+		margin-left: $spacing-double;
+
+		> .arrow-up {
+			width: 8px;
+			height: 8px;
+			margin-right: $spacing-half;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--investment-profile {
+	color: #2044a5;
+	max-width: 272px;
+	background: #ffffff;
+
+	> .loanable {
+		padding: $spacing-double $spacing-double $spacing-secondary;
+		background: #eef4ff;
+		border-radius: 8px 8px 0 0;
+
+		> .title {
+			font: 400 1rem/1 $gotham-bold;
+			opacity: 0.8;
+			letter-spacing: -0.01em;
+		}
+
+		> .amount {
+			font: 700 2.29rem/1 $gotham-bold;
+			letter-spacing: -0.02em;
+			display: flex;
+			align-items: center;
+			margin-top: $spacing-default;
+
+			> .currency {
+				width: 23px;
+				height: 28px;
+				margin-right: $spacing-half;
+			}
+		}
+	}
+
+	> .details {
+		border-top: 1px solid #d3dff7;
+		background: #ffffff;
+		padding: $spacing-secondary 14px $spacing-secondary $spacing-double;
+		display: flex;
+
+		> .wrapper {
+			width: 100%;
+
+			> .fund-name {
+				@include landing_use-case-bubble--investment-profile--fund-name;
+			}
+
+			> .product-name {
+				margin-top: $spacing-half;
+				letter-spacing: -0.01em;
+				font: 700 0.86rem/1.3 $gotham-bold;
+			}
+		}
+
+		> .icon {
+			margin-left: $spacing-default;
+			display: block;
+			min-width: 32px;
+			height: 32px;
+		}
+	}
+
+	> .chart {
+		border-radius: 0 0 $spacing-default $spacing-default;
+		height: 82.35px;
+		width: 100%;
+
+		> .label {
+			font: 600 0.57rem/1.5 $gilroy-bold;
+			color: #a1a8b4;
+			padding-left: $spacing-double;
+		}
+	}
+}
+
+/**
+
+	:: use-case-bubble -investment-profile 
+
+**/
+
+/**
+
+	:: use-case-bubble -total-savings
+
+**/
+
+@mixin landing_use-case-bubble--total-savings--details {
+	width: 100%;
+
+	> .label {
+		font: 400 0.72rem/1 $gotham-bold;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #ffffff;
+		opacity: 0.6;
+	}
+
+	> .amount {
+		font: 500 2.29rem/1 $gotham-medium;
+		letter-spacing: -0.02em;
+		margin-top: 6px;
+		color: #ffffff;
+		display: flex;
+
+		> .currency {
+			width: 24px;
+			height: 23.49px;
+			margin: $spacing-quarter $spacing-half 0 0;
+			display: inline-block;
+			background-size: 100%;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--total-savings {
+	max-width: 390px;
+	height: 76px;
+	background: #1972f9;
+	padding: $spacing-double $spacing-secondary $spacing-secondary;
+	display: flex;
+
+	> .details {
+		@include landing_use-case-bubble--total-savings--details;
+	}
+
+	> .refresh-btn {
+		min-width: 32px;
+		height: 32px;
+		cursor: pointer;
+		align-self: flex-end;
+		margin-left: $spacing-double;
+	}
+}
+
+/**
+
+	:: use-case-bubble -total-savings
+
+**/
+
+/**
+
+	:: use-case-bubble -wmp
+
+**/
+
+@mixin landing_use-case-bubble--wmp--details {
+	color: #0a2757;
+	margin-left: $spacing-triple;
+
+	> .label {
+		padding-top: 9px;
+		font: 700 1.14rem/1.3 $gotham-bold;
+		letter-spacing: -0.01em;
+	}
+
+	> .description {
+		margin-top: 2px;
+		font: 600 0.86rem/1.5 $gilroy-bold;
+
+		> .text {
+			color: #6d7b92;
+			opacity: 0.8;
+			margin-right: $spacing-half;
+		}
+	}
+
+	> .amount {
+		font: 700 0.86rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		margin-top: $spacing-half;
+		color: #0057e4;
+	}
+}
+
+@mixin landing_use-case-bubble--wmp {
+	max-width: 390px;
+	width: 100%;
+	display: flex;
+	background: #ffffff;
+	border: 1px solid #e0ecff;
+	padding: $spacing-double $spacing-secondary $spacing-double $spacing-double;
+
+	> .image {
+		width: 52px;
+		height: 52px;
+	}
+
+	> .details {
+		@include landing_use-case-bubble--wmp--details;
+	}
+
+	> .icon {
+		display: block;
+		width: 32px;
+		height: 32px;
+		margin: auto 0 auto auto;
+	}
+}
+
+/**
+
+	:: use-case-bubble -wmp
+
+**/
+
+/**
+
+	:: use-case-bubble -amount-received
+
+**/
+
+@mixin landing_use-case-bubble--amount-received {
+	max-width: 260px;
+	height: 86px;
+	color: #2044a5;
+	padding: 20px $spacing-triple $spacing-double;
+	background-size: cover;
+
+	> .label {
+		font: 700 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		opacity: 0.8;
+	}
+
+	> .amount {
+		font: 700 2.29rem/1 $gotham-bold;
+		letter-spacing: -0.02em;
+		margin-top: $spacing-half;
+
+		> .currency {
+			display: inline-block;
+			width: 22.75px;
+			height: 28.44px;
+			padding: 1px 0 2.5px;
+			margin-right: $spacing-half;
+			background-size: 100%;
+		}
+	}
+}
+
+/**
+
+	:: use-case-bubble -amount-received
+
+**/
+
 .landing_use-case-bubble {
 	width: 100%;
 	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
@@ -852,6 +1022,18 @@
 		@include landing_use-case-bubble--mobile;
 	}
 }
+
+/**
+
+	:: use-case-bubble --------------------------------------------------------
+
+**/
+
+/**
+
+	:: indicator --------------------------------------------------------
+
+**/
 
 @mixin landing_indicator--mobile {
 	> .item {
@@ -892,6 +1074,12 @@
 		@include landing_indicator--mobile;
 	}
 }
+
+/**
+
+	:: indicator --------------------------------------------------------
+
+**/
 
 @mixin landing_services-card--small-desktop {
 	max-width: 276.06px;
@@ -1056,64 +1244,17 @@
 	}
 }
 
-@mixin landing_message-bubble--small-desktop--avatar-top {
-	max-width: 199px;
-	height: 207px;
-	padding: 37px 18px 18px;
+/**
 
-	> .avatar {
-		width: 44px;
-		height: 44px;
-	}
+	:: services-card --------------------------------------------------------
 
-	> .title,
-	> .description {
-		font-size: 0.78rem;
-	}
+**/
 
-	> .amount {
-		font-size: 1.78rem;
-	}
+/**
 
-	> .amount,
-	> .separator,
-	> .description {
-		margin-top: $spacing-secondary;
-	}
-}
+	:: message-bubble --------------------------------------------------------
 
-@mixin landing_message-bubble--small-desktop {
-	box-shadow: 0 6px 9px -6px rgba(15, 37, 69, 0.2);
-	border-radius: 6px;
-
-	> .avatar {
-		padding: $spacing-half;
-		box-shadow: 0px 6px 9px -6px rgba(15, 37, 69, 0.2);
-	}
-
-	> .amount > .icon {
-		width: 17px;
-		height: 25px;
-		margin-right: 3px;
-	}
-
-	&.-avatar-top {
-		@include landing_message-bubble--small-desktop--avatar-top;
-	}
-
-	&.-avatar-left {
-		@include landing_message-bubble--small-desktop--avatar-left;
-	}
-}
-
-@mixin landing_message-bubble--mobile--avatar-top--amount {
-	font-size: 1.57rem;
-
-	> .icon {
-		width: 16px;
-		height: 22px;
-	}
-}
+**/
 
 @mixin landing_message-bubble--mobile {
 	&.-avatar-top {
@@ -1147,7 +1288,65 @@
 	}
 }
 
-// bubble-message -- avatar-left
+/**
+
+	:: message-bubble -avatar-left --------------------------------------------------------
+
+**/
+
+@mixin landing_message-bubble--small-desktop--avatar-left {
+	max-width: 190px;
+	height: 78px;
+	padding: 17.57px 17.57px 17.57px 29.29px;
+	box-shadow: 0 5.85714px 8.78571px -5.85714px rgba(15, 37, 69, 0.2);
+	border-radius: 5.85714px;
+
+	> .title {
+		font: 500 0.72rem/1.4 $gotham-medium;
+	}
+
+	> .amount {
+		font: 700 1.71rem/1 $gotham-bold;
+		align-items: center;
+		margin-top: 6px;
+
+		> .icon {
+			min-width: 16.66px;
+			height: 23.43px;
+			margin: 0 3px $spacing-quarter 0;
+		}
+	}
+
+	> .avatar {
+		max-width: 42.46px;
+		height: 42.46px;
+	}
+}
+
+@mixin landing_message-bubble--small-desktop {
+	box-shadow: 0 6px 9px -6px rgba(15, 37, 69, 0.2);
+	border-radius: 6px;
+
+	> .avatar {
+		padding: $spacing-half;
+		box-shadow: 0px 6px 9px -6px rgba(15, 37, 69, 0.2);
+	}
+
+	> .amount > .icon {
+		width: 17px;
+		height: 25px;
+		margin-right: 3px;
+	}
+
+	&.-avatar-top {
+		@include landing_message-bubble--small-desktop--avatar-top;
+	}
+
+	&.-avatar-left {
+		@include landing_message-bubble--small-desktop--avatar-left;
+	}
+}
+
 @mixin landing_message-bubble--avatar-left {
 	height: 108px;
 	padding: $spacing-triple $spacing-triple $spacing-triple 40px;
@@ -1179,32 +1378,50 @@
 	}
 }
 
-@mixin landing_message-bubble--small-desktop--avatar-left {
-	max-width: 190px;
-	height: 78px;
-	padding: 17.57px 17.57px 17.57px 29.29px;
-	box-shadow: 0 5.85714px 8.78571px -5.85714px rgba(15, 37, 69, 0.2);
-	border-radius: 5.85714px;
+/**
 
-	> .title {
-		font: 500 0.72rem/1.4 $gotham-medium;
+	:: message-bubble -avatar-left --------------------------------------------------------
+
+**/
+
+/**
+
+	:: message-bubble -avatar-top --------------------------------------------------------
+
+**/
+
+@mixin landing_message-bubble--small-desktop--avatar-top {
+	max-width: 199px;
+	height: 207px;
+	padding: 37px 18px 18px;
+
+	> .avatar {
+		width: 44px;
+		height: 44px;
+	}
+
+	> .title,
+	> .description {
+		font-size: 0.78rem;
 	}
 
 	> .amount {
-		font: 700 1.71rem/1 $gotham-bold;
-		align-items: center;
-		margin-top: 6px;
-
-		> .icon {
-			min-width: 16.66px;
-			height: 23.43px;
-			margin: 0 3px $spacing-quarter 0;
-		}
+		font-size: 1.78rem;
 	}
 
-	> .avatar {
-		max-width: 42.46px;
-		height: 42.46px;
+	> .amount,
+	> .separator,
+	> .description {
+		margin-top: $spacing-secondary;
+	}
+}
+
+@mixin landing_message-bubble--mobile--avatar-top--amount {
+	font-size: 1.57rem;
+
+	> .icon {
+		width: 16px;
+		height: 22px;
 	}
 }
 
@@ -1247,6 +1464,12 @@
 		max-width: 18ch;
 	}
 }
+
+/**
+
+	:: message-bubble -avatar-top --------------------------------------------------------
+
+**/
 
 .landing_message-bubble {
 	max-width: 260px;
@@ -1305,6 +1528,149 @@
 	}
 }
 
+/**
+
+	:: message-bubble --------------------------------------------------------
+
+**/
+
+/**
+
+	:: shop-item --------------------------------------------------------
+
+**/
+
+/**
+
+	:: shop-item  --vase --------------------------------------------------------
+
+**/
+@mixin landing_shop-item--small-desktop--vase {
+	max-width: 281px;
+	height: 286px;
+	box-shadow: 0 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
+	border-radius: 10.5474px;
+
+	> .image {
+		border-radius: 10.5474px;
+	}
+}
+
+@mixin landing_shop-item--vase {
+	max-width: 329px;
+	height: 335px;
+	position: relative;
+	display: flex;
+	justify-content: end;
+	align-items: flex-start;
+	padding: 20px 26px 0 0;
+	background: #ffffff;
+	box-shadow: 0 38px 26px -21px rgba(15, 37, 69, 0.5);
+	border-radius: 12.3704px;
+
+	> .content {
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		> .icon {
+			margin-right: -$spacing-half;
+		}
+
+		> .details {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			width: 100%;
+		}
+	}
+}
+
+/**
+
+	:: shop-item  --vase --------------------------------------------------------
+
+**/
+
+/**
+
+	:: shop-item  --cream --------------------------------------------------------
+
+**/
+
+@mixin landing_shop-item--small-desktop--cream {
+	max-width: max-content;
+	height: 229px;
+	border: 0.961042px solid #edf3fb;
+	box-shadow: 0 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
+	border-radius: 9.61042px;
+	padding: 0 9px 7px;
+
+	> .image {
+		max-width: 82.65px;
+		height: 205.66px;
+	}
+
+	> .content > .icon {
+		margin-bottom: 5px;
+	}
+}
+
+@mixin landing_shop-item--cream--content {
+	display: flex;
+	align-items: center;
+
+	> .icon {
+		margin-bottom: 6px;
+	}
+
+	> .details {
+		margin-left: $spacing-half;
+
+		> .label {
+			margin-top: 0;
+		}
+	}
+}
+
+@mixin landing_shop-item--cream {
+	max-width: max-content;
+	height: 268px;
+	padding: 0 10px $spacing-default;
+	background: linear-gradient(180deg, #ffffff 23.92%, #dbd7e1 169.83%);
+	border: 1.12715px solid #edf3fb;
+	box-shadow: 0 9.01718px 13.5258px -9.01718px rgba(15, 37, 69, 0.2);
+	border-radius: 11.2715px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+
+	> .image {
+		width: 100%;
+		max-width: 96.93px;
+		height: 241.21px;
+		transform: translate(1%, -8%);
+	}
+
+	> .content {
+		@include landing_shop-item--cream--content;
+	}
+}
+
+/**
+
+	:: shop-item  --cream --------------------------------------------------------
+
+**/
+
+/**
+
+	:: shop-item  --headphones --------------------------------------------------------
+
+**/
+
 @mixin landing_shop-item--small-desktop--headphones {
 	max-width: 229px;
 	height: 115px;
@@ -1325,6 +1691,81 @@
 		}
 	}
 }
+
+@mixin landing_shop-item--headphones {
+	max-width: 268px;
+	height: 135px;
+	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
+	box-shadow: 0 29px 21px -8px rgba(15, 37, 69, 0.4);
+	border-radius: 10px;
+
+	> .image {
+		width: 145px;
+		height: 156px;
+		transform: translateY(8%);
+	}
+
+	> .content {
+		padding: 17px 17px 20px 21px;
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+
+		> .details {
+			width: max-content;
+			text-align: right;
+			margin-right: 6px;
+		}
+	}
+}
+
+/**
+
+	:: shop-item  --headphones --------------------------------------------------------
+
+**/
+
+/**
+
+	:: shop-item --tote --------------------------------------------------------
+
+**/
+@mixin landing_shop-item--small-desktop--tote {
+	height: 160px;
+	box-shadow: 0px 32.4px 22.1684px -36.6632px rgba(15, 37, 69, 0.5);
+
+	> .content > .details {
+		margin-left: 3px;
+	}
+}
+
+@mixin landing_shop-item--tote--content {
+	> .details {
+		margin-left: $spacing-half;
+	}
+}
+
+@mixin landing_shop-item--tote {
+	height: 188px;
+	box-shadow: 0px 38px 26px -43px rgba(15, 37, 69, 0.5);
+	padding: 0 14px 20px 0;
+
+	> .content {
+		@include landing_shop-item--tote--content;
+	}
+}
+
+/**
+
+	:: shop-item --tote --------------------------------------------------------
+
+**/
+
+/**
+
+	:: shop-item --watch --------------------------------------------------------
+
+**/
 
 @mixin landing_shop-item--small-desktop--watch--content {
 	padding: 28px 25px 19px 20px;
@@ -1349,43 +1790,43 @@
 	}
 }
 
-@mixin landing_shop-item--small-desktop--tote {
-	height: 160px;
-	box-shadow: 0px 32.4px 22.1684px -36.6632px rgba(15, 37, 69, 0.5);
+@mixin landing_shop-item--watch--content {
+	padding: 33px 29px 20px $spacing-triple;
 
-	> .content > .details {
-		margin-left: 3px;
+	> .details {
+		margin-left: $spacing-default;
+
+		> .label {
+			max-width: 14ch;
+		}
 	}
 }
 
-@mixin landing_shop-item--small-desktop--cream {
-	max-width: max-content;
-	height: 229px;
-	border: 0.961042px solid #edf3fb;
-	box-shadow: 0 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
-	border-radius: 9.61042px;
-	padding: 0 9px 7px;
+@mixin landing_shop-item--watch {
+	height: 167px;
+	box-shadow: 0 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
+	display: flex;
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: end;
 
 	> .image {
-		max-width: 82.65px;
-		height: 205.66px;
+		width: 122px;
+		height: 167px;
+		margin-left: $spacing-triple;
 	}
 
-	> .content > .icon {
-		margin-bottom: 5px;
-	}
-}
-
-@mixin landing_shop-item--small-desktop--vase {
-	max-width: 281px;
-	height: 286px;
-	box-shadow: 0 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
-	border-radius: 10.5474px;
-
-	> .image {
-		border-radius: 10.5474px;
+	> .content {
+		@include landing_shop-item--watch--content;
 	}
 }
+
+/**
+
+	:: shop-item --watch --------------------------------------------------------
+
+**/
 
 @mixin landing_shop-item--small-desktop--content {
 	> .icon {
@@ -1435,154 +1876,6 @@
 	}
 	&.-headphones {
 		@include landing_shop-item--small-desktop--headphones;
-	}
-}
-
-@mixin landing_shop-item--tote--content {
-	> .details {
-		margin-left: $spacing-half;
-	}
-}
-
-@mixin landing_shop-item--tote {
-	height: 188px;
-	box-shadow: 0px 38px 26px -43px rgba(15, 37, 69, 0.5);
-	padding: 0 14px 20px 0;
-
-	> .content {
-		@include landing_shop-item--tote--content;
-	}
-}
-
-@mixin landing_shop-item--watch--content {
-	padding: 33px 29px 20px $spacing-triple;
-
-	> .details {
-		margin-left: $spacing-default;
-
-		> .label {
-			max-width: 14ch;
-		}
-	}
-}
-
-@mixin landing_shop-item--watch {
-	height: 167px;
-	box-shadow: 0 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
-	display: flex;
-	width: 100%;
-	display: flex;
-	justify-content: end;
-	align-items: end;
-
-	> .image {
-		width: 122px;
-		height: 167px;
-		margin-left: $spacing-triple;
-	}
-
-	> .content {
-		@include landing_shop-item--watch--content;
-	}
-}
-
-@mixin landing_shop-item--cream--content {
-	display: flex;
-	align-items: center;
-
-	> .icon {
-		margin-bottom: 6px;
-	}
-
-	> .details {
-		margin-left: $spacing-half;
-
-		> .label {
-			margin-top: 0;
-		}
-	}
-}
-
-@mixin landing_shop-item--cream {
-	max-width: max-content;
-	height: 268px;
-	padding: 0 10px $spacing-default;
-	background: linear-gradient(180deg, #ffffff 23.92%, #dbd7e1 169.83%);
-	border: 1.12715px solid #edf3fb;
-	box-shadow: 0 9.01718px 13.5258px -9.01718px rgba(15, 37, 69, 0.2);
-	border-radius: 11.2715px;
-	display: flex;
-	flex-direction: column;
-	justify-content: end;
-	align-items: center;
-
-	> .image {
-		width: 100%;
-		max-width: 96.93px;
-		height: 241.21px;
-		transform: translate(1%, -8%);
-	}
-
-	> .content {
-		@include landing_shop-item--cream--content;
-	}
-}
-
-@mixin landing_shop-item--vase {
-	max-width: 329px;
-	height: 335px;
-	position: relative;
-	display: flex;
-	justify-content: end;
-	align-items: flex-start;
-	padding: 20px 26px 0 0;
-	background: #ffffff;
-	box-shadow: 0 38px 26px -21px rgba(15, 37, 69, 0.5);
-	border-radius: 12.3704px;
-
-	> .content {
-		z-index: 2;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-
-		> .icon {
-			margin-right: -$spacing-half;
-		}
-
-		> .details {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-end;
-			width: 100%;
-		}
-	}
-}
-
-@mixin landing_shop-item--headphones {
-	max-width: 268px;
-	height: 135px;
-	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
-	box-shadow: 0 29px 21px -8px rgba(15, 37, 69, 0.4);
-	border-radius: 10px;
-
-	> .image {
-		width: 145px;
-		height: 156px;
-		transform: translateY(8%);
-	}
-
-	> .content {
-		padding: 17px 17px 20px 21px;
-		display: flex;
-		align-items: flex-end;
-		flex-direction: column;
-
-		> .details {
-			width: max-content;
-			text-align: right;
-			margin-right: 6px;
-		}
 	}
 }
 
@@ -1652,6 +1945,18 @@
 	}
 }
 
+/**
+
+	:: shop-item --------------------------------------------------------
+
+**/
+
+/**
+
+	:: text-display -----------------------------------------------------
+
+**/
+
 .landing_text-display {
 	font: 700 6.57rem/1.2 $gotham-bold;
 	letter-spacing: -0.04em;
@@ -1664,6 +1969,18 @@
 		font-size: 3.43rem;
 	}
 }
+
+/**
+
+	:: text-display -----------------------------------------------------
+
+**/
+
+/**
+
+	:: use-case-tabs -----------------------------------------------------
+
+**/
 
 .landing_use-case-tabs {
 	display: flex;
@@ -1693,39 +2010,17 @@
 	}
 }
 
-@mixin landing_section-9-bubble--content {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-top: 9px;
+/**
 
-	> .price {
-		font: 500 3.58rem/1 $gotham-medium;
-		letter-spacing: -0.02em;
-		display: flex;
-		align-items: center;
-		color: #f2f8ff;
+	:: use-case-tabs  ----------------------------------------------------
 
-		> .currency {
-			width: 36px;
-			height: 50px;
-			display: inline-block;
-			margin-right: $spacing-default;
-		}
-	}
+**/
 
-	> .btn {
-		font: 700 1.57rem/1 $gotham-bold;
-		letter-spacing: -0.03em;
-		width: 130px;
-		padding: 13px 0px 9px;
-		background: #ddeeff;
-		color: #0057e4;
-		border-radius: 25px;
-		text-align: center;
-	}
-}
+/**
+
+	:: section-9 -bubble -------------------------------------------------
+
+**/
 
 @mixin landing_section-9-bubble--small-desktop {
 	max-width: 552px;
@@ -1804,6 +2099,40 @@
 	}
 }
 
+@mixin landing_section-9-bubble--content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 9px;
+
+	> .price {
+		font: 500 3.58rem/1 $gotham-medium;
+		letter-spacing: -0.02em;
+		display: flex;
+		align-items: center;
+		color: #f2f8ff;
+
+		> .currency {
+			width: 36px;
+			height: 50px;
+			display: inline-block;
+			margin-right: $spacing-default;
+		}
+	}
+
+	> .btn {
+		font: 700 1.57rem/1 $gotham-bold;
+		letter-spacing: -0.03em;
+		width: 130px;
+		padding: 13px 0px 9px;
+		background: #ddeeff;
+		color: #0057e4;
+		border-radius: 25px;
+		text-align: center;
+	}
+}
+
 .landing_section-9-bubble {
 	width: 100%;
 	max-width: 611px;
@@ -1834,3 +2163,9 @@
 		@include landing_section-9-bubble--mobile;
 	}
 }
+
+/**
+
+	:: section-9 -bubble -------------------------------------------------
+
+**/
