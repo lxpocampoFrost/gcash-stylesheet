@@ -168,6 +168,33 @@
 	}
 }
 
+@mixin landing_use-case-bubble--investment-profile--fund-name {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	> .preamble {
+		font: 400 0.86rem/1.3 $gotham-bold;
+		color: #a1a8b4;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+	}
+
+	> .performance {
+		font: 400 0.86rem/1.3 $gotham-bold;
+		display: flex;
+		align-items: center;
+		color: #11b051;
+		margin-left: $spacing-double;
+
+		> .arrow-up {
+			width: 8px;
+			height: 8px;
+			margin-right: $spacing-half;
+		}
+	}
+}
+
 @mixin landing_use-case-bubble--investment-profile {
 	color: #2044a5;
 
@@ -188,6 +215,10 @@
 			height: 28px;
 			margin-right: $spacing-half;
 		}
+	}
+
+	> .fund-name {
+		@include landing_use-case-bubble--investment-profile--fund-name;
 	}
 
 	> .title,
@@ -288,6 +319,23 @@
 	}
 }
 
+@mixin landing_use-case-bubble--large-desktop--investment-profile--fund-name {
+	> .preamble {
+		font-size: 0.741rem;
+	}
+
+	> .performance {
+		font-size: 0.741rem;
+		margin-left: 13.82px;
+
+		> .arrow-up {
+			min-width: 6.91px;
+			height: 6.91px;
+			margin-right: 3.46px;
+		}
+	}
+}
+
 @mixin landing_use-case-bubble--large-desktop--investment-profile {
 	> .title {
 		font-size: 0.86rem;
@@ -304,6 +352,9 @@
 		}
 	}
 
+	> .fund-name {
+		@include landing_use-case-bubble--large-desktop--investment-profile--fund-name;
+	}
 	> .product-name {
 		font-size: 0.72rem;
 	}
@@ -400,6 +451,23 @@
 	}
 }
 
+@mixin landing_use-case-bubble--small-desktop--investment-profile--fund-name {
+	> .preamble {
+		font-size: 0.665rem;
+	}
+
+	> .performance {
+		font-size: 0.665rem;
+		margin-left: 12.41px;
+
+		> .arrow-up {
+			min-width: 6.21px;
+			height: 6.21px;
+			margin-right: 3.1px;
+		}
+	}
+}
+
 @mixin landing_use-case-bubble--small-desktop--investment-profile {
 	> .title {
 		font-size: 0.79rem;
@@ -413,6 +481,10 @@
 			width: 18px;
 			height: 22px;
 		}
+	}
+
+	> .fund-name {
+		@include landing_use-case-bubble--small-desktop--investment-profile--fund-name;
 	}
 
 	> .product-name {
@@ -606,6 +678,23 @@
 	}
 }
 
+@mixin landing_use-case-bubble--mobile--investment-profile--fund-name {
+	> .preamble {
+		font-size: 0.524rem;
+	}
+
+	> .performance {
+		font-size: 0.524rem;
+		margin-left: 9.78px;
+
+		> .arrow-up {
+			min-width: 4.89px;
+			height: 4.89px;
+			margin-right: 2.44px;
+		}
+	}
+}
+
 @mixin landing_use-case-bubble--mobile--investment-profile {
 	> .title {
 		font-size: 0.64rem;
@@ -620,6 +709,10 @@
 			height: 17px;
 			margin-right: $spacing-quarter;
 		}
+	}
+
+	> .fund-name {
+		@include landing_use-case-bubble--mobile--investment-profile--fund-name;
 	}
 
 	> .product-name {
