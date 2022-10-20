@@ -228,28 +228,42 @@
 	}
 }
 
+@mixin landing_use-case-bubble--large-display--wmp {
+	max-width: 328px;
+	border: 0.8px;
+	padding: 13px 10px 13px 13px;
+
+	> .image {
+		width: 44px;
+		height: 44px;
+	}
+
+	> .details {
+		@include landing_use-case-bubble--large-display--wmp--details;
+	}
+
+	> .icon {
+		width: 27px;
+		height: 27px;
+	}
+}
+
+@mixin landing_use-case-bubble--large-display--investment-profile {
+	> .title {
+		font-size: 0.86rem;
+	}
+}
+
 @mixin landing_use-case-bubble--large-display {
 	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
 	border-radius: 7px;
 
 	&.-wmp {
-		max-width: 328px;
-		border: 0.8px;
-		padding: 13px 10px 13px 13px;
+		@include landing_use-case-bubble--large-display--wmp;
+	}
 
-		> .image {
-			width: 44px;
-			height: 44px;
-		}
-
-		> .details {
-			@include landing_use-case-bubble--large-display--wmp--details;
-		}
-
-		> .icon {
-			width: 27px;
-			height: 27px;
-		}
+	&.-investment-profile {
+		@include landing_use-case-bubble--large-display--investment-profile;
 	}
 
 	&.-total-savings {
@@ -319,6 +333,27 @@
 	}
 }
 
+@mixin landing_use-case-bubble--small-desktop--investment-profile {
+	> .title {
+		font-size: 0.79rem;
+	}
+}
+
+@mixin landing_use-case-bubble--small-desktop--wmp--details {
+	margin-left: 18px;
+
+	> .label {
+		padding-top: $spacing-half;
+		font-size: 0.86rem;
+	}
+
+	> .description,
+	> .amount {
+		font-size: 0.7rem;
+		margin-top: $spacing-quarter;
+	}
+}
+
 @mixin landing_use-case-bubble--small-desktop--wmp {
 	max-width: 300px;
 	padding: $spacing-secondary 9px $spacing-secondary $spacing-secondary;
@@ -375,6 +410,10 @@
 @mixin landing_use-case-bubble--small-desktop {
 	&.-amount-received {
 		@include landing_use-case-bubble--small-desktop--amount-received;
+	}
+
+	&.-investment-profile {
+		@include landing_use-case-bubble--small-desktop--investment-profile;
 	}
 
 	&.-wmp {
@@ -478,6 +517,12 @@
 	}
 }
 
+@mixin landing_use-case-bubble--mobile--investment-profile {
+	> .title {
+		font-size: 0.64rem;
+	}
+}
+
 @mixin landing_use-case-bubble--mobile--wmp--details {
 	margin-left: 15px;
 
@@ -556,6 +601,19 @@
 	&.-total-savings {
 		@include landing_use-case-bubble--mobile--total-savings;
 	}
+
+	&.-investment-profile {
+		@include landing_use-case-bubble--mobile--investment-profile;
+	}
+}
+
+@mixin landing_use-case-bubble--investment-profile {
+	> .title {
+		font: 400 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		color: #2044a5;
+		opacity: 0.8;
+	}
 }
 
 .landing_use-case-bubble {
@@ -573,6 +631,10 @@
 
 	&.-total-savings {
 		@include landing_use-case-bubble--total-savings;
+	}
+
+	&.-investment-profile {
+		@include landing_use-case-bubble--investment-profile;
 	}
 
 	@include on(large-display) {

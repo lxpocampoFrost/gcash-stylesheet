@@ -152,6 +152,10 @@
         </div>
     </div>
 
+    <div class="landing_use-case-bubble -investment-profile">
+        <div class="title">My Investment Portfolio</div>
+    </div>
+
     <div class="landing_use-case-bubble -wmp">
         <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>
         <div class="details">
