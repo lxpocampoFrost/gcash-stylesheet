@@ -154,7 +154,7 @@
 
     <div class="landing_use-case-bubble -investment-profile">
         <div class="title">My Investment Portfolio</div>
-        <div class="amount"><span class="icon" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
+        <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
     </div>
 
     <div class="landing_use-case-bubble -wmp">
