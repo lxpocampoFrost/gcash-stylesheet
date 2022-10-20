@@ -2,47 +2,47 @@
     Landing Page Components
 </p>
 <div class="element">
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-save-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-save-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-save-icon.svg);"></span>
         <div class="title" style="color: #2B3990;">Save</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-scan-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-scan-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-scan-icon.svg);"></span>
         <div class="title" style="color: #CFE3FE;">Scan to pay</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-insure-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-insure-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-insure-icon.svg);"></span>
         <div class="title" style="color: #0D2165;">Insure</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-gcredits-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-gcredits-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-gcredits-icon.svg);"></span>
         <div class="title" style="color: #2B3990;">GCredits</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-bank-transfer-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-bank-transfer-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-bank-transfer-icon.svg);"></span>
         <div class="title" style="color: #D6F5FF;">Bank Transfer</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-loan-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-loan-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-loan-icon.svg);"></span>
         <div class="title" style="color: #0B357B;">Loan</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-cash-in-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-cash-in-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-cash-in-icon.svg);"></span>
         <div class="title" style="color: #2B3990;">Cash In</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-gforest-bg.jpg);">
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-gforest-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-gforest-icon.svg);"></span>
         <div class="title" style="color: #0A5363;">GForest</div>
     </div>
 
-    <div class="landing_services-card" style="background-image: url(./assets/images/services-card-admit-bg.jpg);"></div>
+    <div class="landing_services-card" style="background-image: url(./assets/images/landing/services-card-admit-bg.jpg);"></div>
 
     <div class="landing_services-card" style="background: #D1D9EC;"></div>
 
@@ -62,16 +62,16 @@
 
     <div class="landing_services-card" style="background: #08153F;"></div>
 
-    <div class="landing_services-card -bottom-left" style="background-image: url(./assets/images/services-card-invest-bg.jpg);">
+    <div class="landing_services-card -bottom-left" style="background-image: url(./assets/images/landing/services-card-invest-bg.jpg);">
         <div class="title" style="color: #D6F5FF;">Invest</div>
     </div>
 
-    <div class="landing_services-card -bottom-left" style="background-image: url(./assets/images/services-card-send-bg.jpg);">
+    <div class="landing_services-card -bottom-left" style="background-image: url(./assets/images/landing/services-card-send-bg.jpg);">
         <span class="icon" style="background-image: url(./assets/images/services-card-send-icon.svg);"></span>
         <div class="title" style="color: #2B3990;">Send Money</div>
     </div>
 
-    <div class="landing_services-card -bottom-left -no-padding-bottom" style="background-image: url(./assets/images/services-card-finger-print-bg.jpg);">
+    <div class="landing_services-card -bottom-left -no-padding-bottom" style="background-image: url(./assets/images/landing/services-card-finger-print-bg.jpg);">
         <div class="title" style="color: #C4DEFD;">We care about your security.</div>
     </div>
 
@@ -145,19 +145,58 @@
         </div>
     </div>
 
-    <div class="landing_use-case-bubble -amount-received" style="background-image: url(./assets/images/use-case-bubble-amount-received-bg.jpg);">
+    <div class="landing_use-case-bubble -amount-received" style="background-image: url(./assets/images/landing/use-case-bubble-amount-received-bg.jpg);">
         <div class="label">Amount received</div>
         <div class="amount">
-            <span class="currency" style="background-image: url(./assets/images/use-case-bubble-amount-received-currency.svg);"></span>5,000
+            <span class="currency" style="background-image: url(./assets/images/landing/use-case-bubble-amount-received-currency.svg);"></span>5,000
         </div>
     </div>
-
-    <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
-
-    <div class="landing_text-snowflake" style="color: #ffffff;">Save</div>
 
     <div class="landing_text-display" style="background: linear-gradient(180deg, #1777C1 -10.91%, #0954AA 50.87%, #07489B 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;">
     GCash para sa lahat
     </div>
 
+    <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Shop</div>
+
+    <div class="landing_text-snowflake" style="color: #ffffff;">Save</div>
+
+    <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Save</div>
+
+    <div class="landing_text-heading-1" style="color: #004AA0;">Ang #1 cash app ng bayan, mas pinadali pang gamitin</div>
+
+    <div class="landing_text-heading-1" style="color: #ffffff; background: gray;">Mag-send ng cash</div>
+
+    <div class="landing_text-heading-1" style="color: #004AA0;">o mag-receiveng funds kahit saan sa mundo</div>
+
+    <div class="landing_text-heading-1" style="color: #ffffff; background: gray;">Lahat ‘yan, posible sa <span style="color: #3790ED;">GCash</span></div>
+
+    <div class="landing_text-content-block">
+        <span class="preamble" style="color: #012981;">Start your Kwentong GCash today</span>
+        <div class="title" style="color: #012981;">Anuman ang pangarap, tutulungan ka ng GCash</div>
+        <div class="description" style="color: rgba(68, 92, 133, 0.7);">Maliit man o malaki ang gusto mong gawin, laging may kwento sa likod ng mga ito. Kasama mo ang GCash sa pagsulat ng istorya ng iyong buhay.</div>
+    </div>
+
+    <div class="landing_text-content-block" style="color: #ffffff; background: gray;">
+        <div class="title">Anuman ang pangarap, tutulungan ka ng GCash</div>
+        <a class="link">
+            Learn more
+            <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
+        </a>
+    </div>
+
+    <div class="landing_text-content-block" style="color: #ffffff; background: gray;">
+        <div class="title">Growing your money, as easy as 1-2-3!</div>
+        <a class="link">
+            Learn more
+            <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
+        </a>
+    </div>
+
+    <div class="landing_text-content-block" style="color: #ffffff; background: gray;">
+        <div class="title">Investments, made easy</div>
+        <a class="link">
+            Learn more
+            <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
+        </a>
+    </div>
 </div>
