@@ -908,7 +908,6 @@
 
 .landing_text-display {
 	font: 700 6.57rem/1.2 $gotham-bold;
-	text-align: center;
 	letter-spacing: -0.04em;
 
 	@include on(small-desktop) {
@@ -917,10 +916,5 @@
 
 	@include on(tablet) {
 		font-size: 3.43rem;
-	}
-
-	@include on(mobile) {
-		max-width: 8ch;
-		margin: 0 auto;
 	}
 }
