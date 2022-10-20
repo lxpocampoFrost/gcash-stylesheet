@@ -93,7 +93,7 @@
         <div class="description">Happy birthday anak! Eto pang-celebrate. ‘Wag ubusin agad, ok? Love you!</div>
     </div>
 
-    <div class="shop-item -cream">
+    <div class="landing_shop-item -cream">
         <img class="image" src="./assets/images/landing/shop-item-cream-img.png"/>
         <div class="content">
             <span class="icon" style="background: url(./assets/images/landing/shop-item-cream-icon.svg) center/contain no-repeat;"></span>
@@ -104,7 +104,7 @@
         </div>
     </div>
     
-    <div class="shop-item -watch" style="background: url(./assets/images/landing/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
+    <div class="landing_shop-item -watch" style="background: url(./assets/images/landing/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
         <div class="content">
         <span class="icon" style="background: url(./assets/images/landing/shop-item-watch-category.svg) center/contain no-repeat;"></span>
             <div class="details">
@@ -114,7 +114,7 @@
         </div>
     </div>
     
-    <div class="shop-item -vase" style="background: url(./assets/images/landing/shop-item-vase-img.jpg)center/contain no-repeat;">
+    <div class="landing_shop-item -vase" style="background: url(./assets/images/landing/shop-item-vase-img.jpg)center/contain no-repeat;">
         <div class="content">
             <span class="icon" style="background: url(./assets/images/landing/shop-item-vase-icon.svg) center/contain no-repeat;"></span>
             <div class="details">
@@ -124,7 +124,7 @@
         </div>
     </div>
     
-    <div class="shop-item -tote" style="background: url(./assets/images/landing/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
+    <div class="landing_shop-item -tote" style="background: url(./assets/images/landing/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
         <div class="content">
         <span class="icon" style="background: url(./assets/images/landing/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
             <div class="details">
@@ -134,7 +134,7 @@
         </div>
     </div>
 
-    <div class="shop-item -headphones">
+    <div class="landing_shop-item -headphones">
         <img class="image" src="./assets/images/landing/shop-item-headphones.png"/>
         <div class="content">
             <span class="icon" style="background: url(./assets/images/landing/shop-item-headphones-gadget.svg) center/contain no-repeat;"></span>
@@ -164,6 +164,16 @@
             <div class="amount">PHP 5,000.00</div>
             </div>
         <span class="icon" style="background: url(./assets/images/landing/use-case-bubble-wmp-icon.svg) center/contain no-repeat;"></span>
+    </div>
+
+    <div class="landing_use-case-bubble -total-savings">
+      <div class="details">
+          <div class="label">Total savings balance</div>
+          <div class="amount">
+            <span class="currency" style="background-image: url(./assets/images/landing/use-case-bubble-total-savings-currency.svg);"></span>5,000.00
+          </div>
+      </div>
+      <div class="refresh-btn" style="background: url(./assets/images/landing/use-case-bubble-total-savings-refresh-btn.svg) no-repeat center;"></div>
     </div>
 
     <div class="landing_text-display" style="background: linear-gradient(180deg, #1777C1 -10.91%, #0954AA 50.87%, #07489B 100%);-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;">
