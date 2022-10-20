@@ -158,7 +158,7 @@
 
     <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Shop</div>
 
-    <div class="landing_text-snowflake" style="color: #ffffff;">Save</div>
+    <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Save</div>
 
     <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Save</div>
 
