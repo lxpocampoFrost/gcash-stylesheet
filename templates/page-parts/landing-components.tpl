@@ -160,8 +160,6 @@
 
     <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Save</div>
 
-    <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Save</div>
-
     <div class="landing_text-heading-1" style="color: #004AA0;">Ang #1 cash app ng bayan, mas pinadali pang gamitin</div>
 
     <div class="landing_text-heading-1" style="color: #ffffff; background: gray;">Mag-send ng cash</div>
