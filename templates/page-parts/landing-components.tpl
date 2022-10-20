@@ -158,11 +158,43 @@
 
     <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
 
-    <div class="landing_text-snowflake" style="color: #ffffff;">Save</div>
+    <div class="landing_text-snowflake" style="color: #ffffff; background: gray;">Save</div>
 
     <div class="landing_text-heading-1" style="color: #004AA0;">Ang #1 cash app ng bayan, mas pinadali pang gamitin</div>
 
-    <div class="landing_text-heading-1" style="color: #ffffff;">Mag-send ng cash</div>
+    <div class="landing_text-heading-1" style="color: #ffffff; background: gray;">Mag-send ng cash</div>
 
     <div class="landing_text-heading-1" style="color: #004AA0;">o mag-receiveng funds kahit saan sa mundo</div>
+
+    <div class="landing_text-heading-1" style="color: #ffffff; background: gray;">Lahat ‘yan, posible sa <span style="color: #3790ED;">GCash</span></div>
+
+    <div class="landing_text-content-block">
+        <span class="preamble" style="color: #012981;">Start your Kwentong GCash today</span>
+        <div class="title" style="color: #012981;">Anuman ang pangarap, tutulungan ka ng GCash</div>
+        <div class="description" style="color: rgba(68, 92, 133, 0.7);">Maliit man o malaki ang gusto mong gawin, laging may kwento sa likod ng mga ito. Kasama mo ang GCash sa pagsulat ng istorya ng iyong buhay.</div>
+    </div>
+
+    <div class="landing_text-content-block" style="color: #ffffff; background: gray;">
+        <div class="title">Anuman ang pangarap, tutulungan ka ng GCash</div>
+        <a class="link">
+            Learn more
+            <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
+        </a>
+    </div>
+
+    <div class="landing_text-content-block" style="color: #ffffff; background: gray;">
+        <div class="title">Growing your money, as easy as 1-2-3!</div>
+        <a class="link">
+            Learn more
+            <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
+        </a>
+    </div>
+
+    <div class="landing_text-content-block" style="color: #ffffff; background: gray;">
+        <div class="title">Investments, made easy</div>
+        <a class="link">
+            Learn more
+            <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
+        </a>
+    </div>
 </div>
