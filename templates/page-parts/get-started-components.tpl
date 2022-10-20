@@ -12,4 +12,7 @@
     <div class="label">Tap <a class="highlight" href="#">Get Verified</a> in the GCash app to start.</div>
 </div>
 
+<div class="get-started_message-bubble -cash-in-success">
+    <div class="title">Cash-in success!</div>
+</div>
 </div>

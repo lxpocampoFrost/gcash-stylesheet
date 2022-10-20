@@ -154,15 +154,15 @@
 
     <div class="landing_use-case-bubble -investment-profile">
         <div class="title">My Investment Portfolio</div>
-    </div>
-
-    <div class="landing_use-case-bubble -investment-profile">
+        <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
+        <div class="product-name">Equity Smart Index Fund</div>
         <div class="fund-name">
             <div class="preamble">ATRAM</div>
             <div class="performance">
                 <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
              </div>
         </div>
+        <div class="chart-label">Performance for the past 12W</div>
     </div>
 
     <div class="landing_use-case-bubble -wmp">
@@ -231,22 +231,34 @@
         </a>
     </div>
 
-    <div class="landing_tabs" style="background: gray;">
+    <div class="landing_use-case-tabs" style="background: gray;">
         <div class="item">
-            <span class="icon" style="background: url(./assets/images/landing/Send.svg)  no-repeat;"></span>
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-send-icon.svg)  no-repeat;"></span>
             <div class="title">Send Money</div>
         </div>
         <div class="item">
-            <span class="icon" style="background: url(./assets/images/landing/PayQR.svg)  no-repeat;"></span>
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-PayQR-icon.svg)  no-repeat;"></span>
             <div class="title">Pay Bills</div>
         </div>
         <div class="item">
-            <span class="icon" style="background: url(./assets/images/landing/GInvest.svg)  no-repeat;"></span>
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-GInvest-icon.svg)  no-repeat;"></span>
             <div class="title">Invest</div>
         </div>
         <div class="item">
-            <span class="icon" style="background: url(./assets/images/landing/Save.svg)  no-repeat;"></span>
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-save-icon.svg)  no-repeat;"></span>
             <div class="title">Save</div>
         </div>
     </div>
+
+    <div class="landing_section-9-bubble">
+        <div class="preamble">available balance</div>
+        <div class="content">
+            <div class="price">
+                <span class="currency" style="background: url(./assets/images/landing/use-case-bubble-total-savings-currency.svg) center / contain no-repeat;"></span>
+                7,500.00
+            </div>
+            <span class="btn">Cash In</span>
+        </div>
+    </div>
+
 </div>
