@@ -192,6 +192,54 @@
 	}
 }
 
+@mixin landing_use-case-bubble--total-savings--details {
+	width: 100%;
+
+	> .label {
+		font: 400 0.72rem/1 $gotham-bold;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #ffffff;
+		opacity: 0.6;
+	}
+
+	> .amount {
+		font: 500 2.29rem/1 $gotham-medium;
+		letter-spacing: -0.02em;
+		margin-top: 6px;
+		color: #ffffff;
+		display: flex;
+
+		> .currency {
+			width: 24px;
+			height: 23.49px;
+			margin: $spacing-quarter $spacing-half 0 0;
+			display: inline-block;
+			background-size: 100%;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--total-savings {
+	max-width: 390px;
+	height: 76px;
+	background: #1972f9;
+	padding: $spacing-double $spacing-secondary $spacing-secondary;
+	display: flex;
+
+	> .details {
+		@include landing_use-case-bubble--total-savings--details;
+	}
+
+	> .refresh-btn {
+		min-width: 32px;
+		height: 32px;
+		cursor: pointer;
+		align-self: flex-end;
+		margin-left: $spacing-double;
+	}
+}
+
 @mixin landing_use-case-bubble--large-display--wmp--details {
 	margin-left: 20px;
 
@@ -244,6 +292,38 @@
 	}
 }
 
+@mixin landing_use-case-bubble--large-display--total-savings--details {
+	> .label {
+		font-size: 0.57rem;
+	}
+
+	> .amount {
+		font-size: 1.92rem;
+		margin-top: 5.05px;
+
+		> .currency {
+			width: 20.18px;
+			height: 19.75px;
+			margin: 3.41px 3.36px 0 0;
+		}
+	}
+}
+
+@mixin landing_use-case-bubble--large-display--total-savings {
+	max-width: 328px;
+	height: 63.59px;
+	padding: 13.46px 10.09px 10.09px 13.46px;
+
+	> .details {
+		@include landing_use-case-bubble--large-display--total-savings--details;
+	}
+
+	> .refresh-btn {
+		min-width: 26.91px;
+		height: 26.91px;
+	}
+}
+
 @mixin landing_use-case-bubble--large-display {
 	box-shadow: 0 6.72821px 10.0923px -6.72821px rgba(15, 37, 69, 0.2);
 	border-radius: 7px;
@@ -254,6 +334,10 @@
 
 	&.-investment-profile {
 		@include landing_use-case-bubble--large-display--investment-profile;
+	}
+
+	&.-total-savings {
+		@include landing_use-case-bubble--large-display--total-savings;
 	}
 }
 
@@ -349,6 +433,37 @@
 	}
 }
 
+@mixin landing_use-case-bubble--small-desktop--total-savings {
+	max-width: 300px;
+	height: 59.15px;
+	padding: 12.31px 9.23px 9.23px 12.31px;
+	box-shadow: 0px 6.15385px 9.23077px -6.15385px rgba(15, 37, 69, 0.2);
+	border-radius: 6.15385px;
+
+	> .details {
+		> .label {
+			font-size: 0.57rem;
+		}
+
+		> .amount {
+			font-size: 1.759rem;
+			margin-top: 4.62px;
+
+			> .currency {
+				width: 18.46px;
+				height: 18.07px;
+				margin-right: 3.54px;
+			}
+		}
+	}
+
+	> .refresh-btn {
+		min-width: 24.62px;
+		height: 24.62px;
+		margin-left: 12.31px;
+	}
+}
+
 @mixin landing_use-case-bubble--small-desktop {
 	&.-amount-received {
 		@include landing_use-case-bubble--small-desktop--amount-received;
@@ -360,6 +475,10 @@
 
 	&.-wmp {
 		@include landing_use-case-bubble--small-desktop--wmp;
+	}
+
+	&.-total-savings {
+		@include landing_use-case-bubble--small-desktop--total-savings;
 	}
 }
 
@@ -375,6 +494,37 @@
 	> .amount {
 		font-size: 0.58rem;
 		margin-top: 1px;
+	}
+}
+
+@mixin landing_use-case-bubble--tablet--total-savings {
+	max-width: 268px;
+	height: 52.36px;
+	padding: 10.99px 8.25px 8.25px 10.99px;
+	box-shadow: 0px 5.49744px 8.24615px -5.49744px rgba(15, 37, 69, 0.2);
+	border-radius: 5.49744px;
+
+	> .details {
+		> .label {
+			font-size: 0.491rem;
+		}
+
+		> .amount {
+			font-size: 1.57rem;
+			margin-top: 4.12px;
+
+			> .currency {
+				width: 16.49px;
+				height: 16.14px;
+				margin-right: 3.24px;
+			}
+		}
+	}
+
+	> .refresh-btn {
+		min-width: 21.99px;
+		height: 21.99px;
+		margin-left: 11px;
 	}
 }
 
@@ -399,6 +549,10 @@
 			width: 22px;
 			height: 22px;
 		}
+	}
+
+	&.-total-savings {
+		@include landing_use-case-bubble--tablet--total-savings;
 	}
 }
 
@@ -477,6 +631,36 @@
 	}
 }
 
+@mixin landing_use-case-bubble--mobile--total-savings {
+	max-width: 182.61px;
+	height: 45.68px;
+	box-shadow: 0px 8px 12px -8px rgba(15, 37, 69, 0.2);
+	border-radius: 4.86471px;
+	padding: 9.73px 7.3px 7.3px 9.73px;
+
+	> .details {
+		> .label {
+			font-size: 0.434rem;
+		}
+
+		> .amount {
+			font-size: 1.39rem;
+			margin-top: 3.65px;
+
+			> .currency {
+				width: 14.59px;
+				height: 14.28px;
+				margin: 0 3.03px 0 0;
+			}
+		}
+	}
+
+	> .refresh-btn {
+		min-width: 19.46px;
+		height: 19.46px;
+	}
+}
+
 @mixin landing_use-case-bubble--mobile {
 	&.-amount-received {
 		@include landing_use-case-bubble--mobile--amount-received;
@@ -484,6 +668,10 @@
 
 	&.-wmp {
 		@include landing_use-case-bubble--mobile--wmp;
+	}
+
+	&.-total-savings {
+		@include landing_use-case-bubble--mobile--total-savings;
 	}
 
 	&.-investment-profile {
@@ -502,6 +690,10 @@
 
 	&.-wmp {
 		@include landing_use-case-bubble--wmp;
+	}
+
+	&.-total-savings {
+		@include landing_use-case-bubble--total-savings;
 	}
 
 	&.-investment-profile {
@@ -977,7 +1169,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--headphones {
+@mixin landing_shop-item--small-desktop--headphones {
 	max-width: 229px;
 	height: 115px;
 	box-shadow: 0 24.7263px 17.9053px -6.82105px rgba(15, 37, 69, 0.4);
@@ -998,7 +1190,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--watch--content {
+@mixin landing_shop-item--small-desktop--watch--content {
 	padding: 28px 25px 19px 20px;
 
 	> .details {
@@ -1006,7 +1198,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--watch {
+@mixin landing_shop-item--small-desktop--watch {
 	height: 142px;
 	box-shadow: 0px 8.4379px 12.6568px -8.4379px rgba(15, 37, 69, 0.2);
 
@@ -1017,11 +1209,11 @@
 	}
 
 	> .content {
-		@include shop-item--small-desktop--watch--content;
+		@include landing_shop-item--small-desktop--watch--content;
 	}
 }
 
-@mixin shop-item--small-desktop--tote {
+@mixin landing_shop-item--small-desktop--tote {
 	height: 160px;
 	box-shadow: 0px 32.4px 22.1684px -36.6632px rgba(15, 37, 69, 0.5);
 
@@ -1030,7 +1222,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--cream {
+@mixin landing_shop-item--small-desktop--cream {
 	max-width: max-content;
 	height: 229px;
 	border: 0.961042px solid #edf3fb;
@@ -1048,7 +1240,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--vase {
+@mixin landing_shop-item--small-desktop--vase {
 	max-width: 281px;
 	height: 286px;
 	box-shadow: 0 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
@@ -1059,7 +1251,7 @@
 	}
 }
 
-@mixin shop-item--small-desktop--content {
+@mixin landing_shop-item--small-desktop--content {
 	> .icon {
 		width: 41px;
 		height: 41px;
@@ -1078,11 +1270,11 @@
 	}
 }
 
-@mixin shop-item--small-desktop {
+@mixin landing_shop-item--small-desktop {
 	border-radius: 11px;
 
 	> .content {
-		@include shop-item--small-desktop--content;
+		@include landing_shop-item--small-desktop--content;
 	}
 
 	&.-watch,
@@ -1091,42 +1283,42 @@
 	}
 
 	&.-watch {
-		@include shop-item--small-desktop--watch;
+		@include landing_shop-item--small-desktop--watch;
 	}
 
 	&.-tote {
-		@include shop-item--small-desktop--tote;
+		@include landing_shop-item--small-desktop--tote;
 	}
 
 	&.-cream {
-		@include shop-item--small-desktop--cream;
+		@include landing_shop-item--small-desktop--cream;
 	}
 
 	&.-vase {
-		@include shop-item--small-desktop--vase;
+		@include landing_shop-item--small-desktop--vase;
 	}
 	&.-headphones {
-		@include shop-item--small-desktop--headphones;
+		@include landing_shop-item--small-desktop--headphones;
 	}
 }
 
-@mixin shop-item--tote--content {
+@mixin landing_shop-item--tote--content {
 	> .details {
 		margin-left: $spacing-half;
 	}
 }
 
-@mixin shop-item--tote {
+@mixin landing_shop-item--tote {
 	height: 188px;
 	box-shadow: 0px 38px 26px -43px rgba(15, 37, 69, 0.5);
 	padding: 0 14px 20px 0;
 
 	> .content {
-		@include shop-item--tote--content;
+		@include landing_shop-item--tote--content;
 	}
 }
 
-@mixin shop-item--watch--content {
+@mixin landing_shop-item--watch--content {
 	padding: 33px 29px 20px $spacing-triple;
 
 	> .details {
@@ -1138,7 +1330,7 @@
 	}
 }
 
-@mixin shop-item--watch {
+@mixin landing_shop-item--watch {
 	height: 167px;
 	box-shadow: 0 9.8963px 14.8444px -9.8963px rgba(15, 37, 69, 0.2);
 	display: flex;
@@ -1154,11 +1346,11 @@
 	}
 
 	> .content {
-		@include shop-item--watch--content;
+		@include landing_shop-item--watch--content;
 	}
 }
 
-@mixin shop-item--cream--content {
+@mixin landing_shop-item--cream--content {
 	display: flex;
 	align-items: center;
 
@@ -1175,7 +1367,7 @@
 	}
 }
 
-@mixin shop-item--cream {
+@mixin landing_shop-item--cream {
 	max-width: max-content;
 	height: 268px;
 	padding: 0 10px $spacing-default;
@@ -1196,11 +1388,11 @@
 	}
 
 	> .content {
-		@include shop-item--cream--content;
+		@include landing_shop-item--cream--content;
 	}
 }
 
-@mixin shop-item--vase {
+@mixin landing_shop-item--vase {
 	max-width: 329px;
 	height: 335px;
 	position: relative;
@@ -1231,7 +1423,7 @@
 	}
 }
 
-@mixin shop-item--headphones {
+@mixin landing_shop-item--headphones {
 	max-width: 268px;
 	height: 135px;
 	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
@@ -1258,7 +1450,7 @@
 	}
 }
 
-@mixin shop-item--content {
+@mixin landing_shop-item--content {
 	> .icon {
 		width: 48px;
 		height: 48px;
@@ -1283,7 +1475,7 @@
 	}
 }
 
-.shop-item {
+.landing_shop-item {
 	width: 100%;
 	border-radius: 12px;
 	display: flex;
@@ -1291,7 +1483,7 @@
 	align-items: end;
 
 	> .content {
-		@include shop-item--content;
+		@include landing_shop-item--content;
 	}
 
 	&.-watch,
@@ -1300,27 +1492,27 @@
 	}
 
 	&.-watch {
-		@include shop-item--watch;
+		@include landing_shop-item--watch;
 	}
 
 	&.-tote {
-		@include shop-item--tote;
+		@include landing_shop-item--tote;
 	}
 
 	&.-headphones {
-		@include shop-item--headphones;
+		@include landing_shop-item--headphones;
 	}
 
 	&.-cream {
-		@include shop-item--cream;
+		@include landing_shop-item--cream;
 	}
 
 	&.-vase {
-		@include shop-item--vase;
+		@include landing_shop-item--vase;
 	}
 
 	@include on(small-desktop) {
-		@include shop-item--small-desktop;
+		@include landing_shop-item--small-desktop;
 	}
 }
 
