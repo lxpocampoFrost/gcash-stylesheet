@@ -12,13 +12,11 @@
 
 		> .preamble {
 			font-size: 0.53rem;
-			line-height: 1.4;
 		}
 
 		> .name {
 			margin-top: 3.73px;
 			font-size: 0.93rem;
-			line-height: 1.4;
 
 			> .icon {
 				width: 18.67px;
@@ -32,7 +30,6 @@
 			margin-top: 7.47px;
 			padding: $spacing-half 7px;
 			font-size: 0.8rem;
-			line-height: 1;
 			border-radius: 41.08px;
 		}
 	}
@@ -120,7 +117,7 @@
 
 	> .preamble {
 		color: #25b67b;
-		font: 700 0.62rem/1.37 $gotham-bold;
+		font: 700 0.62rem/1.4 $gotham-bold;
 	}
 
 	> .name {
@@ -128,7 +125,7 @@
 		color: #30326f;
 		display: flex;
 		align-items: center;
-		font: 700 1.09rem/1.37 $gotham-bold;
+		font: 700 1.09rem/1.4 $gotham-bold;
 
 		> .icon {
 			width: 21.86px;
@@ -144,7 +141,7 @@
 		border-radius: 48.09px;
 		padding: $spacing-half 9px;
 		color: #0f3391;
-		font: 700 0.94rem/0.99 $gotham-bold;
+		font: 700 0.94rem/1 $gotham-bold;
 		max-width: max-content;
 	}
 }
