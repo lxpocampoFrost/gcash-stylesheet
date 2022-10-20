@@ -223,4 +223,23 @@
             <span class="icon" style="background: url(./assets/images/landing/content-block-chevron-right.svg) center/cover no-repeat;"></span>
         </a>
     </div>
+
+    <div class="landing_use-case-tabs" style="background: gray;">
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-send-icon.svg)  no-repeat;"></span>
+            <div class="title">Send Money</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-PayQR-icon.svg)  no-repeat;"></span>
+            <div class="title">Pay Bills</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-GInvest-icon.svg)  no-repeat;"></span>
+            <div class="title">Invest</div>
+        </div>
+        <div class="item">
+            <span class="icon" style="background: url(./assets/images/landing/use-case-tab-save-icon.svg)  no-repeat;"></span>
+            <div class="title">Save</div>
+        </div>
+    </div>
 </div>
