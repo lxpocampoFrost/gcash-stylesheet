@@ -153,17 +153,50 @@
     </div>
 
     <div class="landing_use-case-bubble -investment-profile">
-        <div class="title">My Investment Portfolio</div>
-        <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
-        <div class="product-name">Equity Smart Index Fund</div>
-        <div class="fund-name">
-            <div class="preamble">ATRAM</div>
-            <div class="performance">
-                <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
-             </div>
+        <div class="loanable">
+            <div class="title">My Investment Portfolio</div>
+            <div class="amount"><span class="currency" style="background: url(./assets/images/landing/investment-profile-amount-currency.svg) center/contain no-repeat;"></span>400,000</div>
         </div>
-        <div class="chart-label">Performance for the past 12W</div>
+        <div class="details">
+            <div class="wrapper">
+                <div class="fund-name">
+                    <div class="preamble">ATRAM</div>
+                    <div class="performance">
+                        <span class="arrow-up" style="background-image: url(./assets/images/landing/use-case-bubble-investment-profile-arrow-up.svg);"></span>+63%
+                    </div>
+                </div>
+                <div class="product-name">Equity Smart Index Fund</div>
+            </div>
+            <span class="icon" style="background: url(./assets/images/landing/use-case-bubble-investment-profile-tech-feeder-fun.svg) center/contain no-repeat;"></span>
+        </div>
+        <div class="chart">
+        <div class="label">Performance for the past 12W</div>
+            <svg width="272" height="83" viewBox="0 0 272 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_4_1214)">
+                <rect width="272" height="82.3523" fill="white"/>
+                <g filter="url(#filter0_d_4_1214)">
+                <path d="M0 45.8658L19.9759 55.7987L40.9229 52.1661L62.1972 66.3523L82.8169 57.6611H103.764L124.711 45.8658L157.768 26L187.225 45.8658L203.59 65.7315L229.446 33.7601L272 0" stroke="#0057E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                </g>
+                <defs>
+                <filter id="filter0_d_4_1214" x="-17.0002" y="-17" width="306" height="100.352" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset/>
+                <feGaussianBlur stdDeviation="8"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_1214"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_1214" result="shape"/>
+                </filter>
+                <clipPath id="clip0_4_1214">
+                <rect width="272" height="82.3523" fill="white"/>
+                </clipPath>
+                </defs>
+        </svg>
+        </div>
     </div>
+
 
     <div class="landing_use-case-bubble -wmp">
         <img class="image"src="./assets/images/landing/use-case-bubble-wmp-cimb.png"/>
