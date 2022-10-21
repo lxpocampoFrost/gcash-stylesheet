@@ -17,7 +17,7 @@
     </div>
 
     <div class="get-started_section-card -section-5">
-        <div class="title">Cash-in success!</div>
+        <div class="title">Remittance</div>
     </div>
 
 </div>
