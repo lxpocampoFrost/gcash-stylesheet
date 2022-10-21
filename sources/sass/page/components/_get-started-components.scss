@@ -278,10 +278,20 @@ end --message-bubble--cash-in-success
 end --message-bubble
 ****/
 
+/****
+start --section-card
+****/
+
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
 		> .description {
 			max-width: 19ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 36ch;
 		}
 	}
 }
@@ -292,19 +302,38 @@ end --message-bubble
 			max-width: 14ch;
 		}
 	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 30ch;
+		}
+	}
 }
 
 @mixin get-started_section-card--tablet {
-	&.-section-5 {
+	&.-section-5,
+	&.-section-6 {
 		> .description {
 			font-size: 1rem;
+		}
+	}
+
+	&.-section-5 {
+		> .description {
 			max-width: 38ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 42ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--mobile {
-	&.-section-5 {
+	&.-section-5,
+	&.-section-6 {
 		> .description {
 			max-width: 24ch;
 		}
@@ -312,10 +341,11 @@ end --message-bubble
 }
 
 .get-started_section-card {
-	&.-section-5 {
+	&.-section-5,
+	&.-section-6 {
 		> .description {
 			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 26ch;
+			max-width: 27ch;
 			color: #445c85;
 			opacity: 0.7;
 		}
