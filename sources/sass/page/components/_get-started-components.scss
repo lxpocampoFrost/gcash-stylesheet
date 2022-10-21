@@ -402,9 +402,7 @@
 	}
 }
 
-/****
-end --message-bubble
-****/
+// END OF GET-STARTED_SECTION-CARD
 
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
@@ -415,6 +413,10 @@ end --message-bubble
 }
 
 @mixin get-started_section-card--small-desktop {
+	> .title {
+		font-size: 1.14rem;
+	}
+
 	&.-section-5 {
 		> .description {
 			max-width: 14ch;
@@ -440,6 +442,12 @@ end --message-bubble
 }
 
 .get-started_section-card {
+	> .title {
+		font: 700 1.29rem/1.4 $gotham-bold;
+		color: #183462;
+		letter-spacing: -0.03em;
+	}
+
 	&.-section-5 {
 		> .description {
 			font: 500 1.14rem/1.4 $gilroy-medium;
