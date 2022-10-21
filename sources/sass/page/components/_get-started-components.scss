@@ -407,81 +407,133 @@
 	}
 }
 
-// END OF GET-STARTED_SECTION-CARD
-
 /****
 start --section-card
 ****/
 
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
-		> .description {
-			max-width: 19ch;
+		> .content {
+			> .description {
+				max-width: 19ch;
+			}
 		}
 	}
 
 	&.-section-6 {
-		> .description {
+		max-width: 477px;
+
+		> .content > .description {
 			max-width: 36ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--small-desktop {
-	> .title {
+	> .content > .title {
 		font-size: 1.14rem;
 	}
 
+	> .content > .description {
+		font-size: 1rem;
+	}
+
 	&.-section-5 {
-		> .description {
-			max-width: 14ch;
+		> .content {
+			> .description {
+				max-width: 14ch;
+			}
 		}
 	}
 
 	&.-section-6 {
-		> .description {
+		max-width: 372px;
+
+		> .content > .description {
 			max-width: 30ch;
+		}
+
+		&.-gcash-padala > .content > .description {
+			max-width: 24ch;
+		}
+
+		&.-cash-out > .content > .description {
+			max-width: 29ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--tablet {
-	> .description {
-		font-size: 1rem;
-	}
-
 	&.-section-5 {
-		> .description {
-			max-width: 38ch;
+		> .content {
+			> .description {
+				font-size: 1rem;
+				max-width: 38ch;
+			}
 		}
 	}
 
 	&.-section-6 {
-		> .description {
+		max-width: 480px;
+
+		&.-gcash-padala > .content > .description,
+		&.-cash-out > .content > .description,
+		> .content > .description {
 			max-width: 42ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--mobile {
-	&.-section-5 > .description,
-	&.-section-6 > .description {
+	&.-section-5 > .content > .description,
+	&.-section-6 > .content > .description {
 		max-width: 24ch;
+	}
+
+	&.-section-6 {
+		max-width: 320px;
+
+		&.-gcash-padala > .content > .description,
+		&.-cash-out > .content > .description {
+			max-width: 23ch;
+		}
 	}
 }
 
 .get-started_section-card {
-	> .title {
-		font: 700 1.29rem/1.4 $gotham-bold;
-		color: #183462;
-		letter-spacing: -0.03em;
+	display: flex;
+	max-width: 400px;
+	width: 100%;
+	background: #ffffff;
+	box-shadow: 0px 6px 10px rgba(232, 238, 242, 0.79);
+	border-radius: 8px;
+	padding: $spacing-triple;
+
+	> .icon {
+		width: 32px;
+		height: 32px;
 	}
 
-	> .description {
-		font: 500 1.14rem/1.4 $gilroy-medium;
-		max-width: 27ch;
-		color: #445c85;
-		opacity: 0.7;
+	> .content {
+		margin-left: $spacing-secondary;
+
+		> .title {
+			font: 700 1.29rem/1.4 $gotham-bold;
+			color: #183462;
+			letter-spacing: -0.03em;
+		}
+
+		> .description {
+			font: 500 1.14rem/1.4 $gilroy-medium;
+			max-width: 27ch;
+			color: #445c85;
+			opacity: 0.7;
+			margin-top: $spacing-half;
+		}
+	}
+
+	&.-section-6 > .content > .description {
+		max-width: 29ch;
 	}
 
 	@include on(large-desktop) {
@@ -500,3 +552,7 @@ start --section-card
 		@include get-started_section-card--mobile;
 	}
 }
+
+/****
+end --section-card
+****/
