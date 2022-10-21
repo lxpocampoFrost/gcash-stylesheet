@@ -407,133 +407,81 @@
 	}
 }
 
+// END OF GET-STARTED_SECTION-CARD
+
 /****
 start --section-card
 ****/
 
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
-		> .content {
-			> .description {
-				max-width: 19ch;
-			}
+		> .description {
+			max-width: 19ch;
 		}
 	}
 
 	&.-section-6 {
-		max-width: 477px;
-
-		> .content > .description {
+		> .description {
 			max-width: 36ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--small-desktop {
-	> .content > .title {
+	> .title {
 		font-size: 1.14rem;
 	}
 
-	> .content > .description {
-		font-size: 1rem;
-	}
-
 	&.-section-5 {
-		> .content {
-			> .description {
-				max-width: 14ch;
-			}
+		> .description {
+			max-width: 14ch;
 		}
 	}
 
 	&.-section-6 {
-		max-width: 372px;
-
-		> .content > .description {
+		> .description {
 			max-width: 30ch;
-		}
-
-		&.-gcash-padala > .content > .description {
-			max-width: 24ch;
-		}
-
-		&.-cash-out > .content > .description {
-			max-width: 29ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--tablet {
+	> .description {
+		font-size: 1rem;
+	}
+
 	&.-section-5 {
-		> .content {
-			> .description {
-				font-size: 1rem;
-				max-width: 38ch;
-			}
+		> .description {
+			max-width: 38ch;
 		}
 	}
 
 	&.-section-6 {
-		max-width: 480px;
-
-		&.-gcash-padala > .content > .description,
-		&.-cash-out > .content > .description,
-		> .content > .description {
+		> .description {
 			max-width: 42ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--mobile {
-	&.-section-5 > .content > .description,
-	&.-section-6 > .content > .description {
+	&.-section-5 > .description,
+	&.-section-6 > .description {
 		max-width: 24ch;
-	}
-
-	&.-section-6 {
-		max-width: 320px;
-
-		&.-gcash-padala > .content > .description,
-		&.-cash-out > .content > .description {
-			max-width: 23ch;
-		}
 	}
 }
 
 .get-started_section-card {
-	display: flex;
-	max-width: 400px;
-	width: 100%;
-	background: #ffffff;
-	box-shadow: 0px 6px 10px rgba(232, 238, 242, 0.79);
-	border-radius: 8px;
-	padding: $spacing-triple;
-
-	> .icon {
-		width: 32px;
-		height: 32px;
+	> .title {
+		font: 700 1.29rem/1.4 $gotham-bold;
+		color: #183462;
+		letter-spacing: -0.03em;
 	}
 
-	> .content {
-		margin-left: $spacing-secondary;
-
-		> .title {
-			font: 700 1.29rem/1.4 $gotham-bold;
-			color: #183462;
-			letter-spacing: -0.03em;
-		}
-
-		> .description {
-			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 27ch;
-			color: #445c85;
-			opacity: 0.7;
-			margin-top: $spacing-half;
-		}
-	}
-
-	&.-section-6 > .content > .description {
-		max-width: 29ch;
+	> .description {
+		font: 500 1.14rem/1.4 $gilroy-medium;
+		max-width: 27ch;
+		color: #445c85;
+		opacity: 0.7;
 	}
 
 	@include on(large-desktop) {
@@ -556,3 +504,41 @@ start --section-card
 /****
 end --section-card
 ****/
+
+/****
+start --content-block
+****/
+
+@mixin get-started_content-block--small-desktop {
+	&.-section-1 {
+		> .preamble {
+			font-size: 1.29rem;
+		}
+	}
+}
+
+@mixin get-started_content-block--tablet {
+	&.-section-1 {
+		> .preamble {
+			font-size: 1rem;
+		}
+	}
+}
+
+.content-block {
+	&.-section-1 {
+		> .preamble {
+			font: 700 1.71rem/1 $gilroy-bold;
+			color: #0a2757;
+			opacity: 0.4;
+		}
+	}
+
+	@include on(small-desktop) {
+		@include get-started_content-block--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_content-block--tablet;
+	}
+}
