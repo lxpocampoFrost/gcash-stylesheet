@@ -40,126 +40,6 @@
 	}
 }
 
-/****
-start --get-started_message-bubble--cash-in-success
-****/
-@mixin get-started_message-bubble--small-desktop--cash-in-success {
-	> .title {
-		font-size: 1.08rem;
-	}
-
-	> .amount {
-		font-size: 1.86rem;
-
-		> .currency {
-			width: 18px;
-			height: 23px;
-			margin-right: 3px;
-		}
-	}
-}
-
-@mixin get-started_message-bubble--tablet--cash-in-success {
-	> .title {
-		font-size: 1.15rem;
-	}
-
-	> .amount {
-		font-size: 1.96rem;
-
-		> .currency {
-			width: 20px;
-			height: 24px;
-		}
-	}
-}
-
-@mixin get-started_message-bubble--mobile--cash-in-success {
-	> .title {
-		font-size: 0.79rem;
-	}
-
-	> .amount {
-		font-size: 1.31rem;
-
-		> .currency {
-			width: 13px;
-			height: 16px;
-			margin-right: $spacing-quarter;
-		}
-	}
-}
-
-@mixin get-started_message-bubble--cash-in-success {
-	> .title {
-		font: 500 1.22rem/1.4 $gilroy-medium;
-		letter-spacing: -0.01em;
-		color: #2044a5;
-		opacity: 0.8;
-	}
-
-	> .amount {
-		font: 700 2.11rem/1 $gotham-bold;
-		letter-spacing: -0.02em;
-		color: #0058e5;
-		display: flex;
-		align-items: center;
-
-		> .currency {
-			width: 21px;
-			height: 26px;
-			margin-right: $spacing-half;
-		}
-	}
-}
-
-/****
-end --get-started_message-bubble--cash-in-success
-****/
-
-@mixin get-started_message-bubble--small-desktop {
-	&.-cash-in-success {
-		@include get-started_message-bubble--small-desktop--cash-in-success;
-	}
-}
-
-@mixin get-started_message-bubble--small-desktop {
-	&.-verified-account {
-		max-width: 207.14px;
-		padding: 18.97px 14.23px 18.97px 37.16px;
-		height: 87px;
-
-		> .avatar {
-			width: 45.86px;
-			height: 45.86px;
-		}
-
-		> .preamble {
-			font-size: 0.45rem;
-		}
-
-		> .name {
-			margin-top: 3.16px;
-			font-size: 0.79rem;
-
-			> .icon {
-				width: 15.81px;
-				height: 15.81px;
-				margin-left: 3.16px;
-			}
-		}
-
-		> .phone-number {
-			margin-top: 6.32px;
-			padding: 3.16px 6.32px;
-			font-size: 0.68rem;
-			border-radius: 34.78px;
-		}
-	}
-}
-/****
-start --get-started_message-bubble--cash-in-success
-****/
 @mixin get-started_message-bubble--small-desktop--cash-in-success {
 	max-width: 240px;
 	box-shadow: 0px 84.2775px 33.2002px rgba(10, 43, 112, 0.01),
@@ -189,6 +69,69 @@ start --get-started_message-bubble--cash-in-success
 			height: 23px;
 			margin-right: 3px;
 		}
+	}
+}
+
+@mixin get-started_message-bubble--small-desktop--get-verified {
+	max-width: 338.54px;
+	height: 54.95px;
+	box-shadow: 0px 134.1px 53.4701px rgba(10, 13, 41, 0.01),
+		0px 75.5371px 44.9828px rgba(10, 13, 41, 0.05),
+		0px 33.1005px 33.1005px rgba(10, 13, 41, 0.09),
+		0px 8.48732px 18.6721px rgba(10, 13, 41, 0.1),
+		0px 0px 0px rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(13.5797px);
+	border-radius: 10.1848px;
+	padding: 16.97px;
+	font-size: 1.09rem;
+
+	&::before {
+		width: 19.82px;
+		height: 15.25px;
+		top: -4px;
+		left: 76%;
+	}
+
+	> .highlight {
+		font-size: 1.09rem;
+	}
+}
+
+@mixin get-started_message-bubble--small-desktop {
+	&.-verified-account {
+		max-width: 207.14px;
+		padding: 18.97px 14.23px 18.97px 37.16px;
+		height: 87px;
+		> .avatar {
+			width: 45.86px;
+			height: 45.86px;
+		}
+		> .preamble {
+			font-size: 0.45rem;
+		}
+		> .name {
+			margin-top: 3.16px;
+			font-size: 0.79rem;
+			> .icon {
+				width: 15.81px;
+				height: 15.81px;
+				margin-left: 3.16px;
+			}
+		}
+		> .phone-number {
+			margin-top: 6.32px;
+			padding: 3.16px 6.32px;
+			font-size: 0.68rem;
+			border-radius: 34.78px;
+		}
+	}
+
+	&.-get-verified {
+		@include get-started_message-bubble--small-desktop--get-verified;
+	}
+
+	&.-cash-in-success {
+		@include get-started_message-bubble--small-desktop--cash-in-success;
 	}
 }
 
@@ -222,6 +165,15 @@ start --get-started_message-bubble--cash-in-success
 	}
 }
 
+@mixin get-started_message-bubble--tablet {
+	&.-cash-in-success {
+		> .title {
+			font-size: 1.08rem;
+		}
+		@include get-started_message-bubble--tablet--cash-in-success;
+	}
+}
+
 @mixin get-started_message-bubble--mobile--cash-in-success {
 	width: 169px;
 	box-shadow: 0px 59.312px 23.3653px rgba(10, 43, 112, 0.01),
@@ -251,6 +203,39 @@ start --get-started_message-bubble--cash-in-success
 			height: 16px;
 			margin-right: $spacing-quarter;
 		}
+	}
+}
+
+@mixin get-started_message-bubble--mobile--get-verified {
+	max-width: 319.46px;
+	height: 52.04px;
+	box-shadow: 0px 126.541px 50.4564px rgba(10, 13, 41, 0.01),
+		0px 71.2796px 42.4474px rgba(10, 13, 41, 0.05),
+		0px 31.2349px 31.2349px rgba(10, 13, 41, 0.09),
+		0px 8.00895px 17.6197px rgba(10, 13, 41, 0.1),
+		0px 0px 0px rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(12.8143px);
+	border-radius: 9.61074px;
+	padding: 16.02px;
+	font-size: 1.03rem;
+
+	&::before {
+		width: 18.71px;
+		height: 14.39px;
+	}
+
+	> .highlight {
+		font-size: 1.03rem;
+	}
+}
+
+@mixin get-started_message-bubble--mobile {
+	&.-get-verified {
+		@include get-started_message-bubble--mobile--get-verified;
+	}
+
+	&.-cash-in-success {
+		@include get-started_message-bubble--mobile--cash-in-success;
 	}
 }
 
@@ -299,28 +284,34 @@ start --get-started_message-bubble--cash-in-success
 	}
 }
 
-/****
-end --get-started_message-bubble--cash-in-success
-****/
+@mixin get-started_message-bubble--get-verified {
+	max-width: 444px;
+	height: 72.52px;
+	padding: 22.26px;
+	box-shadow: 0 175.873px 70.1267px rgba(10, 13, 41, 0.01),
+		0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
+		0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
+		0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(17.81px);
+	border-radius: 13.3575px;
+	position: relative;
+	font: 600 1.43rem/1.4 $gilroy-bold;
+	color: rgba(10, 39, 87, 0.6);
 
-@mixin get-started_message-bubble--small-desktop {
-	&.-cash-in-success {
-		@include get-started_message-bubble--small-desktop--cash-in-success;
+	&::before {
+		position: absolute;
+		min-width: 26px;
+		height: 20px;
+		background: #ffffff;
+		top: -8px;
+		left: 77%;
+		content: '';
+		transform: rotate(45deg);
 	}
-}
 
-@mixin get-started_message-bubble--tablet {
-	&.-cash-in-success {
-		> .title {
-			font-size: 1.08rem;
-		}
-		@include get-started_message-bubble--tablet--cash-in-success;
-	}
-}
-
-@mixin get-started_message-bubble--mobile {
-	&.-cash-in-success {
-		@include get-started_message-bubble--mobile--cash-in-success;
+	> .highlight {
+		font: 700 1.43rem/1.4 $gilroy-bold;
+		color: #005ce5;
 	}
 }
 
@@ -388,6 +379,10 @@ end --get-started_message-bubble--cash-in-success
 
 	&.-cash-in-success {
 		@include get-started_message-bubble--cash-in-success;
+	}
+
+	&.-get-verified {
+		@include get-started_message-bubble--get-verified;
 	}
 
 	@include on(large-desktop) {
