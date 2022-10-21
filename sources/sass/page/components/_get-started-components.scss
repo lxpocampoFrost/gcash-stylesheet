@@ -9,24 +9,23 @@
 	backdrop-filter: blur(17.81px);
 	border-radius: 13.3575px;
 	position: relative;
+	font: 600 1.43rem/1.4 $gilroy-medium;
+	color: rgba(10, 39, 87, 0.6);
 
-	> .icon {
+	&::before {
 		position: absolute;
-		width: 26px;
+		min-width: 26px;
 		height: 20px;
-		top: 0;
-		transform: translate(315px, -18px);
+		background: #ffffff;
+		top: -8px;
+		left: 77%;
+		content: '';
+		transform: rotate(45deg);
 	}
 
-	> .label {
-		font: 600 1.43rem/1.4 $gilroy-medium;
-		color: rgba(10, 39, 87, 0.6);
-		max-width: 32ch;
-
-		> .highlight {
-			font: 600 1.43rem/1.4 $gilroy-bold;
-			color: #005ce5;
-		}
+	> .highlight {
+		font: 600 1.43rem/1.4 $gilroy-bold;
+		color: #005ce5;
 	}
 }
 
@@ -60,19 +59,17 @@ start --get-started_message-bubble--cash-in-success
 	backdrop-filter: blur(13.5797px);
 	border-radius: 10.1848px;
 	padding: 16.97px;
+	font-size: 1.09rem;
 
-	> .icon {
+	&::before {
 		width: 19.82px;
 		height: 15.25px;
-		transform: translate(239px, -14px);
+		top: -4px;
+		left: 76%;
 	}
 
-	> .label {
+	> .highlight {
 		font-size: 1.09rem;
-
-		> .highlight {
-			font-size: 1.09rem;
-		}
 	}
 }
 
@@ -161,19 +158,15 @@ end --get-started_message-bubble--cash-in-success
 	backdrop-filter: blur(12.8143px);
 	border-radius: 9.61074px;
 	padding: 16.02px;
+	font-size: 1.03rem;
 
-	> .icon {
+	&::before {
 		width: 18.71px;
 		height: 14.39px;
-		transform: translate(228px, -12px);
 	}
 
-	> .label {
+	> .highlight {
 		font-size: 1.03rem;
-
-		> .highlight {
-			font-size: 1.03rem;
-		}
 	}
 }
 
