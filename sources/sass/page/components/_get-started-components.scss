@@ -484,30 +484,3 @@
 	:: comparison-table --------------------------------------------------------
 
 **/
-
-.get-started_comparison-table {
-	.header {
-		display: flex;
-		align-items: center;
-
-		> .icon {
-			min-width: 32px;
-			height: 32px;
-		}
-
-		> .title {
-			margin-left: $spacing-half;
-			color: #0a2757;
-
-			&.-verified {
-				color: #1972f9;
-			}
-		}
-	}
-}
-
-/**
-
-	:: comparison-table --------------------------------------------------------
-
-**/
