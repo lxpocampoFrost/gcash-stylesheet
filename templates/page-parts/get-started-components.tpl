@@ -28,16 +28,16 @@
         </div>
     </div>
 
-    <div class="get-started_section-card -section-5">
-        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
+    <div class="get-started_section-card -section-5 -online">
+        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-online.svg) center no-repeat;"></span>
         <div class="content">
             <div class="title">Online Banking</div>
-            <div class="description">Link any of your bank accounts to GCash to cash in seamlessly.</div>
+            <div class="description">Link your bank accounts to GCash to cash in seamlessly.</div>
         </div>
     </div>
 
-    <div class="get-started_section-card -section-5">
-        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
+    <div class="get-started_section-card -section-5 -counter">
+        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
         <div class="content">
             <div class="title">Over-the-Counter</div>
             <div class="description -counter">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
@@ -45,6 +45,26 @@
     </div>
 
     <div class="get-started_section-card -section-6">
-        <div class="description">Cash out at GCash Partner Outlets such as Puregold, SM, and Robinsons and through our GCash Pera Outlets and GCash Padala partners.</div>
+        <span class="icon" style="background: url(./assets/images/get-started_section-card-section-6-pera-outlet.svg) center/contain no-repeat;"></span>
+        <div class="content">
+            <div class="title">Over-the-Counter</div>
+            <div class="description">Cash out at GCash Partner Outlets such as Puregold, SM, and Robinsons and through our GCash Pera Outlets and GCash Padala partners.</div>
+        </div>
+    </div>
+
+    <div class="get-started_section-card -section-6 -gcash-padala">
+        <span class="icon" style="background: url(./assets/images/get-started_section-card-section-6-gcash-padala.svg) center/contain no-repeat;"></span>
+        <div class="content">
+            <div class="title">Domestic Remittance</div>
+            <div class="description">Send money and cash out anywhere in the Philippines through GCash Padala.</div>
+        </div>
+    </div>
+
+    <div class="get-started_section-card -section-6 -cash-out">
+        <span class="icon" style="background: url(./assets/images/get-started_section-card-section-6-cash-out.svg) center/contain no-repeat;"></span>
+        <div class="content">
+            <div class="title">GCash Mastercard</div>
+            <div class="description">With a GCash Mastercard, you can cash out at any BancNet or Mastercard ATM nationwide.</div>
+        </div>
     </div>
 </div>
