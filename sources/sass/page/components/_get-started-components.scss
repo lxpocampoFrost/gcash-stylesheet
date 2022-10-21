@@ -5,6 +5,10 @@
 		border: 0.66px solid #edf1fb;
 		border-radius: 3.96px;
 
+		&::after {
+			border: 7.5px solid #ffffff;
+		}
+
 		> .avatar {
 			width: 54.16px;
 			height: 54.16px;
@@ -48,6 +52,11 @@
 		border: 0.560014px solid #edf1fb;
 		border-radius: 3.36px;
 
+		&::after {
+			border: 6px solid #ffffff;
+			right: -6px;
+		}
+
 		> .avatar {
 			width: 45.86px;
 			height: 45.86px;
@@ -59,7 +68,7 @@
 
 		> .name {
 			margin-top: 3.16px;
-			font-size: 0.45rem;
+			font-size: 0.79rem;
 
 			> .icon {
 				width: 15.81px;
@@ -102,6 +111,17 @@
 	letter-spacing: -0.01em;
 	padding: 26px 20px 26px 51px;
 	border: 0.77px solid #edf1fb;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		transform: rotate(45deg);
+		right: -8px;
+		border: 9px solid #ffffff;
+		top: 67%;
+		border-radius: 15% 0 0 0 / 25%;
+	}
 
 	> .avatar {
 		width: 63.39px;
