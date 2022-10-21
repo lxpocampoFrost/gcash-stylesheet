@@ -1,0 +1,163 @@
+/*
+*
+* START - 1st Section
+*
+**/
+@mixin landing_panel-1--small-desktop {
+	.section-1-phone {
+		width: 768px;
+		height: 44px;
+	}
+}
+
+@mixin landing_panel-1--tablet {
+	.section-1-phone {
+		width: 480px;
+		height: 27px;
+	}
+
+	.section-1-phone-shadow {
+		width: 768px;
+		height: 159px;
+	}
+}
+
+@mixin landing_panel-1--mobile {
+	.landing_text-display {
+		max-width: 9ch;
+		transform: translate(0, -100px);
+	}
+
+	.section-1-phone {
+		width: 373.75px;
+		height: 21.02px;
+	}
+
+	.section-1-phone-shadow {
+		width: 598px;
+		height: 123.8px;
+	}
+}
+
+.landing_panel-1 {
+	.landing_text-display {
+		text-align: center;
+		transform: translate(0, -100px);
+	}
+
+	.landing_wrapper-floating {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.section-1-phone {
+		width: 989.5px;
+		height: 57px;
+		transform: translate(0, 130px);
+	}
+
+	.section-1-phone-shadow {
+		width: 1014px;
+		height: 209px;
+		mix-blend-mode: multiply;
+		transform: translate(0, 130px);
+	}
+
+	@include on(small-desktop) {
+		@include landing_panel-1--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include landing_panel-1--tablet;
+	}
+
+	@include on(mobile) {
+		@include landing_panel-1--mobile;
+	}
+}
+/*
+*
+* END - 1st Section
+*
+**/
+
+.landing_wrapper-floating {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+}
+
+.landing_wrapper-bounding-box {
+	width: 100%;
+	height: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.landing_wrapper {
+	width: 100%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+	overflow: hidden;
+}
+
+.landing_panel {
+	width: 100%;
+	position: relative;
+}
+
+.landing_container {
+	width: 100%;
+	overflow-x: clip;
+
+	> .header-menu {
+		position: fixed;
+		z-index: 999;
+		left: 50%;
+		transform: translate(-50%, 36px);
+	}
+
+	> .landing_indicator {
+		position: fixed;
+		z-index: 999;
+		top: 50%;
+		left: 93px;
+		transform: translateY(-50%);
+	}
+
+	> .landing_panel {
+		z-index: 50;
+	}
+
+	@include on(large-desktop) {
+		> .landing_indicator {
+			left: 70px;
+		}
+	}
+
+	@include on(small-desktop) {
+		> .landing_indicator {
+			left: 39px;
+		}
+	}
+
+	@include on(tablet) {
+		> .landing_indicator {
+			left: 24px;
+		}
+	}
+
+	@include on(mobile) {
+		> .landing_indicator {
+			left: 16px;
+		}
+	}
+}
