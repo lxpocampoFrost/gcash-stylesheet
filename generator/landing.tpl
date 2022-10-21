@@ -1,5 +1,15 @@
 <div class="landing_container">
     {@header-menu}
+
+    <ul class="landing_indicator">
+        <li class="item -active"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+
     <div class="landing_panel landing_panel-1">
         <div class="landing_wrapper" style="background: linear-gradient(0deg, rgba(8, 58, 166, 0.2) 0%, rgba(83, 171, 234, 0) 69.43%), url(../assets/images/landing/section-1-bg.jpg); background-blend-mode: multiply, normal;">
             <div class="landing_wrapper-bounding-box">
