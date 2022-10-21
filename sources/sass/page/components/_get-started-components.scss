@@ -9,7 +9,7 @@
 	backdrop-filter: blur(17.81px);
 	border-radius: 13.3575px;
 	position: relative;
-	font: 600 1.43rem/1.4 $gilroy-medium;
+	font: 600 1.43rem/1.4 $gilroy-bold;
 	color: rgba(10, 39, 87, 0.6);
 
 	&::before {
@@ -24,7 +24,7 @@
 	}
 
 	> .highlight {
-		font: 600 1.43rem/1.4 $gilroy-bold;
+		font: 700 1.43rem/1.4 $gilroy-bold;
 		color: #005ce5;
 	}
 }
