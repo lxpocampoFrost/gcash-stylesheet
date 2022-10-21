@@ -16,7 +16,7 @@
         <div class="title">Cash-in success!</div>
     </div>
 
-    <div class="get-started_message-bubble -cash-in-success">
+    <div class="get-started_section-card -section-5">
         <div class="title">Cash-in success!</div>
     </div>
 
