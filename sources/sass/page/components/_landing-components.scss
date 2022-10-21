@@ -163,7 +163,9 @@
 	}
 
 	> .chart {
-		height: 71px;
+		> svg {
+			height: 71px;
+		}
 
 		> .label {
 			font-size: 0.5rem;
@@ -239,7 +241,9 @@
 	}
 
 	> .chart {
-		height: 63px;
+		> svg {
+			height: 63px;
+		}
 
 		> .label {
 			font-size: 0.43rem;
@@ -801,8 +805,11 @@
 
 	> .chart {
 		border-radius: 0 0 $spacing-default $spacing-default;
-		height: 82.35px;
-		width: 100%;
+
+		> svg {
+			width: 100%;
+			height: 82.35px;
+		}
 
 		> .label {
 			font: 600 0.57rem/1.5 $gilroy-bold;
