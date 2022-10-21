@@ -79,6 +79,15 @@
         <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
     </div>
 
+    <ul class="landing_indicator">
+        <li class="item -active"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+        <li class="item"></li>
+    </ul>
+
     <div class="landing_message-bubble -avatar-left">
         <div class="title">Send money to Trisha</div>
         <div class="amount"><span class="icon" style="background: url(./assets/images/landing/message-bubble-avatar-left-currency.svg) center/contain no-repeat;"></span>2,500</div>
