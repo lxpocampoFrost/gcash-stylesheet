@@ -3,6 +3,42 @@
 * START - 1st Section
 *
 **/
+@mixin landing_panel-1--small-desktop {
+	.section-1-phone {
+		width: 768px;
+		height: 44px;
+	}
+}
+
+@mixin landing_panel-1--tablet {
+	.section-1-phone {
+		width: 480px;
+		height: 27px;
+	}
+
+	.section-1-phone-shadow {
+		width: 768px;
+		height: 159px;
+	}
+}
+
+@mixin landing_panel-1--mobile {
+	.landing_text-display {
+		max-width: 9ch;
+		transform: translate(0, -100px);
+	}
+
+	.section-1-phone {
+		width: 373.75px;
+		height: 21.02px;
+	}
+
+	.section-1-phone-shadow {
+		width: 598px;
+		height: 123.8px;
+	}
+}
+
 .landing_panel-1 {
 	.landing_text-display {
 		text-align: center;
@@ -28,39 +64,15 @@
 	}
 
 	@include on(small-desktop) {
-		.section-1-phone {
-			width: 768px;
-			height: 44px;
-		}
+		@include landing_panel-1--small-desktop;
 	}
 
 	@include on(tablet) {
-		.section-1-phone {
-			width: 480px;
-			height: 27px;
-		}
-
-		.section-1-phone-shadow {
-			width: 768px;
-			height: 159px;
-		}
+		@include landing_panel-1--tablet;
 	}
 
 	@include on(mobile) {
-		.landing_text-display {
-			max-width: 9ch;
-			transform: translate(0, -100px);
-		}
-
-		.section-1-phone {
-			width: 373.75px;
-			height: 21.02px;
-		}
-
-		.section-1-phone-shadow {
-			width: 598px;
-			height: 123.8px;
-		}
+		@include landing_panel-1--mobile;
 	}
 }
 /*
