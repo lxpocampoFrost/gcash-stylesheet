@@ -5,6 +5,7 @@
 **/
 .landing_panel-1 {
 	.landing_text-display {
+		text-align: center;
 		transform: translate(0, -100px);
 	}
 
@@ -22,7 +23,44 @@
 	.section-1-phone-shadow {
 		width: 1014px;
 		height: 209px;
+		mix-blend-mode: multiply;
 		transform: translate(0, 130px);
+	}
+
+	@include on(small-desktop) {
+		.section-1-phone {
+			width: 768px;
+			height: 44px;
+		}
+	}
+
+	@include on(tablet) {
+		.section-1-phone {
+			width: 480px;
+			height: 27px;
+		}
+
+		.section-1-phone-shadow {
+			width: 768px;
+			height: 159px;
+		}
+	}
+
+	@include on(mobile) {
+		.landing_text-display {
+			max-width: 9ch;
+			transform: translate(0, -100px);
+		}
+
+		.section-1-phone {
+			width: 373.75px;
+			height: 21.02px;
+		}
+
+		.section-1-phone-shadow {
+			width: 598px;
+			height: 123.8px;
+		}
 	}
 }
 /*
@@ -85,5 +123,29 @@
 
 	> .landing_panel {
 		z-index: 50;
+	}
+
+	@include on(large-desktop) {
+		> .landing_indicator {
+			left: 70px;
+		}
+	}
+
+	@include on(small-desktop) {
+		> .landing_indicator {
+			left: 39px;
+		}
+	}
+
+	@include on(tablet) {
+		> .landing_indicator {
+			left: 24px;
+		}
+	}
+
+	@include on(mobile) {
+		> .landing_indicator {
+			left: 16px;
+		}
 	}
 }
