@@ -44,4 +44,7 @@
         </div>
     </div>
 
+    <div class="get-started_section-card -section-6">
+        <div class="description">Cash out at GCash Partner Outlets such as Puregold, SM, and Robinsons and through our GCash Pera Outlets and GCash Padala partners.</div>
+    </div>
 </div>

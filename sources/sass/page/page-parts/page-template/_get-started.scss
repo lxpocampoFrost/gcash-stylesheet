@@ -89,13 +89,15 @@
 	overflow-x: clip;
 
 	> .header-menu {
-		margin: 0 auto 120px;
-		position: sticky;
+		position: fixed;
 		top: 36px;
+		left: 50%;
+		transform: translate(-50%);
 	}
 
 	> .get-started_panel-1 {
 		min-height: 838px;
+		margin-top: calc(120px + 36px + 64px);
 	}
 
 	@include on(large-desktop) {
