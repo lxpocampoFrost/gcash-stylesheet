@@ -152,6 +152,7 @@
 @mixin landing_use-case-bubble--large-desktop--investment-profile {
 	max-width: 235px;
 	box-shadow: 0px 6.91177px 10.3676px -6.91177px rgba(15, 37, 69, 0.2);
+	border-radius: 6.91px;
 
 	> .loanable {
 		@include landing_use-case-bubble--large-desktop--investment-profile--loanable;
@@ -162,7 +163,6 @@
 	}
 
 	> .chart {
-		border-radius: 0 0 6.91px 6.91px;
 		> svg {
 			height: 71px;
 		}
@@ -234,6 +234,7 @@
 @mixin landing_use-case-bubble--small-desktop--investment-profile {
 	max-width: 211px;
 	box-shadow: 0px 6.20588px 9.30882px -6.20588px rgba(15, 37, 69, 0.2);
+	border-radius: 6.21px;
 
 	> .loanable {
 		@include landing_use-case-bubble--small-desktop--investment-profile--loanable;
@@ -244,8 +245,6 @@
 	}
 
 	> .chart {
-		border-radius: 0 0 6.21px 6.21px;
-
 		> svg {
 			height: 63px;
 		}
@@ -297,6 +296,7 @@
 @mixin landing_use-case-bubble--mobile--investment-profile {
 	max-width: 166px;
 	box-shadow: 0px 4.88794px 7.33192px -4.88794px rgba(15, 37, 69, 0.2);
+	border-radius: 4.89px;
 
 	> .loanable {
 		@include landing_use-case-bubble--mobile--investment-profile--loanable;
@@ -324,8 +324,6 @@
 	}
 
 	> .chart {
-		border-radius: 0 0 4.89px 4.89px;
-
 		> .label {
 			font-size: 0.36rem;
 			padding-left: 10px;
@@ -368,7 +366,7 @@
 	> .loanable {
 		padding: $spacing-double $spacing-double $spacing-secondary;
 		background: #eef4ff;
-		border-radius: 8px 8px 0 0;
+		border-radius: 8px;
 
 		> .title {
 			font: 400 1rem/1 $gotham-bold;
@@ -420,8 +418,6 @@
 	}
 
 	> .chart {
-		border-radius: 0 0 $spacing-default $spacing-default;
-
 		> svg {
 			width: 100%;
 			height: 82.35px;
