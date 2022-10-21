@@ -402,59 +402,150 @@
 	}
 }
 
-// END OF GET-STARTED_SECTION-CARD
-
 @mixin get-started_section-card--large-desktop {
+	box-shadow: 0px 6px 10px rgba(232, 238, 242, 0.79);
+	border-radius: 8px;
+
 	&.-section-5 {
-		> .description {
+		max-width: 314.67px;
+		height: 143px;
+
+		&.-online > .content > .description {
+			max-width: 17ch;
+		}
+
+		&.-counter > .content > .description {
+			max-width: 19ch;
+		}
+
+		> .content > .description {
 			max-width: 19ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--small-desktop {
-	> .title {
+	> .content > .title {
 		font-size: 1.14rem;
 	}
 
 	&.-section-5 {
-		> .description {
+		max-width: 245.33px;
+		height: 162px;
+
+		&.-online > .content > .description {
+			max-width: 12ch;
+		}
+
+		&.-counter > .content > .description {
+			max-width: 15ch;
+		}
+
+		> .content > .description {
 			max-width: 14ch;
 		}
 	}
 }
 
+@mixin get-started_section-card--tablet--section-5 {
+	max-width: 480px;
+	height: 114px;
+
+	&.-online {
+		height: 94px;
+
+		> .content > .description {
+			max-width: 41ch;
+		}
+	}
+
+	&.-counter > .content > .description {
+		max-width: 40ch;
+	}
+
+	> .content > .description {
+		font-size: 1rem;
+		max-width: 38ch;
+	}
+}
+
 @mixin get-started_section-card--tablet {
 	&.-section-5 {
-		> .description {
-			font-size: 1rem;
-			max-width: 38ch;
+		@include get-started_section-card--tablet--section-5;
+	}
+}
+
+@mixin get-started_section-card--mobile--section-5 {
+	max-width: 320px;
+	height: 114px;
+
+	&.-online {
+		height: 114px;
+
+		> .content > .description {
+			max-width: 21ch;
 		}
+	}
+
+	&.-counter {
+		height: 134px;
+
+		> .content > .description {
+			max-width: 22ch;
+		}
+	}
+
+	> .content > .description {
+		max-width: 24ch;
 	}
 }
 
 @mixin get-started_section-card--mobile {
 	&.-section-5 {
+		@include get-started_section-card--mobile--section-5;
+	}
+}
+
+@mixin get-started_section-card--section-5 {
+	&.-counter > .content > .description {
+		max-width: 28ch;
+	}
+
+	> .content {
+		margin-left: $spacing-secondary;
+
 		> .description {
-			max-width: 24ch;
+			font: 500 1.14rem/1.4 $gilroy-medium;
+			max-width: 27ch;
+			color: #445c85;
+			opacity: 0.7;
+			margin-top: $spacing-half;
 		}
 	}
 }
 
 .get-started_section-card {
-	> .title {
+	display: flex;
+	width: 100%;
+	max-width: 400px;
+	padding: $spacing-triple;
+	background: #ffffff;
+	box-shadow: 0px 6px 10px rgba(232, 238, 242, 0.79);
+	border-radius: 8px;
+
+	> .icon {
+		width: 32px;
+		height: 32px;
+	}
+
+	> .content > .title {
 		font: 700 1.29rem/1.4 $gotham-bold;
 		color: #183462;
 		letter-spacing: -0.03em;
 	}
 
 	&.-section-5 {
-		> .description {
-			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 26ch;
-			color: #445c85;
-			opacity: 0.7;
-		}
+		@include get-started_section-card--section-5;
 	}
 
 	@include on(large-desktop) {
