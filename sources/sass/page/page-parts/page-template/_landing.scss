@@ -1,3 +1,25 @@
+/*
+*
+* 1st Section
+*
+**/
+.landing_panel-1 {
+	.landing_wrapper-floating {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.section-1-phone {
+		width: 989.5px;
+		height: 57px;
+	}
+
+	.section-1-phone-shadow {
+		width: 1014px;
+		height: 209px;
+	}
+}
+
 .landing_wrapper-floating {
 	width: 100%;
 	height: 100%;
