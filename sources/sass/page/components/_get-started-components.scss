@@ -556,3 +556,40 @@ start --section-card
 /****
 end --section-card
 ****/
+
+/****
+start --content-block
+****/
+@mixin get-started_content-block--small-desktop {
+	&.-section-1 {
+		> .preamble {
+			font-size: 1.29rem;
+		}
+	}
+}
+
+@mixin get-started_content-block--tablet {
+	&.-section-1 {
+		> .preamble {
+			font-size: 1rem;
+		}
+	}
+}
+
+.content-block {
+	&.-section-1 {
+		> .preamble {
+			font: 700 1.71rem/1 $gilroy-bold;
+			color: #0a2757;
+			opacity: 0.4;
+		}
+	}
+
+	@include on(small-desktop) {
+		@include get-started_content-block--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_content-block--tablet;
+	}
+}

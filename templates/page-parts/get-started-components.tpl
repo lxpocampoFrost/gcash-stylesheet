@@ -50,4 +50,9 @@
             <div class="description">With a GCash Mastercard, you can cash out at any BancNet or Mastercard ATM nationwide.</div>
         </div>
     </div>
+
+    <div class="content-block -section-1">
+        <div class="preamble">Get Started</div>
+    </div>
+    
 </div>
