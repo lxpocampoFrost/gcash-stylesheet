@@ -28,4 +28,33 @@
     <div class="get-started_section-card -section-6">
         <div class="description">Cash out at GCash Partner Outlets such as Puregold, SM, and Robinsons and through our GCash Pera Outlets and GCash Padala partners.</div>
     </div>
+
+     <div class="get-started_comparison-table">
+		<div class="row">
+            <div class="item">&nbsp;</div>
+            <div class="item">
+                <div class="header">
+                    <span class="icon" style="background: url(../assets/images/get-started/comparison-table-basic.svg) center/cover no-repeat;"></span>
+                    <div class="title">Basic</div>
+                </div>
+                <div class="description">Registered, but non-verified, accounts</div>
+            </div>
+            <div class="item">
+                <div class="header">
+                    <span class="icon" style="background: url(../assets/images/get-started/comparison-table-verified.svg) center/cover no-repeat;"></span>
+                    <div class="title -verified">Verified</div>
+                </div>
+                <div class="description">Registered and verified accounts</div>
+            </div>
+	    </div>
+
+        <div class="row">
+            <div class="item">Features</div>
+            <div class="item">Has basic features</div>
+        </div>
+        <div class="row">
+            <div class="item">Wallet Size</div>
+            <div class="item">Php 50,000 wallet size</div>
+        </div>
+	</div>
 </div>
