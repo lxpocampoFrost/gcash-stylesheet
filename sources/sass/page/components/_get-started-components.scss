@@ -459,7 +459,8 @@ start --section-card
 }
 
 @mixin get-started_section-card--mobile {
-	> .description {
+	&.-section-5 > .description,
+	&.-section-6 > .description {
 		max-width: 24ch;
 	}
 }
