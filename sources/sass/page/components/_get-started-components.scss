@@ -6,7 +6,7 @@
 		border-radius: 3.96px;
 
 		&::after {
-			border: 7.5px solid #ffffff;
+			// border: 7.5px solid #ffffff;
 		}
 
 		> .avatar {
@@ -53,8 +53,10 @@
 		border-radius: 3.36px;
 
 		&::after {
-			border: 6px solid #ffffff;
-			right: -6px;
+			right: -9px;
+			border-left: solid 9px #ffffff;
+			border-bottom: solid 8.5px transparent;
+			border-top: solid 8.5px transparent;
 		}
 
 		> .avatar {
@@ -116,11 +118,12 @@
 	&::after {
 		content: '';
 		position: absolute;
-		transform: rotate(45deg);
-		right: -8px;
-		border: 9px solid #ffffff;
+		right: -10px;
 		top: 67%;
-		border-radius: 15% 0 0 0 / 25%;
+		filter: drop-shadow(1px 1px 1px rgba(15, 37, 69, 0.2));
+		border-left: solid 11px #ffffff;
+		border-bottom: solid 10px transparent;
+		border-top: solid 10px transparent;
 	}
 
 	> .avatar {
