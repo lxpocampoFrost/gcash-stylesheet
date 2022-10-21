@@ -401,3 +401,67 @@
 		@include get-started_message-bubble--mobile;
 	}
 }
+
+/****
+end --message-bubble
+****/
+
+@mixin get-started_section-card--large-desktop {
+	&.-section-5 {
+		> .description {
+			max-width: 19ch;
+		}
+	}
+}
+
+@mixin get-started_section-card--small-desktop {
+	&.-section-5 {
+		> .description {
+			max-width: 14ch;
+		}
+	}
+}
+
+@mixin get-started_section-card--tablet {
+	&.-section-5 {
+		> .description {
+			font-size: 1rem;
+			max-width: 38ch;
+		}
+	}
+}
+
+@mixin get-started_section-card--mobile {
+	&.-section-5 {
+		> .description {
+			max-width: 24ch;
+		}
+	}
+}
+
+.get-started_section-card {
+	&.-section-5 {
+		> .description {
+			font: 500 1.14rem/1.4 $gilroy-medium;
+			max-width: 26ch;
+			color: #445c85;
+			opacity: 0.7;
+		}
+	}
+
+	@include on(large-desktop) {
+		@include get-started_section-card--large-desktop;
+	}
+
+	@include on(small-desktop) {
+		@include get-started_section-card--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_section-card--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_section-card--mobile;
+	}
+}
