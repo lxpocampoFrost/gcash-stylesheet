@@ -18,11 +18,8 @@
     </div>
 
     <div class="get-started_section-card -section-5">
-        <div class="description">Receive overseas remittances directly to your GCash account.</div>
-    </div>
-
-    <div class="get-started_section-card -section-5">
         <div class="title">Remittance</div>
+        <div class="description">Receive overseas remittances directly to your GCash account.</div>
     </div>
 
 </div>
