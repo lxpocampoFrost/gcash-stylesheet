@@ -404,10 +404,20 @@
 
 // END OF GET-STARTED_SECTION-CARD
 
+/****
+start --section-card
+****/
+
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
 		> .description {
 			max-width: 19ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 36ch;
 		}
 	}
 }
@@ -422,22 +432,36 @@
 			max-width: 14ch;
 		}
 	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 30ch;
+		}
+	}
 }
 
 @mixin get-started_section-card--tablet {
+	> .description {
+		font-size: 1rem;
+	}
+
 	&.-section-5 {
 		> .description {
-			font-size: 1rem;
 			max-width: 38ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 42ch;
 		}
 	}
 }
 
 @mixin get-started_section-card--mobile {
-	&.-section-5 {
-		> .description {
-			max-width: 24ch;
-		}
+	&.-section-5 > .description,
+	&.-section-6 > .description {
+		max-width: 24ch;
 	}
 }
 
@@ -448,13 +472,11 @@
 		letter-spacing: -0.03em;
 	}
 
-	&.-section-5 {
-		> .description {
-			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 26ch;
-			color: #445c85;
-			opacity: 0.7;
-		}
+	> .description {
+		font: 500 1.14rem/1.4 $gilroy-medium;
+		max-width: 27ch;
+		color: #445c85;
+		opacity: 0.7;
 	}
 
 	@include on(large-desktop) {
