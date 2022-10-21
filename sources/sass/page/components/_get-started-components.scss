@@ -1,13 +1,68 @@
-/****
-start --get-started_message-bubble--cash-in-success
-****/
+@mixin get-started_message-bubble--large-desktop {
+	&.-verified-account {
+		max-width: 245px;
+		padding: 22px 17px 23px 44px;
+		height: 103px;
+
+		> .avatar {
+			width: 54.16px;
+			height: 54.16px;
+		}
+
+		> .preamble {
+			font-size: 0.53rem;
+		}
+
+		> .name {
+			margin-top: 3.73px;
+			font-size: 0.93rem;
+
+			> .icon {
+				width: 18.67px;
+				height: 18.67px;
+				display: block;
+				margin-left: 3.73px;
+			}
+		}
+
+		> .phone-number {
+			margin-top: 7.47px;
+			padding: $spacing-half 7px;
+			font-size: 0.8rem;
+			border-radius: 41.08px;
+		}
+	}
+
+	&.-cash-in-success {
+		> .title {
+			font-size: 1.15rem;
+		}
+	}
+}
+
 @mixin get-started_message-bubble--small-desktop--cash-in-success {
+	max-width: 240px;
+	box-shadow: 0px 84.2775px 33.2002px rgba(10, 43, 112, 0.01),
+		0px 47.2465px 28.0925px rgba(10, 43, 112, 0.05),
+		0px 21.7078px 21.7078px rgba(10, 43, 112, 0.09),
+		0px 5.10772px 11.4924px rgba(10, 43, 112, 0.1),
+		0px 0px 0px rgba(10, 43, 112, 0.1);
+	border-radius: 8.61016px;
+	padding: 43px 20px 15px;
+
+	> .icon {
+		width: 65px;
+		height: 65px;
+		box-shadow: 0px 9.86994px 14.4807px -9.65382px rgba(15, 37, 69, 0.2);
+	}
+
 	> .title {
 		font-size: 1.08rem;
 	}
 
 	> .amount {
 		font-size: 1.86rem;
+		margin-bottom: 10px;
 
 		> .currency {
 			width: 18px;
@@ -17,13 +72,91 @@ start --get-started_message-bubble--cash-in-success
 	}
 }
 
+@mixin get-started_message-bubble--small-desktop--get-verified {
+	max-width: 338.54px;
+	height: 54.95px;
+	box-shadow: 0px 134.1px 53.4701px rgba(10, 13, 41, 0.01),
+		0px 75.5371px 44.9828px rgba(10, 13, 41, 0.05),
+		0px 33.1005px 33.1005px rgba(10, 13, 41, 0.09),
+		0px 8.48732px 18.6721px rgba(10, 13, 41, 0.1),
+		0px 0px 0px rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(13.5797px);
+	border-radius: 10.1848px;
+	padding: 16.97px;
+	font-size: 1.09rem;
+
+	&::before {
+		width: 19.82px;
+		height: 15.25px;
+		top: -4px;
+		left: 76%;
+	}
+
+	> .highlight {
+		font-size: 1.09rem;
+	}
+}
+
+@mixin get-started_message-bubble--small-desktop {
+	&.-verified-account {
+		max-width: 207.14px;
+		padding: 18.97px 14.23px 18.97px 37.16px;
+		height: 87px;
+		> .avatar {
+			width: 45.86px;
+			height: 45.86px;
+		}
+		> .preamble {
+			font-size: 0.45rem;
+		}
+		> .name {
+			margin-top: 3.16px;
+			font-size: 0.79rem;
+			> .icon {
+				width: 15.81px;
+				height: 15.81px;
+				margin-left: 3.16px;
+			}
+		}
+		> .phone-number {
+			margin-top: 6.32px;
+			padding: 3.16px 6.32px;
+			font-size: 0.68rem;
+			border-radius: 34.78px;
+		}
+	}
+
+	&.-get-verified {
+		@include get-started_message-bubble--small-desktop--get-verified;
+	}
+
+	&.-cash-in-success {
+		@include get-started_message-bubble--small-desktop--cash-in-success;
+	}
+}
+
 @mixin get-started_message-bubble--tablet--cash-in-success {
+	max-width: 254px;
+	box-shadow: 0 89.0354px 35.0746px rgba(10, 43, 112, 0.01),
+		0 49.9138px 29.6785px rgba(10, 43, 112, 0.05),
+		0 22.9334px 22.9334px rgba(10, 43, 112, 0.09),
+		0 5.39609px 12.1412px rgba(10, 43, 112, 0.1), 0 0 0 rgba(10, 43, 112, 0.1);
+	border-radius: 9.09626px;
+	padding: 45px 22px 16px;
+
+	> .icon {
+		width: 69px;
+		height: 69px;
+		box-shadow: 0px 10.4272px 15.2983px -10.1988px rgba(15, 37, 69, 0.2);
+	}
+
 	> .title {
 		font-size: 1.15rem;
 	}
 
 	> .amount {
 		font-size: 1.96rem;
+		margin-bottom: 11px;
 
 		> .currency {
 			width: 20px;
@@ -32,13 +165,38 @@ start --get-started_message-bubble--cash-in-success
 	}
 }
 
+@mixin get-started_message-bubble--tablet {
+	&.-cash-in-success {
+		> .title {
+			font-size: 1.08rem;
+		}
+		@include get-started_message-bubble--tablet--cash-in-success;
+	}
+}
+
 @mixin get-started_message-bubble--mobile--cash-in-success {
+	width: 169px;
+	box-shadow: 0px 59.312px 23.3653px rgba(10, 43, 112, 0.01),
+		0px 33.2507px 19.7707px rgba(10, 43, 112, 0.05),
+		0px 15.2773px 15.2773px rgba(10, 43, 112, 0.09),
+		0px 3.59467px 8.08801px rgba(10, 43, 112, 0.1),
+		0px 0px 0px rgba(10, 43, 112, 0.1);
+	border-radius: 6.05958px;
+	padding: 30px 14px 11px;
+
+	> .icon {
+		width: 46px;
+		height: 46px;
+		box-shadow: 0px 6.94618px 10.1911px -6.79408px rgba(15, 37, 69, 0.2);
+	}
+
 	> .title {
 		font-size: 0.79rem;
 	}
 
 	> .amount {
 		font-size: 1.31rem;
+		margin-bottom: 7px;
 
 		> .currency {
 			width: 13px;
@@ -48,11 +206,64 @@ start --get-started_message-bubble--cash-in-success
 	}
 }
 
+@mixin get-started_message-bubble--mobile--get-verified {
+	max-width: 319.46px;
+	height: 52.04px;
+	box-shadow: 0px 126.541px 50.4564px rgba(10, 13, 41, 0.01),
+		0px 71.2796px 42.4474px rgba(10, 13, 41, 0.05),
+		0px 31.2349px 31.2349px rgba(10, 13, 41, 0.09),
+		0px 8.00895px 17.6197px rgba(10, 13, 41, 0.1),
+		0px 0px 0px rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(12.8143px);
+	border-radius: 9.61074px;
+	padding: 16.02px;
+	font-size: 1.03rem;
+
+	&::before {
+		width: 18.71px;
+		height: 14.39px;
+	}
+
+	> .highlight {
+		font-size: 1.03rem;
+	}
+}
+
+@mixin get-started_message-bubble--mobile {
+	&.-get-verified {
+		@include get-started_message-bubble--mobile--get-verified;
+	}
+
+	&.-cash-in-success {
+		@include get-started_message-bubble--mobile--cash-in-success;
+	}
+}
+
 @mixin get-started_message-bubble--cash-in-success {
+	max-width: 273px;
+	box-shadow: 0 95.7381px 37.715px rgba(10, 43, 112, 0.01),
+		0 53.6713px 31.9127px rgba(10, 43, 112, 0.05),
+		0 24.6598px 24.6598px rgba(10, 43, 112, 0.09),
+		0 5.80231px 13.0552px rgba(10, 43, 112, 0.1), 0 0 0 rgba(10, 43, 112, 0.1);
+	border-radius: 9.78103px;
+	padding: 49px 23px 17px;
+	position: relative;
+
+	> .icon {
+		width: 74px;
+		height: 74px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -112%);
+		border-radius: 50%;
+		box-shadow: 0 11.2121px 16.4499px -10.9666px rgba(15, 37, 69, 0.2);
+	}
+
 	> .title {
 		font: 500 1.22rem/1.4 $gilroy-medium;
 		letter-spacing: -0.01em;
 		color: #2044a5;
+		text-align: center;
 		opacity: 0.8;
 	}
 
@@ -62,6 +273,8 @@ start --get-started_message-bubble--cash-in-success
 		color: #0058e5;
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		margin-bottom: $spacing-secondary;
 
 		> .currency {
 			width: 21px;
@@ -71,31 +284,109 @@ start --get-started_message-bubble--cash-in-success
 	}
 }
 
-/****
-end --get-started_message-bubble--cash-in-success
-****/
+@mixin get-started_message-bubble--get-verified {
+	max-width: 444px;
+	height: 72.52px;
+	padding: 22.26px;
+	box-shadow: 0 175.873px 70.1267px rgba(10, 13, 41, 0.01),
+		0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
+		0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
+		0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
+	backdrop-filter: blur(17.81px);
+	border-radius: 13.3575px;
+	position: relative;
+	font: 600 1.43rem/1.4 $gilroy-bold;
+	color: rgba(10, 39, 87, 0.6);
 
-@mixin get-started_message-bubble--small-desktop {
-	&.-cash-in-success {
-		@include get-started_message-bubble--small-desktop--cash-in-success;
+	&::before {
+		position: absolute;
+		min-width: 26px;
+		height: 20px;
+		background: #ffffff;
+		top: -8px;
+		left: 77%;
+		content: '';
+		transform: rotate(45deg);
+	}
+
+	> .highlight {
+		font: 700 1.43rem/1.4 $gilroy-bold;
+		color: #005ce5;
 	}
 }
 
-@mixin get-started_message-bubble--tablet {
-	&.-cash-in-success {
-		@include get-started_message-bubble--tablet--cash-in-success;
-	}
-}
+@mixin get-started_message-bubble--verified-account {
+	max-width: 286.35px;
+	letter-spacing: -0.01em;
+	padding: 26px 20px 26px 51px;
+	position: relative;
+	height: 121px;
 
-@mixin get-started_message-bubble--mobile {
-	&.-cash-in-success {
-		@include get-started_message-bubble--mobile--cash-in-success;
+	> .avatar {
+		width: 63.39px;
+		height: 63.39px;
+		border-radius: 50%;
+		padding: 5px;
+		background: #ffffff;
+		left: 0;
+		transform: translateX(-23px);
+		box-shadow: 0px 8.74344px 13.1152px -8.74344px rgba(15, 37, 69, 0.2);
+		object-fit: cover;
+	}
+
+	> .preamble {
+		color: #25b67b;
+		font: 700 0.62rem/1.4 $gotham-bold;
+	}
+
+	> .name {
+		margin-top: 4.37px;
+		color: #30326f;
+		display: flex;
+		align-items: center;
+		font: 700 1.09rem/1.4 $gotham-bold;
+
+		> .icon {
+			width: 21.86px;
+			height: 21.86px;
+			display: block;
+			margin-left: 4.37px;
+		}
+	}
+
+	> .phone-number {
+		margin-top: 9px;
+		background: #ecf1fa;
+		border-radius: 48.09px;
+		padding: $spacing-half 9px;
+		color: #0f3391;
+		font: 700 0.94rem/1 $gotham-bold;
+		max-width: max-content;
 	}
 }
 
 .get-started_message-bubble {
+	background: #ffffff;
+	width: 100%;
+
+	> .avatar {
+		position: absolute;
+	}
+
+	&.-verified-account {
+		@include get-started_message-bubble--verified-account;
+	}
+
 	&.-cash-in-success {
 		@include get-started_message-bubble--cash-in-success;
+	}
+
+	&.-get-verified {
+		@include get-started_message-bubble--get-verified;
+	}
+
+	@include on(large-desktop) {
+		@include get-started_message-bubble--large-desktop;
 	}
 
 	@include on(small-desktop) {
@@ -108,5 +399,99 @@ end --get-started_message-bubble--cash-in-success
 
 	@include on(mobile) {
 		@include get-started_message-bubble--mobile;
+	}
+}
+
+// END OF GET-STARTED_SECTION-CARD
+
+/****
+start --section-card
+****/
+
+@mixin get-started_section-card--large-desktop {
+	&.-section-5 {
+		> .description {
+			max-width: 19ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 36ch;
+		}
+	}
+}
+
+@mixin get-started_section-card--small-desktop {
+	> .title {
+		font-size: 1.14rem;
+	}
+
+	&.-section-5 {
+		> .description {
+			max-width: 14ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 30ch;
+		}
+	}
+}
+
+@mixin get-started_section-card--tablet {
+	> .description {
+		font-size: 1rem;
+	}
+
+	&.-section-5 {
+		> .description {
+			max-width: 38ch;
+		}
+	}
+
+	&.-section-6 {
+		> .description {
+			max-width: 42ch;
+		}
+	}
+}
+
+@mixin get-started_section-card--mobile {
+	&.-section-5 > .description,
+	&.-section-6 > .description {
+		max-width: 24ch;
+	}
+}
+
+.get-started_section-card {
+	> .title {
+		font: 700 1.29rem/1.4 $gotham-bold;
+		color: #183462;
+		letter-spacing: -0.03em;
+	}
+
+	> .description {
+		font: 500 1.14rem/1.4 $gilroy-medium;
+		max-width: 27ch;
+		color: #445c85;
+		opacity: 0.7;
+	}
+
+	@include on(large-desktop) {
+		@include get-started_section-card--large-desktop;
+	}
+
+	@include on(small-desktop) {
+		@include get-started_section-card--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_section-card--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_section-card--mobile;
 	}
 }
