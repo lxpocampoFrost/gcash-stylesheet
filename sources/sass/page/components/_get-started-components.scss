@@ -654,6 +654,7 @@ start --content-block
 
 		> .title {
 			font-size: 4.57rem;
+			margin-top: 40px;
 		}
 
 		> .description {
@@ -661,6 +662,10 @@ start --content-block
 			line-height: 1.3;
 			letter-spacing: 0;
 			max-width: 24ch;
+		}
+
+		> .register-btn {
+			margin-top: $spacing-double-triple;
 		}
 	}
 }
@@ -673,16 +678,19 @@ start --content-block
 
 		> .title {
 			font-size: 3.43rem;
+			margin-top: $spacing-triple;
 		}
 
 		> .description {
 			font-size: 1.14rem;
+			margin-top: $spacing-quad;
 		}
 
 		> .register-btn {
 			max-width: 99px;
 			font-weight: 400;
 			padding: $spacing-double;
+			margin-top: $spacing-quad;
 		}
 	}
 }
@@ -690,6 +698,7 @@ start --content-block
 @mixin get-started_content-block--mobile {
 	&.-section-1 > .description {
 		max-width: 19ch;
+		margin-top: $spacing-secondary;
 	}
 }
 
@@ -705,6 +714,7 @@ start --content-block
 			font: 600 1.71rem/1.4 $gilroy-bold;
 			letter-spacing: -0.02em;
 			max-width: 22ch;
+			margin-top: $spacing-triple;
 		}
 
 		> .title {
@@ -712,6 +722,7 @@ start --content-block
 			letter-spacing: -0.03em;
 			color: #012981;
 			max-width: 10ch;
+			margin-top: $spacing-double-triple;
 
 			> .highlight {
 				color: rgba(25, 114, 249, 1);
@@ -728,6 +739,8 @@ start --content-block
 			text-align: center;
 			letter-spacing: -0.01em;
 			font: 700 1.14rem/1 $gotham-bold;
+			margin-top: $spacing-double-quad;
+			cursor: pointer;
 		}
 	}
 
