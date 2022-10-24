@@ -21,9 +21,26 @@
     </div>
 
     <div class="get-started_section-card -section-5">
+        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
         <div class="content">
             <div class="title">Remittance</div>
             <div class="description">Receive overseas remittances directly to your GCash account.</div>
+        </div>
+    </div>
+
+    <div class="get-started_section-card -section-5 -online">
+        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-online.svg) center no-repeat;"></span>
+        <div class="content">
+            <div class="title">Online Banking</div>
+            <div class="description">Link your bank accounts to GCash to cash in seamlessly.</div>
+        </div>
+    </div>
+
+    <div class="get-started_section-card -section-5 -counter">
+        <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
+        <div class="content">
+            <div class="title">Over-the-Counter</div>
+            <div class="description -counter">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
         </div>
     </div>
 
@@ -51,10 +68,11 @@
         </div>
     </div>
 
-    <div class="content-block -section-1">
+    <div class="get-started_content-block -section-1">
         <div class="preamble">Get Started</div>
         <div class="title">Your <span class="highlight">GCash</span> story begins here!</div>
         <div class="description">Register now, and receive an awesome freebies from GCash!</div>
+        <div class="register-btn">Register</div>
     </div>
 
 </div>
