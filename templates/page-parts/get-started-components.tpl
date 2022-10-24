@@ -110,8 +110,6 @@
 		</div>
 	</div>
 
-
-
     <div class="get-started_section-card -section-6 -gcash-padala">
         <span class="icon" style="background: url(./assets/images/get-started_section-card-section-6-gcash-padala.svg) center/contain no-repeat;"></span>
         <div class="content">
@@ -131,6 +129,7 @@
     <div class="content-block -section-1">
         <div class="preamble">Get Started</div>
         <div class="title">Your <span class="highlight">GCash</span> story begins here!</div>
+        <div class="description">Register now, and receive an awesome freebies from GCash!</div>
     </div>
-    
+
 </div>
