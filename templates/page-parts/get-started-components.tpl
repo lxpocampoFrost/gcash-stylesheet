@@ -75,4 +75,17 @@
         <div class="register-btn">Register</div>
     </div>
 
+    <div class="get-started_content-block -outlets">
+        <span class="preamble">Put the cash in Gcash</span>
+        <div class="title">63,000</div>
+        <div class="label">Cash In Outlets Nationwide</div>
+        <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
+    </div>
+
+    <div class="get-started_content-block -outlets -real-money">
+        <span class="preamble">Real Money, Unreal Convenience</span>
+        <div class="title">72,000</div>
+        <div class="label">Cash Out Outlets Nationwide</div>
+        <p class="description">With thousands of ATMs and GCash Partner Outlets nationwide, withdrawing your GCash funds is safe and convenient.</p>
+    </div>
 </div>

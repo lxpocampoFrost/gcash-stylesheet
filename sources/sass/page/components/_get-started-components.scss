@@ -646,6 +646,29 @@ end --section-card
 /****
 start --content-block
 ****/
+
+@mixin get-started_content-block--small-desktop--outlets {
+	&.-real-money > .description {
+		max-width: 33ch;
+	}
+
+	> .title {
+		font-size: 4.57rem;
+	}
+
+	> .label {
+		font-size: 1.43rem;
+	}
+
+	> .description {
+		max-width: 28ch;
+	}
+
+	> .methods {
+		max-width: 24ch;
+	}
+}
+
 @mixin get-started_content-block--small-desktop {
 	&.-section-1 {
 		> .preamble {
@@ -667,6 +690,46 @@ start --content-block
 		> .register-btn {
 			margin-top: $spacing-double-triple;
 		}
+	}
+
+	&.-outlets {
+		@include get-started_content-block--small-desktop--outlets;
+	}
+}
+
+@mixin get-started_content-block--tablet--outlets {
+	&.-real-money {
+		> .preamble {
+			font-size: 1rem;
+		}
+
+		> .description {
+			font-size: 1.14rem;
+			max-width: 47ch;
+		}
+
+		> .label {
+			font-size: 1.43rem;
+		}
+	}
+
+	> .preamble {
+		font-size: 1.12rem;
+	}
+
+	> .title {
+		font-size: 3.43rem;
+		margin-top: $spacing-quad;
+	}
+
+	> .label {
+		font-size: 1.6rem;
+	}
+
+	> .description {
+		font-size: 1.28rem;
+		max-width: 40ch;
+		margin-top: $spacing-triple;
 	}
 }
 
@@ -693,12 +756,47 @@ start --content-block
 			margin-top: $spacing-quad;
 		}
 	}
+
+	&.-outlets {
+		@include get-started_content-block--tablet--outlets;
+	}
+}
+
+@mixin get-started_content-block--mobile--outlets {
+	&.-real-money {
+		> .label {
+			font-size: 1.43rem;
+		}
+
+		> .title {
+			margin-top: $spacing-triple;
+		}
+
+		> .description {
+			font-size: 1rem;
+			max-width: 33ch;
+		}
+	}
+
+	> .title {
+		margin-top: 21px;
+	}
+
+	> .description {
+		font-size: 1rem;
+		max-width: 34ch;
+		margin-top: $spacing-triple;
+	}
 }
 
 @mixin get-started_content-block--mobile {
 	&.-section-1 > .description {
 		max-width: 19ch;
 		margin-top: $spacing-secondary;
+	}
+
+	&.-outlets {
+		@include get-started_content-block--mobile--outlets;
 	}
 }
 
@@ -741,6 +839,44 @@ start --content-block
 			font: 700 1.14rem/1 $gotham-bold;
 			margin-top: $spacing-double-quad;
 			cursor: pointer;
+		}
+	}
+
+	&.-outlets {
+		color: #0a2757;
+
+		&.-real-money > .description {
+			max-width: 38ch;
+		}
+
+		> .preamble {
+			font: 400 1rem/1 $gotham-bold;
+			letter-spacing: -0.01em;
+		}
+
+		> .title {
+			font: 700 5.71rem/1.2 $gotham-bold;
+			letter-spacing: -0.03em;
+			color: #1972f9;
+			margin-top: $spacing-double-triple;
+		}
+
+		> .label {
+			font: 400 1.71rem/1.3 $gotham-bold;
+			opacity: 0.8;
+			letter-spacing: -0.03em;
+		}
+
+		> .description {
+			font: 500 1.14rem/1.4 $gilroy-bold;
+			opacity: 0.5;
+			max-width: 40ch;
+			margin-top: 40px;
+		}
+
+		> .methods {
+			font: 600 1.14rem/1.4 $gilroy-bold;
+			margin-top: $spacing-triple;
 		}
 	}
 
