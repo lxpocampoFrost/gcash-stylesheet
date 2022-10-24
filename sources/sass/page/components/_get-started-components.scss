@@ -802,6 +802,24 @@ start --content-block
 	}
 }
 
+@mixin get-started_comparison-table--tablet--row--wrap {
+	flex-direction: column;
+	padding-bottom: $spacing-double;
+
+	> .item {
+		margin-left: 0;
+		padding-bottom: 0;
+
+		&:last-of-type {
+			margin-left: 0;
+		}
+
+		&.-maxW {
+			max-width: 22ch;
+		}
+	}
+}
+
 @mixin get-started_comparison-table--tablet--row {
 	margin-bottom: 0;
 
@@ -821,21 +839,31 @@ start --content-block
 	}
 
 	> .wrap {
-		flex-direction: column;
-		padding-bottom: $spacing-double;
+		@include get-started_comparison-table--tablet--row--wrap;
+	}
+}
 
-		> .item {
-			margin-left: 0;
-			padding-bottom: 0;
+@mixin get-started_comparison-table--tablet--column {
+	&:last-of-type {
+		margin-left: $spacing-default;
 
-			&:last-of-type {
-				margin-left: 0;
-			}
-
-			&.-maxW {
-				max-width: 22ch;
-			}
+		> .row > .wrap {
+			padding-top: 18.5px;
 		}
+	}
+
+	&:first-of-type {
+		> .row > .wrap > .item:last-of-type {
+			margin-top: $spacing-half;
+		}
+
+		> .row:nth-of-type(2) > .wrap {
+			padding-bottom: 37px;
+		}
+	}
+
+	> .row {
+		@include get-started_comparison-table--tablet--row;
 	}
 }
 
@@ -843,26 +871,20 @@ start --content-block
 	max-width: 488px;
 
 	> .column {
-		&:last-of-type {
-			margin-left: $spacing-default;
+		@include get-started_comparison-table--tablet--column;
+	}
+}
 
-			> .row > .wrap {
-				padding-top: 18.5px;
-			}
-		}
+@mixin get-started_comparison-table--mobile--column--last-of-type {
+	margin-left: 0;
+	margin-top: $spacing-triple;
+	max-width: unset;
 
-		&:first-of-type {
-			> .row > .wrap > .item:last-of-type {
-				margin-top: $spacing-half;
-			}
+	> .row > .wrap {
+		padding-top: 0;
 
-			> .row:nth-of-type(2) > .wrap {
-				padding-bottom: 37px;
-			}
-		}
-
-		> .row {
-			@include get-started_comparison-table--tablet--row;
+		> .item:last-of-type {
+			margin-top: $spacing-half;
 		}
 	}
 }
@@ -881,17 +903,7 @@ start --content-block
 	}
 
 	&:last-of-type {
-		margin-left: 0;
-		margin-top: $spacing-triple;
-		max-width: unset;
-
-		> .row > .wrap {
-			padding-top: 0;
-
-			> .item:last-of-type {
-				margin-top: $spacing-half;
-			}
-		}
+		@include get-started_comparison-table--mobile--column--last-of-type;
 	}
 
 	> .row > .wrap > .item {
@@ -908,30 +920,34 @@ start --content-block
 	}
 }
 
+@mixin get-started_comparison-table--header--wrap {
+	display: flex;
+	align-items: center;
+
+	> .icon {
+		min-width: 32px;
+		height: 32px;
+		margin-right: $spacing-half;
+	}
+
+	> .title {
+		font: 700 1.43rem/1.35 $gotham-bold;
+		color: #0a2757;
+		letter-spacing: -0.03em;
+
+		&.-verified {
+			color: #1972f9;
+		}
+	}
+}
+
 @mixin get-started_comparison-table--header {
 	&:not(.-hide) {
 		margin-left: $spacing-double;
 	}
 
 	> .wrap {
-		display: flex;
-		align-items: center;
-
-		> .icon {
-			min-width: 32px;
-			height: 32px;
-			margin-right: $spacing-half;
-		}
-
-		> .title {
-			font: 700 1.43rem/1.35 $gotham-bold;
-			color: #0a2757;
-			letter-spacing: -0.03em;
-
-			&.-verified {
-				color: #1972f9;
-			}
-		}
+		@include get-started_comparison-table--header--wrap;
 	}
 
 	> .description {
@@ -996,30 +1012,34 @@ start --content-block
 	}
 }
 
+@mixin get-started_comparison-table--column {
+	width: 100%;
+	color: #012981;
+
+	&.-verified {
+		color: #1972f9;
+
+		> .row > .wrap > .-label {
+			display: none;
+		}
+	}
+
+	&:last-of-type {
+		max-width: 344px;
+	}
+
+	> .row {
+		@include get-started_comparison-table--row;
+	}
+}
+
 .get-started_comparison-table {
 	width: 100%;
 	max-width: 1021px;
 	display: flex;
 
 	> .column {
-		width: 100%;
-		color: #012981;
-
-		&.-verified {
-			color: #1972f9;
-
-			> .row > .wrap > .-label {
-				display: none;
-			}
-		}
-
-		&:last-of-type {
-			max-width: 344px;
-		}
-
-		> .row {
-			@include get-started_comparison-table--row;
-		}
+		@include get-started_comparison-table--column;
 	}
 
 	@include on(small-desktop) {
