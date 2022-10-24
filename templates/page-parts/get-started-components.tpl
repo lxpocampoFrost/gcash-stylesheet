@@ -53,6 +53,7 @@
 
     <div class="content-block -section-1">
         <div class="preamble">Get Started</div>
+        <div class="title">Your <span class="highlight">GCash</span> story begins here!</div>
     </div>
     
 </div>

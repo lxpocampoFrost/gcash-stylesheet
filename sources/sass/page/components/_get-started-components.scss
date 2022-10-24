@@ -565,6 +565,10 @@ start --content-block
 		> .preamble {
 			font-size: 1.29rem;
 		}
+
+		> .title {
+			font-size: 4.57rem;
+		}
 	}
 }
 
@@ -572,6 +576,10 @@ start --content-block
 	&.-section-1 {
 		> .preamble {
 			font-size: 1rem;
+		}
+
+		> .title {
+			font-size: 3.43rem;
 		}
 	}
 }
@@ -582,6 +590,17 @@ start --content-block
 			font: 700 1.71rem/1 $gilroy-bold;
 			color: #0a2757;
 			opacity: 0.4;
+		}
+
+		> .title {
+			font: 700 5.7rem/1.1 $gotham-bold;
+			letter-spacing: -0.03em;
+			color: #012981;
+			max-width: 10ch;
+
+			> .highlight {
+				color: rgba(25, 114, 249, 1);
+			}
 		}
 	}
 
