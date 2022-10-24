@@ -55,5 +55,10 @@
         <div class="preamble">Get Started</div>
         <div class="title">Your <span class="highlight">GCash</span> story begins here!</div>
     </div>
+
+    <div class="content-block -section-2">
+        <div class="preamble">Amazing features for verified accounts</div>
+        <div class="title">Life is great when you’re <span class="highlight">verified</span><span class="icon" style="background: url(./assets/images/get-started_message-bubble-content-block-section-2-verified.svg) center/contain no-repeat;"></span></div>
+    </div>
     
 </div>
