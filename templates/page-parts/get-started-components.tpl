@@ -54,6 +54,7 @@
     <div class="content-block -section-1">
         <div class="preamble">Get Started</div>
         <div class="title">Your <span class="highlight">GCash</span> story begins here!</div>
+        <div class="description">Register now, and receive an awesome freebies from GCash!</div>
     </div>
 
     <div class="content-block -section-2">
