@@ -411,12 +411,39 @@
 start --section-card
 ****/
 
+@mixin get-started_section-card--section-5 {
+	&.-counter > .content > .description {
+		max-width: 28ch;
+	}
+
+	> .content {
+		margin-left: $spacing-secondary;
+
+		> .description {
+			font: 500 1.14rem/1.4 $gilroy-medium;
+			max-width: 27ch;
+			color: #445c85;
+			opacity: 0.7;
+			margin-top: $spacing-half;
+		}
+	}
+}
+
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
-		> .content {
-			> .description {
-				max-width: 19ch;
-			}
+		max-width: 314.67px;
+		height: 143px;
+
+		&.-online > .content > .description {
+			max-width: 17ch;
+		}
+
+		&.-counter > .content > .description {
+			max-width: 19ch;
+		}
+
+		> .content > .description {
+			max-width: 19ch;
 		}
 	}
 
@@ -439,10 +466,19 @@ start --section-card
 	}
 
 	&.-section-5 {
-		> .content {
-			> .description {
-				max-width: 14ch;
-			}
+		max-width: 245.33px;
+		height: 162px;
+
+		&.-online > .content > .description {
+			max-width: 12ch;
+		}
+
+		&.-counter > .content > .description {
+			max-width: 15ch;
+		}
+
+		> .content > .description {
+			max-width: 14ch;
 		}
 	}
 
@@ -463,14 +499,31 @@ start --section-card
 	}
 }
 
+@mixin get-started_section-card--tablet--section-5 {
+	max-width: 480px;
+	height: 114px;
+
+	&.-online {
+		height: 94px;
+
+		> .content > .description {
+			max-width: 41ch;
+		}
+	}
+
+	&.-counter > .content > .description {
+		max-width: 40ch;
+	}
+
+	> .content > .description {
+		font-size: 1rem;
+		max-width: 38ch;
+	}
+}
+
 @mixin get-started_section-card--tablet {
 	&.-section-5 {
-		> .content {
-			> .description {
-				font-size: 1rem;
-				max-width: 38ch;
-			}
-		}
+		@include get-started_section-card--tablet--section-5;
 	}
 
 	&.-section-6 {
@@ -484,10 +537,39 @@ start --section-card
 	}
 }
 
+@mixin get-started_section-card--mobile--section-5 {
+	max-width: 320px;
+	height: 114px;
+
+	&.-online {
+		height: 114px;
+
+		> .content > .description {
+			max-width: 21ch;
+		}
+	}
+
+	&.-counter {
+		height: 134px;
+
+		> .content > .description {
+			max-width: 22ch;
+		}
+	}
+
+	> .content > .description {
+		max-width: 24ch;
+	}
+}
+
 @mixin get-started_section-card--mobile {
 	&.-section-5 > .content > .description,
 	&.-section-6 > .content > .description {
 		max-width: 24ch;
+	}
+
+	&.-section-5 {
+		@include get-started_section-card--mobile--section-5;
 	}
 
 	&.-section-6 {
@@ -532,6 +614,10 @@ start --section-card
 		}
 	}
 
+	&.-section-5 {
+		@include get-started_section-card--section-5;
+	}
+
 	&.-section-6 > .content > .description {
 		max-width: 29ch;
 	}
@@ -560,56 +646,72 @@ end --section-card
 /****
 start --content-block
 ****/
+@mixin get-started_content-block--small-desktop--section-1 {
+	> .preamble {
+		font-size: 1.29rem;
+	}
+
+	> .title {
+		font-size: 4.57rem;
+	}
+
+	> .description {
+		font-size: 1.29rem;
+		line-height: 1.3;
+		letter-spacing: 0;
+		max-width: 24ch;
+	}
+}
+
 @mixin get-started_content-block--small-desktop {
 	&.-section-1,
 	&.-section-2 {
-		> .preamble {
-			font-size: 1.29rem;
-		}
+		@include get-started_content-block--small-desktop--section-1;
+	}
 
-		> .title {
-			font-size: 4.57rem;
+	&.-section-2 > .title > .icon {
+		width: 71px;
+		height: 71px;
+		vertical-align: top;
+		margin-left: $spacing-half;
+	}
+}
 
-			> .icon {
-				width: 71px;
-				height: 71px;
-				vertical-align: top;
-				margin-left: $spacing-half;
-			}
-		}
+@mixin get-started_content-block--tablet--section-1 {
+	> .title {
+		font-size: 3.43rem;
+	}
 
-		> .description {
-			font-size: 1.29rem;
-			line-height: 1.3;
-			letter-spacing: 0;
-			max-width: 24ch;
-		}
+	> .description {
+		font-size: 1.14rem;
+	}
+
+	> .register-btn {
+		max-width: 99px;
+		font-weight: 400;
+		padding: $spacing-double;
 	}
 }
 
 @mixin get-started_content-block--tablet {
 	&.-section-1,
 	&.-section-2 {
-		> .title {
-			font-size: 3.43rem;
-
-			> .icon {
-				width: 50px;
-				height: 50px;
-			}
-		}
-
-		> .description {
-			font-size: 1.14rem;
-		}
+		@include get-started_content-block--tablet--section-1;
 	}
 
 	&.-section-1 > .preamble {
 		font-size: 1rem;
 	}
 
-	&.-section-2 > .preamble {
-		font-size: 1.14rem;
+	&.-section-2 {
+		> .preamble {
+			font-size: 1.14rem;
+		}
+
+		> .title > .icon {
+			width: 50px;
+			height: 50px;
+		}
 	}
 }
 
@@ -668,9 +770,22 @@ start --content-block
 			color: rgba(25, 114, 249, 1);
 		}
 	}
+
+	> .register-btn {
+		width: 100%;
+		max-width: 180px;
+		padding: $spacing-double 54.5px;
+		background: #1972f9;
+		color: #ffffff;
+		border-radius: 47px;
+		text-align: center;
+		letter-spacing: -0.01em;
+		font: 700 1.14rem/1 $gotham-bold;
+		cursor: pointer;
+	}
 }
 
-.content-block {
+.get-started_content-block {
 	&.-section-1,
 	&.-section-2 {
 		@include content-block--section-1;
