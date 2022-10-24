@@ -432,7 +432,6 @@ start --section-card
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
 		max-width: 314.67px;
-		height: 143px;
 
 		&.-online > .content > .description {
 			max-width: 17ch;
@@ -467,7 +466,6 @@ start --section-card
 
 	&.-section-5 {
 		max-width: 245.33px;
-		height: 162px;
 
 		&.-online > .content > .description {
 			max-width: 12ch;
@@ -501,14 +499,9 @@ start --section-card
 
 @mixin get-started_section-card--tablet--section-5 {
 	max-width: 480px;
-	height: 114px;
 
-	&.-online {
-		height: 94px;
-
-		> .content > .description {
-			max-width: 41ch;
-		}
+	&.-online > .content > .description {
+		max-width: 41ch;
 	}
 
 	&.-counter > .content > .description {
@@ -539,22 +532,13 @@ start --section-card
 
 @mixin get-started_section-card--mobile--section-5 {
 	max-width: 320px;
-	height: 114px;
 
-	&.-online {
-		height: 114px;
-
-		> .content > .description {
-			max-width: 21ch;
-		}
+	&.-online > .content > .description {
+		max-width: 21ch;
 	}
 
-	&.-counter {
-		height: 134px;
-
-		> .content > .description {
-			max-width: 22ch;
-		}
+	&.-counter > .content > .description {
+		max-width: 22ch;
 	}
 
 	> .content > .description {
@@ -587,7 +571,7 @@ start --section-card
 	max-width: 400px;
 	width: 100%;
 	background: #ffffff;
-	box-shadow: 0px 6px 10px rgba(232, 238, 242, 0.79);
+	box-shadow: 0 6px 10px rgba(232, 238, 242, 0.79);
 	border-radius: 8px;
 	padding: $spacing-triple;
 
