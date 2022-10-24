@@ -626,3 +626,105 @@ start --section-card
 /****
 end --section-card
 ****/
+
+/****
+start --content-block
+****/
+@mixin get-started_content-block--small-desktop {
+	&.-section-1 {
+		> .preamble {
+			font-size: 1.29rem;
+		}
+
+		> .title {
+			font-size: 4.57rem;
+		}
+
+		> .description {
+			font-size: 1.29rem;
+			line-height: 1.3;
+			letter-spacing: 0;
+			max-width: 24ch;
+		}
+	}
+}
+
+@mixin get-started_content-block--tablet {
+	&.-section-1 {
+		> .preamble {
+			font-size: 1rem;
+		}
+
+		> .title {
+			font-size: 3.43rem;
+		}
+
+		> .description {
+			font-size: 1.14rem;
+		}
+
+		> .register-btn {
+			max-width: 99px;
+			font-weight: 400;
+			padding: $spacing-double;
+		}
+	}
+}
+
+@mixin get-started_content-block--mobile {
+	&.-section-1 > .description {
+		max-width: 19ch;
+	}
+}
+
+.get-started_content-block {
+	&.-section-1 {
+		color: rgba(10, 39, 87, 0.4);
+
+		> .preamble {
+			font: 700 1.71rem/1 $gilroy-bold;
+		}
+
+		> .description {
+			font: 600 1.71rem/1.4 $gilroy-bold;
+			letter-spacing: -0.02em;
+			max-width: 22ch;
+		}
+
+		> .title {
+			font: 700 5.7rem/1.1 $gotham-bold;
+			letter-spacing: -0.03em;
+			color: #012981;
+			max-width: 10ch;
+
+			> .highlight {
+				color: rgba(25, 114, 249, 1);
+			}
+		}
+
+		> .register-btn {
+			width: 100%;
+			max-width: 180px;
+			padding: $spacing-double 54.5px;
+			background: #1972f9;
+			color: #ffffff;
+			border-radius: 47px;
+			text-align: center;
+			letter-spacing: -0.01em;
+			font: 700 1.14rem/1 $gotham-bold;
+			cursor: pointer;
+		}
+	}
+
+	@include on(small-desktop) {
+		@include get-started_content-block--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_content-block--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_content-block--mobile;
+	}
+}
