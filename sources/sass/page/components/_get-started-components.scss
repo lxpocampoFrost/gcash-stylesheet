@@ -862,10 +862,6 @@ start --content-block
 		&:last-of-type {
 			margin-left: 0;
 		}
-
-		&.-maxW {
-			max-width: 22ch;
-		}
 	}
 }
 
@@ -918,6 +914,7 @@ start --content-block
 		> .item:last-of-type {
 			margin-top: $spacing-half;
 			margin-left: 0;
+			max-width: 30ch;
 		}
 
 		&:not(:first-of-type) {
@@ -970,10 +967,6 @@ start --content-block
 		font: 700 1.43rem/1.35 $gotham-bold;
 		color: #0a2757;
 		letter-spacing: -0.03em;
-
-		&.-verified {
-			color: #1972f9;
-		}
 	}
 }
 
@@ -1028,6 +1021,10 @@ start --content-block
 		> .row {
 			&:first-of-type {
 				margin-left: $spacing-double;
+			}
+
+			> .header > .title {
+				color: inherit;
 			}
 
 			> .item.-label {

@@ -83,13 +83,13 @@
 			<div class="row">
                 <div class="header">
                     <span class="icon" style="background: url(./assets/images/get-started/comparison-table-verified.svg) center/cover no-repeat;"></span> 
-                    <div class="title -verified">Verified</div>
+                    <div class="title">Verified</div>
                 </div>
                 <div class="description">Registered and verified accounts</div>
 			</div>
 			<div class="row">
 					<div class="item -label">Features</div>
-					<div class="item -maxW">Has the complete range of GCash features!</div>
+					<div class="item">Has the complete range of GCash features!</div>
 			</div>
 			<div class="row">
 					<div class="item -label">Wallet Size</div>
