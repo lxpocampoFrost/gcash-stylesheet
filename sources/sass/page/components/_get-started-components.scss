@@ -646,27 +646,31 @@ end --section-card
 /****
 start --content-block
 ****/
-@mixin get-started_content-block--small-desktop--section-1 {
-	> .preamble {
-		font-size: 1.29rem;
-	}
-
-	> .title {
-		font-size: 4.57rem;
-	}
-
-	> .description {
-		font-size: 1.29rem;
-		line-height: 1.3;
-		letter-spacing: 0;
-		max-width: 24ch;
-	}
-}
-
 @mixin get-started_content-block--small-desktop {
 	&.-section-1,
 	&.-section-2 {
-		@include get-started_content-block--small-desktop--section-1;
+		> .preamble {
+			font-size: 1.29rem;
+		}
+
+		> .title {
+			font-size: 4.57rem;
+		}
+
+		> .description {
+			font-size: 1.29rem;
+			line-height: 1.3;
+			letter-spacing: 0;
+			max-width: 24ch;
+		}
+
+		> .register-btn {
+			margin-top: $spacing-double-triple;
+		}
+	}
+
+	&.-section-1 > .title {
+		margin-top: 40px;
 	}
 
 	&.-section-2 > .title > .icon {
@@ -677,35 +681,40 @@ start --content-block
 	}
 }
 
-@mixin get-started_content-block--tablet--section-1 {
-	> .title {
-		font-size: 3.43rem;
-	}
-
-	> .description {
-		font-size: 1.14rem;
-	}
-
-	> .register-btn {
-		max-width: 99px;
-		font-weight: 400;
-		padding: $spacing-double;
-	}
-}
-
 @mixin get-started_content-block--tablet {
 	&.-section-1,
 	&.-section-2 {
-		@include get-started_content-block--tablet--section-1;
+		> .title {
+			font-size: 3.43rem;
+		}
+
+		> .description {
+			font-size: 1.14rem;
+			margin-top: $spacing-quad;
+		}
+
+		> .register-btn {
+			max-width: 99px;
+			font-weight: 400;
+			padding: $spacing-double;
+			margin-top: $spacing-quad;
+		}
 	}
 
-	&.-section-1 > .preamble {
-		font-size: 1rem;
+	&.-section-1 {
+		> .preamble {
+			font-size: 1rem;
+		}
+
+		> .title {
+			margin-top: $spacing-triple;
+		}
 	}
 
 	&.-section-2 {
 		> .preamble {
 			font-size: 1.14rem;
+			margin-top: $spacing-quad;
 		}
 
 		> .title > .icon {
@@ -724,6 +733,7 @@ start --content-block
 
 		> .description {
 			max-width: 19ch;
+			margin-top: $spacing-secondary;
 		}
 	}
 }
@@ -758,6 +768,7 @@ start --content-block
 		font: 600 1.71rem/1.4 $gilroy-bold;
 		letter-spacing: -0.02em;
 		max-width: 22ch;
+		margin-top: $spacing-triple;
 	}
 
 	> .title {
@@ -765,6 +776,7 @@ start --content-block
 		letter-spacing: -0.03em;
 		color: #012981;
 		max-width: 10ch;
+		margin-top: $spacing-double-triple;
 
 		> .highlight {
 			color: rgba(25, 114, 249, 1);
@@ -781,6 +793,7 @@ start --content-block
 		text-align: center;
 		letter-spacing: -0.01em;
 		font: 700 1.14rem/1 $gotham-bold;
+		margin-top: $spacing-double-quad;
 		cursor: pointer;
 	}
 }
