@@ -747,7 +747,7 @@ start --content-block
 
 // :START - comparison-table
 
-@mixin get-started_comparison-table--large-desktop--row {
+@mixin get-started_comparison-table--small-desktop--row {
 	&:first-of-type {
 		margin-bottom: $spacing-triple;
 	}
@@ -772,7 +772,7 @@ start --content-block
 	}
 }
 
-@mixin get-started_comparison-table--large-desktop {
+@mixin get-started_comparison-table--small-desktop {
 	max-width: 688px;
 
 	> .column {
@@ -785,7 +785,7 @@ start --content-block
 		}
 
 		> .row {
-			@include get-started_comparison-table--large-desktop--row;
+			@include get-started_comparison-table--small-desktop--row;
 		}
 	}
 }
@@ -823,11 +823,6 @@ start --content-block
 			&.-maxW {
 				max-width: 22ch;
 			}
-		}
-
-		> .item,
-		> .item.-label {
-			font-size: 1rem;
 		}
 	}
 }
@@ -1013,8 +1008,8 @@ start --content-block
 		}
 	}
 
-	@include on(large-desktop) {
-		@include get-started_comparison-table--large-desktop;
+	@include on(small-desktop) {
+		@include get-started_comparison-table--small-desktop;
 	}
 
 	@include on(tablet) {
