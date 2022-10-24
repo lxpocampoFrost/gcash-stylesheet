@@ -101,25 +101,25 @@
                 </div>  
 			</div>
 			<div class="row">
-                <div class="wrap -showMobile">
+                <div class="wrap">
 					<div class="item -label">Features</div>
 					<div class="item -maxW">Has the complete range of GCash features!</div>
 				</div>
 			</div>
 			<div class="row">
-                <div class="wrap -showMobile">
+                <div class="wrap">
 					<div class="item -label">Wallet Size</div>
 					<div class="item">Php 100,000 wallet size</div>
 				</div>
 			</div>
 			<div class="row">
-                <div class="wrap -showMobile">
+                <div class="wrap">
 					<div class="item -label">Incoming Limit</div>
 					<div class="item">Php 100,000 monthly incoming limit</div>
 				</div>
 			</div>
 			<div class="row">
-                <div class="wrap -showMobile">
+                <div class="wrap">
 					<div class="item -label">Outgoing Limit</div>
 					<div class="item">Php 100,000 monthly outgoing limit</div>
 				</div>
