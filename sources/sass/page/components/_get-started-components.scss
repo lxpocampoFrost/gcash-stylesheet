@@ -668,6 +668,16 @@ start --content-block
 			margin-top: $spacing-double-triple;
 		}
 	}
+
+	&.-section-3 {
+		> .title {
+			font-size: 4.57rem;
+		}
+
+		> .description {
+			font-size: 1.29rem;
+		}
+	}
 }
 
 @mixin get-started_content-block--tablet {
@@ -693,12 +703,34 @@ start --content-block
 			margin-top: $spacing-quad;
 		}
 	}
+
+	&.-section-3 {
+		> .title {
+			font-size: 3.43rem;
+			max-width: 11ch;
+		}
+
+		> .description {
+			max-width: 37ch;
+		}
+	}
 }
 
 @mixin get-started_content-block--mobile {
 	&.-section-1 > .description {
 		max-width: 19ch;
 		margin-top: $spacing-secondary;
+	}
+
+	&.-section-3 {
+		> .title {
+			font-size: 3.43rem;
+			max-width: 10ch;
+		}
+
+		> .description {
+			max-width: 30ch;
+		}
 	}
 }
 
@@ -741,6 +773,22 @@ start --content-block
 			font: 700 1.14rem/1 $gotham-bold;
 			margin-top: $spacing-double-quad;
 			cursor: pointer;
+		}
+	}
+
+	&.-section-3 {
+		> .title {
+			font: 700 5.71rem/1.1 $gotham-bold;
+			color: #012981;
+			letter-spacing: -0.03em;
+			max-width: 8ch;
+		}
+
+		> .description {
+			color: rgba(10, 39, 87, 0.4);
+			margin-top: $spacing-double;
+			font: 600 1.71rem/1.3 $gilroy-bold;
+			max-width: 31ch;
 		}
 	}
 

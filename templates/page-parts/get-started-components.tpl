@@ -75,4 +75,8 @@
         <div class="register-btn">Register</div>
     </div>
 
+    <div class="get-started_content-block -section-3">
+        <div class="title">Getting verified is super-easy</div>
+        <div class="description">The only requirements are a government-issued ID and your selfie.</div>
+    </div>
 </div>
