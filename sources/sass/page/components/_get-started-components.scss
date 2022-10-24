@@ -565,6 +565,13 @@ start --content-block
 		> .preamble {
 			font-size: 1.29rem;
 		}
+
+		> .description {
+			font-size: 1.29rem;
+			line-height: 1.3;
+			letter-spacing: 0;
+			max-width: 24ch;
+		}
 	}
 }
 
@@ -573,15 +580,32 @@ start --content-block
 		> .preamble {
 			font-size: 1rem;
 		}
+
+		> .description {
+			font-size: 1.14rem;
+		}
+	}
+}
+
+@mixin get-started_content-block--mobile {
+	&.-section-1 > .description {
+		max-width: 19ch;
 	}
 }
 
 .content-block {
 	&.-section-1 {
+		color: #0a2757;
+		opacity: 0.4;
+
 		> .preamble {
 			font: 700 1.71rem/1 $gilroy-bold;
-			color: #0a2757;
-			opacity: 0.4;
+		}
+
+		> .description {
+			font: 600 1.71rem/1.4 $gilroy-bold;
+			letter-spacing: -0.02em;
+			max-width: 22ch;
 		}
 	}
 
@@ -591,5 +615,9 @@ start --content-block
 
 	@include on(tablet) {
 		@include get-started_content-block--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_content-block--mobile;
 	}
 }
