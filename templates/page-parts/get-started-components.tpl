@@ -79,5 +79,27 @@
         <div class="preamble">Amazing features for verified accounts</div>
         <div class="title">Life is great when you’re <span class="highlight">verified</span><span class="icon" style="background: url(./assets/images/get-started_message-bubble-content-block-section-2-verified.svg) center/contain no-repeat;"></span></div>
     </div>
+
+    <div class="get-started_content-block -section-4">
+        <div class="content">
+            <div class="preamble">Safety and Privacy</div>
+            <div class="header">Share <span class="highlight">funds</span>,</div>
+        </div>
+        <div class="content">
+            <div class="title">not your <span class="highlight">sensitive </span>info</div>
+            <div class="description">Unbeatable military-grade encryption keeps all your details and financial history safe. Nothing gets out without your authentication.</div>
+        </div>
+    </div>
+
+    <div class="get-started_content-block -section-4 -order">
+        <div class="content">
+            <div class="title">in your pocket</div>
+            <div class="description">Your Mobile Personal Identification Number (MPIN) is a 4-digit code that you use to authorize all your GCash transactions.</div>
+        </div>
+        <div class="content">
+            <div class="preamble">GCash Mobile PIN</div>
+            <div class="header">Like having a <span class="highlight">bank vault</span></div>
+        </div>
+    </div>
     
 </div>
