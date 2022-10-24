@@ -74,4 +74,5 @@
         <div class="description">Register now, and receive an awesome freebies from GCash!</div>
         <div class="register-btn">Register</div>
     </div>
+
 </div>
