@@ -75,6 +75,11 @@
         <div class="register-btn">Register</div>
     </div>
 
+    <div class="get-started_content-block -section-2">
+        <div class="preamble">Amazing features for verified accounts</div>
+        <div class="title">Life is great when you’re <span class="highlight">verified</span><span class="icon" style="background: url(./assets/images/get-started_message-bubble-content-block-section-2-verified.svg) center/contain no-repeat;"></span></div>
+    </div>
+
     <div class="get-started_content-block -outlets">
         <span class="preamble">Put the cash in Gcash</span>
         <div class="title">63,000</div>
@@ -88,4 +93,5 @@
         <div class="label">Cash Out Outlets Nationwide</div>
         <p class="description">With thousands of ATMs and GCash Partner Outlets nationwide, withdrawing your GCash funds is safe and convenient.</p>
     </div>
+    
 </div>
