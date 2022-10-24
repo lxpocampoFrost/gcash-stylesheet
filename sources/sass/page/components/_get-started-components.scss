@@ -793,12 +793,9 @@ start --content-block
 @mixin get-started_comparison-table--tablet--row {
 	margin-bottom: 0;
 
-	&:not(:last-of-type) {
-		margin-bottom: $spacing-half;
-	}
-
-	&:first-of-type {
-		margin-bottom: $spacing-triple;
+	&:not(:first-of-type) {
+		margin-top: $spacing-half;
+		margin-bottom: 0;
 	}
 
 	> .header {
@@ -843,7 +840,7 @@ start --content-block
 			margin-left: $spacing-default;
 
 			> .row > .wrap {
-				padding-top: 18px;
+				padding-top: 18.5px;
 			}
 		}
 
