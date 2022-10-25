@@ -195,7 +195,7 @@
 	}
 
 	.section-3-img-2 {
-		width: calc(300px + 40px);
+		width: calc(300px + 50px);
 		transform: translate(-50%, 86px);
 	}
 
@@ -219,6 +219,7 @@
 
 	.get-started_message-bubble.-get-verified {
 		transform: translate(70px, -3px);
+		z-index: 999;
 	}
 
 	.section-3-img-1 {
