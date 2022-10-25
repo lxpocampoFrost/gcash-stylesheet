@@ -120,7 +120,7 @@
 	.get-started_wrapper-bounding-box {
 		background: #ebf3ff;
 		border-radius: 0px 0px 40px 40px;
-		padding: 120px 0 82px 154px;
+		padding: 120px 159px 82px 154px;
 		flex-direction: column;
 		min-height: 814px;
 
@@ -130,6 +130,8 @@
 	}
 
 	@include on(large-desktop) {
+		transform: translateY(-1px);
+
 		.get-started_wrapper-bounding-box {
 			padding: 120px 60px 82px;
 
@@ -140,8 +142,10 @@
 	}
 
 	@include on(small-desktop) {
+		min-height: 742px;
+
 		.get-started_wrapper-bounding-box {
-			padding: 150px 40px $spacing-double-quad;
+			padding: 100px 40px $spacing-double-quad;
 			min-height: 662px;
 
 			> .get-started_comparison-table {
@@ -151,6 +155,8 @@
 	}
 
 	@include on(tablet) {
+		min-height: 828px;
+
 		.get-started_wrapper-bounding-box {
 			padding: 150px 40px $spacing-double-quad;
 			min-height: 764px;
@@ -162,9 +168,11 @@
 	}
 
 	@include on(mobile) {
+		min-height: 1153px;
+
 		.get-started_wrapper-bounding-box {
 			padding: 150px 30px 40px;
-			min-height: 764px;
+			min-height: 1105px;
 
 			> .get-started_comparison-table {
 				margin-top: 60px;
