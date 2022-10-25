@@ -52,7 +52,7 @@
         </div>
     </div>
 
-    <div class="get-started_section-card -section-6 -gcash-padala">
+    <div class="get-started_section-card -section-6">
         <span class="icon" style="background: url(./assets/images/get-started/section-card-section-6-gcash-padala.svg) center/contain no-repeat;"></span>
         <div class="content">
             <div class="title">Domestic Remittance</div>
@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <div class="get-started_section-card -section-6 -cash-out">
+    <div class="get-started_section-card -section-6">
         <span class="icon" style="background: url(./assets/images/get-started/section-card-section-6-cash-out.svg) center/contain no-repeat;"></span>
         <div class="content">
             <div class="title">GCash Mastercard</div>
@@ -122,8 +122,6 @@
 		</div>
 	</div>
 
-    
-
     <div class="get-started_content-block -section-1">
         <div class="preamble">Get Started</div>
         <div class="title">Your <span class="highlight">GCash</span> story begins here!</div>
@@ -165,12 +163,12 @@
         <div class="description">Unbeatable military-grade encryption keeps all your details and financial history safe. Nothing gets out without your authentication.</div>
     </div>
 
-    <div class="get-started_content-block -section-4 -order" style="background: gray;">
+    <div class="get-started_content-block -section-4" style="background: gray;">
         <div class="title">in your pocket</div>
         <div class="description">Your Mobile Personal Identification Number (MPIN) is a 4-digit code that you use to authorize all your GCash transactions.</div>
     </div>
 
-     <div class="get-started_content-block -section-4 -order" style="background: gray;">
+     <div class="get-started_content-block -section-4" style="background: gray;">
         <div class="preamble">GCash Mobile PIN</div>
         <div class="header">Like having a <span class="highlight">bank vault</span></div>
     </div>
