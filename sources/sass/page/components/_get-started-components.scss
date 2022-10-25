@@ -632,7 +632,8 @@ start --content-block
 ****/
 @mixin get-started_content-block--small-desktop {
 	&.-section-1,
-	&.-section-2 {
+	&.-section-2,
+	&.-section-3 {
 		> .preamble {
 			font-size: 1.29rem;
 		}
@@ -644,12 +645,18 @@ start --content-block
 		> .description {
 			font-size: 1.29rem;
 			line-height: 1.3;
-			letter-spacing: 0;
-			max-width: 24ch;
 		}
 
 		> .register-btn {
 			margin-top: $spacing-double-triple;
+		}
+	}
+
+	&.-section-1,
+	&.-section-2 {
+		> .description {
+			letter-spacing: 0;
+			max-width: 24ch;
 		}
 	}
 
@@ -663,25 +670,19 @@ start --content-block
 		vertical-align: top;
 		margin-left: $spacing-half;
 	}
-
-	&.-section-3 {
-		> .title {
-			font-size: 4.57rem;
-		}
-
-		> .description {
-			font-size: 1.29rem;
-		}
-	}
 }
 
 @mixin get-started_content-block--tablet {
 	&.-section-1,
-	&.-section-2 {
+	&.-section-2,
+	&.-section-3 {
 		> .title {
 			font-size: 3.43rem;
 		}
+	}
 
+	&.-section-1,
+	&.-section-2 {
 		> .description {
 			font-size: 1.14rem;
 			margin-top: $spacing-quad;
@@ -718,7 +719,6 @@ start --content-block
 
 	&.-section-3 {
 		> .title {
-			font-size: 3.43rem;
 			max-width: 11ch;
 		}
 
@@ -730,7 +730,8 @@ start --content-block
 
 @mixin get-started_content-block--mobile {
 	&.-section-1,
-	&.-section-2 {
+	&.-section-2,
+	&.-section-3 {
 		> .title {
 			max-width: 10ch;
 		}
@@ -741,15 +742,9 @@ start --content-block
 		}
 	}
 
-	&.-section-3 {
-		> .title {
-			font-size: 3.43rem;
-			max-width: 10ch;
-		}
-
-		> .description {
-			max-width: 30ch;
-		}
+	&.-section-3 > .description {
+		max-width: 30ch;
+		margin-top: $spacing-double;
 	}
 }
 
@@ -815,7 +810,8 @@ start --content-block
 
 .get-started_content-block {
 	&.-section-1,
-	&.-section-2 {
+	&.-section-2,
+	&.-section-3 {
 		@include content-block--section-1;
 	}
 
@@ -825,38 +821,35 @@ start --content-block
 
 	&.-section-3 {
 		> .title {
-			font: 700 5.71rem/1.1 $gotham-bold;
-			color: #012981;
-			letter-spacing: -0.03em;
 			max-width: 8ch;
+			margin-top: unset;
 		}
 
 		> .description {
-			color: rgba(10, 39, 87, 0.4);
 			margin-top: $spacing-double;
 			font: 600 1.71rem/1.3 $gilroy-bold;
 			max-width: 31ch;
 		}
-
-		@include on(small-desktop) {
-			@include get-started_content-block--small-desktop;
-		}
-
-		@include on(tablet) {
-			@include get-started_content-block--tablet;
-		}
-
-		@include on(mobile) {
-			@include get-started_content-block--mobile;
-		}
 	}
 
-	/****
+	@include on(small-desktop) {
+		@include get-started_content-block--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_content-block--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_content-block--mobile;
+	}
+}
+
+/****
 end --content-block
 ****/
 
-	// :END - comparison-table
-}
+// :END - comparison-table
 
 // :START - comparison-table
 
