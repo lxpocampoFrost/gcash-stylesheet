@@ -631,7 +631,7 @@ end --section-card
 start --content-block
 ****/
 
-@mixin get-started__content-block--small-desktop--section-4 {
+@mixin get-started_content-block--small-desktop--section-4 {
 	> .header,
 	> .title {
 		font-size: 5rem;
@@ -691,7 +691,7 @@ start --content-block
 	}
 
 	&.-section-4 {
-		@include get-started__content-block--small-desktop--section-4;
+		@include get-started_content-block--small-desktop--section-4;
 	}
 
 	&.-outlets {
