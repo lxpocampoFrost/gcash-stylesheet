@@ -632,10 +632,6 @@ start --content-block
 ****/
 
 @mixin get-started_content-block--small-desktop--outlets {
-	&.-real-money > .description {
-		max-width: 33ch;
-	}
-
 	> .title {
 		font-size: 4.57rem;
 	}
@@ -700,7 +696,6 @@ start --content-block
 
 		> .description {
 			font-size: 1.14rem;
-			max-width: 47ch;
 		}
 
 		> .label {
@@ -786,7 +781,6 @@ start --content-block
 
 		> .description {
 			font-size: 1rem;
-			max-width: 33ch;
 		}
 	}
 
@@ -880,10 +874,6 @@ start --content-block
 
 @mixin get-started_content-block--outlets {
 	color: #0a2757;
-
-	&.-real-money > .description {
-		max-width: 38ch;
-	}
 
 	> .preamble {
 		font: 400 1rem/1 $gotham-bold;
