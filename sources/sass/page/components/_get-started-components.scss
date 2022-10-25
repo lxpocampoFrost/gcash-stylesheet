@@ -411,35 +411,9 @@
 start --section-card
 ****/
 
-@mixin get-started_section-card--section-5 {
-	&.-counter > .content > .description {
-		max-width: 28ch;
-	}
-
-	> .content {
-		margin-left: $spacing-secondary;
-
-		> .description {
-			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 27ch;
-			color: #445c85;
-			opacity: 0.7;
-			margin-top: $spacing-half;
-		}
-	}
-}
-
 @mixin get-started_section-card--large-desktop {
 	&.-section-5 {
 		max-width: 314.67px;
-
-		&.-online > .content > .description {
-			max-width: 17ch;
-		}
-
-		&.-counter > .content > .description {
-			max-width: 19ch;
-		}
 
 		> .content > .description {
 			max-width: 19ch;
@@ -467,14 +441,6 @@ start --section-card
 	&.-section-5 {
 		max-width: 245.33px;
 
-		&.-online > .content > .description {
-			max-width: 12ch;
-		}
-
-		&.-counter > .content > .description {
-			max-width: 15ch;
-		}
-
 		> .content > .description {
 			max-width: 14ch;
 		}
@@ -491,14 +457,6 @@ start --section-card
 
 @mixin get-started_section-card--tablet--section-5 {
 	max-width: 480px;
-
-	&.-online > .content > .description {
-		max-width: 41ch;
-	}
-
-	&.-counter > .content > .description {
-		max-width: 40ch;
-	}
 
 	> .content > .description {
 		font-size: 1rem;
@@ -523,14 +481,6 @@ start --section-card
 @mixin get-started_section-card--mobile--section-5 {
 	max-width: 320px;
 
-	&.-online > .content > .description {
-		max-width: 21ch;
-	}
-
-	&.-counter > .content > .description {
-		max-width: 22ch;
-	}
-
 	> .content > .description {
 		max-width: 24ch;
 	}
@@ -548,6 +498,20 @@ start --section-card
 
 	&.-section-6 {
 		max-width: 320px;
+	}
+}
+
+@mixin get-started_section-card--section-5 {
+	> .content {
+		margin-left: $spacing-secondary;
+
+		> .description {
+			font: 500 1.14rem/1.4 $gilroy-medium;
+			max-width: 27ch;
+			color: #445c85;
+			opacity: 0.7;
+			margin-top: $spacing-half;
+		}
 	}
 }
 
