@@ -152,5 +152,25 @@
         <div class="label">Cash Out Outlets Nationwide</div>
         <p class="description">With thousands of ATMs and GCash Partner Outlets nationwide, withdrawing your GCash funds is safe and convenient.</p>
     </div>
+
+    <div class="get-started_content-block -section-4" style="background: gray;">
+        <div class="preamble">Safety and Privacy</div>
+        <div class="header">Share <span class="highlight">funds</span>,</div>
+    </div>
+
+     <div class="get-started_content-block -section-4" style="background: gray;">
+        <div class="title">not your <span class="highlight">sensitive </span>info</div>
+        <div class="description">Unbeatable military-grade encryption keeps all your details and financial history safe. Nothing gets out without your authentication.</div>
+    </div>
+
+    <div class="get-started_content-block -section-4 -order" style="background: gray;">
+        <div class="title">in your pocket</div>
+        <div class="description">Your Mobile Personal Identification Number (MPIN) is a 4-digit code that you use to authorize all your GCash transactions.</div>
+    </div>
+
+     <div class="get-started_content-block -section-4 -order" style="background: gray;">
+        <div class="preamble">GCash Mobile PIN</div>
+        <div class="header">Like having a <span class="highlight">bank vault</span></div>
+    </div>
     
 </div>
