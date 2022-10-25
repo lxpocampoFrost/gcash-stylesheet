@@ -25,4 +25,69 @@
             </div>
         </div>
     </div>
+
+    <div class="get-started_panel get-started_panel-2">
+        <div class="get-started_wrapper">
+            <div class="get-started_wrapper-bounding-box">
+                <div class="get-started_content-block -section-2">
+                    <div class="preamble">Amazing features for verified accounts</div>
+                    <div class="title">Life is great when you’re <span class="highlight">verified</span><span class="icon" style="background: url(../assets/images/get-started/message-bubble-content-block-section-2-verified.svg) center/contain no-repeat;"></span></div>
+                </div>
+
+                <div class="get-started_comparison-table">
+                    <div class="column">
+                        <div class="row">
+                            <div class="header">
+                                <span class="icon" style="background: url(./assets/images/get-started/comparison-table-basic.svg) center/cover no-repeat;"></span> 
+                                <div class="title">Basic</div>
+                            </div>
+                            <div class="description">Registered, but non-verified, accounts</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Features</div>
+                                <div class="item">Has basic features</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Wallet Size</div>
+                                <div class="item">Php 50,000 wallet size</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Incoming Limit</div>
+                                <div class="item">Php 10,000 monthly incoming limit</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Outgoing Limit</div>
+                                <div class="item">Php 10,000 monthly outgoing limit</div>
+                        </div>
+                    </div>
+
+                    <div class="column -verified">
+                        <div class="row">
+                            <div class="header">
+                                <span class="icon" style="background: url(./assets/images/get-started/comparison-table-verified.svg) center/cover no-repeat;"></span> 
+                                <div class="title">Verified</div>
+                            </div>
+                            <div class="description">Registered and verified accounts</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Features</div>
+                                <div class="item">Has the complete range of GCash features!</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Wallet Size</div>
+                                <div class="item">Php 100,000 wallet size</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Incoming Limit</div>
+                                <div class="item">Php 100,000 monthly incoming limit</div>
+                        </div>
+                        <div class="row">
+                                <div class="item -label">Outgoing Limit</div>
+                                <div class="item">Php 100,000 monthly outgoing limit</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
