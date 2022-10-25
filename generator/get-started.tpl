@@ -38,7 +38,7 @@
                     <div class="column">
                         <div class="row">
                             <div class="header">
-                                <span class="icon" style="background: url(./assets/images/get-started/comparison-table-basic.svg) center/cover no-repeat;"></span> 
+                                <span class="icon" style="background: url(../assets/images/get-started/comparison-table-basic.svg) center/cover no-repeat;"></span> 
                                 <div class="title">Basic</div>
                             </div>
                             <div class="description">Registered, but non-verified, accounts</div>
@@ -64,7 +64,7 @@
                     <div class="column -verified">
                         <div class="row">
                             <div class="header">
-                                <span class="icon" style="background: url(./assets/images/get-started/comparison-table-verified.svg) center/cover no-repeat;"></span> 
+                                <span class="icon" style="background: url(../assets/images/get-started/comparison-table-verified.svg) center/cover no-repeat;"></span> 
                                 <div class="title">Verified</div>
                             </div>
                             <div class="description">Registered and verified accounts</div>
