@@ -681,12 +681,14 @@ start --content-block
 }
 
 @mixin get-started_content-block--tablet--order {
-	> .header {
-		max-width: 5ch;
-	}
+	> .content {
+		> .header {
+			max-width: 5ch;
+		}
 
-	> .description {
-		max-width: 34ch;
+		> .description {
+			max-width: 34ch;
+		}
 	}
 }
 
@@ -740,12 +742,7 @@ start --content-block
 	}
 
 	&.-order {
-		display: flex;
-		flex-direction: column-reverse;
-
-		> .content {
-			@include get-started_content-block--tablet--order;
-		}
+		@include get-started_content-block--tablet--order;
 	}
 }
 

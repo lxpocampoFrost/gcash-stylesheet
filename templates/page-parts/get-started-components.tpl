@@ -139,6 +139,9 @@
             <div class="preamble">Safety and Privacy</div>
             <div class="header">Share <span class="highlight">funds</span>,</div>
         </div>
+    </div>
+
+     <div class="get-started_content-block -section-4">
         <div class="content">
             <div class="title">not your <span class="highlight">sensitive </span>info</div>
             <div class="description">Unbeatable military-grade encryption keeps all your details and financial history safe. Nothing gets out without your authentication.</div>
@@ -150,6 +153,9 @@
             <div class="title">in your pocket</div>
             <div class="description">Your Mobile Personal Identification Number (MPIN) is a 4-digit code that you use to authorize all your GCash transactions.</div>
         </div>
+    </div>
+
+     <div class="get-started_content-block -section-4 -order">
         <div class="content">
             <div class="preamble">GCash Mobile PIN</div>
             <div class="header">Like having a <span class="highlight">bank vault</span></div>
