@@ -769,8 +769,13 @@ start --content-block
 		}
 	}
 
-	&.-section-3 > .description {
-		max-width: 37ch;
+	&.-section-3 {
+		> .title {
+			max-width: 11ch;
+		}
+		> .description {
+			max-width: 37ch;
+		}
 	}
 
 	&.-section-4 {
