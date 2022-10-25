@@ -647,26 +647,22 @@ start --content-block
 }
 
 @mixin get-started_content-block--small-desktop {
-	&.-section-1,
-	&.-section-2 {
-		> .preamble {
-			font-size: 1.29rem;
-		}
+	> .title {
+		font-size: 4.57rem;
+	}
 
-		> .title {
-			font-size: 4.57rem;
-		}
+	> .preamble {
+		font-size: 1.29rem;
+	}
 
-		> .description {
-			font-size: 1.29rem;
-			line-height: 1.3;
-			letter-spacing: 0;
-			max-width: 24ch;
-		}
+	> .description {
+		font-size: 1.29rem;
+		line-height: 1.3;
+		letter-spacing: 0;
+	}
 
-		> .register-btn {
-			margin-top: $spacing-double-triple;
-		}
+	> .register-btn {
+		margin-top: $spacing-double-triple;
 	}
 
 	&.-section-1 > .title {
@@ -704,33 +700,28 @@ start --content-block
 }
 
 @mixin get-started_content-block--tablet {
-	&.-section-1,
-	&.-section-2 {
-		> .title {
-			font-size: 3.43rem;
-		}
-
-		> .description {
-			font-size: 1.14rem;
-			margin-top: $spacing-quad;
-		}
-
-		> .register-btn {
-			max-width: 99px;
-			font-weight: 400;
-			padding: $spacing-double;
-			margin-top: $spacing-quad;
-		}
+	> .title {
+		font-size: 3.43rem;
 	}
 
-	&.-section-1 {
-		> .preamble {
-			font-size: 1rem;
-		}
+	> .preamble {
+		font-size: 1rem;
+	}
 
-		> .title {
-			margin-top: $spacing-triple;
-		}
+	> .description {
+		font-size: 1.14rem;
+		margin-top: $spacing-quad;
+	}
+
+	> .register-btn {
+		max-width: 99px;
+		font-weight: 400;
+		padding: $spacing-double;
+		margin-top: $spacing-quad;
+	}
+
+	&.-section-1 > .title {
+		margin-top: $spacing-triple;
 	}
 
 	&.-section-2 {
@@ -744,34 +735,12 @@ start --content-block
 		}
 	}
 
+	&.-section-3 > .description {
+		max-width: 37ch;
+	}
+
 	&.-section-4 {
 		@include get-started_content-block--tablet--section-4;
-	}
-}
-
-@mixin get-started_content-block--mobile {
-	&.-section-1,
-	&.-section-2 {
-		> .title {
-			max-width: 10ch;
-		}
-
-		> .description {
-			max-width: 19ch;
-			margin-top: $spacing-secondary;
-		}
-	}
-
-	&.-section-4 {
-		> .header,
-		> .title {
-			font-size: 3.43rem;
-			max-width: 9ch;
-		}
-
-		&.-order > .header {
-			max-width: 8.5ch;
-		}
 	}
 }
 
@@ -805,7 +774,23 @@ start --content-block
 	}
 }
 
-@mixin content-block--section-2 {
+@mixin get-started_content-block--mobile {
+	&.-section-2 > .title {
+		max-width: 10ch;
+	}
+
+	> .description {
+		max-width: 19ch;
+		margin-top: $spacing-secondary;
+	}
+
+	&.-section-3 > .description {
+		max-width: 29ch;
+		margin-top: $spacing-double;
+	}
+}
+
+@mixin get-started_content-block--section-2 {
 	> .preamble {
 		font: 600 1.71rem/1.3 $gilroy-bold;
 	}
@@ -824,18 +809,11 @@ start --content-block
 	}
 }
 
-@mixin content-block--section-1 {
+.get-started_content-block {
 	color: rgba(10, 39, 87, 0.4);
 
 	> .preamble {
 		font: 700 1.71rem/1 $gilroy-bold;
-	}
-
-	> .description {
-		font: 600 1.71rem/1.4 $gilroy-bold;
-		letter-spacing: -0.02em;
-		max-width: 22ch;
-		margin-top: $spacing-triple;
 	}
 
 	> .title {
@@ -863,16 +841,30 @@ start --content-block
 		margin-top: $spacing-double-quad;
 		cursor: pointer;
 	}
-}
 
-.get-started_content-block {
-	&.-section-1,
-	&.-section-2 {
-		@include content-block--section-1;
+	> .description {
+		font: 600 1.71rem/1.4 $gilroy-bold;
+		letter-spacing: -0.02em;
+		max-width: 24ch;
+		margin-top: $spacing-triple;
 	}
 
 	&.-section-2 {
-		@include content-block--section-2;
+		@include get-started_content-block--section-2;
+	}
+
+	&.-section-3 {
+		> .title {
+			max-width: 8ch;
+			margin-top: unset;
+		}
+
+		> .description {
+			margin-top: $spacing-double;
+			line-height: 1.3;
+			letter-spacing: 0;
+			max-width: 31ch;
+		}
 	}
 
 	&.-section-4 {
@@ -892,44 +884,52 @@ start --content-block
 	}
 }
 
+/****
+end --content-block
+****/
+
 // :START - comparison-table
+
+@mixin get-started_comparison-table--small-desktop--column {
+	&:first-of-type > .row {
+		&:first-of-type {
+			max-width: 252px;
+		}
+
+		&:not(:first-of-type) > .item.-label {
+			max-width: 124px;
+		}
+	}
+
+	&:last-of-type {
+		max-width: 296px;
+	}
+
+	> .row {
+		&:first-of-type {
+			margin-bottom: $spacing-triple;
+		}
+
+		> .header > .title {
+			font-size: 1.29rem;
+		}
+
+		> .description {
+			font-size: 0.86rem;
+		}
+
+		> .item,
+		> .item.-label {
+			font-size: 1rem;
+		}
+	}
+}
 
 @mixin get-started_comparison-table--small-desktop {
 	max-width: 688px;
 
 	> .column {
-		&:first-of-type > .row {
-			&:first-of-type {
-				max-width: 252px;
-			}
-
-			&:not(:first-of-type) > .item.-label {
-				max-width: 124px;
-			}
-		}
-
-		&:last-of-type {
-			max-width: 296px;
-		}
-
-		> .row {
-			&:first-of-type {
-				margin-bottom: $spacing-triple;
-			}
-
-			> .header > .title {
-				font-size: 1.29rem;
-			}
-
-			> .description {
-				font-size: 0.86rem;
-			}
-
-			> .item,
-			> .item.-label {
-				font-size: 1rem;
-			}
-		}
+		@include get-started_comparison-table--small-desktop--column;
 	}
 }
 
@@ -957,10 +957,8 @@ start --content-block
 	&:last-of-type {
 		margin-left: $spacing-default;
 
-		> .row {
-			&:not(:first-of-type) {
-				padding-top: 18.5px;
-			}
+		> .row:not(:first-of-type) {
+			padding-top: 18.5px;
 		}
 	}
 
@@ -1011,33 +1009,37 @@ start --content-block
 	}
 }
 
+@mixin get-started_comparison-table--mobile--column {
+	&:last-of-type {
+		@include get-started_comparison-table--mobile--column-last-of-type;
+	}
+
+	&:first-of-type > .row {
+		&:first-of-type {
+			max-width: unset;
+		}
+
+		&:nth-of-type(2) {
+			padding-bottom: 0;
+		}
+	}
+
+	&.-verified > .row > .item.-label {
+		display: block;
+		padding-bottom: 0;
+	}
+
+	> .row {
+		display: block;
+	}
+}
+
 @mixin get-started_comparison-table--mobile {
 	display: block;
 	max-width: 322px;
 
 	> .column {
-		&:last-of-type {
-			@include get-started_comparison-table--mobile--column-last-of-type;
-		}
-
-		&:first-of-type > .row {
-			&:first-of-type {
-				max-width: unset;
-			}
-
-			&:nth-of-type(2) {
-				padding-bottom: 0;
-			}
-		}
-
-		&.-verified > .row > .item.-label {
-			display: block;
-			padding-bottom: 0;
-		}
-
-		> .row {
-			display: block;
-		}
+		@include get-started_comparison-table--mobile--column;
 	}
 }
 
@@ -1099,26 +1101,30 @@ start --content-block
 	}
 }
 
+@mixin get-started_comparison-table--column--verified {
+	color: #1972f9;
+
+	> .row {
+		&:first-of-type {
+			margin-left: $spacing-double;
+		}
+
+		> .header > .title {
+			color: inherit;
+		}
+
+		> .item.-label {
+			display: none;
+		}
+	}
+}
+
 @mixin get-started_comparison-table--column {
 	width: 100%;
 	color: #012981;
 
 	&.-verified {
-		color: #1972f9;
-
-		> .row {
-			&:first-of-type {
-				margin-left: $spacing-double;
-			}
-
-			> .header > .title {
-				color: inherit;
-			}
-
-			> .item.-label {
-				display: none;
-			}
-		}
+		@include get-started_comparison-table--column--verified;
 	}
 
 	&:first-of-type > .row:first-of-type {
@@ -1158,6 +1164,3 @@ start --content-block
 }
 
 // :END - comparison-table
-/****
-end --content-block
-****/
