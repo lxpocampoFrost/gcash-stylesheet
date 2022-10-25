@@ -697,21 +697,13 @@ start --content-block
 		}
 	}
 
-	&.-section-3 {
-		> .title {
-			max-width: 11ch;
-		}
-
-		> .description {
-			max-width: 37ch;
-		}
+	&.-section-3 > .description {
+		max-width: 37ch;
 	}
 }
 
 @mixin get-started_content-block--mobile {
-	> .title,
-	&.-section-2 > .title,
-	&.-section-3 > .title {
+	&.-section-2 > .title {
 		max-width: 10ch;
 	}
 
