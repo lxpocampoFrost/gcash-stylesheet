@@ -642,18 +642,11 @@ start --content-block
 	> .description {
 		font-size: 1.29rem;
 		line-height: 1.3;
+		letter-spacing: 0;
 	}
 
 	> .register-btn {
 		margin-top: $spacing-double-triple;
-	}
-
-	&.-section-1,
-	&.-section-2 {
-		> .description {
-			letter-spacing: 0;
-			max-width: 24ch;
-		}
 	}
 
 	&.-section-1 > .title {
@@ -673,6 +666,10 @@ start --content-block
 		font-size: 3.43rem;
 	}
 
+	> .preamble {
+		font-size: 1rem;
+	}
+
 	> .description {
 		font-size: 1.14rem;
 		margin-top: $spacing-quad;
@@ -685,14 +682,8 @@ start --content-block
 		margin-top: $spacing-quad;
 	}
 
-	&.-section-1 {
-		> .preamble {
-			font-size: 1rem;
-		}
-
-		> .title {
-			margin-top: $spacing-triple;
-		}
+	&.-section-1 > .title {
+		margin-top: $spacing-triple;
 	}
 
 	&.-section-2 {
@@ -718,7 +709,9 @@ start --content-block
 }
 
 @mixin get-started_content-block--mobile {
-	> .title {
+	> .title,
+	&.-section-2 > .title,
+	&.-section-3 > .title {
 		max-width: 10ch;
 	}
 
@@ -788,7 +781,7 @@ start --content-block
 	> .description {
 		font: 600 1.71rem/1.4 $gilroy-bold;
 		letter-spacing: -0.02em;
-		max-width: 22ch;
+		max-width: 24ch;
 		margin-top: $spacing-triple;
 	}
 
@@ -805,6 +798,7 @@ start --content-block
 		> .description {
 			margin-top: $spacing-double;
 			line-height: 1.3;
+			letter-spacing: 0;
 			max-width: 31ch;
 		}
 	}
