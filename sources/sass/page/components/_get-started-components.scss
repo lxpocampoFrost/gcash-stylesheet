@@ -878,6 +878,45 @@ start --content-block
 	}
 }
 
+@mixin get-started_content-block--outlets {
+	color: #0a2757;
+
+	&.-real-money > .description {
+		max-width: 38ch;
+	}
+
+	> .preamble {
+		font: 400 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+		margin-left: 6px;
+	}
+
+	> .title {
+		font: 700 5.71rem/1.2 $gotham-bold;
+		letter-spacing: -0.03em;
+		color: #1972f9;
+		margin-top: $spacing-double-triple;
+	}
+
+	> .label {
+		font: 400 1.71rem/1.3 $gotham-bold;
+		opacity: 0.8;
+		letter-spacing: -0.03em;
+	}
+
+	> .description {
+		font: 500 1.14rem/1.4 $gilroy-bold;
+		opacity: 0.5;
+		max-width: 40ch;
+		margin-top: 40px;
+	}
+
+	> .methods {
+		font: 600 1.14rem/1.4 $gilroy-bold;
+		margin-top: $spacing-triple;
+	}
+}
+
 .get-started_content-block {
 	&.-section-1,
 	&.-section-2 {
@@ -889,42 +928,7 @@ start --content-block
 	}
 
 	&.-outlets {
-		color: #0a2757;
-
-		&.-real-money > .description {
-			max-width: 38ch;
-		}
-
-		> .preamble {
-			font: 400 1rem/1 $gotham-bold;
-			letter-spacing: -0.01em;
-			margin-left: 6px;
-		}
-
-		> .title {
-			font: 700 5.71rem/1.2 $gotham-bold;
-			letter-spacing: -0.03em;
-			color: #1972f9;
-			margin-top: $spacing-double-triple;
-		}
-
-		> .label {
-			font: 400 1.71rem/1.3 $gotham-bold;
-			opacity: 0.8;
-			letter-spacing: -0.03em;
-		}
-
-		> .description {
-			font: 500 1.14rem/1.4 $gilroy-bold;
-			opacity: 0.5;
-			max-width: 40ch;
-			margin-top: 40px;
-		}
-
-		> .methods {
-			font: 600 1.14rem/1.4 $gilroy-bold;
-			margin-top: $spacing-triple;
-		}
+		@include get-started_content-block--outlets;
 	}
 
 	@include on(small-desktop) {
