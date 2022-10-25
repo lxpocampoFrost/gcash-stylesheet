@@ -1,7 +1,25 @@
 /*
-*
+* START - 2nd Section
+**/
+.landing_panel-2 {
+	.landing_wrapper-bounding-box {
+		justify-content: flex-end;
+	}
+
+	.landing_text-heading-1 {
+		max-width: 7ch;
+		transform: translate(-75px, 166px);
+	}
+
+	.landing_message-bubble.-avatar-left {
+		left: 50%;
+		transform: translate(-298px, 124px);
+	}
+}
+/* END  - 2nd Section */
+
+/*
 * START - 1st Section
-*
 **/
 @mixin landing_panel-1--small-desktop {
 	.section-1-phone {
@@ -75,11 +93,7 @@
 		@include landing_panel-1--mobile;
 	}
 }
-/*
-*
-* END - 1st Section
-*
-**/
+/* END - 1st Section */
 
 .landing_wrapper-floating {
 	width: 100%;
