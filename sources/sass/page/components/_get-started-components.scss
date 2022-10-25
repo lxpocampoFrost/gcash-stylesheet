@@ -744,7 +744,35 @@ start --content-block
 	}
 }
 
-@mixin content-block--section-4 {
+@mixin get-started_content-block--mobile {
+	&.-section-2 > .title {
+		max-width: 10ch;
+	}
+
+	> .description {
+		max-width: 19ch;
+		margin-top: $spacing-secondary;
+	}
+
+	&.-section-3 > .description {
+		max-width: 29ch;
+		margin-top: $spacing-double;
+	}
+
+	&.-section-4 {
+		> .header,
+		> .title {
+			font-size: 3.43rem;
+			max-width: 9ch;
+		}
+
+		&.-order > .header {
+			max-width: 8.5ch;
+		}
+	}
+}
+
+@mixin get-started_content-block--section-4 {
 	color: rgba(255, 255, 255, 0.6);
 	> .preamble {
 		font: 700 1rem/1 $gotham-bold;
@@ -772,22 +800,6 @@ start --content-block
 		font: 600 1.14rem/1.4 $gilroy-bold;
 		margin-top: $spacing-triple;
 		max-width: 34ch;
-	}
-}
-
-@mixin get-started_content-block--mobile {
-	&.-section-2 > .title {
-		max-width: 10ch;
-	}
-
-	> .description {
-		max-width: 19ch;
-		margin-top: $spacing-secondary;
-	}
-
-	&.-section-3 > .description {
-		max-width: 29ch;
-		margin-top: $spacing-double;
 	}
 }
 
@@ -869,7 +881,7 @@ start --content-block
 	}
 
 	&.-section-4 {
-		@include content-block--section-4;
+		@include get-started_content-block--section-4;
 	}
 
 	@include on(small-desktop) {
