@@ -452,14 +452,6 @@ start --section-card
 		> .content > .description {
 			max-width: 30ch;
 		}
-
-		&.-gcash-padala > .content > .description {
-			max-width: 24ch;
-		}
-
-		&.-cash-out > .content > .description {
-			max-width: 29ch;
-		}
 	}
 }
 
@@ -480,8 +472,6 @@ start --section-card
 	&.-section-6 {
 		max-width: 480px;
 
-		&.-gcash-padala > .content > .description,
-		&.-cash-out > .content > .description,
 		> .content > .description {
 			max-width: 42ch;
 		}
@@ -508,11 +498,6 @@ start --section-card
 
 	&.-section-6 {
 		max-width: 320px;
-
-		&.-gcash-padala > .content > .description,
-		&.-cash-out > .content > .description {
-			max-width: 23ch;
-		}
 	}
 }
 
@@ -604,10 +589,6 @@ start --content-block
 	> .description {
 		font-size: 1rem;
 	}
-
-	&.-order > .description {
-		max-width: 28ch;
-	}
 }
 
 @mixin get-started_content-block--small-desktop--outlets {
@@ -668,16 +649,6 @@ start --content-block
 	> .title {
 		font-size: 4.57rem;
 		max-width: 6ch;
-	}
-
-	&.-order {
-		> .header {
-			max-width: 5ch;
-		}
-
-		> .description {
-			max-width: 34ch;
-		}
 	}
 }
 
@@ -777,10 +748,6 @@ start --content-block
 		> .title {
 			font-size: 3.43rem;
 			max-width: 9ch;
-		}
-
-		&.-order > .header {
-			max-width: 8.5ch;
 		}
 	}
 
