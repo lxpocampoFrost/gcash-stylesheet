@@ -820,7 +820,6 @@ start --content-block
 
 @mixin content-block--section-4 {
 	color: rgba(255, 255, 255, 0.6);
-	background: black;
 
 	> .content {
 		@include content-block--section-4--content;
