@@ -643,10 +643,6 @@ start --content-block
 	> .description {
 		max-width: 28ch;
 	}
-
-	> .methods {
-		max-width: 24ch;
-	}
 }
 
 @mixin get-started_content-block--small-desktop {
@@ -689,22 +685,8 @@ start --content-block
 }
 
 @mixin get-started_content-block--tablet--outlets {
-	&.-real-money {
-		> .preamble {
-			font-size: 1rem;
-		}
-
-		> .description {
-			font-size: 1.14rem;
-		}
-
-		> .label {
-			font-size: 1.43rem;
-		}
-	}
-
 	> .preamble {
-		font-size: 1.12rem;
+		font-size: 1rem;
 	}
 
 	> .title {
@@ -713,11 +695,11 @@ start --content-block
 	}
 
 	> .label {
-		font-size: 1.6rem;
+		font-size: 1.43rem;
 	}
 
 	> .description {
-		font-size: 1.28rem;
+		font-size: 1.14rem;
 		max-width: 40ch;
 		margin-top: $spacing-triple;
 	}
@@ -770,22 +752,8 @@ start --content-block
 }
 
 @mixin get-started_content-block--mobile--outlets {
-	&.-real-money {
-		> .label {
-			font-size: 1.43rem;
-		}
-
-		> .title {
-			margin-top: $spacing-triple;
-		}
-
-		> .description {
-			font-size: 1rem;
-		}
-	}
-
 	> .title {
-		margin-top: 21px;
+		margin-top: $spacing-triple;
 	}
 
 	> .description {
@@ -899,11 +867,6 @@ start --content-block
 		opacity: 0.5;
 		max-width: 40ch;
 		margin-top: 40px;
-	}
-
-	> .methods {
-		font: 600 1.14rem/1.4 $gilroy-bold;
-		margin-top: $spacing-triple;
 	}
 }
 

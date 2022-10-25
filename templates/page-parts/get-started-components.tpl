@@ -141,7 +141,7 @@
         <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
     </div>
 
-    <div class="get-started_content-block -outlets -real-money">
+    <div class="get-started_content-block -outlets">
         <span class="preamble">Real Money, Unreal Convenience</span>
         <div class="title">72,000</div>
         <div class="label">Cash Out Outlets Nationwide</div>
