@@ -139,6 +139,20 @@
         <div class="title">Life is great when you’re <span class="highlight">verified</span><span class="icon" style="background: url(./assets/images/get-started_message-bubble-content-block-section-2-verified.svg) center/contain no-repeat;"></span></div>
     </div>
 
+    <div class="get-started_content-block -outlets">
+        <span class="preamble">Put the cash in Gcash</span>
+        <div class="title">63,000</div>
+        <div class="label">Cash In Outlets Nationwide</div>
+        <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
+    </div>
+
+    <div class="get-started_content-block -outlets">
+        <span class="preamble">Real Money, Unreal Convenience</span>
+        <div class="title">72,000</div>
+        <div class="label">Cash Out Outlets Nationwide</div>
+        <p class="description">With thousands of ATMs and GCash Partner Outlets nationwide, withdrawing your GCash funds is safe and convenient.</p>
+    </div>
+
     <div class="get-started_content-block -section-4" style="background: gray;">
         <div class="preamble">Safety and Privacy</div>
         <div class="header">Share <span class="highlight">funds</span>,</div>
