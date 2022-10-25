@@ -687,6 +687,18 @@ start --content-block
 	}
 }
 
+@mixin get-started_content-block--tablet--section-4--order {
+	> .content {
+		> .header {
+			max-width: 5ch;
+		}
+
+		> .description {
+			max-width: 34ch;
+		}
+	}
+}
+
 @mixin get-started_content-block--tablet--section-4 {
 	> .content {
 		> .header,
@@ -697,15 +709,7 @@ start --content-block
 	}
 
 	&.-order {
-		> .content {
-			> .header {
-				max-width: 5ch;
-			}
-
-			> .description {
-				max-width: 34ch;
-			}
-		}
+		@include get-started_content-block--tablet--section-4--order;
 	}
 }
 
