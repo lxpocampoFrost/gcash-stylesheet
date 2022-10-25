@@ -630,6 +630,22 @@ end --section-card
 /****
 start --content-block
 ****/
+
+@mixin get-started__content-block--small-desktop--section-4 {
+	> .header,
+	> .title {
+		font-size: 5rem;
+	}
+
+	> .description {
+		font-size: 1rem;
+	}
+
+	&.-order > .description {
+		max-width: 28ch;
+	}
+}
+
 @mixin get-started_content-block--small-desktop {
 	> .title {
 		font-size: 4.57rem;
@@ -658,6 +674,28 @@ start --content-block
 		height: 71px;
 		vertical-align: top;
 		margin-left: $spacing-half;
+	}
+
+	&.-section-4 {
+		@include get-started__content-block--small-desktop--section-4;
+	}
+}
+
+@mixin get-started_content-block--tablet--section-4 {
+	> .header,
+	> .title {
+		font-size: 4.57rem;
+		max-width: 6ch;
+	}
+
+	&.-order {
+		> .header {
+			max-width: 5ch;
+		}
+
+		> .description {
+			max-width: 34ch;
+		}
 	}
 }
 
@@ -700,6 +738,10 @@ start --content-block
 	&.-section-3 > .description {
 		max-width: 37ch;
 	}
+
+	&.-section-4 {
+		@include get-started_content-block--tablet--section-4;
+	}
 }
 
 @mixin get-started_content-block--mobile {
@@ -715,6 +757,49 @@ start --content-block
 	&.-section-3 > .description {
 		max-width: 29ch;
 		margin-top: $spacing-double;
+	}
+
+	&.-section-4 {
+		> .header,
+		> .title {
+			font-size: 3.43rem;
+			max-width: 9ch;
+		}
+
+		&.-order > .header {
+			max-width: 8.5ch;
+		}
+	}
+}
+
+@mixin get-started_content-block--section-4 {
+	color: rgba(255, 255, 255, 0.6);
+	> .preamble {
+		font: 700 1rem/1 $gotham-bold;
+		letter-spacing: -0.01em;
+	}
+
+	> .header {
+		margin-top: $spacing-default;
+	}
+
+	> .header,
+	> .title {
+		font: 700 6.29rem/1 $gotham-bold;
+		letter-spacing: -0.03em;
+		max-width: 5ch;
+		color: rgba(255, 255, 255, 0.6);
+		margin-top: 0;
+
+		> .highlight {
+			color: rgba(255, 255, 255, 1);
+		}
+	}
+
+	> .description {
+		font: 600 1.14rem/1.4 $gilroy-bold;
+		margin-top: $spacing-triple;
+		max-width: 34ch;
 	}
 }
 
@@ -793,6 +878,10 @@ start --content-block
 			letter-spacing: 0;
 			max-width: 31ch;
 		}
+	}
+
+	&.-section-4 {
+		@include get-started_content-block--section-4;
 	}
 
 	@include on(small-desktop) {
