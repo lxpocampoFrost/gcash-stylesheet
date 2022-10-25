@@ -940,6 +940,10 @@ start --content-block
 	}
 }
 
+/****
+end --content-block
+****/
+
 // :START - comparison-table
 
 @mixin get-started_comparison-table--small-desktop {
@@ -1205,7 +1209,5 @@ start --content-block
 	}
 }
 
-// :END - comparison-table
-/****
-end --content-block
-****/
+//  :END - comparison-table
+// ****
