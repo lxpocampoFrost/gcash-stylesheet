@@ -363,18 +363,16 @@
 @mixin get-started_panel-5--small-desktop {
 	padding: 80px 0;
 
-	.get-started_content-block.-outlets {
-		> .description {
-			max-width: 28ch;
-		}
-
-		> .subtext {
-			max-width: 24ch;
-		}
+	.get-started_content-block.-outlets > .description {
+		max-width: 28ch;
 	}
 
 	.get-started_wrapper-bounding-box > .content {
 		margin-top: 46px;
+	}
+
+	.subtext {
+		max-width: 24ch;
 	}
 
 	.section-5-img-1 {
@@ -393,24 +391,28 @@
 	.get-started_wrapper-bounding-box > .content {
 		display: block;
 		margin-top: 0;
+	}
 
-		.get-started_section-card.-section-5 {
-			margin-top: $spacing-double;
-		}
+	.get-started_content-block.-outlets > .description {
+		max-width: 40ch;
+	}
 
-		.get-started_section-card.-section-5:not(:first-of-type) {
-			margin-left: 0;
-		}
+	.get-started_section-card.-section-5 {
+		margin-top: $spacing-double;
+	}
+
+	.get-started_section-card.-section-5:not(:first-of-type) {
+		margin-left: 0;
 	}
 
 	.get-started_content-block.-outlets {
 		padding: 0;
+	}
 
-		> .subtext {
-			font-size: 1rem;
-			margin-top: 663px;
-			max-width: max-content;
-		}
+	.subtext {
+		font-size: 1rem;
+		margin-top: 663px;
+		max-width: 100%;
 	}
 
 	.section-5-img-1 {
@@ -426,12 +428,16 @@
 @mixin get-started_panel-5--mobile {
 	padding: $spacing-double-triple 0;
 
-	.get-started_wrapper-bounding-box > .get-started_content-block.-outlets,
-	.get-started_wrapper-bounding-box > .content {
+	.get-started_content-block.-outlets,
+	.content {
 		margin: 0 auto;
 	}
 
-	.get-started_content-block.-outlets > .subtext {
+	.get-started_content-block.-outlets > .description {
+		max-width: 37ch;
+	}
+
+	.subtext {
 		margin-top: 471px;
 	}
 
@@ -465,20 +471,20 @@
 		justify-content: center;
 		z-index: 1;
 		margin-top: 123px;
+	}
 
-		.get-started_section-card.-section-5:not(:first-of-type) {
-			margin-left: $spacing-double;
-		}
+	.get-started_section-card.-section-5:not(:first-of-type) {
+		margin-left: $spacing-double;
 	}
 
 	.get-started_content-block.-outlets {
 		padding: 103px 0 0 160px;
+	}
 
-		> .subtext {
-			font: 500 1.14rem/1.4 $gilroy-medium;
-			color: #0a2757;
-			margin-top: $spacing-triple;
-		}
+	.subtext {
+		font: 500 1.14rem/1.4 $gilroy-medium;
+		color: #0a2757;
+		margin-top: $spacing-triple;
 	}
 
 	.section-5-img-1 {
