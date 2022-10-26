@@ -110,6 +110,95 @@
 /* END  - 1st Section */
 
 /*
+* START - 2nd Section
+**/
+@mixin get-started_panel-2--large-desktop {
+	transform: translateY(-1px);
+
+	.get-started_wrapper-bounding-box {
+		padding: 120px 60px 82px;
+	}
+
+	.get-started_comparison-table {
+		margin-top: 100px;
+	}
+}
+
+@mixin get-started_panel-2--small-desktop {
+	min-height: 742px;
+
+	.get-started_wrapper-bounding-box {
+		padding: 100px 40px $spacing-double-quad;
+		min-height: 662px;
+	}
+
+	.get-started_comparison-table {
+		margin-top: 60px;
+	}
+}
+
+@mixin get-started_panel-2--tablet {
+	min-height: 828px;
+
+	.get-started_wrapper-bounding-box {
+		padding: 150px 40px $spacing-double-quad;
+		min-height: 764px;
+	}
+
+	.get-started_comparison-table {
+		margin-top: 60px;
+	}
+}
+
+@mixin get-started_panel-2--mobile {
+	min-height: 1153px;
+
+	.get-started_wrapper-bounding-box {
+		padding: 150px 30px 40px;
+		min-height: 1105px;
+	}
+
+	.get-started_comparison-table {
+		margin-top: 60px;
+	}
+}
+
+.get-started_panel-2 {
+	z-index: -1;
+	transform: translateY(-122px);
+	min-height: 934px;
+
+	.get-started_wrapper-bounding-box {
+		background: #ebf3ff;
+		border-radius: 0px 0px 40px 40px;
+		padding: 120px 159px 82px 154px;
+		flex-direction: column;
+		min-height: 814px;
+	}
+
+	.get-started_comparison-table {
+		margin-top: 100px;
+	}
+
+	@include on(large-desktop) {
+		@include get-started_panel-2--large-desktop;
+	}
+
+	@include on(small-desktop) {
+		@include get-started_panel-2--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_panel-2--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_panel-2--mobile;
+	}
+}
+/* END  - 2nd Section */
+
+/*
 * START - 3rd Section
 **/
 
