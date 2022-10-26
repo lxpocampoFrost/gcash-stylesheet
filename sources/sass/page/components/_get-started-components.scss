@@ -628,11 +628,17 @@ start --content-block
 		margin-top: 40px;
 	}
 
-	&.-section-2 > .title > .icon {
-		width: 71px;
-		height: 71px;
-		vertical-align: top;
-		margin-left: $spacing-half;
+	&.-section-2 {
+		> .preamble {
+			font-size: 1.23rem;
+		}
+
+		> .title > .icon {
+			width: 71px;
+			height: 71px;
+			vertical-align: top;
+			margin-left: $spacing-half;
+		}
 	}
 
 	&.-section-4 {
@@ -924,6 +930,19 @@ end --content-block
 
 // :START - comparison-table
 
+@mixin get-started_comparison-table--large-desktop {
+	> .column:first-of-type > .row {
+		&:first-of-type {
+			width: 54%;
+			margin-left: auto;
+		}
+
+		&:not(:first-of-type) > .item:first-of-type {
+			max-width: 222px;
+		}
+	}
+}
+
 @mixin get-started_comparison-table--small-desktop--column {
 	&:first-of-type > .row {
 		&:first-of-type {
@@ -1186,6 +1205,10 @@ end --content-block
 
 	> .column {
 		@include get-started_comparison-table--column;
+	}
+
+	@include on(large-desktop) {
+		@include get-started_comparison-table--large-desktop;
 	}
 
 	@include on(small-desktop) {
