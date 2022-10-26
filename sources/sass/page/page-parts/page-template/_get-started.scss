@@ -1,33 +1,110 @@
 /*
 * START - 1st Section
 **/
+@mixin get-started_panel-1--large-desktop {
+	min-height: 820px;
+
+	.get-started_wrapper-bounding-box {
+		min-height: 700px;
+		padding-left: 60px;
+	}
+
+	.section-1-img-1 {
+		width: 641px;
+		transform: translate(-69px, 165px);
+	}
+
+	.get-started_message-bubble.-verified-account {
+		transform: translate(-3px, 42px);
+	}
+}
+
+@mixin get-started_panel-1--small-desktop {
+	min-height: 680px;
+
+	.get-started_wrapper-bounding-box {
+		min-height: 600px;
+		padding-left: 40px;
+	}
+
+	.section-1-img-1 {
+		width: 500.38px;
+		transform: translate(-51px, 98px);
+	}
+
+	.get-started_message-bubble.-verified-account {
+		transform: translate(-25px, 10px);
+	}
+}
+
+@mixin get-started_panel-1--tablet {
+	min-height: 625px;
+
+	.get-started_wrapper-bounding-box {
+		min-height: 561px;
+	}
+
+	.section-1-img-1 {
+		width: 466px;
+		transform: translate(-97px, 134px);
+	}
+
+	.get-started_message-bubble.-verified-account {
+		transform: translate(-59px, 102px);
+	}
+}
+
+@mixin get-started_panel-1--mobile {
+	min-height: 704px;
+
+	.get-started_wrapper-bounding-box {
+		min-height: 656px;
+		padding-left: 30px;
+	}
+
+	.section-1-img-1 {
+		width: 444px;
+		transform: translate(-124px, 204px);
+	}
+
+	.get-started_message-bubble.-verified-account {
+		transform: translate(-123px, 162px);
+	}
+}
+
 .get-started_panel-1 {
+	min-height: 836px;
+
 	.get-started_wrapper-bounding-box {
 		background: #ebf3ff;
-		border-radius: 40px 40px 0px 0px;
-		min-height: 836px;
+		border-radius: 40px 40px 0 0;
+		min-height: 716px;
 		padding: 60px 0 0 154px;
 	}
 
 	.section-1-img-1 {
 		width: 707px;
-		transform: translate(44px, 92px);
+		transform: translate(28px, 92px);
 	}
 
 	.get-started_message-bubble.-verified-account {
-		transform: translate(124px, -63px);
+		transform: translate(110px, -63px);
 	}
 
 	@include on(large-desktop) {
+		@include get-started_panel-1--large-desktop;
 	}
 
 	@include on(small-desktop) {
+		@include get-started_panel-1--small-desktop;
 	}
 
 	@include on(tablet) {
+		@include get-started_panel-1--tablet;
 	}
 
 	@include on(mobile) {
+		@include get-started_panel-1--mobile;
 	}
 }
 /* END  - 1st Section */
@@ -378,6 +455,7 @@
 		top: 36px;
 		left: 50%;
 		transform: translate(-50%);
+		z-index: 999;
 	}
 
 	> .get-started_panel-1 {

@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="get-started_section-card -section-5 -online">
+    <div class="get-started_section-card -section-5">
         <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-online.svg) center no-repeat;"></span>
         <div class="content">
             <div class="title">Online Banking</div>
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="get-started_section-card -section-5 -counter">
+    <div class="get-started_section-card -section-5">
         <span class="icon" style="background: url(./assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
         <div class="content">
             <div class="title">Over-the-Counter</div>
