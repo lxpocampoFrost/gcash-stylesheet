@@ -363,10 +363,6 @@
 @mixin get-started_panel-5--small-desktop {
 	padding: 80px 0;
 
-	.get-started_content-block.-outlets > .description {
-		max-width: 28ch;
-	}
-
 	.get-started_wrapper-bounding-box > .content {
 		margin-top: 46px;
 	}
@@ -391,10 +387,6 @@
 	.get-started_wrapper-bounding-box > .content {
 		display: block;
 		margin-top: 0;
-	}
-
-	.get-started_content-block.-outlets > .description {
-		max-width: 40ch;
 	}
 
 	.get-started_section-card.-section-5 {
@@ -431,10 +423,6 @@
 	.get-started_content-block.-outlets,
 	.content {
 		margin: 0 auto;
-	}
-
-	.get-started_content-block.-outlets > .description {
-		max-width: 37ch;
 	}
 
 	.subtext {
