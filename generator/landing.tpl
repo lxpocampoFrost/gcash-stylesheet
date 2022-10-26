@@ -26,7 +26,7 @@
     </div>
 
     <div class="landing_panel landing_panel-2">
-        <div class="landing_wrapper" style="background: url(../assets/images/landing/section-2-bg.jpg) center/cover no-repeat;">
+        <div class="landing_wrapper" style="background-image: url(../assets/images/landing/section-2-bg.jpg);">
             <div class="landing_wrapper-bounding-box">
                 <div class="landing_text-heading-1" style="color: #ffffff;">Mag-send ng cash</div>
             </div>
