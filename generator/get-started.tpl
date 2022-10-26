@@ -125,6 +125,7 @@
                         your authentication.</div>
                     </div>
                 </div>
+            </div>
             <div class="get-started_wrapper-floating">
                 <img class="section-4-img-1" src="../assets/images/get-started/section-4-img-1.png">
             </div>
