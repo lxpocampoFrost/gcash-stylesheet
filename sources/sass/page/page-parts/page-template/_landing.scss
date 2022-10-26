@@ -1,4 +1,42 @@
 /*
+* START - 3rd Section
+**/
+.landing_panel-3 {
+	.landing_text-snowflake {
+		transform: translate(0, 73px);
+	}
+
+	.section-3-phone {
+		width: 255px;
+		height: 74px;
+		transform: translate(57px, 127px);
+	}
+
+	.landing_shop-item {
+		&.-cream {
+			transform: translate(187px, -218px);
+		}
+
+		&.-watch {
+			transform: translate(-512px, -170px);
+		}
+
+		&.-vase {
+			transform: translate(-670px, 164px);
+		}
+
+		&.-tote {
+			transform: translate(348px, 80px);
+		}
+
+		&.-headphones {
+			transform: translate(-152px, 265px);
+		}
+	}
+}
+/* END  - 3rd Section */
+
+/*
 * START - 2nd Section
 **/
 .landing_panel-2 {
@@ -12,7 +50,6 @@
 	}
 
 	.landing_message-bubble.-avatar-left {
-		left: 50%;
 		transform: translate(-298px, 124px);
 	}
 }
@@ -71,14 +108,14 @@
 	.section-1-phone {
 		width: 989.5px;
 		height: 57px;
-		transform: translate(0, 130px);
+		transform: translate(-50%, 30px);
 	}
 
 	.section-1-phone-shadow {
 		width: 1014px;
 		height: 209px;
 		mix-blend-mode: multiply;
-		transform: translate(0, 130px);
+		transform: translate(-50%, 160px);
 	}
 
 	@include on(small-desktop) {
@@ -103,6 +140,11 @@
 	top: 0;
 	display: flex;
 	align-items: center;
+
+	> * {
+		position: absolute;
+		left: 50%;
+	}
 }
 
 .landing_wrapper-bounding-box {
