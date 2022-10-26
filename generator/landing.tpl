@@ -40,4 +40,68 @@
             </div>
         </div>
     </div>
+
+    <div class="landing_panel landing_panel-3">
+        <div class="landing_wrapper" style="background: url(../assets/images/landing/section-3-bg.jpg) center/cover no-repeat;">
+            <div class="landing_wrapper-bounding-box">
+                <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
+            </div>
+
+            <div class="landing_wrapper-floating">
+                <img class="section-3-phone" src="../assets/images/landing/section-3-phone.png">
+
+                <div class="landing_shop-item -cream">
+                    <img class="image" src="../assets/images/landing/shop-item-cream-img.png">
+                    <div class="content">
+                        <span class="icon" style="background: url(../assets/images/landing/shop-item-cream-icon.svg) center/contain no-repeat;"></span>
+                        <div class="details">
+                            <div class="label">Daily Cream</div>
+                            <div class="amount">PHP 250</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landing_shop-item -watch" style="background: url(../assets/images/landing/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
+                    <div class="content">
+                        <span class="icon" style="background: url(../assets/images/landing/shop-item-watch-category.svg) center/contain no-repeat;"></span>
+                        <div class="details">
+                            <div class="label">Digital Watch: Sports Edition</div>
+                            <div class="amount">PHP 25,000</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landing_shop-item -vase" style="background: url(../assets/images/landing/shop-item-vase-img.jpg)center/contain no-repeat;">
+                    <div class="content">
+                        <span class="icon" style="background: url(../assets/images/landing/shop-item-vase-icon.svg) center/contain no-repeat;"></span>
+                        <div class="details">
+                            <div class="label">Vase</div>
+                            <div class="amount">PHP 320</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landing_shop-item -tote" style="background: url(../assets/images/landing/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0) 100%);">
+                    <div class="content">
+                        <span class="icon" style="background: url(../assets/images/landing/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
+                        <div class="details">
+                            <div class="label">Tote</div>
+                            <div class="amount">PHP 100</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="landing_shop-item -headphones">
+                    <img class="image" src="../assets/images/landing/shop-item-headphones.png">
+                    <div class="content">
+                        <span class="icon" style="background: url(../assets/images/landing/shop-item-headphones-gadget.svg) center/contain no-repeat;"></span>
+                        <div class="details">
+                            <div class="label">Headphones</div>
+                            <div class="amount">PHP 6,500</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
