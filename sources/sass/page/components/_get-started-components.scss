@@ -507,7 +507,7 @@ start --section-card
 
 		> .description {
 			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 27ch;
+			max-width: 28ch;
 			color: #445c85;
 			opacity: 0.7;
 			margin-top: $spacing-half;
@@ -601,7 +601,7 @@ start --content-block
 	}
 
 	> .description {
-		max-width: 33ch;
+		max-width: 28ch;
 	}
 }
 
@@ -835,7 +835,7 @@ start --content-block
 	> .description {
 		font: 500 1.14rem/1.4 $gilroy-bold;
 		opacity: 0.5;
-		max-width: 40ch;
+		max-width: 39ch;
 		margin-top: 40px;
 	}
 }
