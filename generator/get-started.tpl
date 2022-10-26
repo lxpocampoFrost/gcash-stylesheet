@@ -44,4 +44,52 @@
             </div>
         </div>
     </div>
+
+    <div class="get-started_panel get-started_panel-6">
+        <div class="get-started_wrapper">
+            <div class="get-started_wrapper-bounding-box">
+                <div class="content">
+                    <div class="get-started_section-card -section-6">
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-6-gcash-padala.svg) center/contain no-repeat;"></span>
+                        <div class="content">
+                            <div class="title">Domestic Remittance</div>
+                            <div class="description">Send money and cash out anywhere in the Philippines through GCash Padala.</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="content">
+                    <div class="get-started_content-block -outlets">
+                        <span class="preamble">Real Money, Unreal Convenience</span>
+                        <div class="title">72,000</div>
+                        <div class="label">Cash Out Outlets Nationwide</div>
+                        <p class="description">With thousands of ATMs and GCash Partner Outlets nationwide, withdrawing your GCash funds is safe and convenient.</p>
+                    </div>
+                    <div class="get-started_section-card -section-6">
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-6-pera-outlet.svg) center/contain no-repeat;"></span>
+                        <div class="content">
+                            <div class="title">Over-the-Counter</div>
+                            <div class="description">Cash out at GCash Partner Outlets such as Puregold, SM, and Robinsons and through our GCash Pera Outlets and GCash Padala partners.</div>
+                        </div>
+                    </div>
+                    <div class="get-started_section-card -section-6">
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-6-cash-out.svg) center/contain no-repeat;"></span>
+                        <div class="content">
+                            <div class="title">GCash Mastercard</div>
+                            <div class="description">With a GCash Mastercard, you can cash out at any BancNet or Mastercard ATM nationwide.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="get-started_wrapper-floating">
+                <img class="section-6-img-1" src="../assets/images/get-started/section-6-img-1.png">
+
+                <img class="section-6-img pin-1" src="../assets/images/get-started/section-6-pin-1.svg">
+                <img class="section-6-img pin-2" src="../assets/images/get-started/section-6-pin-2.svg">
+                <img class="section-6-img pin-3" src="../assets/images/get-started/section-6-pin-3.svg">
+                <img class="section-6-img pin-4" src="../assets/images/get-started/section-6-pin-4.svg">
+            </div>
+        </div>
+    </div>
 </div>
