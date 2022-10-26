@@ -133,7 +133,7 @@
         </div>
     </div>
     
-    <div class="landing_shop-item -tote" style="background: url(./assets/images/landing/shop-item-tote.png)center/contain no-repeat, linear-gradient(180deg, #EFEDF2 0%, rgba(239, 237, 242, 0.5) 100%);">
+    <div class="landing_shop-item -tote" style="background: url(./assets/images/landing/shop-item-tote.jpg)center/cover no-repeat">
         <div class="content">
         <span class="icon" style="background: url(./assets/images/landing/shop-item-tote-accessories.svg) center/contain no-repeat;"></span>
             <div class="details">
