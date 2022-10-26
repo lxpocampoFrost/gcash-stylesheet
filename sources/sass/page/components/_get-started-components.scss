@@ -769,10 +769,6 @@ start --content-block
 		letter-spacing: -0.01em;
 	}
 
-	> .header {
-		margin-top: $spacing-default;
-	}
-
 	> .header,
 	> .title {
 		font: 700 6.29rem/1 $gotham-bold;
@@ -784,6 +780,10 @@ start --content-block
 		> .highlight {
 			color: rgba(255, 255, 255, 1);
 		}
+	}
+
+	> .header {
+		margin-top: $spacing-default;
 	}
 
 	> .description {

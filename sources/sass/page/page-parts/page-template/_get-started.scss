@@ -344,6 +344,121 @@
 **/
 
 /*
+* START - 4th Section
+**/
+
+@mixin get-started_panel-4--large-desktop {
+	.get-started_wrapper-bounding-box {
+		min-height: 980px;
+		padding: 150px 0;
+	}
+
+	.get-started_content-block.-section-4 {
+		transform: translate(-450px, 44%);
+
+		&:last-of-type {
+			transform: translate(50%, 39%);
+		}
+	}
+
+	.section-4-img-1 {
+		transform: translate(-50%, -80%);
+	}
+}
+
+@mixin get-started_panel-4--small-desktop {
+	.get-started_wrapper-bounding-box {
+		min-height: 755px;
+	}
+
+	.get-started_content-block.-section-4 {
+		transform: translate(-345px, 16%);
+
+		&:last-of-type {
+			transform: translate(43%, 21%);
+		}
+	}
+
+	.section-4-img-1 {
+		width: 357px;
+		transform: translate(-50%, -93%);
+	}
+}
+
+@mixin get-started_panel-4--tablet {
+	.get-started_wrapper-bounding-box {
+		min-height: 726px;
+		flex-direction: column;
+	}
+
+	.get-started_content-block.-section-4,
+	.get-started_content-block.-section-4:last-of-type {
+		position: unset;
+		transform: unset;
+	}
+
+	.section-4-img-1 {
+		width: 341px;
+		transform: translate(3%, -89%);
+	}
+}
+
+@mixin get-started_panel-4--mobile {
+	.get-started_wrapper-bounding-box {
+		min-height: 701px;
+		padding: 72px 31px 0;
+	}
+
+	.section-4-img-1 {
+		transform: translate(-50%, -23%);
+		object-fit: cover;
+		width: 500px;
+	}
+}
+
+.get-started_panel-4 {
+	background: #1972f9;
+
+	.get-started_wrapper-bounding-box {
+		min-height: 1080px;
+		padding: 200px 0;
+	}
+
+	.get-started_content-block.-section-4 {
+		position: absolute;
+		left: 50%;
+		transform: translate(-514px, 44%);
+
+		&:last-of-type {
+			transform: translate(55%, 39%);
+		}
+	}
+
+	.section-4-img-1 {
+		transform: translate(-50%, -89%);
+		width: 515px;
+	}
+
+	@include on(large-desktop) {
+		@include get-started_panel-4--large-desktop;
+	}
+
+	@include on(small-desktop) {
+		@include get-started_panel-4--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include get-started_panel-4--tablet;
+	}
+
+	@include on(mobile) {
+		@include get-started_panel-4--mobile;
+	}
+}
+
+/* END  - 4th Section */
+
+/*
 * START - 5th Section
 **/
 @mixin get-started_panel-5--large-desktop {
