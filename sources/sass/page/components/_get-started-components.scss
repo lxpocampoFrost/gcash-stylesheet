@@ -507,7 +507,7 @@ start --section-card
 
 		> .description {
 			font: 500 1.14rem/1.4 $gilroy-medium;
-			max-width: 27ch;
+			max-width: 28ch;
 			color: #445c85;
 			opacity: 0.7;
 			margin-top: $spacing-half;
@@ -601,7 +601,7 @@ start --content-block
 	}
 
 	> .description {
-		max-width: 33ch;
+		max-width: 28ch;
 	}
 }
 
@@ -610,6 +610,7 @@ start --content-block
 		font-size: 4.57rem;
 	}
 
+	&.-section-2 > .preamble,
 	> .preamble {
 		font-size: 1.29rem;
 	}
@@ -768,10 +769,6 @@ start --content-block
 		letter-spacing: -0.01em;
 	}
 
-	> .header {
-		margin-top: $spacing-default;
-	}
-
 	> .header,
 	> .title {
 		font: 700 6.29rem/1 $gotham-bold;
@@ -783,6 +780,10 @@ start --content-block
 		> .highlight {
 			color: rgba(255, 255, 255, 1);
 		}
+	}
+
+	> .header {
+		margin-top: $spacing-default;
 	}
 
 	> .description {
@@ -834,7 +835,7 @@ start --content-block
 	> .description {
 		font: 500 1.14rem/1.4 $gilroy-bold;
 		opacity: 0.5;
-		max-width: 40ch;
+		max-width: 39ch;
 		margin-top: 40px;
 	}
 }
@@ -923,6 +924,19 @@ end --content-block
 ****/
 
 // :START - comparison-table
+
+@mixin get-started_comparison-table--large-desktop {
+	> .column:first-of-type > .row {
+		&:first-of-type {
+			width: 54%;
+			margin-left: auto;
+		}
+
+		&:not(:first-of-type) > .item:first-of-type {
+			max-width: 222px;
+		}
+	}
+}
 
 @mixin get-started_comparison-table--small-desktop--column {
 	&:first-of-type > .row {
@@ -1186,6 +1200,10 @@ end --content-block
 
 	> .column {
 		@include get-started_comparison-table--column;
+	}
+
+	@include on(large-desktop) {
+		@include get-started_comparison-table--large-desktop;
 	}
 
 	@include on(small-desktop) {
