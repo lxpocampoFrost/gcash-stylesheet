@@ -118,8 +118,9 @@
                     <div class="title">63,000</div>
                     <div class="label">Cash In Outlets Nationwide</div>
                     <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
-                    <div class="subtext">You can cash in via the following methods: </div>
                 </div>
+
+                <div class="subtext">You can cash in via the following methods: </div>
 
                 <div class="content">
                     <div class="get-started_section-card -section-5">

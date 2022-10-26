@@ -351,6 +351,10 @@
 		padding-left: 0;
 	}
 
+	.subtext {
+		margin-left: 0;
+	}
+
 	.section-5-img-1 {
 		transform: translate(-11%, 1%);
 	}
@@ -382,6 +386,7 @@
 }
 
 @mixin get-started_panel-5--tablet {
+	height: 1401px;
 	padding: $spacing-double-quad 144px;
 
 	.get-started_wrapper-bounding-box > .content {
@@ -403,7 +408,7 @@
 
 	.subtext {
 		font-size: 1rem;
-		margin-top: 663px;
+		margin-top: auto;
 		max-width: 100%;
 	}
 
@@ -418,6 +423,7 @@
 }
 
 @mixin get-started_panel-5--mobile {
+	height: 1200px;
 	padding: $spacing-double-triple 0;
 
 	.get-started_content-block.-outlets,
@@ -426,7 +432,7 @@
 	}
 
 	.subtext {
-		margin-top: 471px;
+		text-align: center;
 	}
 
 	.section-5-img-1 {
@@ -472,7 +478,7 @@
 	.subtext {
 		font: 500 1.14rem/1.4 $gilroy-medium;
 		color: #0a2757;
-		margin-top: $spacing-triple;
+		margin: $spacing-triple 0 0 160px;
 	}
 
 	.section-5-img-1 {
