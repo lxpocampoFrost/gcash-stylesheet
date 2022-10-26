@@ -26,6 +26,25 @@
         </div>
     </div>
 
+    <div class="get-started_panel get-started_panel-3">
+        <div class="get-started_wrapper">
+            <div class="get-started_wrapper-bounding-box">
+                <div class="get-started_content-block -section-3">
+                    <div class="title">Getting verified is super-easy</div>
+                    <div class="description">The only requirements are a government-issued ID and your selfie.</div>
+                </div>
+            </div>
+
+            <div class="get-started_wrapper-floating">
+                <img class="section-3-img-1" src="../assets/images/get-started/section-3-img-1.png">
+                <img class="section-3-img-2" src="../assets/images/get-started/section-3-img-2.png">
+                <div class="get-started_message-bubble -get-verified">
+                    Tap <span class="highlight">Get Verified</span> in the GCash app to start.
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="get-started_panel get-started_panel-6">
         <div class="get-started_wrapper">
             <div class="get-started_wrapper-bounding-box">
