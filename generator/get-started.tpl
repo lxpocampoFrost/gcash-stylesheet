@@ -45,6 +45,56 @@
         </div>
     </div>
 
+    <div class="get-started_panel get-started_panel-5">
+        <div class="get-started_wrapper">
+            <div class="get-started_wrapper-bounding-box">
+                <div class="get-started_content-block -outlets">
+                    <span class="preamble">Put the cash in Gcash</span>
+                    <div class="title">63,000</div>
+                    <div class="label">Cash In Outlets Nationwide</div>
+                    <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
+                    <div class="subtext">You can cash in via the following methods: </div>
+                </div>
+
+                <div class="content">
+                    <div class="get-started_section-card -section-5">
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
+                        <div class="content">
+                            <div class="title">Remittance</div>
+                            <div class="description">Receive overseas remittances directly to your GCash account.</div>
+                        </div>
+                    </div>
+
+                    <div class="get-started_section-card -section-5">
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-online.svg) center no-repeat;"></span>
+                        <div class="content">
+                            <div class="title">Online Banking</div>
+                            <div class="description">Link your bank accounts to GCash to cash in seamlessly.</div>
+                        </div>
+                    </div>
+
+                    <div class="get-started_section-card -section-5">
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
+                        <div class="content">
+                            <div class="title">Over-the-Counter</div>
+                            <div class="description">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="get-started_wrapper-floating">
+                <img class="section-5-img-1" src="../assets/images/get-started/section-5-img-1.png">
+
+                <div class="get-started_message-bubble -cash-in-success">
+                    <img class="icon" src="../assets/images/get-started/message-bubble-cash-in-success-notification.png"/>
+                    <div class="title">Cash-in success!</div>
+                    <div class="amount"><span class="currency" style="background: url(./assets/images/get-started/message-bubble-cash-in-success-amount-currency.svg) center/contain no-repeat;"></span>7,500</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="get-started_panel get-started_panel-6">
         <div class="get-started_wrapper">
             <div class="get-started_wrapper-bounding-box">
