@@ -1496,7 +1496,7 @@
 }
 
 @mixin landing_shop-item--small-desktop--cream {
-	max-width: max-content;
+	max-width: 136.47px;
 	height: 229px;
 	border: 0.961042px solid #edf3fb;
 	box-shadow: 0 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
@@ -1514,6 +1514,45 @@
 		> .icon {
 			margin-bottom: 5px;
 		}
+	}
+}
+
+@mixin shop-item--mobile--cream--content {
+	> .icon {
+		margin-bottom: 3.43px;
+		width: 27.45px;
+		height: 27.45px;
+		margin-right: -3px;
+	}
+
+	> .details {
+		margin-left: $spacing-quarter;
+
+		> .label {
+			font-size: 0.49rem;
+		}
+
+		> .amount {
+			font-size: 0.82rem;
+		}
+	}
+}
+
+@mixin shop-item--mobile--cream {
+	border: 0.644592px solid #edf3fb;
+	box-shadow: 0px 5.15674px 7.73511px -5.15674px rgba(15, 37, 69, 0.2);
+	border-radius: 6.44592px;
+	padding: 0 9.434px $spacing-half $spacing-quarter;
+	max-width: 91.53px;
+	height: 153.41px;
+
+	> .image {
+		max-width: 55.43px;
+		height: 137.94px;
+	}
+
+	> .content {
+		@include shop-item--mobile--cream--content;
 	}
 }
 
@@ -1535,8 +1574,8 @@
 }
 
 @mixin landing_shop-item--cream {
-	max-width: max-content;
-	height: 268px;
+	max-width: 160.05px;
+	height: 268.26px;
 	padding: 0 10px $spacing-default;
 	background: linear-gradient(180deg, #ffffff 23.92%, #dbd7e1 169.83%);
 	border: 1.12715px solid #edf3fb;
@@ -1749,42 +1788,6 @@
 	}
 	&.-headphones {
 		@include landing_shop-item--small-desktop--headphones;
-	}
-}
-
-@mixin shop-item--mobile--cream--content {
-	> .icon {
-		margin-bottom: 3.43px;
-		width: 27.45px;
-		height: 27.45px;
-		margin-right: -3px;
-	}
-
-	> .details {
-		> .label {
-			font-size: 0.49rem;
-		}
-
-		> .amount {
-			font-size: 0.82rem;
-		}
-	}
-}
-
-@mixin shop-item--mobile--cream {
-	height: 153px;
-	border: 0.644592px solid #edf3fb;
-	box-shadow: 0px 5.15674px 7.73511px -5.15674px rgba(15, 37, 69, 0.2);
-	border-radius: 6.44592px;
-	padding: 0 9.1px $spacing-half;
-
-	> .image {
-		max-width: 55.43px;
-		height: 137.94px;
-	}
-
-	> .content {
-		@include shop-item--mobile--cream--content;
 	}
 }
 
