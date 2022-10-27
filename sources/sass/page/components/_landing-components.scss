@@ -1000,6 +1000,30 @@
 	}
 }
 
+@mixin shop-item--mobile--cream {
+	height: 153px;
+	border: 0.644592px solid #edf3fb;
+	box-shadow: 0px 5.15674px 7.73511px -5.15674px rgba(15, 37, 69, 0.2);
+	border-radius: 6.44592px;
+	padding: 0 9.1px $spacing-half;
+	background: linear-gradient(180deg, #ffffff 23.92%, #dbd7e1 169.83%);
+
+	> .image {
+		max-width: 55.43px;
+		height: 137.94px;
+	}
+
+	> .content > .icon {
+		margin-bottom: 3.43px;
+	}
+}
+
+@mixin shop-item--mobile {
+	&.-cream {
+		@include shop-item--mobile--cream;
+	}
+}
+
 @mixin shop-item--tote--content {
 	> .details {
 		margin-left: $spacing-half;
@@ -1211,6 +1235,10 @@
 
 	@include on(small-desktop) {
 		@include shop-item--small-desktop;
+	}
+
+	@include on(mobile) {
+		@include shop-item--mobile;
 	}
 }
 
