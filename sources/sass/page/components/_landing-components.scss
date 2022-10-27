@@ -1723,6 +1723,11 @@
 		max-width: 281px;
 	}
 
+	&.-watch > .content,
+	&.-tote > .content {
+		align-items: flex-start;
+	}
+
 	&.-watch {
 		@include landing_shop-item--small-desktop--watch;
 	}
