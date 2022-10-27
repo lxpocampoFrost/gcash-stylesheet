@@ -43,6 +43,11 @@
                 data-name="Landing Page Components">
                 {$landing-components}
             </div>
+
+            <div class="section-block element-group --show-code -reference -component" 
+                data-name="Get Started Page Components">
+                {$get-started-components}
+            </div>
         </div>
         
         <div class="index-group">
