@@ -159,6 +159,10 @@
 * START - 3rd Section
 **/
 .landing_panel-3 {
+	.landing_wrapper {
+		background-size: 1920px;
+	}
+
 	.landing_text-snowflake {
 		transform: translate(0, 73px);
 	}
@@ -189,6 +193,61 @@
 		&.-headphones {
 			transform: translate(-152px, 265px);
 		}
+	}
+
+	@include on(small-desktop) {
+		.landing_wrapper {
+			background-size: 1308px;
+			height: 698px;
+		}
+
+		.landing_text-snowflake {
+			transform: translate(0, 0);
+		}
+
+		.section-3-phone {
+			width: 173px;
+			height: 50px;
+			transform: translate(40px, 85px);
+		}
+
+		.landing_shop-item {
+			&.-cream {
+				transform: translate(117px, -162px);
+			}
+
+			&.-watch {
+				transform: translate(-409px, -149px);
+			}
+
+			&.-vase {
+				transform: translate(-570px, 139px);
+			}
+
+			&.-tote {
+				transform: translate(234px, 80px);
+			}
+
+			&.-headphones {
+				transform: translate(-196px, 218px);
+			}
+		}
+	}
+
+	@include on(tablet) {
+		.landing_wrapper {
+			background-size: 1499px;
+			height: 800px;
+		}
+
+		.section-3-phone {
+			width: 198px;
+			height: 57px;
+			transform: translate(46px, 97px);
+		}
+	}
+
+	@include on(mobile) {
 	}
 }
 /* END  - 3rd Section */

@@ -42,7 +42,7 @@
     </div>
 
     <div class="landing_panel landing_panel-3">
-        <div class="landing_wrapper" style="background: url(../assets/images/landing/section-3-bg.jpg) center/cover no-repeat;">
+        <div class="landing_wrapper" style="background-image: url(../assets/images/landing/section-3-bg.jpg); background-position: center; background-repeat: no-repeat;">
             <div class="landing_wrapper-bounding-box">
                 <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
             </div>
