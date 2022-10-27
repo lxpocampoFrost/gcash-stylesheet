@@ -1691,6 +1691,43 @@
 	}
 }
 
+@mixin landing_shop-item--mobile--watch--content {
+	padding: 17px 26px 10px 0;
+
+	> .icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	> .details {
+		margin-left: $spacing-half;
+
+		> .label {
+			font-size: 0.42rem;
+		}
+
+		> .amount {
+			font-size: 0.72rem;
+		}
+	}
+}
+
+@mixin landing_shop-item--mobile--watch {
+	max-width: 167px;
+	height: 85px;
+	box-shadow: 0 5.03579px 7.55369px -5.03579px rgba(15, 37, 69, 0.2);
+
+	> .content {
+		@include landing_shop-item--mobile--watch--content;
+	}
+
+	> .image {
+		width: 62px;
+		height: 85px;
+		margin-left: $spacing-secondary;
+	}
+}
+
 @mixin landing_shop-item--watch--content {
 	padding: 33px 29px 20px $spacing-triple;
 
@@ -1711,6 +1748,7 @@
 	display: flex;
 	justify-content: end;
 	align-items: end;
+	background: linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);
 
 	> .image {
 		width: 122px;
@@ -1818,8 +1856,11 @@
 }
 
 @mixin landing_shop-item--mobile {
-	> .content > .details > .amount {
-		margin-top: $spacing-quarter;
+	> .content > .details {
+		> .label,
+		> .amount {
+			margin-top: $spacing-quarter;
+		}
 	}
 
 	&.-cream {
@@ -1828,6 +1869,10 @@
 
 	&.-vase {
 		@include landing_shop-item--mobile--vase;
+	}
+
+	&.-watch {
+		@include landing_shop-item--mobile--watch;
 	}
 }
 
