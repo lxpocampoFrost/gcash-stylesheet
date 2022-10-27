@@ -1607,7 +1607,6 @@
 	> .image {
 		width: 124px;
 		height: 133px;
-		margin: -6px 0 0 -25px;
 	}
 
 	> .content {
@@ -1616,6 +1615,45 @@
 		> .details {
 			margin-right: 5px;
 		}
+	}
+}
+
+@mixin landing_shop-item--mobile--headphones--content {
+	padding: $spacing-secondary $spacing-double 14.23px 10.62px;
+
+	> .icon {
+		width: 34.16px;
+		height: 34.16px;
+	}
+
+	> .details {
+		margin-right: $spacing-quarter;
+
+		> .label {
+			font-size: 0.61rem;
+		}
+
+		> .amount {
+			font-size: 1.01rem;
+			margin-top: 3px;
+		}
+	}
+}
+
+@mixin landing_shop--item--mobile--headphones {
+	width: 190.71px;
+	height: 96.07px;
+	box-shadow: 0px 20.6366px 14.9437px -5.69285px rgba(15, 37, 69, 0.4);
+	border-radius: 7.11606px;
+
+	> .image {
+		width: 103.18px;
+		height: 111.01px;
+		transform: translateY(9%);
+	}
+
+	> .content {
+		@include landing_shop-item--mobile--headphones--content;
 	}
 }
 
@@ -1727,6 +1765,11 @@
 }
 
 @mixin landing_shop-item--small-desktop--content {
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
 	> .icon {
 		width: 41px;
 		height: 41px;
@@ -1749,15 +1792,6 @@
 	border-radius: 11px;
 
 	> .content {
-		z-index: 2;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-
-		> .icon {
-			margin-right: -4px;
-		}
-
 		@include landing_shop-item--small-desktop--content;
 	}
 
@@ -1783,9 +1817,17 @@
 		@include landing_shop-item--small-desktop--cream;
 	}
 
+	&.-vase,
+	&.-headphones {
+		> .content > .icon {
+			margin-right: -4px;
+		}
+	}
+
 	&.-vase {
 		@include landing_shop-item--small-desktop--vase;
 	}
+
 	&.-headphones {
 		@include landing_shop-item--small-desktop--headphones;
 	}
@@ -1798,6 +1840,10 @@
 
 	&.-cream {
 		@include shop-item--mobile--cream;
+	}
+
+	&.-headphones {
+		@include landing_shop--item--mobile--headphones;
 	}
 }
 
