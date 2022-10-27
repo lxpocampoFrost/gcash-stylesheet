@@ -1458,10 +1458,7 @@
 	height: 286px;
 	box-shadow: 0 32.4px 22.1684px -17.9053px rgba(15, 37, 69, 0.5);
 	border-radius: 10.5474px;
-
-	> .image {
-		border-radius: 10.5474px;
-	}
+	padding: 17.05px 22.21px 0 0;
 }
 
 @mixin landing_shop-item--vase {
@@ -1496,7 +1493,7 @@
 }
 
 @mixin landing_shop-item--small-desktop--cream {
-	max-width: max-content;
+	max-width: 136.47px;
 	height: 229px;
 	border: 0.961042px solid #edf3fb;
 	box-shadow: 0 7.68833px 11.5325px -7.68833px rgba(15, 37, 69, 0.2);
@@ -1508,8 +1505,51 @@
 		height: 205.66px;
 	}
 
-	> .content > .icon {
-		margin-bottom: 5px;
+	> .content {
+		flex-direction: row;
+
+		> .icon {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+@mixin landing_shop-item--mobile--cream--content {
+	> .icon {
+		margin-bottom: 3.43px;
+		width: 27.45px;
+		height: 27.45px;
+		margin-right: -3px;
+	}
+
+	> .details {
+		margin-left: $spacing-quarter;
+
+		> .label {
+			font-size: 0.49rem;
+		}
+
+		> .amount {
+			font-size: 0.82rem;
+		}
+	}
+}
+
+@mixin landing_shop-item--mobile--cream {
+	border: 0.644592px solid #edf3fb;
+	box-shadow: 0px 5.15674px 7.73511px -5.15674px rgba(15, 37, 69, 0.2);
+	border-radius: 6.44592px;
+	padding: 0 9.434px $spacing-half $spacing-quarter;
+	max-width: 91.53px;
+	height: 153.41px;
+
+	> .image {
+		max-width: 55.43px;
+		height: 137.94px;
+	}
+
+	> .content {
+		@include landing_shop-item--mobile--cream--content;
 	}
 }
 
@@ -1531,8 +1571,8 @@
 }
 
 @mixin landing_shop-item--cream {
-	max-width: max-content;
-	height: 268px;
+	max-width: 160.05px;
+	height: 268.26px;
 	padding: 0 10px $spacing-default;
 	background: linear-gradient(180deg, #ffffff 23.92%, #dbd7e1 169.83%);
 	border: 1.12715px solid #edf3fb;
@@ -1651,6 +1691,43 @@
 	}
 }
 
+@mixin landing_shop-item--mobile--watch--content {
+	padding: 17px 26px 10px 0;
+
+	> .icon {
+		width: 24px;
+		height: 24px;
+	}
+
+	> .details {
+		margin-left: $spacing-half;
+
+		> .label {
+			font-size: 0.42rem;
+		}
+
+		> .amount {
+			font-size: 0.72rem;
+		}
+	}
+}
+
+@mixin landing_shop-item--mobile--watch {
+	max-width: 167px;
+	height: 85px;
+	box-shadow: 0 5.03579px 7.55369px -5.03579px rgba(15, 37, 69, 0.2);
+
+	> .content {
+		@include landing_shop-item--mobile--watch--content;
+	}
+
+	> .image {
+		width: 62px;
+		height: 85px;
+		margin-left: $spacing-secondary;
+	}
+}
+
 @mixin landing_shop-item--watch--content {
 	padding: 33px 29px 20px $spacing-triple;
 
@@ -1749,40 +1826,32 @@
 	}
 }
 
-@mixin landing_shop-item--mobile--watch--content {
-	padding: 17px 26px 10px 0;
-
+@mixin landing_shop-item--mobile--vase--content {
 	> .icon {
-		width: 24px;
-		height: 24px;
+		width: 26.47px;
+		height: 26.47px;
 	}
 
 	> .details {
-		margin-left: $spacing-half;
-
 		> .label {
-			font-size: 0.42rem;
+			font-size: 0.47rem;
 		}
 
 		> .amount {
-			font-size: 0.72rem;
+			font-size: 0.79rem;
 		}
 	}
 }
 
-@mixin landing_shop-item--mobile--watch {
-	max-width: 167px;
-	height: 85px;
-	box-shadow: 0 5.03579px 7.55369px -5.03579px rgba(15, 37, 69, 0.2);
+@mixin landing_shop-item--mobile--vase {
+	max-width: 181.44px;
+	height: 184.72px;
+	padding: 11.03px 14.37px 0 0;
+	box-shadow: 0px 20.9533px 14.3365px -11.5795px rgba(15, 37, 69, 0.5);
+	border-radius: 6.82105px;
 
 	> .content {
-		@include landing_shop-item--mobile--watch--content;
-	}
-
-	> .image {
-		width: 62px;
-		height: 85px;
-		margin-left: $spacing-secondary;
+		@include landing_shop-item--mobile--vase--content;
 	}
 }
 
@@ -1792,6 +1861,14 @@
 		> .amount {
 			margin-top: $spacing-quarter;
 		}
+	}
+
+	&.-cream {
+		@include landing_shop-item--mobile--cream;
+	}
+
+	&.-vase {
+		@include landing_shop-item--mobile--vase;
 	}
 
 	&.-watch {
