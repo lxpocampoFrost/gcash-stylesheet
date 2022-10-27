@@ -119,15 +119,11 @@
                 </div>
                 <div class="get-started_content-block -section-4">
                     <div class="title">not your <span class="highlight">sensitive </span>info</div>
-                    <div class="description">Unbeatable military-grade encryption
-                        keeps all your details and financial
-                        history safe. Nothing gets out without
-                        your authentication.</div>
-                    </div>
+                    <div class="description">Unbeatable military-grade encryption keeps all your details and financial history safe. Nothing gets out without your authentication.</div>
                 </div>
             </div>
             <div class="get-started_wrapper-floating">
-                <img class="section-4-img-1" src="../assets/images/get-started/section-4-img-1.png">
+                <img class="section-4-img-1" src="../assets/images/get-started/section-4-img-1.png"/>
             </div>
         </div>
     </div>
