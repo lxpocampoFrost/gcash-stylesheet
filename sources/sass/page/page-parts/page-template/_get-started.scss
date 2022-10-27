@@ -930,6 +930,7 @@
 @mixin get-started_container--small-desktop {
 	> .get-started_panel-1 {
 		min-height: 600px;
+		margin-top: 140px;
 	}
 }
 
@@ -960,7 +961,7 @@
 
 	> .get-started_panel-1 {
 		min-height: 838px;
-		margin-top: calc(120px + 36px + 64px);
+		margin-top: 155px;
 	}
 
 	@include on(large-desktop) {
