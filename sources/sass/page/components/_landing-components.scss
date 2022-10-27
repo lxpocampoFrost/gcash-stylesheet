@@ -1508,8 +1508,12 @@
 		height: 205.66px;
 	}
 
-	> .content > .icon {
-		margin-bottom: 5px;
+	> .content {
+		flex-direction: row;
+
+		> .icon {
+			margin-bottom: 5px;
+		}
 	}
 }
 
