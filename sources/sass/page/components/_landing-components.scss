@@ -1773,6 +1773,7 @@
 @mixin landing_shop-item--mobile--watch {
 	max-width: 167px;
 	height: 85px;
+	box-shadow: 0 5.03579px 7.55369px -5.03579px rgba(15, 37, 69, 0.2);
 
 	> .content {
 		@include landing_shop-item--mobile--watch--content;
@@ -1781,7 +1782,7 @@
 	> .image {
 		width: 62px;
 		height: 85px;
-		margin-left: 12px;
+		margin-left: $spacing-secondary;
 	}
 }
 
