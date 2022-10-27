@@ -166,7 +166,6 @@
 .get-started_panel-2 {
 	z-index: -1;
 	transform: translateY(-122px);
-	min-height: 934px;
 
 	.get-started_wrapper-bounding-box {
 		background: #ebf3ff;
@@ -298,8 +297,6 @@
 }
 
 .get-started_panel-3 {
-	margin-top: 120px;
-
 	.get-started_wrapper-bounding-box {
 		min-height: 758px;
 		align-items: center;
@@ -362,7 +359,7 @@
 	}
 
 	.section-4-img-1 {
-		transform: translate(-50%, -80%);
+		transform: translate(-50%, 17%);
 	}
 }
 
@@ -381,7 +378,7 @@
 
 	.section-4-img-1 {
 		width: 357px;
-		transform: translate(-50%, -93%);
+		transform: translate(-50%, 17%);
 	}
 }
 
@@ -399,7 +396,7 @@
 
 	.section-4-img-1 {
 		width: 341px;
-		transform: translate(3%, -89%);
+		transform: translate(3%, 17%);
 	}
 }
 
@@ -410,7 +407,7 @@
 	}
 
 	.section-4-img-1 {
-		transform: translate(-50%, -23%);
+		transform: translate(-50%, 48%);
 		object-fit: cover;
 		width: 500px;
 	}
@@ -435,7 +432,7 @@
 	}
 
 	.section-4-img-1 {
-		transform: translate(-50%, -89%);
+		transform: translate(-50%, 17%);
 		width: 515px;
 	}
 
