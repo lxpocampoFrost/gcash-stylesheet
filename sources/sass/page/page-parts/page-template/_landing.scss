@@ -248,6 +248,14 @@
 	}
 
 	@include on(mobile) {
+		.landing_wrapper {
+			background-size: 1680px;
+			height: 897px;
+		}
+
+		.section-3-phone {
+			display: none;
+		}
 	}
 }
 /* END  - 3rd Section */
