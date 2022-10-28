@@ -1,71 +1,27 @@
 /*
-* START - 3rd Section
-**/
-.landing_panel-3 {
-	.landing_text-snowflake {
-		transform: translate(0, 73px);
-	}
-
-	.section-3-phone {
-		width: 255px;
-		height: 74px;
-		transform: translate(57px, 127px);
-	}
-
-	.landing_shop-item {
-		&.-cream {
-			transform: translate(187px, -218px);
-		}
-
-		&.-watch {
-			transform: translate(-512px, -170px);
-		}
-
-		&.-vase {
-			transform: translate(-670px, 164px);
-		}
-
-		&.-tote {
-			transform: translate(348px, 80px);
-		}
-
-		&.-headphones {
-			transform: translate(-152px, 265px);
-		}
-	}
-}
-/* END  - 3rd Section */
-
-/*
-* START - 2nd Section
-**/
-.landing_panel-2 {
-	.landing_wrapper-bounding-box {
-		justify-content: flex-end;
-	}
-
-	.landing_text-heading-1 {
-		max-width: 7ch;
-		transform: translate(-75px, 166px);
-	}
-
-	.landing_message-bubble.-avatar-left {
-		transform: translate(-298px, 124px);
-	}
-}
-/* END  - 2nd Section */
-
-/*
 * START - 1st Section
 **/
 @mixin landing_panel-1--small-desktop {
+	.landing_text-display {
+		transform: translate(0, -57px);
+	}
+
 	.section-1-phone {
 		width: 768px;
 		height: 44px;
+		transform: translate(-50%, 43px);
+	}
+
+	.section-1-phone-shadow {
+		transform: translate(-50%, 160px);
 	}
 }
 
 @mixin landing_panel-1--tablet {
+	.landing_text-display {
+		transform: translate(0, -27px);
+	}
+
 	.section-1-phone {
 		width: 480px;
 		height: 27px;
@@ -74,13 +30,14 @@
 	.section-1-phone-shadow {
 		width: 768px;
 		height: 159px;
+		transform: translate(-50%, 131px);
 	}
 }
 
 @mixin landing_panel-1--mobile {
 	.landing_text-display {
 		max-width: 9ch;
-		transform: translate(0, -100px);
+		transform: translate(0, -74px);
 	}
 
 	.section-1-phone {
@@ -91,6 +48,7 @@
 	.section-1-phone-shadow {
 		width: 598px;
 		height: 123.8px;
+		transform: translate(-50%, 110px);
 	}
 }
 
@@ -131,6 +89,231 @@
 	}
 }
 /* END - 1st Section */
+
+/*
+* START - 2nd Section
+**/
+@mixin landing_panel-2--large-desktop {
+	.landing_text-heading-1 {
+		transform: translate(-65px, 170px);
+	}
+
+	.landing_message-bubble.-avatar-left {
+		transform: translate(-280px, 107px);
+	}
+}
+
+@mixin landing_panel-2--small-desktop {
+	.landing_message-bubble.-avatar-left {
+		transform: translate(-180px, 126px);
+	}
+}
+
+@mixin landing_panel-2--tablet {
+	.landing_text-heading-1 {
+		transform: translate(-147px, 300px);
+	}
+
+	.landing_message-bubble.-avatar-left {
+		transform: translate(-212px, 166px);
+	}
+}
+
+@mixin landing_panel-2--mobile {
+	.landing_wrapper {
+		background-position: 46%;
+	}
+
+	.landing_text-heading-1 {
+		transform: translate(-108px, 85px);
+	}
+
+	.landing_message-bubble.-avatar-left {
+		transform: translate(-71px, 239px);
+	}
+}
+
+.landing_panel-2 {
+	.landing_wrapper {
+		background-size: cover;
+		background-position: 40%;
+	}
+
+	.landing_wrapper-bounding-box {
+		justify-content: flex-end;
+	}
+
+	.landing_text-heading-1 {
+		max-width: 7ch;
+		transform: translate(-75px, 166px);
+	}
+
+	.landing_message-bubble.-avatar-left {
+		transform: translate(-298px, 124px);
+	}
+
+	@include on(large-desktop) {
+		@include landing_panel-2--large-desktop;
+	}
+
+	@include on(small-desktop) {
+		@include landing_panel-2--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include landing_panel-2--tablet;
+	}
+
+	@include on(mobile) {
+		@include landing_panel-2--mobile;
+	}
+}
+/* END  - 2nd Section */
+
+/*
+* START - 3rd Section
+**/
+@mixin landing_panel-3--small-desktop {
+	.landing_wrapper {
+		background-size: 1308px;
+		height: 698px;
+	}
+
+	.landing_text-snowflake {
+		transform: translate(0, 0);
+	}
+
+	.section-3-phone {
+		width: 173px;
+		height: 50px;
+		transform: translate(40px, 85px);
+	}
+
+	.landing_shop-item {
+		&.-cream {
+			transform: translate(117px, -162px);
+		}
+
+		&.-watch {
+			transform: translate(-409px, -149px);
+		}
+
+		&.-vase {
+			transform: translate(-570px, 139px);
+		}
+
+		&.-tote {
+			transform: translate(234px, 80px);
+		}
+
+		&.-headphones {
+			transform: translate(-196px, 218px);
+		}
+	}
+}
+
+@mixin landing_panel-3--tablet {
+	.landing_wrapper {
+		background-size: 1499px;
+		height: 800px;
+	}
+
+	.section-3-phone {
+		width: 198px;
+		height: 57px;
+		transform: translate(46px, 97px);
+	}
+}
+
+@mixin landing_panel-3--mobile {
+	.landing_wrapper {
+		background-size: 1680px;
+		background-position: 52%;
+		height: 896px;
+	}
+
+	.landing_text-snowflake {
+		transform: translate(0, 90px);
+	}
+
+	.section-3-phone {
+		display: none;
+	}
+
+	.landing_shop-item {
+		&.-cream {
+			transform: translate(112px, -60px);
+		}
+
+		&.-watch {
+			transform: translate(-228px, -268px);
+		}
+
+		&.-vase {
+			transform: translate(-227px, 254px);
+		}
+
+		&.-tote {
+			transform: translate(234px, 80px);
+		}
+
+		&.-headphones {
+			transform: translate(20px, 342px);
+		}
+	}
+}
+
+.landing_panel-3 {
+	.landing_wrapper {
+		background-size: 1920px;
+		background-position: center;
+	}
+
+	.landing_text-snowflake {
+		transform: translate(0, 73px);
+	}
+
+	.section-3-phone {
+		width: 255px;
+		height: 74px;
+		transform: translate(57px, 127px);
+	}
+
+	.landing_shop-item {
+		&.-cream {
+			transform: translate(187px, -218px);
+		}
+
+		&.-watch {
+			transform: translate(-512px, -170px);
+		}
+
+		&.-vase {
+			transform: translate(-670px, 164px);
+		}
+
+		&.-tote {
+			transform: translate(348px, 80px);
+		}
+
+		&.-headphones {
+			transform: translate(-152px, 265px);
+		}
+	}
+
+	@include on(small-desktop) {
+		@include landing_panel-3--small-desktop;
+	}
+
+	@include on(tablet) {
+		@include landing_panel-3--tablet;
+	}
+
+	@include on(mobile) {
+		@include landing_panel-3--mobile;
+	}
+}
+/* END  - 3rd Section */
 
 .landing_wrapper-floating {
 	width: 100%;
