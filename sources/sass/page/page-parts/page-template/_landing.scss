@@ -173,6 +173,96 @@
 /*
 * START - 3rd Section
 **/
+@mixin landing_panel-3--small-desktop {
+	.landing_wrapper {
+		background-size: 1308px;
+		height: 698px;
+	}
+
+	.landing_text-snowflake {
+		transform: translate(0, 0);
+	}
+
+	.section-3-phone {
+		width: 173px;
+		height: 50px;
+		transform: translate(40px, 85px);
+	}
+
+	.landing_shop-item {
+		&.-cream {
+			transform: translate(117px, -162px);
+		}
+
+		&.-watch {
+			transform: translate(-409px, -149px);
+		}
+
+		&.-vase {
+			transform: translate(-570px, 139px);
+		}
+
+		&.-tote {
+			transform: translate(234px, 80px);
+		}
+
+		&.-headphones {
+			transform: translate(-196px, 218px);
+		}
+	}
+}
+
+@mixin landing_panel-3--tablet {
+	.landing_wrapper {
+		background-size: 1499px;
+		height: 800px;
+	}
+
+	.section-3-phone {
+		width: 198px;
+		height: 57px;
+		transform: translate(46px, 97px);
+	}
+}
+
+@mixin landing_panel-3--mobile {
+	.landing_wrapper {
+		background-size: 1680px;
+		background-position: 52%;
+		height: 896px;
+	}
+
+	.landing_text-snowflake {
+		transform: translate(0, 90px);
+	}
+
+	.section-3-phone {
+		display: none;
+	}
+
+	.landing_shop-item {
+		&.-cream {
+			transform: translate(112px, -60px);
+		}
+
+		&.-watch {
+			transform: translate(-228px, -268px);
+		}
+
+		&.-vase {
+			transform: translate(-227px, 254px);
+		}
+
+		&.-tote {
+			transform: translate(234px, 80px);
+		}
+
+		&.-headphones {
+			transform: translate(20px, 342px);
+		}
+	}
+}
+
 .landing_panel-3 {
 	.landing_wrapper {
 		background-size: 1920px;
@@ -212,93 +302,15 @@
 	}
 
 	@include on(small-desktop) {
-		.landing_wrapper {
-			background-size: 1308px;
-			height: 698px;
-		}
-
-		.landing_text-snowflake {
-			transform: translate(0, 0);
-		}
-
-		.section-3-phone {
-			width: 173px;
-			height: 50px;
-			transform: translate(40px, 85px);
-		}
-
-		.landing_shop-item {
-			&.-cream {
-				transform: translate(117px, -162px);
-			}
-
-			&.-watch {
-				transform: translate(-409px, -149px);
-			}
-
-			&.-vase {
-				transform: translate(-570px, 139px);
-			}
-
-			&.-tote {
-				transform: translate(234px, 80px);
-			}
-
-			&.-headphones {
-				transform: translate(-196px, 218px);
-			}
-		}
+		@include landing_panel-3--small-desktop;
 	}
 
 	@include on(tablet) {
-		.landing_wrapper {
-			background-size: 1499px;
-			height: 800px;
-		}
-
-		.section-3-phone {
-			width: 198px;
-			height: 57px;
-			transform: translate(46px, 97px);
-		}
+		@include landing_panel-3--tablet;
 	}
 
 	@include on(mobile) {
-		.landing_wrapper {
-			background-size: 1680px;
-			background-position: 52%;
-			height: 896px;
-		}
-
-		.landing_text-snowflake {
-			transform: translate(0, 90px);
-		}
-
-		.section-3-phone {
-			display: none;
-		}
-
-		.landing_shop-item {
-			&.-cream {
-				transform: translate(112px, -60px);
-			}
-
-			&.-watch {
-				transform: translate(-228px, -268px);
-			}
-
-			&.-vase {
-				transform: translate(-227px, 254px);
-			}
-
-			&.-tote {
-				transform: translate(234px, 80px);
-			}
-
-			&.-headphones {
-				transform: translate(20px, 342px);
-			}
-		}
+		@include landing_panel-3--mobile;
 	}
 }
 /* END  - 3rd Section */
