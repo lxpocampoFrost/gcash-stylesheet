@@ -42,7 +42,7 @@
     </div>
 
     <div class="landing_panel landing_panel-3">
-        <div class="landing_wrapper" style="background-image: url(../assets/images/landing/section-3-bg.jpg); background-position: center; background-repeat: no-repeat;">
+        <div class="landing_wrapper" style="background-image: url(../assets/images/landing/section-3-bg.jpg); background-repeat: no-repeat;">
             <div class="landing_wrapper-bounding-box">
                 <div class="landing_text-snowflake" style="color: #ffffff;">Shop</div>
             </div>
@@ -61,7 +61,8 @@
                     </div>
                 </div>
 
-                <div class="landing_shop-item -watch" style="background: url(../assets/images/landing/shop-item-watch.png) 24px/contain no-repeat,linear-gradient(254.99deg, #ffffff 15.71%, #dbd7e1 96.48%);">
+                <div class="landing_shop-item -watch">
+                    <img class="image" src="../assets/images/landing/shop-item-watch.png">
                     <div class="content">
                         <span class="icon" style="background: url(../assets/images/landing/shop-item-watch-category.svg) center/contain no-repeat;"></span>
                         <div class="details">
