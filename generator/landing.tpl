@@ -105,4 +105,20 @@
             </div>
         </div>
     </div>
+
+    <div class="landing_panel landing_panel-4">
+        <div class="landing_wrapper" style="background-image: url(../assets/images/landing/section-4-bg.jpg);">
+            <div class="landing_wrapper-bounding-box">
+                <div class="landing_text-snowflake" style="color: #ffffff;">Save</div>
+            </div>
+
+            <div class="landing_wrapper-floating">
+                <div class="section-4-pig"></div>
+                <img src="../assets/images/landing/section-4-coin-1.png" class="section-4-coin-1">
+                <img src="../assets/images/landing/section-4-coin-2.png" class="section-4-coin-2">
+                <img src="../assets/images/landing/section-4-coin-3.png" class="section-4-coin-3">
+                <img src="../assets/images/landing/section-4-coin-4.png" class="section-4-coin-4">
+            </div>
+        </div>
+    </div>
 </div>

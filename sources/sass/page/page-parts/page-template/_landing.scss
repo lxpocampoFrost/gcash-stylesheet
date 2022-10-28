@@ -315,6 +315,56 @@
 }
 /* END  - 3rd Section */
 
+/*
+* START - 4th Section
+**/
+.landing_panel-4 {
+	.landing_text-snowflake {
+		position: absolute;
+		z-index: 2;
+	}
+
+	.section-4-pig {
+		width: 496.11px;
+		height: 551.34px;
+		background-image: url(../images/landing/section-4-pig.jpg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		mask-image: url(../images/landing/section-4-pig-mask.svg);
+		mask-size: 100%;
+		mask-repeat: no-repeat;
+		mask-position: center;
+		transform: translate(33px, -80px);
+		z-index: 1;
+	}
+
+	.section-4-coin-1 {
+		width: 169.5px;
+		top: 0;
+		transform: translate(98px);
+	}
+
+	.section-4-coin-2 {
+		width: 213.5px;
+		transform: translate(-22px, -114px);
+		z-index: 3;
+	}
+
+	.section-4-coin-3 {
+		width: 162px;
+		transform: translate(-355px, -130px);
+		z-index: 3;
+	}
+
+	.section-4-coin-4 {
+		width: 597.5px;
+		bottom: 0;
+		transform: translate(-579px);
+	}
+}
+/* END  - 4th Section */
+
 .landing_wrapper-floating {
 	width: 100%;
 	height: 100%;
