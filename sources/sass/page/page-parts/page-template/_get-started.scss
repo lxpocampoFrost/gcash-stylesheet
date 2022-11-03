@@ -938,6 +938,10 @@
 @mixin get-started_container--mobile {
 	> .get-started_panel-1 {
 		min-height: 656px;
+	}
+
+	> .get-started_panel-1,
+	> .get-started_panel-2 {
 		padding: 0 $spacing-double;
 	}
 }
