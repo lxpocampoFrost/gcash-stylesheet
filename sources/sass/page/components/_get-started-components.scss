@@ -654,7 +654,6 @@ start --content-block
 
 @mixin get-started_content-block--tablet--outlets {
 	> .title {
-		font-size: 3.43rem;
 		margin-top: $spacing-quad;
 	}
 
@@ -821,7 +820,7 @@ start --content-block
 	}
 
 	> .title {
-		font: 700 5.71rem/1.2 $gotham-bold;
+		font: 500 5.71rem/1.2 $gotham-medium;
 		color: #1972f9;
 	}
 
