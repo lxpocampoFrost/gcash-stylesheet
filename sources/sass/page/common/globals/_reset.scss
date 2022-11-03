@@ -90,7 +90,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-synthesis: none;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -108,6 +108,7 @@ section {
 }
 body {
 	line-height: 1;
+	font-synthesis: none;
 }
 body::-webkit-scrollbar {
 	height: 0;
