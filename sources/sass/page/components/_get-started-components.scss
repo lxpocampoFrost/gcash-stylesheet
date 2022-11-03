@@ -827,13 +827,13 @@ start --content-block
 	}
 
 	> .label {
-		font: 400 1.71rem/1.3 $gotham-bold;
+		font: 500 1.71rem/1.3 $gotham-medium;
 		opacity: 0.8;
 		letter-spacing: -0.03em;
 	}
 
 	> .description {
-		font: 500 1.14rem/1.4 $gilroy-bold;
+		font: 500 1.14rem/1.4 $gilroy-medium;
 		opacity: 0.5;
 		max-width: 39ch;
 		margin-top: 40px;
