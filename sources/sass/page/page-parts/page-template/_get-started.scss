@@ -118,18 +118,14 @@
 	.get-started_wrapper-bounding-box {
 		padding: 120px 60px 82px;
 	}
-
-	.get-started_comparison-table {
-		margin-top: 100px;
-	}
 }
 
 @mixin get-started_panel-2--small-desktop {
-	min-height: 742px;
+	min-height: 708px;
 
 	.get-started_wrapper-bounding-box {
 		padding: 100px 40px $spacing-double-quad;
-		min-height: 662px;
+		min-height: 628px;
 	}
 
 	.get-started_comparison-table {
@@ -138,28 +134,24 @@
 }
 
 @mixin get-started_panel-2--tablet {
-	min-height: 828px;
+	min-height: 789px;
 
 	.get-started_wrapper-bounding-box {
 		padding: 150px 40px $spacing-double-quad;
-		min-height: 764px;
+		min-height: 725px;
 	}
 
 	.get-started_comparison-table {
-		margin-top: 60px;
+		margin-top: $spacing-double-triple;
 	}
 }
 
 @mixin get-started_panel-2--mobile {
-	min-height: 1153px;
+	min-height: 1061px;
 
 	.get-started_wrapper-bounding-box {
 		padding: 150px 30px 40px;
-		min-height: 1105px;
-	}
-
-	.get-started_comparison-table {
-		margin-top: 60px;
+		min-height: 1013px;
 	}
 }
 
@@ -172,11 +164,11 @@
 		border-radius: 0px 0px 40px 40px;
 		padding: 120px 159px 82px 154px;
 		flex-direction: column;
-		min-height: 814px;
+		min-height: 700px;
 	}
 
 	.get-started_comparison-table {
-		margin-top: 100px;
+		margin-top: $spacing-double-quad;
 	}
 
 	@include on(large-desktop) {
