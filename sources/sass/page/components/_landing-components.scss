@@ -41,7 +41,7 @@
 	}
 
 	> .description {
-		font: 600 1.29rem/1.4 $gilroy-bold;
+		font: 600 1.29rem/1.4 $gilroy-semibold;
 		letter-spacing: -0.02em;
 		margin-top: 26px;
 	}
@@ -424,7 +424,7 @@
 		}
 
 		> .label {
-			font: 600 0.57rem/1.5 $gilroy-bold;
+			font: 600 0.57rem/1.5 $gilroy-semibold;
 			color: #a1a8b4;
 			padding-left: $spacing-double;
 		}
@@ -570,7 +570,7 @@
 
 	> .description {
 		margin-top: $spacing-quarter;
-		font: 600 0.86rem/1.5 $gilroy-bold;
+		font: 600 0.86rem/1.5 $gilroy-semibold;
 
 		> .text {
 			color: #6d7b92;
@@ -1384,7 +1384,7 @@
 	}
 
 	> .description {
-		font: 600 1rem/1.4 $gilroy-bold;
+		font: 600 1rem/1.4 $gilroy-semibold;
 		text-align: center;
 		color: #445c85;
 		margin: $spacing-double auto 0;
