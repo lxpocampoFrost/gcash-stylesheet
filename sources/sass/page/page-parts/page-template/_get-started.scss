@@ -699,12 +699,14 @@
 		margin: 0 auto;
 
 		.get-started_section-card.-section-6 {
-			margin-top: 824px;
+			margin-top: 607px;
 		}
 	}
 
 	.section-6-img-1 {
-		transform: translate(-50%, -10%);
+		width: 350px;
+		height: 600.83px;
+		transform: translate(-50%, -16%);
 	}
 
 	.section-6-img {
@@ -740,13 +742,13 @@
 	.get-started_wrapper-bounding-box
 		> .content
 		:not(:first-of-type).get-started_section-card.-section-6 {
-		margin-top: 533px;
+		margin-top: 484px;
 	}
 
 	.section-6-img-1 {
-		width: 345px;
-		height: 533px;
-		transform: translate(-50%, -24%);
+		width: 295px;
+		height: 490.37px;
+		transform: translate(-50%, -26%);
 	}
 
 	.section-6-img {
@@ -754,19 +756,19 @@
 		height: 49px;
 
 		&.pin-1 {
-			transform: translate(-153%, -620%);
+			transform: translate(-137%, -610%);
 		}
 
 		&.pin-2 {
-			transform: translate(141%, -375%);
+			transform: translate(111%, -365%);
 		}
 
 		&.pin-3 {
-			transform: translate(-297%, -170%);
+			transform: translate(-258%, -180%);
 		}
 
 		&.pin-4 {
-			transform: translate(123%, 20%);
+			transform: translate(100%, -4%);
 		}
 	}
 }
