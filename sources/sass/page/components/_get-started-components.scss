@@ -651,7 +651,6 @@ start --content-block
 
 @mixin get-started_content-block--tablet--outlets {
 	> .title {
-		font-size: 3.43rem;
 		margin-top: $spacing-quad;
 	}
 
@@ -705,8 +704,10 @@ start --content-block
 		> .title {
 			max-width: 11ch;
 		}
+
 		> .description {
-			max-width: 37ch;
+			max-width: 30ch;
+			margin: $spacing-double auto 0;
 		}
 	}
 
@@ -721,6 +722,7 @@ start --content-block
 
 @mixin get-started_content-block--mobile--outlets {
 	> .title {
+		font-size: 3.43rem;
 		margin-top: $spacing-triple;
 	}
 
@@ -783,7 +785,7 @@ start --content-block
 	}
 
 	> .description {
-		font: 600 1.14rem/1.4 $gilroy-semibold;
+		font: 500 1.14rem/1.4 $gilroy-medium;
 		margin-top: $spacing-triple;
 		max-width: 34ch;
 	}
@@ -818,7 +820,7 @@ start --content-block
 	}
 
 	> .title {
-		font: 700 5.71rem/1.2 $gotham-bold;
+		font: 500 5.71rem/1.2 $gotham-medium;
 		color: #1972f9;
 	}
 

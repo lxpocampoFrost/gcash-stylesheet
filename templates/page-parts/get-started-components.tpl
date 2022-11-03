@@ -131,7 +131,7 @@
 
     <div class="get-started_content-block -section-3">
         <div class="title">Getting verified is super-easy</div>
-        <div class="description">The only requirements are a government-issued ID and your selfie.</div>
+        <div class="description">The only requirements are a government-issued ID &amp; your selfie.</div>
     </div>
 
     <div class="get-started_content-block -section-2">
@@ -140,7 +140,7 @@
     </div>
 
     <div class="get-started_content-block -outlets">
-        <span class="preamble">Put the cash in Gcash</span>
+        <span class="preamble">Put the cash in GCash</span>
         <div class="title">63,000</div>
         <div class="label">Cash In Outlets Nationwide</div>
         <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
