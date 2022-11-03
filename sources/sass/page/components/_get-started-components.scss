@@ -706,7 +706,8 @@ start --content-block
 			max-width: 11ch;
 		}
 		> .description {
-			max-width: 37ch;
+			max-width: 30ch;
+			margin: $spacing-double auto 0;
 		}
 	}
 
