@@ -1071,7 +1071,7 @@ end --content-block
 		}
 
 		&:nth-of-type(2) {
-			padding-bottom: 0;
+			padding-bottom: $spacing-double;
 		}
 	}
 
