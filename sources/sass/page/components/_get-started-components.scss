@@ -658,7 +658,7 @@ start --content-block
 	}
 
 	> .description {
-		max-width: 40ch;
+		max-width: 100%;
 		margin-top: $spacing-triple;
 	}
 }
@@ -853,7 +853,7 @@ start --content-block
 
 	> .title {
 		font: 700 5.7rem/1.1 $gotham-bold;
-		letter-spacing: -0.03em;
+		letter-spacing: -0.05em;
 		color: #012981;
 		max-width: 10ch;
 		margin-top: $spacing-double-triple;
