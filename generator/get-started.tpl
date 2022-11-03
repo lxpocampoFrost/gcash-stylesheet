@@ -142,13 +142,13 @@
 
                 <div class="content">
                     <div class="get-started_section-card -section-5">
-                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
                         <div class="content">
-                            <div class="title">Remittance</div>
-                            <div class="description">Receive overseas remittances directly to your GCash account.</div>
+                            <div class="title">Over-the-Counter</div>
+                            <div class="description">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
                         </div>
                     </div>
-
+                    
                     <div class="get-started_section-card -section-5">
                         <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-online.svg) center no-repeat;"></span>
                         <div class="content">
@@ -158,10 +158,10 @@
                     </div>
 
                     <div class="get-started_section-card -section-5">
-                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
                         <div class="content">
-                            <div class="title">Over-the-Counter</div>
-                            <div class="description">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
+                            <div class="title">Remittance</div>
+                            <div class="description">Receive overseas remittances directly to your GCash account.</div>
                         </div>
                     </div>
                 </div>
