@@ -90,6 +90,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-synthesis: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -125,7 +126,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
+	content: '';
 	content: none;
 }
 table {
@@ -142,10 +143,10 @@ input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
 }
-input[type="number"] {
+input[type='number'] {
 	-moz-appearance: textfield;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
 	margin: 0;
 }
 button {
