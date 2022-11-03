@@ -121,4 +121,69 @@
             </div>
         </div>
     </div>
+
+    <div class="landing_panel landing_panel-5">
+        <div class="landing_wrapper" style="background: #0D2165;">
+            <div class="landing_wrapper-bounding-box">
+                
+            </div>
+
+            <div class="landing_wrapper-floating">
+                <div class="landing_services-card landing_services-card-1" style="background: #CEF3FF;"></div>
+                <div class="landing_services-card landing_services-card-2" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;"></div>
+                <div class="landing_services-card landing_services-card-3" style="background: #1566D8;"></div>
+                <div class="landing_services-card" style="background: #0074FF;"></div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-save-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-save-icon.svg);"></span>
+                    <div class="title" style="color: #2B3990;">Save</div>
+                </div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-scan-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-scan-icon.svg);"></span>
+                    <div class="title" style="color: #CFE3FE;">Scan to pay</div>
+                </div>
+                <div class="landing_services-card -bottom-left" style="background-image: url(../assets/images/landing/services-card-invest-bg.jpg);">
+                    <div class="title" style="color: #D6F5FF;">Invest</div>
+                </div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-insure-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-insure-icon.svg);"></span>
+                    <div class="title" style="color: #0D2165;">Insure</div>
+                </div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-gcredits-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-gcredits-icon.svg);"></span>
+                    <div class="title" style="color: #2B3990;">GCredits</div>
+                </div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-bank-transfer-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-bank-transfer-icon.svg);"></span>
+                    <div class="title" style="color: #D6F5FF;">Bank Transfer</div>
+                </div>
+                <div class="landing_services-card -content-only" style="background: transparent;">
+                    <div class="title" style="color: #EEF7FF;">at marami pang iba</div>
+                </div>
+                <div class="landing_services-card -bottom-left -no-padding-bottom" style="background-image: url(../assets/images/landing/services-card-finger-print-bg.jpg);">
+                    <div class="title" style="color: #C4DEFD;">We care about your security.</div>
+                </div>
+                <div class="landing_services-card -bottom-left" style="background-image: url(../assets/images/landing/services-card-send-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-send-icon.svg);"></span>
+                    <div class="title" style="color: #2B3990;">Send Money</div>
+                </div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-loan-bg.jpg);">
+                    <span class="icon" style="background-image: url(./assets/images/landing/services-card-loan-icon.svg);"></span>
+                    <div class="title" style="color: #0B357B;">Loan</div>
+                </div>
+                <div class="landing_services-card" style="background: #D1D9EC;"></div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-admit-bg.jpg);"></div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-cash-in-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-cash-in-icon.svg);"></span>
+                    <div class="title" style="color: #2B3990;">Cash In</div>
+                </div>
+                <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-gforest-bg.jpg);">
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-gforest-icon.svg);"></span>
+                    <div class="title" style="color: #0A5363;">GForest</div>
+                </div>
+                <div class="landing_services-card landing_services-card-" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;"></div>
+                <div class="landing_services-card" style="background: #0064FF;"></div>
+                <div class="landing_services-card" style="background: #F7FEFC;"></div>
+            </div>
+        </div>
+    </div>
 </div>

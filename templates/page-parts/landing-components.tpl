@@ -48,7 +48,8 @@
 
     <div class="landing_services-card" style="background: #CEF3FF;"></div>
 
-    <div class="landing_services-card" style="background: transparent;"></div>
+    <div class="landing_services-card" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;
+    "></div>
 
     <div class="landing_services-card" style="background: #1566D8;"></div>
 
