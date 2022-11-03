@@ -25,9 +25,17 @@
 }
 
 @font-face {
-	font-family: "Gilroy Bold";
+	font-family: "Gilroy SemiBold";
 	src: url("../fonts/Gilroy/Gilroy-SemiBold.otf") format("opentype");
 	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy Bold";
+	src: url("../fonts/Gilroy/Gilroy-Bold.otf") format("opentype");
+	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }

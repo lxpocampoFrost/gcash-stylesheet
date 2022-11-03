@@ -4,6 +4,7 @@ Base Typesetting
 $gotham-medium: "Gotham Medium", Arial, Helvetica, sans-serif;
 $gotham-bold: "Gotham Bold", Arial, Helvetica, sans-serif;
 $gilroy-medium: "Gilroy Medium", Arial, Helvetica, sans-serif;
+$gilroy-semibold: "Gilroy SemiBold", Arial, Helvetica, sans-serif;
 $gilroy-bold: "Gilroy Bold", Arial, Helvetica, sans-serif;
 
 // HEADLINE
@@ -45,19 +46,24 @@ $label-tiny-light: 350 0.57rem/1 $gotham-medium;
 // CONTENT
 // 16px
 $content-large: 500 1.14rem/1.4 $gilroy-medium;
-$content-large-bold: 600 1.14rem/1.4 $gilroy-bold;
+$content-large-semibold: 600 1.14rem/1.4 $gilroy-semibold;
+$content-large-bold: 700 1.14rem/1.4 $gilroy-bold;
 // 14px
 $content-base: 500 1rem/1.4 $gilroy-medium;
-$content-base-bold: 600 1rem/1.4 $gilroy-bold;
+$content-base-semibold: 600 1rem/1.4 $gilroy-semibold;
+$content-base-bold: 700 1rem/1.4 $gilroy-bold;
 // 12px
 $content-caption: 500 0.86rem/1.4 $gilroy-medium;
-$content-caption-bold: 600 0.86rem/1.4 $gilroy-bold;
+$content-caption-semibold: 600 0.86rem/1.4 $gilroy-semibold;
+$content-caption-bold: 700 0.86rem/1.4 $gilroy-bold;
 // 10px
 $content-small-caption: 500 0.72rem/1.5 $gilroy-medium;
-$content-small-caption-bold: 600 0.72rem/1.5 $gilroy-bold;
+$content-small-caption-semibold: 600 0.72rem/1.5 $gilroy-semibold;
+$content-small-caption-bold: 700 0.72rem/1.5 $gilroy-bold;
 // 8px
 $content-fine-caption: 500 0.57rem/1.5 $gilroy-medium;
-$content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
+$content-fine-caption-semibold: 600 0.57rem/1.5 $gilroy-semibold;
+$content-fine-caption-bold: 700 0.57rem/1.5 $gilroy-bold;
 
 .text {
 	&-headline {
@@ -181,6 +187,10 @@ $content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
 		&-large {
 			font: $content-large;
 
+			&.-semibold {
+				font: $content-large-semibold;
+			}
+
 			&.-bold {
 				font: $content-large-bold;
 			}
@@ -188,6 +198,10 @@ $content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
 
 		&-base {
 			font: $content-base;
+
+			&.-semibold {
+				font: $content-base-semibold;
+			}
 
 			&.-bold {
 				font: $content-base-bold;
@@ -197,6 +211,10 @@ $content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
 		&-caption {
 			font: $content-caption;
 
+			&.-semibold {
+				font: $content-caption-semibold;
+			}
+
 			&.-bold {
 				font: $content-caption-bold;
 			}
@@ -205,6 +223,10 @@ $content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
 		&-small-caption {
 			font: $content-small-caption;
 
+			&.-semibold {
+				font: $content-small-caption-semibold;
+			}
+
 			&.-bold {
 				font: $content-small-caption-bold;
 			}
@@ -212,6 +234,10 @@ $content-fine-caption-bold: 600 0.57rem/1.5 $gilroy-bold;
 
 		&-fine-caption {
 			font: $content-fine-caption;
+
+			&.-semibold {
+				font: $content-fine-caption-semibold;
+			}
 
 			&.-bold {
 				font: $content-fine-caption-bold;
