@@ -80,7 +80,6 @@
 		0px 33.1005px 33.1005px rgba(10, 13, 41, 0.09),
 		0px 8.48732px 18.6721px rgba(10, 13, 41, 0.1),
 		0px 0px 0px rgba(10, 13, 41, 0.1);
-	backdrop-filter: blur(13.5797px);
 	border-radius: 10.1848px;
 	padding: 16.97px;
 	font-size: 1.09rem;
@@ -196,7 +195,7 @@
 	}
 
 	> .title {
-		font-size: 0.79rem;
+		font-size: 0.76rem;
 	}
 
 	> .amount {
@@ -219,7 +218,6 @@
 		0px 31.2349px 31.2349px rgba(10, 13, 41, 0.09),
 		0px 8.00895px 17.6197px rgba(10, 13, 41, 0.1),
 		0px 0px 0px rgba(10, 13, 41, 0.1);
-	backdrop-filter: blur(12.8143px);
 	border-radius: 9.61074px;
 	padding: 16.02px;
 	font-size: 1.03rem;
@@ -265,7 +263,7 @@
 	}
 
 	> .title {
-		font: 500 1.22rem/1.4 $gilroy-medium;
+		font: 500 1.23rem/1.4 $gotham-medium;
 		letter-spacing: -0.01em;
 		color: #2044a5;
 		text-align: center;
@@ -284,7 +282,7 @@
 		> .currency {
 			width: 21px;
 			height: 26px;
-			margin-right: $spacing-half;
+			margin: 0 $spacing-half 2.5px 0;
 		}
 	}
 }
@@ -297,7 +295,6 @@
 		0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
 		0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
 		0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
-	backdrop-filter: blur(17.81px);
 	border-radius: 13.3575px;
 	position: relative;
 	font: 600 1.43rem/1.4 $gilroy-semibold;
@@ -654,7 +651,6 @@ start --content-block
 
 @mixin get-started_content-block--tablet--outlets {
 	> .title {
-		font-size: 3.43rem;
 		margin-top: $spacing-quad;
 	}
 
@@ -663,7 +659,7 @@ start --content-block
 	}
 
 	> .description {
-		max-width: 40ch;
+		max-width: 100%;
 		margin-top: $spacing-triple;
 	}
 }
@@ -708,8 +704,10 @@ start --content-block
 		> .title {
 			max-width: 11ch;
 		}
+
 		> .description {
-			max-width: 37ch;
+			max-width: 30ch;
+			margin: $spacing-double auto 0;
 		}
 	}
 
@@ -724,6 +722,7 @@ start --content-block
 
 @mixin get-started_content-block--mobile--outlets {
 	> .title {
+		font-size: 3.43rem;
 		margin-top: $spacing-triple;
 	}
 
@@ -786,7 +785,7 @@ start --content-block
 	}
 
 	> .description {
-		font: 600 1.14rem/1.4 $gilroy-semibold;
+		font: 500 1.14rem/1.4 $gilroy-medium;
 		margin-top: $spacing-triple;
 		max-width: 34ch;
 	}
@@ -821,7 +820,7 @@ start --content-block
 	}
 
 	> .title {
-		font: 700 5.71rem/1.2 $gotham-bold;
+		font: 500 5.71rem/1.2 $gotham-medium;
 		color: #1972f9;
 	}
 
@@ -848,7 +847,7 @@ start --content-block
 
 	> .title {
 		font: 700 5.7rem/1.1 $gotham-bold;
-		letter-spacing: -0.03em;
+		letter-spacing: -0.05em;
 		color: #012981;
 		max-width: 10ch;
 		margin-top: $spacing-double-triple;
@@ -1071,7 +1070,7 @@ end --content-block
 		}
 
 		&:nth-of-type(2) {
-			padding-bottom: 0;
+			padding-bottom: $spacing-double;
 		}
 	}
 
