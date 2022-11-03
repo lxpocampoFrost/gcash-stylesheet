@@ -196,7 +196,7 @@
 	}
 
 	> .title {
-		font-size: 0.79rem;
+		font-size: 0.76rem;
 	}
 
 	> .amount {
@@ -265,7 +265,7 @@
 	}
 
 	> .title {
-		font: 500 1.22rem/1.4 $gilroy-medium;
+		font: 500 1.23rem/1.4 $gotham-medium;
 		letter-spacing: -0.01em;
 		color: #2044a5;
 		text-align: center;
@@ -284,7 +284,7 @@
 		> .currency {
 			width: 21px;
 			height: 26px;
-			margin-right: $spacing-half;
+			margin: 0 $spacing-half 2.5px 0;
 		}
 	}
 }
