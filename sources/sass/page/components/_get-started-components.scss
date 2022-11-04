@@ -441,7 +441,7 @@ start --section-card
 		max-width: 245.33px;
 
 		> .content > .description {
-			max-width: 14ch;
+			max-width: 16.5ch;
 		}
 	}
 
@@ -456,6 +456,10 @@ start --section-card
 
 @mixin get-started_section-card--tablet--section-5 {
 	max-width: 480px;
+
+	&:nth-of-type(2) > .content > .description {
+		max-width: 41ch;
+	}
 
 	> .content > .description {
 		font-size: 1rem;
