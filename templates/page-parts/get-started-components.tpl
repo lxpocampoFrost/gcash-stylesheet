@@ -5,7 +5,7 @@
 
     <div class="get-started_message-bubble -verified-account" style="background: url('./assets/images/get-started/message-bubble-dialog.png')no-repeat; background-size:100% 100%;"> 
         <img class="avatar" src="./assets/images/get-started/message-bubble-verified-account.png">
-        <div class="preamble">Successfully verified account</div>
+        <div class="preamble">Account verified!</div>
         <div class="name">Cheska Ejemplo <span class="icon" style="background: url(./assets/images/get-started/message-bubble-verified.svg) center/contain no-repeat;"></span></div>
         <div class="phone-number">+63917 1234567</div>
     </div>
@@ -131,7 +131,7 @@
 
     <div class="get-started_content-block -section-3">
         <div class="title">Getting verified is super-easy</div>
-        <div class="description">The only requirements are a government-issued ID and your selfie.</div>
+        <div class="description">The only requirements are a government-issued ID &amp; your selfie.</div>
     </div>
 
     <div class="get-started_content-block -section-2">
@@ -140,7 +140,7 @@
     </div>
 
     <div class="get-started_content-block -outlets">
-        <span class="preamble">Put the cash in Gcash</span>
+        <span class="preamble">Put the cash in GCash</span>
         <div class="title">63,000</div>
         <div class="label">Cash In Outlets Nationwide</div>
         <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>

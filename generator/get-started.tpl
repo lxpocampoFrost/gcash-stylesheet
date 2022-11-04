@@ -18,7 +18,7 @@
                 <div class="get-started_message-bubble -verified-account"
                     style="background: url('../assets/images/get-started/message-bubble-dialog.png')no-repeat; background-size:100% 100%;">
                     <img class="avatar" src="../assets/images/get-started/message-bubble-verified-account.png">
-                    <div class="preamble">Successfully verified account</div>
+                    <div class="preamble">Account verified!</div>
                     <div class="name">Cheska Ejemplo <span class="icon" style="background: url(../assets/images/get-started/message-bubble-verified.svg) center/contain no-repeat;"></span></div>
                     <div class="phone-number">+63917 1234567</div>
                 </div>
@@ -96,7 +96,7 @@
             <div class="get-started_wrapper-bounding-box">
                 <div class="get-started_content-block -section-3">
                     <div class="title">Getting verified is super-easy</div>
-                    <div class="description">The only requirements are a government-issued ID and your selfie.</div>
+                    <div class="description">The only requirements are a government-issued ID &amp; your selfie.</div>
                 </div>
             </div>
 
@@ -132,7 +132,7 @@
         <div class="get-started_wrapper">
             <div class="get-started_wrapper-bounding-box">
                 <div class="get-started_content-block -outlets">
-                    <span class="preamble">Put the cash in Gcash</span>
+                    <span class="preamble">Put the cash in GCash</span>
                     <div class="title">63,000</div>
                     <div class="label">Cash In Outlets Nationwide</div>
                     <p class="description">Adding funds to your GCash account is super easy! Cash in using the app, or at any of our partner outlets.</p>
@@ -142,13 +142,13 @@
 
                 <div class="content">
                     <div class="get-started_section-card -section-5">
-                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
                         <div class="content">
-                            <div class="title">Remittance</div>
-                            <div class="description">Receive overseas remittances directly to your GCash account.</div>
+                            <div class="title">Over-the-Counter</div>
+                            <div class="description">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
                         </div>
                     </div>
-
+                    
                     <div class="get-started_section-card -section-5">
                         <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-online.svg) center no-repeat;"></span>
                         <div class="content">
@@ -158,10 +158,10 @@
                     </div>
 
                     <div class="get-started_section-card -section-5">
-                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-counter.svg) center no-repeat;"></span>
+                        <span class="icon" style="background: url(../assets/images/get-started/section-card-section-5-remittance.svg) center no-repeat;"></span>
                         <div class="content">
-                            <div class="title">Over-the-Counter</div>
-                            <div class="description">Cash in at GCash Partner Outlets such as Puregold, SM, and Robinsons.</div>
+                            <div class="title">Remittance</div>
+                            <div class="description">Receive overseas remittances directly to your GCash account.</div>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                 <div class="get-started_message-bubble -cash-in-success">
                     <img class="icon" src="../assets/images/get-started/message-bubble-cash-in-success-notification.png"/>
                     <div class="title">Cash-in success!</div>
-                    <div class="amount"><span class="currency" style="background: url(./assets/images/get-started/message-bubble-cash-in-success-amount-currency.svg) center/contain no-repeat;"></span>7,500</div>
+                    <div class="amount"><span class="currency" style="background: url(../assets/images/get-started/message-bubble-cash-in-success-amount-currency.svg) center/contain no-repeat;"></span>7,500</div>
                 </div>
             </div>
         </div>

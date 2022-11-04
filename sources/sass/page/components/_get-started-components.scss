@@ -1,8 +1,8 @@
 @mixin get-started_message-bubble--large-desktop {
 	&.-verified-account {
-		max-width: 245px;
-		padding: 22px 17px 23px 44px;
-		height: 103px;
+		max-width: 253px;
+		padding: 22px 17px 22px 44px;
+		height: 104px;
 
 		> .avatar {
 			width: 54.16px;
@@ -80,7 +80,6 @@
 		0px 33.1005px 33.1005px rgba(10, 13, 41, 0.09),
 		0px 8.48732px 18.6721px rgba(10, 13, 41, 0.1),
 		0px 0px 0px rgba(10, 13, 41, 0.1);
-	backdrop-filter: blur(13.5797px);
 	border-radius: 10.1848px;
 	padding: 16.97px;
 	font-size: 1.09rem;
@@ -99,9 +98,9 @@
 
 @mixin get-started_message-bubble--small-desktop {
 	&.-verified-account {
-		max-width: 207.14px;
-		padding: 18.97px 14.23px 18.97px 37.16px;
-		height: 87px;
+		max-width: 215px;
+		padding: 19px 22px 19px 37px;
+		height: 88px;
 
 		> .avatar {
 			width: 45.86px;
@@ -196,7 +195,7 @@
 	}
 
 	> .title {
-		font-size: 0.79rem;
+		font-size: 0.76rem;
 	}
 
 	> .amount {
@@ -219,7 +218,6 @@
 		0px 31.2349px 31.2349px rgba(10, 13, 41, 0.09),
 		0px 8.00895px 17.6197px rgba(10, 13, 41, 0.1),
 		0px 0px 0px rgba(10, 13, 41, 0.1);
-	backdrop-filter: blur(12.8143px);
 	border-radius: 9.61074px;
 	padding: 16.02px;
 	font-size: 1.03rem;
@@ -265,7 +263,7 @@
 	}
 
 	> .title {
-		font: 500 1.22rem/1.4 $gilroy-medium;
+		font: 500 1.23rem/1.4 $gotham-medium;
 		letter-spacing: -0.01em;
 		color: #2044a5;
 		text-align: center;
@@ -284,7 +282,7 @@
 		> .currency {
 			width: 21px;
 			height: 26px;
-			margin-right: $spacing-half;
+			margin: 0 $spacing-half 2.5px 0;
 		}
 	}
 }
@@ -297,10 +295,9 @@
 		0 99.0679px 58.9955px rgba(10, 13, 41, 0.05),
 		0 43.4118px 43.4118px rgba(10, 13, 41, 0.09),
 		0 11.1312px 24.4887px rgba(10, 13, 41, 0.1), 0 0 0 rgba(10, 13, 41, 0.1);
-	backdrop-filter: blur(17.81px);
 	border-radius: 13.3575px;
 	position: relative;
-	font: 600 1.43rem/1.4 $gilroy-bold;
+	font: 600 1.43rem/1.4 $gilroy-semibold;
 	color: rgba(10, 39, 87, 0.6);
 
 	&::before {
@@ -321,11 +318,12 @@
 }
 
 @mixin get-started_message-bubble--verified-account {
-	max-width: 286.35px;
+	max-width: 297px;
 	letter-spacing: -0.01em;
 	padding: 26px 20px 26px 51px;
 	position: relative;
 	height: 121px;
+	box-shadow: 0px 6.19327px 9.28991px -6.19327px rgba(15, 37, 69, 0.2);
 
 	> .avatar {
 		width: 63.39px;
@@ -342,6 +340,7 @@
 	> .preamble {
 		color: #25b67b;
 		font: 700 0.62rem/1.4 $gotham-bold;
+		letter-spacing: 0.01em;
 	}
 
 	> .name {
@@ -506,7 +505,6 @@ start --section-card
 		margin-left: $spacing-secondary;
 
 		> .description {
-			font: 500 1.14rem/1.4 $gilroy-medium;
 			max-width: 28ch;
 			color: #445c85;
 			opacity: 0.7;
@@ -630,9 +628,8 @@ start --content-block
 	}
 
 	&.-section-2 > .title > .icon {
-		width: 71px;
-		height: 71px;
-		vertical-align: top;
+		width: 64px;
+		height: 64px;
 		margin-left: $spacing-half;
 	}
 
@@ -655,7 +652,6 @@ start --content-block
 
 @mixin get-started_content-block--tablet--outlets {
 	> .title {
-		font-size: 3.43rem;
 		margin-top: $spacing-quad;
 	}
 
@@ -664,7 +660,7 @@ start --content-block
 	}
 
 	> .description {
-		max-width: 40ch;
+		max-width: 100%;
 		margin-top: $spacing-triple;
 	}
 }
@@ -696,12 +692,18 @@ start --content-block
 
 	&.-section-2 {
 		> .preamble {
-			font-size: 1.14rem;
+			font-size: 1rem;
 		}
 
-		> .title > .icon {
-			width: 50px;
-			height: 50px;
+		> .title {
+			font-size: 2.29rem;
+			letter-spacing: -0.03em;
+
+			> .icon {
+				width: 44px;
+				height: 44px;
+				margin-top: -3px;
+			}
 		}
 	}
 
@@ -709,8 +711,10 @@ start --content-block
 		> .title {
 			max-width: 11ch;
 		}
+
 		> .description {
-			max-width: 37ch;
+			max-width: 30ch;
+			margin: $spacing-double auto 0;
 		}
 	}
 
@@ -725,6 +729,7 @@ start --content-block
 
 @mixin get-started_content-block--mobile--outlets {
 	> .title {
+		font-size: 3.43rem;
 		margin-top: $spacing-triple;
 	}
 
@@ -736,7 +741,7 @@ start --content-block
 
 @mixin get-started_content-block--mobile {
 	&.-section-2 > .title {
-		max-width: 10ch;
+		max-width: 12ch;
 	}
 
 	> .description {
@@ -787,7 +792,7 @@ start --content-block
 	}
 
 	> .description {
-		font: 600 1.14rem/1.4 $gilroy-bold;
+		font: 500 1.14rem/1.4 $gilroy-medium;
 		margin-top: $spacing-triple;
 		max-width: 34ch;
 	}
@@ -795,16 +800,17 @@ start --content-block
 
 @mixin get-started_content-block--section-2 {
 	> .preamble {
-		font: 600 1.71rem/1.3 $gilroy-bold;
+		font: 600 1.29rem/1.3 $gilroy-semibold;
 	}
 
 	> .title {
+		font-size: 3.43rem;
 		max-width: 14ch;
 		margin-top: 15px;
 
 		> .icon {
-			width: 101px;
-			height: 101px;
+			width: 64px;
+			height: 64px;
 			display: inline-block;
 			vertical-align: text-bottom;
 			margin-left: $spacing-default;
@@ -822,18 +828,18 @@ start --content-block
 	}
 
 	> .title {
-		font: 700 5.71rem/1.2 $gotham-bold;
+		font: 500 5.71rem/1.2 $gotham-medium;
 		color: #1972f9;
 	}
 
 	> .label {
-		font: 400 1.71rem/1.3 $gotham-bold;
+		font: 500 1.71rem/1.3 $gotham-medium;
 		opacity: 0.8;
 		letter-spacing: -0.03em;
 	}
 
 	> .description {
-		font: 500 1.14rem/1.4 $gilroy-bold;
+		font: 500 1.14rem/1.4 $gilroy-medium;
 		opacity: 0.5;
 		max-width: 39ch;
 		margin-top: 40px;
@@ -849,7 +855,7 @@ start --content-block
 
 	> .title {
 		font: 700 5.7rem/1.1 $gotham-bold;
-		letter-spacing: -0.03em;
+		letter-spacing: -0.05em;
 		color: #012981;
 		max-width: 10ch;
 		margin-top: $spacing-double-triple;
@@ -874,7 +880,7 @@ start --content-block
 	}
 
 	> .description {
-		font: 600 1.71rem/1.4 $gilroy-bold;
+		font: 600 1.71rem/1.4 $gilroy-semibold;
 		letter-spacing: -0.02em;
 		max-width: 24ch;
 		margin-top: $spacing-triple;
@@ -1072,7 +1078,7 @@ end --content-block
 		}
 
 		&:nth-of-type(2) {
-			padding-bottom: 0;
+			padding-bottom: $spacing-double;
 		}
 	}
 
@@ -1132,7 +1138,7 @@ end --content-block
 	> .item {
 		width: 100%;
 		padding-bottom: $spacing-double;
-		font: 600 1.14rem/1.4 $gilroy-bold;
+		font: 600 1.14rem/1.4 $gilroy-semibold;
 
 		&.-label {
 			color: rgba(10, 39, 87, 0.4);
