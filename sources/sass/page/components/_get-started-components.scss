@@ -774,7 +774,7 @@ start --content-block
 @mixin get-started_content-block--section-4 {
 	color: rgba(255, 255, 255, 0.6);
 	> .preamble {
-		font: 700 1rem/1 $gotham-bold;
+		font: 500 1rem/1 $gotham-medium;
 		letter-spacing: -0.01em;
 	}
 
@@ -783,7 +783,7 @@ start --content-block
 		font: 700 6.29rem/1 $gotham-bold;
 		letter-spacing: -0.03em;
 		max-width: 5ch;
-		color: rgba(255, 255, 255, 0.6);
+		color: rgba(255, 255, 255, 0.4);
 		margin-top: 0;
 
 		> .highlight {
