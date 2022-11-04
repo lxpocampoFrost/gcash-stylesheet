@@ -652,7 +652,7 @@ start --content-block
 
 @mixin get-started_content-block--tablet--outlets {
 	> .title {
-		margin-top: $spacing-quad;
+		margin-top: $spacing-triple;
 	}
 
 	> .label {
@@ -661,7 +661,6 @@ start --content-block
 
 	> .description {
 		max-width: 100%;
-		margin-top: $spacing-triple;
 	}
 }
 
@@ -730,7 +729,7 @@ start --content-block
 @mixin get-started_content-block--mobile--outlets {
 	> .title {
 		font-size: 3.43rem;
-		margin-top: $spacing-triple;
+		margin-top: $spacing-double;
 	}
 
 	> .description {
@@ -842,7 +841,7 @@ start --content-block
 		font: 500 1.14rem/1.4 $gilroy-medium;
 		opacity: 0.5;
 		max-width: 39ch;
-		margin-top: 40px;
+		margin-top: $spacing-default;
 	}
 }
 
@@ -858,7 +857,7 @@ start --content-block
 		letter-spacing: -0.05em;
 		color: #012981;
 		max-width: 10ch;
-		margin-top: $spacing-double-triple;
+		margin-top: $spacing-quad;
 
 		> .highlight {
 			color: rgba(25, 114, 249, 1);
