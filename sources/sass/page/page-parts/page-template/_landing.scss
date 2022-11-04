@@ -478,34 +478,84 @@
 /*
 * START - 5th Section
 **/
-.landing_panel-5 {
-	$width: 340px;
-	$height: 480px;
-	$gutter: 12px;
-	$current-col-x: -1238px;
-	$current-col-y: -430px;
+@function current-col-y($screen, $current-col) {
+	$current-col-y: 0;
+
+	@if $screen == desktop {
+		@if $current-col == 2 {
+			$current-col-y: -600px;
+		} @else if $current-col == 3 {
+			$current-col-y: -370px;
+		} @else if $current-col == 4 {
+			$current-col-y: -378px;
+		} @else if $current-col == 5 {
+			$current-col-y: -300px;
+		} @else if $current-col == 6 {
+			$current-col-y: -600px;
+		} @else if $current-col == 7 {
+			$current-col-y: -550px;
+		}
+	} @else if $screen == small-desktop {
+		@if $current-col == 2 {
+			$current-col-y: -520px;
+		} @else if $current-col == 3 {
+			$current-col-y: -395px;
+		} @else if $current-col == 4 {
+			$current-col-y: -334px;
+		} @else if $current-col == 5 {
+			$current-col-y: -260px;
+		} @else if $current-col == 6 {
+			$current-col-y: -117px;
+		} @else if $current-col == 7 {
+			$current-col-y: -550px;
+		}
+	} @else if $screen == tablet {
+		@if $current-col == 2 {
+			$current-col-y: -520px;
+		} @else if $current-col == 3 {
+			$current-col-y: -395px;
+		} @else if $current-col == 4 {
+			$current-col-y: -334px;
+		} @else if $current-col == 5 {
+			$current-col-y: -260px;
+		} @else if $current-col == 6 {
+			$current-col-y: -117px;
+		} @else if $current-col == 7 {
+			$current-col-y: -550px;
+		}
+	} @else if $screen == mobile {
+		@if $current-col == 2 {
+			$current-col-y: -520px;
+		} @else if $current-col == 3 {
+			$current-col-y: -395px;
+		} @else if $current-col == 4 {
+			$current-col-y: -334px;
+		}
+	}
+
+	@return $current-col-y;
+}
+
+@mixin landing_services-card($arguments...) {
+	$width: nth($arguments, 1);
+	$height: nth($arguments, 2);
+	$gutter: nth($arguments, 3);
+	$current-col-x: nth($arguments, 4);
+	$current-col-y: nth($arguments, 5);
 	$current-col: 1;
 	$current-row: 1;
+	$screen: nth($arguments, 6);
+	$mod: 3;
+
+	@if $screen == mobile {
+		$mod: 5;
+	}
 
 	@for $i from 1 through 21 {
 		@if $i != 1 {
-			@if (($i - 1) % 3) == 0 {
+			@if (($i - 1) % $mod) == 0 {
 				$current-col: $current-col + 1;
-
-				@if $current-col == 2 {
-					$current-col-y: -600px;
-				} @else if $current-col == 3 {
-					$current-col-y: -370px;
-				} @else if $current-col == 4 {
-					$current-col-y: -378px;
-				} @else if $current-col == 5 {
-					$current-col-y: -300px;
-				} @else if $current-col == 6 {
-					$current-col-y: -600px;
-				} @else if $current-col == 7 {
-					$current-col-y: -550px;
-				}
-
+				$current-col-y: current-col-y($screen, $current-col);
 				$current-col-x: $current-col-x + $width + $gutter;
 				$current-row: 1;
 			} @else {
@@ -518,125 +568,85 @@
 			transform: translate($current-col-x, $current-col-y);
 		}
 	}
+}
+
+@mixin landing_panel-5--small-desktop {
+	$width: 276.06px;
+	$height: 389.73px;
+	$gutter: 10px;
+	$current-col-x: -980px;
+	$current-col-y: -430px;
+
+	@include landing_services-card(
+		$width,
+		$height,
+		$gutter,
+		$current-col-x,
+		$current-col-y,
+		small-desktop
+	);
+}
+
+@mixin landing_panel-5--tablet {
+	$width: 235.86px;
+	$height: 332.98px;
+	$gutter: 9px;
+	$current-col-x: -850px;
+	$current-col-y: -430px;
+
+	@include landing_services-card(
+		$width,
+		$height,
+		$gutter,
+		$current-col-x,
+		$current-col-y,
+		tablet
+	);
+}
+
+@mixin landing_panel-5--mobile {
+	$width: 134.88px;
+	$height: 190.42px;
+	$gutter: 5px;
+	$current-col-x: -290px;
+	$current-col-y: -430px;
+
+	@include landing_services-card(
+		$width,
+		$height,
+		$gutter,
+		$current-col-x,
+		$current-col-y,
+		mobile
+	);
+}
+
+.landing_panel-5 {
+	$width: 340px;
+	$height: 480px;
+	$gutter: 12px;
+	$current-col-x: -1200px;
+	$current-col-y: -430px;
+
+	@include landing_services-card(
+		$width,
+		$height,
+		$gutter,
+		$current-col-x,
+		$current-col-y,
+		desktop
+	);
 
 	@include on(small-desktop) {
-		$width: 276.06px;
-		$height: 389.73px;
-		$gutter: 10px;
-		$current-col-x: -980px;
-		$current-col-y: -430px;
-		$current-col: 1;
-		$current-row: 1;
-
-		@for $i from 1 through 21 {
-			@if $i != 1 {
-				@if (($i - 1) % 3) == 0 {
-					$current-col: $current-col + 1;
-
-					@if $current-col == 2 {
-						$current-col-y: -520px;
-					} @else if $current-col == 3 {
-						$current-col-y: -395px;
-					} @else if $current-col == 4 {
-						$current-col-y: -334px;
-					} @else if $current-col == 5 {
-						$current-col-y: -260px;
-					} @else if $current-col == 6 {
-						$current-col-y: -117px;
-					} @else if $current-col == 7 {
-						$current-col-y: -550px;
-					}
-
-					$current-col-x: $current-col-x + $width + $gutter;
-					$current-row: 1;
-				} @else {
-					$current-row: $current-row + 1;
-					$current-col-y: $current-col-y + $height + $gutter;
-				}
-			}
-
-			.landing_services-card:nth-child(#{$i}) {
-				transform: translate($current-col-x, $current-col-y);
-			}
-		}
+		@include landing_panel-5--small-desktop;
 	}
 
 	@include on(tablet) {
-		$width: 235.86px;
-		$height: 332.98px;
-		$gutter: 9px;
-		$current-col-x: -850px;
-		$current-col-y: -430px;
-		$current-col: 1;
-		$current-row: 1;
-
-		@for $i from 1 through 21 {
-			@if $i != 1 {
-				@if (($i - 1) % 3) == 0 {
-					$current-col: $current-col + 1;
-
-					@if $current-col == 2 {
-						$current-col-y: -520px;
-					} @else if $current-col == 3 {
-						$current-col-y: -395px;
-					} @else if $current-col == 4 {
-						$current-col-y: -334px;
-					} @else if $current-col == 5 {
-						$current-col-y: -260px;
-					} @else if $current-col == 6 {
-						$current-col-y: -117px;
-					} @else if $current-col == 7 {
-						$current-col-y: -550px;
-					}
-
-					$current-col-x: $current-col-x + $width + $gutter;
-					$current-row: 1;
-				} @else {
-					$current-row: $current-row + 1;
-					$current-col-y: $current-col-y + $height + $gutter;
-				}
-			}
-
-			.landing_services-card:nth-child(#{$i}) {
-				transform: translate($current-col-x, $current-col-y);
-			}
-		}
+		@include landing_panel-5--tablet;
 	}
 
 	@include on(mobile) {
-		$width: 134.88px;
-		$height: 190.42px;
-		$gutter: 5px;
-		$current-col-x: -290px;
-		$current-col-y: -430px;
-		$current-col: 1;
-		$current-row: 1;
-
-		@for $i from 1 through 21 {
-			@if $i != 1 {
-				@if (($i - 1) % 5) == 0 {
-					$current-col: $current-col + 1;
-
-					@if $current-col == 2 {
-						$current-col-y: -520px;
-					} @else if $current-col == 3 {
-						$current-col-y: -395px;
-					} @else if $current-col == 4 {
-						$current-col-y: -334px;
-					}
-
-					$current-col-x: $current-col-x + $width + $gutter;
-					$current-row: 1;
-				} @else {
-					$current-row: $current-row + 1;
-					$current-col-y: $current-col-y + $height + $gutter;
-				}
-			}
-
-			.landing_services-card:nth-child(#{$i}) {
-				transform: translate($current-col-x, $current-col-y);
-			}
-		}
+		@include landing_panel-5--mobile;
 	}
 }
 /* END  - 5th Section */

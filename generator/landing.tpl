@@ -129,9 +129,9 @@
             </div>
 
             <div class="landing_wrapper-floating">
-                <div class="landing_services-card landing_services-card-1" style="background: #CEF3FF;"></div>
-                <div class="landing_services-card landing_services-card-2" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;"></div>
-                <div class="landing_services-card landing_services-card-3" style="background: #1566D8;"></div>
+                <div class="landing_services-card" style="background: #CEF3FF;"></div>
+                <div class="landing_services-card" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;"></div>
+                <div class="landing_services-card" style="background: #1566D8;"></div>
                 <div class="landing_services-card" style="background: #0074FF;"></div>
                 <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-save-bg.jpg);">
                     <span class="icon" style="background-image: url(../assets/images/landing/services-card-save-icon.svg);"></span>
@@ -167,7 +167,7 @@
                     <div class="title" style="color: #2B3990;">Send Money</div>
                 </div>
                 <div class="landing_services-card" style="background-image: url(../assets/images/landing/services-card-loan-bg.jpg);">
-                    <span class="icon" style="background-image: url(./assets/images/landing/services-card-loan-icon.svg);"></span>
+                    <span class="icon" style="background-image: url(../assets/images/landing/services-card-loan-icon.svg);"></span>
                     <div class="title" style="color: #0B357B;">Loan</div>
                 </div>
                 <div class="landing_services-card" style="background: #D1D9EC;"></div>
@@ -180,7 +180,7 @@
                     <span class="icon" style="background-image: url(../assets/images/landing/services-card-gforest-icon.svg);"></span>
                     <div class="title" style="color: #0A5363;">GForest</div>
                 </div>
-                <div class="landing_services-card landing_services-card-" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;"></div>
+                <div class="landing_services-card" style="background: transparent; border: 2px solid #CEE3FD; opacity: 0.1;"></div>
                 <div class="landing_services-card" style="background: #0064FF;"></div>
                 <div class="landing_services-card" style="background: #F7FEFC;"></div>
             </div>
