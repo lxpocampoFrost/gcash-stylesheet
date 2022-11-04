@@ -196,7 +196,7 @@
 
 	> .amount {
 		font-size: 1.31rem;
-		margin-bottom: 7px;
+		margin: $spacing-half 0 7px;
 
 		> .currency {
 			width: 13px;
@@ -273,7 +273,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: $spacing-secondary;
+		margin: $spacing-default 0 $spacing-secondary;
 
 		> .currency {
 			width: 21px;
