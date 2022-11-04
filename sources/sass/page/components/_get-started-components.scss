@@ -1,7 +1,6 @@
 @mixin get-started_message-bubble--large-desktop {
 	&.-verified-account {
 		padding: 25.38px 31.23px 24.54px 49.78px;
-		height: 104px;
 
 		> .avatar {
 			width: 61.87px;
@@ -25,8 +24,8 @@
 		}
 
 		> .phone-number {
-			margin-top: 7.47px;
-			padding: $spacing-half 7px;
+			margin-top: 7.81px;
+			padding: 4.17px 8.53px;
 			font-size: 0.91rem;
 			border-radius: 41.08px;
 		}
@@ -98,7 +97,6 @@
 @mixin get-started_message-bubble--small-desktop {
 	&.-verified-account {
 		padding: 21.49px 26.45px 20.78px 42.15px;
-		height: 88px;
 
 		> .avatar {
 			width: 52.39px;
@@ -320,7 +318,6 @@
 	letter-spacing: -0.01em;
 	padding: 26px $spacing-quad 25px 51px;
 	position: relative;
-	height: 121px;
 	box-shadow: 0px 6.19327px 9.28991px -6.19327px rgba(15, 37, 69, 0.2);
 
 	> .avatar {
@@ -357,7 +354,7 @@
 	}
 
 	> .phone-number {
-		margin-top: 9px;
+		margin-top: $spacing-default;
 		background: #ecf1fa;
 		border-radius: 48.09px;
 		padding: 4.43px 8.74px;
