@@ -605,20 +605,73 @@
 }
 
 @mixin landing_panel-5--mobile {
-	$width: 134.88px;
-	$height: 190.42px;
-	$gutter: 5px;
-	$current-col-x: -290px;
-	$current-col-y: -430px;
+	$col-1-x: -206px;
+	$col-2-x: -67px;
+	$col-3-x: 71px;
 
-	@include landing_services-card(
-		$width,
-		$height,
-		$gutter,
-		$current-col-x,
-		$current-col-y,
-		mobile
-	);
+	.landing_services-card:nth-child(n) {
+		transform: translate(-341px, 1000px);
+	}
+
+	.landing_services-card:nth-child(1) {
+		transform: translate($col-1-x, -400px);
+	}
+
+	.landing_services-card:nth-child(7) {
+		transform: translate($col-1-x, -205px);
+	}
+
+	.landing_services-card:nth-child(8) {
+		transform: translate($col-1-x, -10px);
+	}
+
+	.landing_services-card:nth-child(17) {
+		transform: translate($col-1-x, 185px);
+	}
+
+	.landing_services-card:nth-child(6) {
+		transform: translate($col-1-x, 380px);
+	}
+
+	.landing_services-card:nth-child(2) {
+		transform: translate($col-2-x, -360px);
+	}
+
+	.landing_services-card:nth-child(10) {
+		transform: translate($col-2-x, -165px);
+	}
+
+	.landing_services-card:nth-child(11) {
+		transform: translate($col-2-x, 30px);
+	}
+
+	.landing_services-card:nth-child(12) {
+		transform: translate($col-2-x, 225px);
+	}
+
+	.landing_services-card:nth-child(5) {
+		transform: translate($col-2-x, 420px);
+	}
+
+	.landing_services-card:nth-child(4) {
+		transform: translate($col-3-x, -400px);
+	}
+
+	.landing_services-card:nth-child(13) {
+		transform: translate($col-3-x, -205px);
+	}
+
+	.landing_services-card:nth-child(14) {
+		transform: translate($col-3-x, -10px);
+	}
+
+	.landing_services-card:nth-child(18) {
+		transform: translate($col-3-x, 185px);
+	}
+
+	.landing_services-card:nth-child(16) {
+		transform: translate($col-3-x, 380px);
+	}
 }
 
 .landing_panel-5 {
