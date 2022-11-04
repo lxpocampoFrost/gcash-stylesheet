@@ -699,32 +699,34 @@
 		margin: 0 auto;
 
 		.get-started_section-card.-section-6 {
-			margin-top: 824px;
+			margin-top: 607px;
 		}
 	}
 
 	.section-6-img-1 {
-		transform: translate(-50%, -10%);
+		width: 350px;
+		height: 600.83px;
+		transform: translate(-50%, -16%);
 	}
 
 	.section-6-img {
-		width: 50px;
-		height: 73px;
+		width: 36.75px;
+		height: 53.2px;
 
 		&.pin-1 {
-			transform: translate(-154%, -470%);
+			transform: translate(-145%, -550%);
 		}
 
 		&.pin-2 {
-			transform: translate(145%, -223%);
+			transform: translate(127%, -298%);
 		}
 
 		&.pin-3 {
-			transform: translate(-297%, -17%);
+			transform: translate(-283%, -84%);
 		}
 
 		&.pin-4 {
-			transform: translate(127%, 174%);
+			transform: translate(116%, 116%);
 		}
 	}
 }
@@ -740,33 +742,33 @@
 	.get-started_wrapper-bounding-box
 		> .content
 		:not(:first-of-type).get-started_section-card.-section-6 {
-		margin-top: 533px;
+		margin-top: 484px;
 	}
 
 	.section-6-img-1 {
-		width: 345px;
-		height: 533px;
-		transform: translate(-50%, -24%);
+		width: 295px;
+		height: 490.37px;
+		transform: translate(-50%, -26%);
 	}
 
 	.section-6-img {
-		width: 34px;
-		height: 49px;
+		width: 31px;
+		height: 45px;
 
 		&.pin-1 {
-			transform: translate(-153%, -620%);
+			transform: translate(-142%, -641%);
 		}
 
 		&.pin-2 {
-			transform: translate(141%, -375%);
+			transform: translate(126%, -393%);
 		}
 
 		&.pin-3 {
-			transform: translate(-297%, -170%);
+			transform: translate(-283%, -192%);
 		}
 
 		&.pin-4 {
-			transform: translate(123%, 20%);
+			transform: translate(116%, 2%);
 		}
 	}
 }
