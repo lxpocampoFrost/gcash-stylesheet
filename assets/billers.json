@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Balayan",
+        "city": "Batangas",
+        "region": "Region IV-A",
+        "address": "006 A/B Ground Floor Waltermart Center Balibago-Balayan Highway COR Paz Street Caloocan Balayan Batangas Philippines4213"
+    }, 
+    {
+        "name": "ACM VISTA MILAGROS",
+        "city": "Quezon City",
+        "region": "NCR",
+        "address": "224 EVERGREEN ST. GRP I-B PAYATAS QUEZON CITY"
+    },
+    {
+        "name": "CEBUANA LHUILLIER  Pajac",
+        "city": "Lapu-lapu City",
+        "region": "Region VII",
+        "address": "Jayme 13 Building Rotonda Brgy. Pajac Lapulapu City 6015 Philippines"
+    },
+    {
+        "name": "CEBUANA LHUILLIER Baguio 1",
+        "city": "CAR",
+        "region": "Region IV-A",
+        "address": "25 abanao st., baguio city"
+    }
+]
