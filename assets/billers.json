@@ -19,8 +19,68 @@
     },
     {
         "name": "CEBUANA LHUILLIER Baguio 1",
-        "city": "CAR",
+        "city": "baguio",
         "region": "Region IV-A",
         "address": "25 abanao st., baguio city"
+    },
+    {
+        "name": "CEBUANA LHUILLIER Washington 1",
+        "city": "Makati",
+        "region": "NCR",
+        "address": "6974 Washington st. cor. Dela Rosa St. Pio Del Pilar Makati City"
+    },
+    {
+        "name": "CEBUANA LHUILLIER Tutuban Ctr Padre Algue",
+        "city": "Manila",
+        "region": "NCR",
+        "address": "PSE-PT01 Ground Floor Parking Tower, Tutuban Center Claro M. Recto, Manila Brgy 245 Zone 22 District II"
+    },
+    {
+        "name": "CEBUANA LHUILLIER Tutuban Ctr Padre Algue",
+        "city": "Mandaluyong",
+        "region": "NCR",
+        "address": "3rd floor Star Mall Bldg. EDSA cor. Shaw Blvd. Brgy. Wack Wack Greenhills East Mandaluyong City"
+    },
+    {
+        "name": "AMI VILLA CRISTINA LAS PINAS",
+        "address": "ALFAMART MONIQUE ST., COR VILLA CRISTINA AVE PAMPLONA 3 LAS PINAS CITY 1740",
+        "city": "Las piñas",
+        "region": "NCR"
+    },
+    {
+        "Name": "AMI GREEN GATE HOMES IMUS",
+        "address": "ALFAMART, B11 LOT1 GREEN GATE HOMES 3 MALAGASANG 2A IMUS CITY CAVITE 4103",
+        "city": "imus",
+        "region": "Region IV-A"
+    },
+    {
+        "Name": "AMI SPRINGVILLE MOLINO",
+        "address": "ALFAMART B1 L1 CAMELLA SPRINGVILLE SUBD P1 MAIN ROAD CORNER KAIMITO ST MOLINO 3 BACOOR CAVITE 4102",
+        "city": "Bacoor",
+        "region": "Region IV-A"
+    },
+    {
+        "Name": "AMI SABANG DASMARINAS",
+        "address": "ALFAMART 84 MEP CAMPOS AVE. SABANG DASMARINAS CITY CAVITE 4114",
+        "city": "dasmariñas",
+        "region": "Region IV-A"
+    },
+    {
+        "Name": "AMI SABANG DASMARINAS",
+        "address": "2216 Chino Roces Ave, Makati, 1233 Metro Manila",
+        "city": "makati",
+        "region": "NCR"
+    },
+    {
+        "Name": "Allday-S-Libis",
+        "address": "150-E Eulogio Rodriguez Jr. Ave, Bagumbayan, Quezon City, 1110",
+        "city": "quezon city",
+        "region": "NCR"
+    },
+    {
+        "Name": "VILLARICA",
+        "address": "248 A.M CONCEPCION ST",
+        "city": "pasig",
+        "region": "NCR"
     }
 ]
