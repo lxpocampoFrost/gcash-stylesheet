@@ -48,91 +48,91 @@
         "region": "NCR"
     },
     {
-        "Name": "AMI GREEN GATE HOMES IMUS",
+        "name": "AMI GREEN GATE HOMES IMUS",
         "address": "ALFAMART, B11 LOT1 GREEN GATE HOMES 3 MALAGASANG 2A IMUS CITY CAVITE 4103",
         "city": "imus",
         "region": "Region IV-A"
     },
     {
-        "Name": "AMI SPRINGVILLE MOLINO",
+        "name": "AMI SPRINGVILLE MOLINO",
         "address": "ALFAMART B1 L1 CAMELLA SPRINGVILLE SUBD P1 MAIN ROAD CORNER KAIMITO ST MOLINO 3 BACOOR CAVITE 4102",
         "city": "Bacoor",
         "region": "Region IV-A"
     },
     {
-        "Name": "AMI SABANG DASMARINAS",
+        "name": "AMI SABANG DASMARINAS",
         "address": "ALFAMART 84 MEP CAMPOS AVE. SABANG DASMARINAS CITY CAVITE 4114",
         "city": "dasmariñas",
         "region": "Region IV-A"
     },
     {
-        "Name": "AMI SABANG DASMARINAS",
+        "name": "AMI SABANG DASMARINAS",
         "address": "2216 Chino Roces Ave, Makati, 1233 Metro Manila",
         "city": "makati",
         "region": "NCR"
     },
     {
-        "Name": "Allday-S-Libis",
+        "name": "Allday-S-Libis",
         "address": "150-E Eulogio Rodriguez Jr. Ave, Bagumbayan, Quezon City, 1110",
         "city": "quezon city",
         "region": "NCR"
     },
     {
-        "Name": "VILLARICA",
+        "name": "VILLARICA",
         "address": "71 C RAYMUNDO AVE CANIOGAN PASIG CITY",
         "city": "pasig",
         "region": "NCR"
     },
     {
-        "Name": "Ministop Rockwell",
+        "name": "Ministop Rockwell",
         "address": "TOWER 1 ROCKWELL BUSINESS CENTER ORTIGAS AVENUE PASIG CITY",
         "city": "pasig",
         "region": "NCR"
     },
     {
-        "Name": "AMI EVANGELISTA ST SANTOLAN",
+        "name": "AMI EVANGELISTA ST SANTOLAN",
         "address": "ALFAMART EVANGELISTA SANTOLAN PASIG CITY ",
         "city": "pasig",
         "region": "NCR"
     },
     {
-        "Name": "CEBUANA LHUILLIER Novamall",
+        "name": "CEBUANA LHUILLIER Novamall",
         "address": "Novaliches Mall Complex, Novaliches, Quezon City",
         "city": "quezon city",
         "region": "NCR"
     },
     {
-        "Name": "CEBUANA LHUILLIER North Olympus",
+        "name": "CEBUANA LHUILLIER North Olympus",
         "address": "Lot 1a Blk 6 Phase 4 North Olympus Iv Zabarte Subdivision Brgy. Kaligayahan Novaliches Quezon City",
         "city": "quezon city",
         "region": "NCR"
     }, 
     {
-        "Name": "ODSI_NESPEROS STORE",
+        "name": "ODSI_NESPEROS STORE",
         "address": "4 SITIO PUGOT BAGONG SILANGAN QUEZON CITY NATIONAL CAPITAL REGION",
         "city": "quezon city",
         "region": "NCR"
     },
     {
-        "Name": "ODSI_F NILO SARI SARI STORE",
+        "name": "ODSI_F NILO SARI SARI STORE",
         "address": "#16 CAPRICORN ST CARMEL V TANDANG SORA QUEZON CITY TANDANG SORA QUEZON CITY NATIONAL CAPITAL REGION",
         "city": "quezon city",
         "region": "NCR"
     },
     {
-        "Name": "ACM PIZZA REPUBLIC BAHAY TORO",
+        "name": "ACM PIZZA REPUBLIC BAHAY TORO",
         "address": "69.A JERSEY ST. TORO HILLS CONGRESSIONAL HOMES BRGY. BAHAY TORO QUEZON CITY",
         "city": "quezon city",
         "region": "NCR"
     },
     {
-        "Name": "ACM SAMPANG MARY JANE - iBAYAD",
+        "name": "ACM SAMPANG MARY JANE - iBAYAD",
         "address": "#57 PULONG GUBAT, NAGKAISANG NAYON NOVALICHES QUEZON CITY",
         "city": "quezon city",
         "region": "NCR"
     },
     {
-        "Name": "ACM SULARAN ADELITA",
+        "name": "ACM SULARAN ADELITA",
         "address": "2154 BICOLEYTE ST. BRGY. COMMONWEALTH Q.C",
         "city": "quezon city",
         "region": "NCR"
