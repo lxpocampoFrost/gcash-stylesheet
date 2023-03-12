@@ -5,36 +5,8 @@ let filter = $('.map_sidebar-filter');
 let filterList = $('.map_filter-dropdown-content');
 let filterItem = $('.map_filter-dropdown-content .map_filter-drodpown-list-item');
 
-/**
- * Map Methods and variables
- * @var map The global GMaps object
- * 
- * @method initMap() Initialized the map UI of Google Maps
-*/
-let map;
-
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: { lat: 14.40, lng: 121.03 },
-    disableDefaultUI: true,
-    styles: [
-      {
-      "featureType": "poi",
-      "stylers": [
-        { "visibility": "off" }
-      ]
-      },
-    ]
-  });
-
-  const directionsRenderer = new google.maps.DirectionsRenderer();
-  const directionsService = new google.maps.DirectionsService();
-  directionsRenderer.setMap(map);
-
-  const control = document.getElementById("floating-panel");
-  map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
-}
+//Save a copy of the template element
+let templateElement = document.getElementById('map_search-item'); 
 
 /**
  * Creates an item from the template element.
@@ -60,110 +32,6 @@ const createItem = (product, templateElement) => {
 
   return newItem;
 };
-
-/**
- * Method to render data to HTML
- *  @method renderDataToHTML
- *  Renders items to the results panel
- *  @param  partnerData 
- *  Array that holds filtered data
- *  @param  templateElement
- *  Copy of the element that holds the base structure 
-
- *  @method filterByInput
- *  Renders items to the results panel
- *  @param  partnerData 
- *  Array that holds filtered data
- *  @param  templateElement
- *  Copy of the element that holds the base structure 
-*/ 
-function renderDataToHTML(partnerData, templateElement) {
-  let newItems = partnerData.map((item) => createItem(item, templateElement));
-
-  //Clear initial elements
-  $('.map_search-results').empty();
-
-  //Append to HTML
-  newItems.slice(0, 4).map(item => {
-    $('.map_search-results').append(item);
-  });
-
-  resultsCount.text(partnerData.length);
-}
-
-function filterByInput(partnerData, templateElement) {
-  $( ".map_search-input.w-input" ).on("input", function() {
-    let inputValue = $(this).val().toLowerCase();
-    
-    filteredData = partnerData.filter((item) => 
-      item.name.toLowerCase().includes(inputValue) ||
-      item.city.toLowerCase().includes(inputValue) ||
-      item.address.toLowerCase().includes(inputValue)
-    );
-
-    if (filteredData.length != 0) {
-      renderDataToHTML(filteredData, templateElement);
-    } else {
-      $('.map_search-results').empty();
-    }
-  });
-}
-
-
-function filterByDropdown(partnerData, templateElement) {
-  let changeBtn = $('.map_search-item-btn.map_change-location');
-  let cancelBtn = $('.map_action-btn.cancel');
-  let applyBtn = $('.map_action-btn.apply');
-  let searchByNameBlock = $('.map_form.map_search-by-name');
-  let searchByDropdown = $('.map_form.map_search-by-dropdown');
-
-  //Opens dropdowns
-  changeBtn.on('click', function() {
-    //Adds classes 'disabled' and 'active'
-    searchByNameBlock.addClass('disabled');
-    searchByDropdown.addClass('active');
-    $('.w-checkbox-input').prop('checked', false);
-  });
-
-  //Close dropdown filters
-  cancelBtn.on('click', function() {
-    searchByNameBlock.removeClass('disabled');
-    searchByDropdown.removeClass('active');
-  });
-
-  //Applies dropdown value filters
-  applyBtn.on('click', function() {
-    filteredData = partnerData.filter((item) => 
-      item.city.toLowerCase().includes(filterCityCurrent.text().toLowerCase()) &&
-      item.region.toLowerCase().includes(filterRegionCurrent.text().toLowerCase())
-    );
-    
-    renderDataToHTML(filteredData, templateElement);
-    filterByInput(filteredData, templateElement);
-
-    searchByNameBlock.removeClass('disabled');
-    searchByDropdown.removeClass('active');
-  });
-
-  //Closes dropdown list, when clicking dropdown again
-  filter.on('click', function() {
-    if( $(this).children('.map_filter-dropdown-content').css('display') == 'none') { 
-      filterList.css('display', 'none');
-      $(this).children('.map_filter-dropdown-content').css('display', 'block');
-    } else {
-      $(this).children('.map_filter-dropdown-content').css('display', 'none');
-    }
-  });
-
-  //Changes current dropdown value on item click
-  filterItem.on('click', function() {
-    $(this).parent()
-    .siblings('.map_filter-dropdown-toggle')
-    .children('.map_filter-current')
-    .text($(this).text());
-  });
-}
-
 
 /**
  *  Methods to filter incoming data based on user position 
@@ -318,12 +186,13 @@ async function fetchPartners () {
   }
 };
 
-//Our Main method where all other functions are called
+/**
+ * Methods to get user position
+ * @method initializeFilterData() 
+ * Async function that gets data first from partners
+*/ 
 async function initializeFilterData() {
   try {
-    //Save a copy of the template element
-    let templateElement = document.getElementById('map_search-item');
-
     //Get partners data
     let partnersData = await fetchPartners();
     //Get user coodinates
@@ -334,17 +203,260 @@ async function initializeFilterData() {
     //Filter partners data based on user location
     let filteredPartners = filterByLocation(userLocation , partnersData);
 
-    //Render the data to HTML and attach event listeners
-    renderDataToHTML(filteredPartners, templateElement);
-    filterByInput(filteredPartners, templateElement);
-    filterByDropdown(partnersData, templateElement);
-
-
+    let data = {
+      allItems: partnersData,
+      filteredItems: filteredPartners,
+      coords: coordinates,
+      location: userLocation,
+    };
+    
+    return data;
   } catch (error) {
     console.log('Main method: ', error.message);
   }
 }
 
-initializeFilterData();
+/**
+ * Map Methods and variables
+ * @var map The global GMaps object
+ * 
+ * @method initMap() Initialized the map UI of Google Maps
+*/
+let map;
+
+async function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 10,
+    center: { lat: 14.40, lng: 121.03 },
+    disableDefaultUI: true,
+    styles: [
+      {
+      "featureType": "poi",
+      "stylers": [
+        { "visibility": "off" }
+      ]
+      },
+    ]
+  });
+
+    
+  const directionsRenderer = new google.maps.DirectionsRenderer();
+  const directionsService = new google.maps.DirectionsService();
+  directionsRenderer.setMap(map);
+
+  // onChangeHandler(coordinates);
+
+  const control = document.getElementById("floating-panel");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
+
+  function renderRoutes(directions) {
+    $('#steps-sidebar').empty();
+    directions.forEach((direction) => {
+      $('#steps-sidebar').append(
+        `
+        <div class="steps">
+          <div class="adp-maneuver-icon adp-${direction.maneuver}"></div>
+          <div class="content">
+            <p class="instructions">${direction.instructions}</p>
+            <span class="distance">${direction.distance.value}m</span>
+          </div>
+        </div>
+        `
+      );
+    });
+  }
+  function calculateAndDisplayRoute(directionsService, directionsRenderer,coordinates) {
+    const start = coordinates.lat + ',' + coordinates.lng;
+    const end = document.getElementById("end").value;
+    const selectedMode = document.getElementById("mode").value;
+    const data = null;
+    directionsService
+      .route({
+        origin: start,
+        destination: end,
+        travelMode: google.maps.TravelMode[selectedMode],
+      })
+      .then((response) => {
+        directionsRenderer.setDirections(response);
+        let directions = directionsRenderer.getDirections()
+        renderRoutes(directions.routes[0].legs[0].steps);
+      })
+      .catch((e) =>
+        window.alert("Request failed, something went wrong. Please try again later.")
+      );
+  }
+  
+  const onChangeHandler = function (coords) {
+    let endInput = $('#end');
+    let startInput = $('#start');
+    let startLocation = $('.starting-point .highlight.start-address');
+    startLocation.text(startInput.val());
+    calculateAndDisplayRoute(directionsService, directionsRenderer, coords);
+  };
+
+  /**
+ * Method to render data to HTML
+ *  @method renderDataToHTML
+ *  Renders items to the results panel
+ *  @param  partnerData 
+ *  Array that holds filtered data
+ *  @param  templateElement
+ *  Copy of the element that holds the base structure 
+
+ *  @method filterByInput
+ *  Renders items to the results panel
+ *  @param  partnerData 
+ *  Array that holds filtered data
+ *  @param  templateElement
+ *  Copy of the element that holds the base structure 
+*/ 
+  function renderDataToHTML(partnerData, templateElement, coords) {
+    let newItems = partnerData.map((item) => createItem(item, templateElement));
+    let itemLimit = 4;
+
+    //Clear initial elements
+    $('.map_search-results').empty();
+
+    //Append to HTML
+    newItems.slice(0, itemLimit).map(item => {
+      $('.map_search-results').append(item);
+    });
+
+    //Display number of results
+    resultsCount.text(partnerData.length);
+
+    //Attach see directions event to rendered btn
+    $('.map_dir-btn').on('click', function() {
+      console.log('clicking..');
+      let directionsBtn = $(this);
+      //Targets direction services end input
+      let endInput = $('#end');
+      //Elmenent - Sidebar location name
+      let partnerName = $('.outlets_sidebar-location > .outlets_sidebar-destination');
+      //Elmenent - Sidebar location address
+      let partnerAddress = $('.outlets_sidebar-location > .outlets_sidebar-address');
+      $('.outlets_sidebar-wrapper').css('display', 'flex');
+  
+      partnerName.text(directionsBtn.parent().siblings('.map_search-item-destination').text());
+      partnerAddress.text(directionsBtn.parent().siblings('.map_search-item-address').text());
+      endInput.attr('value', directionsBtn.parent().siblings('.map_search-item-address').text());
+      onChangeHandler(coords);
+    });
+
+    //Infinite scroll, Adds items when scroll reaches bottom;
+    $('.map_search-results').on('scroll', function(){
+      var $el = $(this);
+    
+      if( $el.innerHeight()+$el.scrollTop() >= this.scrollHeight-5 ){
+        itemLimit++;
+        $('.map_search-results').append(newItems[itemLimit - 1]);
+         //Attach see directions event to rendered btn
+        $('.map_dir-btn').on('click', function() {
+          console.log('clicking..');
+          let directionsBtn = $(this);
+          //Targets direction services end input
+          let endInput = $('#end');
+          //Elmenent - Sidebar location name
+          let partnerName = $('.outlets_sidebar-location > .outlets_sidebar-destination');
+          //Elmenent - Sidebar location address
+          let partnerAddress = $('.outlets_sidebar-location > .outlets_sidebar-address');
+          $('.outlets_sidebar-wrapper').css('display', 'flex');
+      
+          partnerName.text(directionsBtn.parent().siblings('.map_search-item-destination').text());
+          partnerAddress.text(directionsBtn.parent().siblings('.map_search-item-address').text());
+          endInput.attr('value', directionsBtn.parent().siblings('.map_search-item-address').text());
+          onChangeHandler(coords);
+        });
+      }
+    });
+
+  }
+
+  function filterByInput(partnerData, templateElement, coords) {
+    $( ".map_search-input.w-input" ).on("input", function() {
+      let inputValue = $(this).val().toLowerCase();
+      
+      filteredData = partnerData.filter((item) => 
+        item.name.toLowerCase().includes(inputValue) ||
+        item.city.toLowerCase().includes(inputValue) ||
+        item.address.toLowerCase().includes(inputValue)
+      );
+
+      if (filteredData.length != 0) {
+        renderDataToHTML(filteredData, templateElement, coords);
+      } else {
+        $('.map_search-results').empty();
+      }
+    });
+  }
+
+
+  function filterByDropdown(partnerData, templateElement, coords) {
+    let changeBtn = $('.map_search-item-btn.map_change-location');
+    let cancelBtn = $('.map_action-btn.cancel');
+    let applyBtn = $('.map_action-btn.apply');
+    let searchByNameBlock = $('.map_form.map_search-by-name');
+    let searchByDropdown = $('.map_form.map_search-by-dropdown');
+
+    //Opens dropdowns
+    changeBtn.on('click', function() {
+      //Adds classes 'disabled' and 'active'
+      searchByNameBlock.addClass('disabled');
+      searchByDropdown.addClass('active');
+      $('.w-checkbox-input').prop('checked', false);
+    });
+
+    //Close dropdown filters
+    cancelBtn.on('click', function() {
+      searchByNameBlock.removeClass('disabled');
+      searchByDropdown.removeClass('active');
+    });
+
+    //Applies dropdown value filters
+    applyBtn.on('click', function() {
+      filteredData = partnerData.filter((item) => 
+        item.city.toLowerCase().includes(filterCityCurrent.text().toLowerCase()) &&
+        item.region.toLowerCase().includes(filterRegionCurrent.text().toLowerCase())
+      );
+      
+      renderDataToHTML(filteredData, templateElement, coords);
+      filterByInput(filteredData, templateElement, coords);
+
+      searchByNameBlock.removeClass('disabled');
+      searchByDropdown.removeClass('active');
+    });
+
+    //Closes dropdown list, when clicking dropdown again
+    filter.on('click', function() {
+      if( $(this).children('.map_filter-dropdown-content').css('display') == 'none') { 
+        filterList.css('display', 'none');
+        $(this).children('.map_filter-dropdown-content').css('display', 'block');
+      } else {
+        $(this).children('.map_filter-dropdown-content').css('display', 'none');
+      }
+    });
+
+    //Changes current dropdown value on item click
+    filterItem.on('click', function() {
+      $(this).parent()
+      .siblings('.map_filter-dropdown-toggle')
+      .children('.map_filter-current')
+      .text($(this).text());
+    });
+  }
+
+  let data = await initializeFilterData();
+
+  $('.starting-point .highlight.start-address').text(data.location.address);
+
+  //Render the data to HTML and attach event listeners
+  renderDataToHTML(data.filteredItems, templateElement, data.coords);
+  filterByInput(data.filteredItems, templateElement, data.coords);
+  filterByDropdown(data.allItems, templateElement, data.coords);
+
+  console.log(data);
+}
 
 window.initMap = initMap;
+
