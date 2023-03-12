@@ -94,5 +94,47 @@
         "address": "ALFAMART EVANGELISTA SANTOLAN PASIG CITY ",
         "city": "pasig",
         "region": "NCR"
+    },
+    {
+        "Name": "CEBUANA LHUILLIER Novamall",
+        "address": "Novaliches Mall Complex, Novaliches, Quezon City",
+        "city": "quezon city",
+        "region": "NCR"
+    },
+    {
+        "Name": "CEBUANA LHUILLIER North Olympus",
+        "address": "Lot 1a Blk 6 Phase 4 North Olympus Iv Zabarte Subdivision Brgy. Kaligayahan Novaliches Quezon City",
+        "city": "quezon city",
+        "region": "NCR"
+    }, 
+    {
+        "Name": "ODSI_NESPEROS STORE",
+        "address": "4 SITIO PUGOT BAGONG SILANGAN QUEZON CITY NATIONAL CAPITAL REGION",
+        "city": "quezon city",
+        "region": "NCR"
+    },
+    {
+        "Name": "ODSI_F NILO SARI SARI STORE",
+        "address": "#16 CAPRICORN ST CARMEL V TANDANG SORA QUEZON CITY TANDANG SORA QUEZON CITY NATIONAL CAPITAL REGION",
+        "city": "quezon city",
+        "region": "NCR"
+    },
+    {
+        "Name": "ACM PIZZA REPUBLIC BAHAY TORO",
+        "address": "69.A JERSEY ST. TORO HILLS CONGRESSIONAL HOMES BRGY. BAHAY TORO QUEZON CITY",
+        "city": "quezon city",
+        "region": "NCR"
+    },
+    {
+        "Name": "ACM SAMPANG MARY JANE - iBAYAD",
+        "address": "#57 PULONG GUBAT, NAGKAISANG NAYON NOVALICHES QUEZON CITY",
+        "city": "quezon city",
+        "region": "NCR"
+    },
+    {
+        "Name": "ACM SULARAN ADELITA",
+        "address": "2154 BICOLEYTE ST. BRGY. COMMONWEALTH Q.C",
+        "city": "quezon city",
+        "region": "NCR"
     }
 ]
