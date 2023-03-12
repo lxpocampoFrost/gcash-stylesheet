@@ -454,6 +454,11 @@ async function initMap() {
   renderDataToHTML(data.filteredItems, templateElement, data.coords);
   filterByInput(data.filteredItems, templateElement, data.coords);
   filterByDropdown(data.allItems, templateElement, data.coords);
+  
+  //Closes the directions sidebar
+  $('.outlets_sidebar-close-btn').on('click', function() {
+    $('.outlets_sidebar-wrapper').css('display', 'mone');
+  });
 
   console.log(data);
 }
