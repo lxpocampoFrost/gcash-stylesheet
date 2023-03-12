@@ -1,3 +1,10 @@
+let resultsCount = $('.map_filtered-items-number');
+let filterRegionCurrent = $('.map_filter-current.map_region');
+let filterCityCurrent = $('.map_filter-current.map_city');
+let filter = $('.map_sidebar-filter');
+let filterList = $('.map_filter-dropdown-content');
+let filterItem = $('.map_filter-dropdown-content .map_filter-drodpown-list-item');
+
 /**
  * Map Methods and variables
  * @var map The global GMaps object
@@ -5,9 +12,6 @@
  * @method initMap() Initialized the map UI of Google Maps
 */
 let map;
-
-//Saves a copy of the template element
-
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -23,6 +27,13 @@ function initMap() {
       },
     ]
   });
+
+  const directionsRenderer = new google.maps.DirectionsRenderer();
+  const directionsService = new google.maps.DirectionsService();
+  directionsRenderer.setMap(map);
+
+  const control = document.getElementById("floating-panel");
+  map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
 }
 
 /**
@@ -52,13 +63,19 @@ const createItem = (product, templateElement) => {
 
 /**
  * Method to render data to HTML
- * @param  partnerData 
- *  Array that holds filtered data
- * @param  templateElementID
- *  ID of the element that holds the base structure 
- * @method renderDataToHTML
+ *  @method renderDataToHTML
  *  Renders items to the results panel
- * 
+ *  @param  partnerData 
+ *  Array that holds filtered data
+ *  @param  templateElement
+ *  Copy of the element that holds the base structure 
+
+ *  @method filterByInput
+ *  Renders items to the results panel
+ *  @param  partnerData 
+ *  Array that holds filtered data
+ *  @param  templateElement
+ *  Copy of the element that holds the base structure 
 */ 
 function renderDataToHTML(partnerData, templateElement) {
   let newItems = partnerData.map((item) => createItem(item, templateElement));
@@ -71,7 +88,7 @@ function renderDataToHTML(partnerData, templateElement) {
     $('.map_search-results').append(item);
   });
 
-  $('.map_filtered-items-number').text(partnerData.length);
+  resultsCount.text(partnerData.length);
 }
 
 function filterByInput(partnerData, templateElement) {
@@ -93,27 +110,82 @@ function filterByInput(partnerData, templateElement) {
 }
 
 
+function filterByDropdown(partnerData, templateElement) {
+  let changeBtn = $('.map_search-item-btn.map_change-location');
+  let cancelBtn = $('.map_action-btn.cancel');
+  let applyBtn = $('.map_action-btn.apply');
+  let searchByNameBlock = $('.map_form.map_search-by-name');
+  let searchByDropdown = $('.map_form.map_search-by-dropdown');
+
+  //Opens dropdowns
+  changeBtn.on('click', function() {
+    //Adds classes 'disabled' and 'active'
+    searchByNameBlock.addClass('disabled');
+    searchByDropdown.addClass('active');
+    $('.w-checkbox-input').prop('checked', false);
+  });
+
+  //Close dropdown filters
+  cancelBtn.on('click', function() {
+    searchByNameBlock.removeClass('disabled');
+    searchByDropdown.removeClass('active');
+  });
+
+  //Applies dropdown value filters
+  applyBtn.on('click', function() {
+    filteredData = partnerData.filter((item) => 
+      item.city.toLowerCase().includes(filterCityCurrent.text().toLowerCase()) &&
+      item.region.toLowerCase().includes(filterRegionCurrent.text().toLowerCase())
+    );
+    
+    renderDataToHTML(filteredData, templateElement);
+    filterByInput(filteredData, templateElement);
+
+    searchByNameBlock.removeClass('disabled');
+    searchByDropdown.removeClass('active');
+  });
+
+  //Closes dropdown list, when clicking dropdown again
+  filter.on('click', function() {
+    if( $(this).children('.map_filter-dropdown-content').css('display') == 'none') { 
+      filterList.css('display', 'none');
+      $(this).children('.map_filter-dropdown-content').css('display', 'block');
+    } else {
+      $(this).children('.map_filter-dropdown-content').css('display', 'none');
+    }
+  });
+
+  //Changes current dropdown value on item click
+  filterItem.on('click', function() {
+    $(this).parent()
+    .siblings('.map_filter-dropdown-toggle')
+    .children('.map_filter-current')
+    .text($(this).text());
+  });
+}
+
+
 /**
- * Methods to filter incoming data based on user position 
- * @param  regionStr 
- *  A string that resembles the 
- *  numbered region's name in word form
- * @method convertToRegion
+ *  Methods to filter incoming data based on user position 
+ *  @method convertToRegion
  *  Converts google's naming of regions, 
  *  to the numbered version ex. Region IX, Region I
- * 
- * @param coords 
- *  An object with lat and lng values
- * @method getUserLocationData 
+ *  @param  regionStr 
+ *  A string that resembles the 
+ *  numbered region's name in word form
+ 
+ *  @method getUserLocationData 
  *  Returns array that contains user's city, region and address
- * 
- * @param userLocation 
+ *  @param coords 
+ *  An object with lat and lng values
+
+ *  @method getUserLocationData 
+ *  Returns array that contains user's city, region and address
+ *  @param userLocation 
  *  An object that holds details 
  *  of users location, city, region and address
- * @param partnersData
+ *  @param partnersData
  *  An Array that holds objects with values of partners
- * @method getUserLocationData 
- *  Returns array that contains user's city, region and address
  * 
 */ 
 function convertRegion(regionString) {   
@@ -184,6 +256,8 @@ async function getUserLocationData(coords) {
     }
 
     $('.map_location-tag-result').text(addresObj.city + ", " + addresObj.region);
+    filterRegionCurrent.text(addresObj.region);
+    filterCityCurrent.text(addresObj.city);
 
     return addresObj;
   } catch (error) {
@@ -200,8 +274,6 @@ function filterByLocation(userLocation, partnersData) {
 
   return initialFilter;
 }
-
-
 
 /**
  * Methods to get user position
@@ -262,10 +334,10 @@ async function initializeFilterData() {
     //Filter partners data based on user location
     let filteredPartners = filterByLocation(userLocation , partnersData);
 
-    //Render the data to HTML 
+    //Render the data to HTML and attach event listeners
     renderDataToHTML(filteredPartners, templateElement);
     filterByInput(filteredPartners, templateElement);
-    
+    filterByDropdown(partnersData, templateElement);
 
 
   } catch (error) {
