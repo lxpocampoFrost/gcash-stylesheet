@@ -328,7 +328,6 @@ async function initMap() {
 
     //Attach see directions event to rendered btn
     $('.map_dir-btn').on('click', function() {
-      console.log('clicking..');
       let directionsBtn = $(this);
       //Targets direction services end input
       let endInput = $('#end');
@@ -353,7 +352,6 @@ async function initMap() {
         $('.map_search-results').append(newItems[itemLimit - 1]);
          //Attach see directions event to rendered btn
         $('.map_dir-btn').on('click', function() {
-          console.log('clicking..');
           let directionsBtn = $(this);
           //Targets direction services end input
           let endInput = $('#end');
@@ -457,10 +455,8 @@ async function initMap() {
   
   //Closes the directions sidebar
   $('.outlets_sidebar-close-btn').on('click', function() {
-    $('.outlets_sidebar-wrapper').css('display', 'mone');
+    $('.outlets_sidebar-wrapper').css('display', 'none');
   });
-
-  console.log(data);
 }
 
 window.initMap = initMap;
