@@ -1,4 +1,71 @@
-import { createItem, fetchPartners, renderItems } from './utility/utility'
+/**
+ * Creates an item from the template element.
+ * @param product The product data to create the item from.
+ * @param templateElement The template element.
+ *
+ * @returns A new Collection Item element.
+ */
+export const createItem = (item, templateElement) => {
+
+
+  // Clone the template element
+  const newItem = templateElement.cloneNode(true);
+  newItem.classList.remove('hidden');
+
+  // Query inner elements
+  const name = newItem.querySelector('.biller-item-title');
+  const payment_date = newItem.querySelector('.biller-item-description');
+  const gcredit = newItem.querySelector('[data-element="gcredit"]');
+  const fee = newItem.querySelector('[data-element="gcredit"]');
+
+
+  // Populate inner elements
+  if (name) name.textContent = item.name || item.Name;
+  if (payment_date) payment_date.textContent = item.payment_date;
+
+
+  return newItem;
+};
+
+/**
+* Methods to fetch Partners data
+* @method fetchPartners() Returns Array from API that uses JSON
+*/
+export async function fetchPartners(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    console.log('fetchPartners(): ', error.message);
+    return [];
+  }
+};
+/**
+* Creates an item from the template element.
+* @param results_area The element where results are displayed
+* @param filter_data Filtered data to be converted 
+*
+* @returns A collection of dom elements.
+*/
+export function renderItems(results_area, filter_data, template_element) {
+  //Clear the children of results
+  results_area.textContent = '';
+
+  //Get converted items
+  let newItems = filter_data.map((item) => createItem(item, template_element));
+
+  //Append new filtered itesm to HTML
+  newItems.map((item) => results_area.append(item));
+
+  results_area.animate(
+    {
+      opacity: [0, 1]
+    },
+    300
+  )
+}
 
 
 (async function () {
@@ -12,12 +79,13 @@ import { createItem, fetchPartners, renderItems } from './utility/utility'
   //Initialize an empty array
   let filterd_items = [];
 
-  //Display the data
+  //Converts data to node elements
   let domItems = partnersData.map((item) => createItem(item, template_element));
 
+  //Appends newly converted elements to results area
   domItems.map((item) => results_area.append(item));
 
-  //Create search functionality
+  //Input search functionality
   search_input.on("input", function () {
     let inputValue = $(this).val().toLowerCase();
 
@@ -33,3 +101,7 @@ import { createItem, fetchPartners, renderItems } from './utility/utility'
 
 
 })();
+
+
+
+
