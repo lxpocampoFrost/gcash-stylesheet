@@ -1,0 +1,127 @@
+[
+    {
+        "name": "#GCashGivesBack",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "123 Finance Corporation",
+        "payment_date": "123 Finance Corporation",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "1Sari Financing Corp.",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "1st Megasaver",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "8990 FTDH",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "8TH ARK MANAGEMENT CORPORATION",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "A Brown Company Inc",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "AA General Insurance",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "ABS-CBN Foundation",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "Access Computer and Technical Colleges",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "ACOM",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "fee": "20"
+    },
+    {
+        "name": "Active Realty",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "ACTV Aklan Cable TV (Aklan)",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "#GCashGivesBack",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "z sample",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    },
+    {
+        "name": "y sample",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20"
+    }
+]
