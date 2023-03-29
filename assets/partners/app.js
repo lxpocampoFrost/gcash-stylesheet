@@ -5,7 +5,7 @@
  *
  * @returns A new Collection Item element.
  */
-export const createItem = (item, templateElement) => {
+const createItem = (item, templateElement) => {
 
 
   // Clone the template element
@@ -31,7 +31,7 @@ export const createItem = (item, templateElement) => {
 * Methods to fetch Partners data
 * @method fetchPartners() Returns Array from API that uses JSON
 */
-export async function fetchPartners(url) {
+async function fetchPartners(url) {
   try {
     const response = await fetch(url);
     const data = await response.json();
@@ -49,7 +49,7 @@ export async function fetchPartners(url) {
 *
 * @returns A collection of dom elements.
 */
-export function renderItems(results_area, filter_data, template_element) {
+function renderItems(results_area, filter_data, template_element) {
   //Clear the children of results
   results_area.textContent = '';
 
