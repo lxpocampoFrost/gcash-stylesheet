@@ -4,124 +4,287 @@
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Electric"
     },
     {
         "name": "123 Finance Corporation",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Insurance"
     },
     {
         "name": "1Sari Financing Corp.",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Cable/Internet"
     },
     {
         "name": "1st Megasaver",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Government"
     },
     {
         "name": "8990 FTDH",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Cable/Internet"
     },
     {
         "name": "8TH ARK MANAGEMENT CORPORATION",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Real Estate"
     },
     {
         "name": "A Brown Company Inc",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Cable/Internet"
     },
     {
         "name": "AA General Insurance",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Insurance"
     },
     {
         "name": "ABS-CBN Foundation",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Insurance"
     },
     {
         "name": "Access Computer and Technical Colleges",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Government"
     },
     {
         "name": "ACOM",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "fee": "20"
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Transportation"
     },
     {
         "name": "Active Realty",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Government"
     },
     {
         "name": "ACTV Aklan Cable TV (Aklan)",
         "payment_date": "Within 2 business days",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Transportation"
     },
     {
         "name": "#GCashGivesBack",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Loans"
     },
     {
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Transportation"
     },
     {
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Loans"
     },
     {
         "name": "z sample",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Government"
     },
     {
         "name": "y sample",
         "payment_date": "Next business day",
         "has_gcredit": true,
         "has_fee": true,
-        "fee_amount": "20"
+        "fee_amount": "20",
+        "biller_type": "Transportation"
+    },
+    {
+        "name": "#GCashGivesBack",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Electric"
+    },
+    {
+        "name": "123 Finance Corporation",
+        "payment_date": "Within 3 business days",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Insurance"
+    },
+    {
+        "name": "1Sari Financing Corp.",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Cable/Internet"
+    },
+    {
+        "name": "1st Megasaver",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Government"
+    },
+    {
+        "name": "8990 FTDH",
+        "payment_date": "Within 3 business days",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Cable/Internet"
+    },
+    {
+        "name": "8TH ARK MANAGEMENT CORPORATION",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Real Estate"
+    },
+    {
+        "name": "A Brown Company Inc",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Cable/Internet"
+    },
+    {
+        "name": "AA General Insurance",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Insurance"
+    },
+    {
+        "name": "ABS-CBN Foundation",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Insurance"
+    },
+    {
+        "name": "Access Computer and Technical Colleges",
+        "payment_date": "Within 3 business days",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Government"
+    },
+    {
+        "name": "ACOM",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Transportation"
+    },
+    {
+        "name": "Active Realty",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Government"
+    },
+    {
+        "name": "ACTV Aklan Cable TV (Aklan)",
+        "payment_date": "Within 2 business days",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Transportation"
+    },
+    {
+        "name": "#GCashGivesBack",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Loans"
+    },
+    {
+        "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Transportation"
+    },
+    {
+        "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Loans"
+    },
+    {
+        "name": "z2 sample",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Government"
+    },
+    {
+        "name": "y2 sample",
+        "payment_date": "Next business day",
+        "has_gcredit": true,
+        "has_fee": true,
+        "fee_amount": "20",
+        "biller_type": "Transportation"
     }
 ]
