@@ -13,9 +13,17 @@
     font-family: Gilroy, sans-serif;
     color: #025AE9;
 }
+
 .paginationjs-prev>a,
 .paginationjs-next>a {
     display: flex;
+    cursor: pointer;
+}
+
+.paginationjs-prev.disabled>a,
+.paginationjs-next.disabled>a {
+    display: flex;
+    cursor: auto;
 }
 
 .pagination-list-wrapper {
