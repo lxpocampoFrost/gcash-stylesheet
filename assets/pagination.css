@@ -1,3 +1,6 @@
-body {
-    background-color: rebeccapurple;
+.pagination-list-wrapper {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
 }
