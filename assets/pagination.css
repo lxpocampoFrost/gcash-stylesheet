@@ -3,10 +3,12 @@
     font-family: Gilroy, sans-serif;
     text-decoration: none;
     color: rgba(10, 39, 87, 0.2);
+    cursor: pointer;
 }
 
 .paginationjs-page {
     font-family: Gilroy, sans-serif;
+    cursor: pointer;
 }
 
 .paginationjs-page.active>a {
