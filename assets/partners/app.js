@@ -73,6 +73,7 @@ function renderItems(results_area, filter_data, template_element) {
     const template_element = document.querySelector('.biller-result-card.hidden');
     const results_area = document.querySelector('.biller-result.billers_collection-list');
     const search_input = $('#field-2');
+    const pagination_container = $('#pagination-area');
 
     results_area.style.opacity = '1';
     //Get the data from URL source
@@ -80,10 +81,8 @@ function renderItems(results_area, filter_data, template_element) {
     //Initialize an empty array
     let filterd_items = [];
 
-
+    //Function to run when reattaching new data to pagination
     function usePagination(data_arr) {
-        const pagination_container = $('#pagination-area');
-
         let arrowSVG = `<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="20.5" cy="20.4922" r="19" stroke="#025AE9" stroke-width="2"/>
         <path d="M19 24L23 20L19 16" stroke="#025AE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -98,17 +97,11 @@ function renderItems(results_area, filter_data, template_element) {
             formatNavigator: 'Results: <%= rangeStart %> - <%= rangeEnd %> of <%= totalNumber %>',
             pageSize: 15,
             callback: function (data, pagination) {
-                // template method of yourself
+                // Template method to render data 
                 renderItems(results_area, data, template_element);
             }
         })
     }
-
-    //Converts data to node elements
-    // let domItems = partnersData.map((item) => createItem(item, template_element));
-
-    //Appends newly converted elements to results area
-    // domItems.map((item) => results_area.append(item));
 
     //Input search functionality
     search_input.on("input", function () {
@@ -130,6 +123,8 @@ function renderItems(results_area, filter_data, template_element) {
         ToDo: 
         - Sort filtered items by letter
         - Pagination gets from filtered items
+        - Filter by biller type
+        - List view, card view  
     */
 
     //Create pagination
