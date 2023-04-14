@@ -1,18 +1,17 @@
 .paginationjs-page>a {
     font-family: Gilroy, sans-serif;
     text-decoration: none;
-    color: rgba(2, 90, 233, 0.2);
+    color: rgba(10, 39, 87, 0.2);
 }
 
 .paginationjs-page {
     font-family: Gilroy, sans-serif;
 }
 
-.paginationjs-page.active {
+.paginationjs-page.active>a {
     font-family: Gilroy, sans-serif;
     color: #025AE9;
 }
-
 .paginationjs-prev>a,
 .paginationjs-next>a {
     display: flex;
