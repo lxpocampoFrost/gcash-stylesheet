@@ -1,6 +1,25 @@
+.paginationjs-page>a {
+    font-family: Gilroy, sans-serif;
+}
+
+.paginationjs-page {
+    font-family: Gilroy, sans-serif;
+}
+
+.paginationjs-prev>a,
+.paginationjs-next>a {
+    display: flex;
+}
+
 .pagination-list-wrapper {
     list-style-type: none;
     display: flex;
     gap: 16px;
     align-items: center;
+    padding-left: 0;
+}
+
+.paginationjs-pages {
+    display: flex;
+    justify-content: center;
 }
