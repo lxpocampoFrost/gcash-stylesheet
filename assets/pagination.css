@@ -35,7 +35,7 @@
 .paginationjs-prev.disabled>a svg circle,
 .paginationjs-prev.disabled>a svg path,
 .paginationjs-next.disabled>a svg circle,
-.paginationjs-next.disabled>a svg circle {
+.paginationjs-next.disabled>a svg path {
     stroke: rgba(10, 39, 87, 0.2)
 }
 
