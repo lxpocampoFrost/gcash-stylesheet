@@ -14,6 +14,10 @@
     color: #025AE9;
 }
 
+.paginationjs-prev {
+    transform: rotate(180deg);
+}
+
 .paginationjs-prev>a,
 .paginationjs-next>a {
     display: flex;
