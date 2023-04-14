@@ -95,7 +95,8 @@ function renderItems(results_area, filter_data, template_element) {
             nextText: arrowSVG,
             showNavigator: true,
             formatNavigator: 'Results: <%= rangeStart %> - <%= rangeEnd %> of <%= totalNumber %>',
-            pageSize: 15,
+            pageSize: 6,
+            pageRange: 1,
             callback: function (data, pagination) {
                 // Template method to render data 
                 renderItems(results_area, data, template_element);
