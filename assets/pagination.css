@@ -32,10 +32,10 @@
     cursor: auto;
 }
 
-.paginationjs-prev.disabled>svg circle,
-.paginationjs-prev.disabled>svg path,
-.paginationjs-next.disabled>svg circle,
-.paginationjs-next.disabled>svg circle {
+.paginationjs-prev.disabled>a svg circle,
+.paginationjs-prev.disabled>a svg path,
+.paginationjs-next.disabled>a svg circle,
+.paginationjs-next.disabled>a svg circle {
     stroke: rgba(10, 39, 87, 1)
 }
 
