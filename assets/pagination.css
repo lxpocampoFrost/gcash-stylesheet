@@ -51,9 +51,16 @@
     gap: 16px;
     align-items: center;
     padding-left: 0;
+    margin: 0;
 }
 
 .paginationjs-pages {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.paginationjs {
+    display: flex;
+    align-items: center;
 }
