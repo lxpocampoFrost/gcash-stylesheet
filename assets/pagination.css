@@ -1,9 +1,17 @@
 .paginationjs-page>a {
     font-family: Gilroy, sans-serif;
+    text-decoration: none;
 }
 
 .paginationjs-page {
     font-family: Gilroy, sans-serif;
+    color: #0A2757;
+    opacity: 0.2;
+}
+
+.paginationjs-page.active {
+    font-family: Gilroy, sans-serif;
+    color: #025AE9;
 }
 
 .paginationjs-prev>a,
