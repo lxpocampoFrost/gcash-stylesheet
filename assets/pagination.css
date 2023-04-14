@@ -1,4 +1,5 @@
-.paginationjs-page>a {
+.paginationjs-page>a,
+.paginationjs-ellipsis>a {
     font-family: Gilroy, sans-serif;
     text-decoration: none;
     color: rgba(10, 39, 87, 0.2);
