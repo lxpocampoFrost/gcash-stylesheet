@@ -73,20 +73,36 @@ function renderItems(results_area, filter_data, template_element) {
     const template_element = document.querySelector('.biller-result-card.hidden');
     const results_area = document.querySelector('.biller-result.billers_collection-list');
     const search_input = $('#field-2');
-    const pagination_container = $('#pagination-area');
-    let arrowSVG = `<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="20.5" cy="20.4922" r="19" stroke="#025AE9" stroke-width="2"/>
-    <path d="M19 24L23 20L19 16" stroke="#025AE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    `
-
-    console.log(results_area);
 
     results_area.style.opacity = '1';
     //Get the data from URL source
     let partnersData = await fetchPartners('https://lxpocampofrost.github.io/gcash-stylesheet/assets/partners.json');
     //Initialize an empty array
     let filterd_items = [];
+
+
+    function usePagination(data_arr) {
+        const pagination_container = $('#pagination-area');
+
+        let arrowSVG = `<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20.5" cy="20.4922" r="19" stroke="#025AE9" stroke-width="2"/>
+        <path d="M19 24L23 20L19 16" stroke="#025AE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        `
+        pagination_container.pagination({
+            ulClassName: 'pagination-list-wrapper',
+            dataSource: data_arr,
+            prevText: arrowSVG,
+            nextText: arrowSVG,
+            showNavigator: true,
+            formatNavigator: 'Results: <%= rangeStart %> - <%= rangeEnd %> of <%= totalNumber %>',
+            pageSize: 15,
+            callback: function (data, pagination) {
+                // template method of yourself
+                renderItems(results_area, data, template_element);
+            }
+        })
+    }
 
     //Converts data to node elements
     // let domItems = partnersData.map((item) => createItem(item, template_element));
@@ -104,41 +120,17 @@ function renderItems(results_area, filter_data, template_element) {
         // updatePagination(filterd_items);
         // renderItems(results_area, filterd_items, template_element);
         pagination_container.pagination('destroy');
-        pagination_container.pagination({
-            ulClassName: 'pagination-list-wrapper',
-            dataSource: filterd_items,
-            prevText: arrowSVG,
-            nextText: arrowSVG,
-            pageSize: 15,
-            callback: function (data, pagination) {
-                console.log(pagination);
-                // template method of yourself
-                renderItems(results_area, data, template_element);
-            }
-        })
+        usePagination(filterd_items)
 
     });
 
-    pagination_container.pagination({
-        ulClassName: 'pagination-list-wrapper',
-        dataSource: partnersData,
-        prevText: arrowSVG,
-        nextText: arrowSVG,
-        pageSize: 15,
-        callback: function (data, pagination) {
-
-            // template method of yourself
-            renderItems(results_area, data, template_element);
-        }
-    })
-
+    usePagination(partnersData)
 
     /*
         ToDo: 
-        - Search input and billers dropdown should filter from filtered_items
+        - Sort filtered items by letter
         - Pagination gets from filtered items
     */
-
 
     //Create pagination
 })();
