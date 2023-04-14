@@ -60,7 +60,16 @@
     align-items: center;
 }
 
+.paginationjs-nav {
+    font-family: Gilroy, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #6780A9;
+}
+
 .paginationjs {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 28px;
 }
