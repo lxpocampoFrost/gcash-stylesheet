@@ -84,6 +84,10 @@
 
 
 /* Styles for card or list view */
+.biller-table-header.list-view {
+    display: flex;
+}
+
 .biller-result.list-view {
     grid-template-columns: 1fr;
     grid-row-gap: 0px;
@@ -128,6 +132,6 @@
     max-width: max-content;
 }
 
-.biller-result.list-view .biller-card-label-wrapper> .biller-services-content.fee.result-card{
+.biller-result.list-view .biller-card-label-wrapper>.biller-services-content.fee.result-card {
     max-width: 120px;
 }
