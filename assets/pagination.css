@@ -12,7 +12,129 @@
 .paginationjs-ellipsis>a {
     cursor: auto;
 }
+/* Styles pagination numbers and dots */
+.paginationjs-page>a,
+.paginationjs-ellipsis>a {
+    font-family: Gilroy, sans-serif;
+    text-decoration: none;
+    color: rgba(10, 39, 87, 0.2);
+}
 
+.paginationjs-page>a {
+    cursor: pointer;
+}
+
+.paginationjs-ellipsis>a {
+    cursor: auto;
+}
+
+.paginationjs-page {
+    font-family: Gilroy, sans-serif;
+}
+
+.paginationjs-page.active>a {
+    font-family: Gilroy, sans-serif;
+    color: #025AE9;
+}
+
+/* Styles for prev and next arrow element and states*/
+.paginationjs-prev {
+    transform: rotate(180deg);
+}
+
+.paginationjs-prev>a,
+.paginationjs-next>a {
+    display: flex;
+    cursor: pointer;
+}
+
+.paginationjs-prev.disabled>a,
+.paginationjs-next.disabled>a {
+    display: flex;
+    cursor: auto;
+}
+
+.paginationjs-prev.disabled>a svg circle,
+.paginationjs-prev.disabled>a svg path,
+.paginationjs-next.disabled>a svg circle,
+.paginationjs-next.disabled>a svg path {
+    stroke: rgba(10, 39, 87, 0.2)
+}
+
+/* Style for pagination ul element */
+.pagination-list-wrapper {
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Style for page numbers */
+.paginationjs-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for text display: Results 1 - x of n */
+.paginationjs-nav {
+    font-family: Gilroy, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #6780A9;
+}
+
+.paginationjs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+
+
+
+
+/* Styles for card or list view */
+.biller-result.list-view {
+    grid-template-columns: 1fr;
+    max-width: 960px;
+}
+
+.biller-result.list-view .biller-result-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+}
+
+.biller-result.list-view .biller-result-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 720px;
+}
+
+.biller-result.list-view .biller-card-content>.biller-item-title {
+    max-width: 100%;
+}
+
+.biller-result.list-view .biller-card-content>.biller-item-description {
+    min-width: 160px;
+    margin-top: 0px;
+}
+
+.biller-result.list-view .biller-card-label-wrapper {
+    max-width: 240px;
+    width: 100%;
+}
+
+.biller-result.list-view .biller-card-label-wrapper>.biller-services-content {
+    max-width: max-content;
+}
 .paginationjs-page {
     font-family: Gilroy, sans-serif;
 }
