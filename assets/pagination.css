@@ -1,17 +1,3 @@
-.paginationjs-page>a,
-.paginationjs-ellipsis>a {
-    font-family: Gilroy, sans-serif;
-    text-decoration: none;
-    color: rgba(10, 39, 87, 0.2);
-}
-
-.paginationjs-page>a {
-    cursor: pointer;
-}
-
-.paginationjs-ellipsis>a {
-    cursor: auto;
-}
 /* Styles pagination numbers and dots */
 .paginationjs-page>a,
 .paginationjs-ellipsis>a {
@@ -110,7 +96,7 @@
     height: auto;
 }
 
-.biller-result.list-view .biller-result-card {
+.biller-result.list-view .biller-card-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -134,64 +120,4 @@
 
 .biller-result.list-view .biller-card-label-wrapper>.biller-services-content {
     max-width: max-content;
-}
-.paginationjs-page {
-    font-family: Gilroy, sans-serif;
-}
-
-.paginationjs-page.active>a {
-    font-family: Gilroy, sans-serif;
-    color: #025AE9;
-}
-
-.paginationjs-prev {
-    transform: rotate(180deg);
-}
-
-.paginationjs-prev>a,
-.paginationjs-next>a {
-    display: flex;
-    cursor: pointer;
-}
-
-.paginationjs-prev.disabled>a,
-.paginationjs-next.disabled>a {
-    display: flex;
-    cursor: auto;
-}
-
-.paginationjs-prev.disabled>a svg circle,
-.paginationjs-prev.disabled>a svg path,
-.paginationjs-next.disabled>a svg circle,
-.paginationjs-next.disabled>a svg path {
-    stroke: rgba(10, 39, 87, 0.2)
-}
-
-.pagination-list-wrapper {
-    list-style-type: none;
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    padding-left: 0;
-    margin: 0;
-}
-
-.paginationjs-pages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.paginationjs-nav {
-    font-family: Gilroy, sans-serif;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #6780A9;
-}
-
-.paginationjs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 28px;
 }
