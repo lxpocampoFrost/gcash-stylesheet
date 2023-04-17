@@ -5,7 +5,11 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Electric"
+        "biller_type": [
+            "Electricity",
+            "Loans",
+            "Credit Card"
+        ]
     },
     {
         "name": "123 Finance Corporation",
@@ -13,7 +17,11 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Insurance"
+        "biller_type": [
+            "Real Estate",
+            "Insurance",
+            "Government"
+        ]
     },
     {
         "name": "1Sari Financing Corp.",
@@ -21,7 +29,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Cable/Internet"
+        "biller_type": [
+            "Healthcare",
+            "Water"
+        ]
     },
     {
         "name": "1st Megasaver",
@@ -29,7 +40,9 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "School"
+        ]
     },
     {
         "name": "8990 FTDH",
@@ -37,7 +50,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Cable/Internet"
+        "biller_type": [
+            "Telcom",
+            "Credit Card"
+        ]
     },
     {
         "name": "8TH ARK MANAGEMENT CORPORATION",
@@ -45,7 +61,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Real Estate"
+        "biller_type": [
+            "Transportation",
+            "Insurance"
+        ]
     },
     {
         "name": "A Brown Company Inc",
@@ -53,7 +72,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Cable/Internet"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "AA General Insurance",
@@ -61,7 +83,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Insurance"
+        "biller_type": [
+            "Transportation",
+            "Real Estate"
+        ]
     },
     {
         "name": "ABS-CBN Foundation",
@@ -69,7 +94,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Insurance"
+        "biller_type": [
+            "Healthcare",
+            "Loans"
+        ]
     },
     {
         "name": "Access Computer and Technical Colleges",
@@ -77,7 +105,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Credit Card",
+            "Water"
+        ]
     },
     {
         "name": "ACOM",
@@ -85,7 +116,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Credit Card",
+            "Insurance"
+        ]
     },
     {
         "name": "Active Realty",
@@ -93,7 +127,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Government",
+            "Payment Solutions"
+        ]
     },
     {
         "name": "ACTV Aklan Cable TV (Aklan)",
@@ -101,7 +138,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Payment Solutions",
+            "Cable/Internet"
+        ]
     },
     {
         "name": "#GCashGivesBack",
@@ -109,7 +149,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Loans"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
@@ -117,7 +160,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Telcom",
+            "Credit Card"
+        ]
     },
     {
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
@@ -125,7 +171,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Loans"
+        "biller_type": [
+            "Credit Card",
+            "Government"
+        ]
     },
     {
         "name": "z sample",
@@ -133,7 +182,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Payment Solutions",
+            "Real Estate"
+        ]
     },
     {
         "name": "y sample",
@@ -141,7 +193,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "#GCashGivesBack",
@@ -149,7 +204,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Electric"
+        "biller_type": [
+            "Cable/Internet",
+            "Payment Solutions"
+        ]
     },
     {
         "name": "123 Finance Corporation",
@@ -157,7 +215,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Insurance"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "1Sari Financing Corp.",
@@ -165,7 +226,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Cable/Internet"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "1st Megasaver",
@@ -173,7 +237,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "8990 FTDH",
@@ -181,7 +248,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Cable/Internet"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "8TH ARK MANAGEMENT CORPORATION",
@@ -189,7 +259,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Real Estate"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "A Brown Company Inc",
@@ -197,7 +270,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Cable/Internet"
+        "biller_type": [
+            "Water",
+            "Insurance"
+        ]
     },
     {
         "name": "AA General Insurance",
@@ -205,7 +281,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Insurance"
+        "biller_type": [
+            "Electricity",
+            "Water"
+        ]
     },
     {
         "name": "ABS-CBN Foundation",
@@ -213,7 +292,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Insurance"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "Access Computer and Technical Colleges",
@@ -221,7 +303,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "ACOM",
@@ -229,7 +314,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Telcom",
+            "Insurance"
+        ]
     },
     {
         "name": "Active Realty",
@@ -237,7 +325,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Others",
+            "Telcom"
+        ]
     },
     {
         "name": "ACTV Aklan Cable TV (Aklan)",
@@ -245,7 +336,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Healthcare",
+            "Payment Solutions"
+        ]
     },
     {
         "name": "#GCashGivesBack",
@@ -253,7 +347,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Loans"
+        "biller_type": [
+            "Electricity",
+            "Insurance"
+        ]
     },
     {
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
@@ -261,7 +358,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Real Estate",
+            "Insurance"
+        ]
     },
     {
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
@@ -269,7 +369,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Loans"
+        "biller_type": [
+            "Electricity",
+            "Credit Card"
+        ]
     },
     {
         "name": "z2 sample",
@@ -277,7 +380,10 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Government"
+        "biller_type": [
+            "Telcom",
+            "Cable/Internet"
+        ]
     },
     {
         "name": "y2 sample",
@@ -285,6 +391,8 @@
         "has_gcredit": true,
         "has_fee": true,
         "fee_amount": "20",
-        "biller_type": "Transportation"
+        "biller_type": [
+            "Transportation"
+        ]
     }
 ]
