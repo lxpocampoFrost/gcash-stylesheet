@@ -127,3 +127,7 @@
 .biller-result.list-view .biller-card-label-wrapper>.biller-services-content {
     max-width: max-content;
 }
+
+.biller-result.list-view .biller-card-label-wrapper> .biller-services-content.fee.result-card{
+    max-width: 120px;
+}
