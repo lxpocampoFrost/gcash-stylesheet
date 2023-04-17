@@ -153,6 +153,7 @@
 @media screen and (max-width: 991px) {
     .biller-table-header.list-view {
         display: none;
+        grid-row-gap: 8px;
     }
 }
 
