@@ -157,4 +157,9 @@
 }
 
 
-@media screen and (max-width: 478px) {}
+@media screen and (max-width: 478px) {
+    .paginationjs {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
