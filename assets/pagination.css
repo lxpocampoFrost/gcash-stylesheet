@@ -102,7 +102,6 @@
     }
 }
 
-
 @media screen and (min-width: 992px) {
 
     .biller-result.list-view .biller-result-card {
@@ -151,7 +150,11 @@
 }
 
 /* Styles for screens between 768px and 991px */
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+    .biller-table-header.list-view {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width: 478px) {}
