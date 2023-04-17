@@ -72,15 +72,14 @@
     color: #6780A9;
 }
 
+/*Main wrapper of pagination*/
 .paginationjs {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 28px;
+    margin-top: 24px;
 }
-
-
-
 
 
 /* Styles for card or list view */
@@ -94,44 +93,65 @@
     max-width: 960px;
 }
 
-.biller-result.list-view .biller-result-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: auto;
-    padding: 12px 0;
-    border: 0;
-    border-bottom: 1px solid rgba(238, 242, 249, 1);
+/* Responsive styles */
+
+
+@media screen and (min-width: 1440px) {
+    .paginationjs {
+        margin-top: 32px;
+    }
 }
 
-.biller-result.list-view .biller-card-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 720px;
+
+@media screen and (min-width: 992px) {
+
+    .biller-result.list-view .biller-result-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        padding: 12px 0;
+        border: 0;
+        border-bottom: 1px solid rgba(238, 242, 249, 1);
+    }
+
+    .biller-result.list-view .biller-card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 720px;
+    }
+
+    .biller-result.list-view .biller-card-content>.biller-item-title {
+        max-width: 100%;
+    }
+
+    .biller-result.list-view .biller-card-content>.biller-item-description {
+        min-width: 160px;
+        max-width: 160px;
+        margin-top: 0px;
+        font-size: 0.86rem;
+    }
+
+    .biller-result.list-view .biller-card-label-wrapper {
+        max-width: 240px;
+        width: 100%;
+    }
+
+    .biller-result.list-view .biller-card-label-wrapper>.biller-services-content {
+        max-width: max-content;
+    }
+
+    .biller-result.list-view .biller-card-label-wrapper>.biller-services-content.fee.result-card {
+        max-width: 120px;
+    }
+
+
 }
 
-.biller-result.list-view .biller-card-content>.biller-item-title {
-    max-width: 100%;
-}
+/* Styles for screens between 768px and 991px */
+@media screen and (max-width: 991px) {}
 
-.biller-result.list-view .biller-card-content>.biller-item-description {
-    min-width: 160px;
-    max-width: 160px;
-    margin-top: 0px;
-    font-size: 0.86rem;
-}
 
-.biller-result.list-view .biller-card-label-wrapper {
-    max-width: 240px;
-    width: 100%;
-}
-
-.biller-result.list-view .biller-card-label-wrapper>.biller-services-content {
-    max-width: max-content;
-}
-
-.biller-result.list-view .biller-card-label-wrapper>.biller-services-content.fee.result-card {
-    max-width: 120px;
-}
+@media screen and (max-width: 478px) {}
