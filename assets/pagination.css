@@ -146,17 +146,21 @@
         max-width: 120px;
     }
 
-
 }
 
 /* Styles for screens between 768px and 991px */
 @media screen and (max-width: 991px) {
     .biller-table-header.list-view {
         display: none;
-        grid-row-gap: 8px;
+    }
+
+    .biller-result.list-view .biller-result-card {
+        padding: 8px 0 16px;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(238, 242, 249, 1);
     }
 }
-
 
 @media screen and (max-width: 478px) {
     .paginationjs {
