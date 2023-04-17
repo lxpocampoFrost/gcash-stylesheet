@@ -94,6 +94,7 @@
     flex-direction: row;
     align-items: center;
     height: auto;
+    padding: 12px 0;
 }
 
 .biller-result.list-view .biller-card-content {
