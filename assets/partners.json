@@ -15,7 +15,7 @@
         "name": "123 Finance Corporation",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Real Estate",
@@ -48,7 +48,7 @@
         "name": "8990 FTDH",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Telcom",
@@ -92,7 +92,7 @@
         "name": "W store",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Healthcare",
@@ -114,7 +114,7 @@
         "name": "V minimart",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Credit Card",
@@ -136,7 +136,7 @@
         "name": "ACTV Aklan Cable TV (Aklan)",
         "payment_date": "Within 2 business days",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Payment Solutions",
@@ -158,7 +158,7 @@
         "name": "K company",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Telcom",
@@ -180,7 +180,7 @@
         "name": "z sample",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Payment Solutions",
@@ -213,7 +213,7 @@
         "name": "123 Finance Corporation",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -235,7 +235,7 @@
         "name": "1st Megasaver",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -246,7 +246,7 @@
         "name": "R mall",
         "payment_date": "Within 3 business days",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -257,7 +257,7 @@
         "name": "8TH ARK MANAGEMENT CORPORATION",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -268,7 +268,7 @@
         "name": "Q store",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Water",
@@ -290,7 +290,7 @@
         "name": "ABS-CBN Foundation",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -345,7 +345,7 @@
         "name": "C company",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -367,7 +367,7 @@
         "name": "ADA MANUFACTURING CORPORATION (ADAMCO)",
         "payment_date": "Next business day",
         "has_gcredit": true,
-        "has_fee": true,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Electricity",
@@ -388,8 +388,8 @@
     {
         "name": "y2 sample",
         "payment_date": "Next business day",
-        "has_gcredit": true,
-        "has_fee": true,
+        "has_gcredit": false,
+        "has_fee": false,
         "fee_amount": "20",
         "biller_type": [
             "Transportation"
