@@ -93,15 +93,22 @@
     max-width: 960px;
 }
 
+.biller-result.list-view .biller-result-card {
+    border-bottom: 1px solid rgba(238, 242, 249, 1);
+}
+
 /* Responsive styles */
 
 
+/* Styles for small XL */
 @media screen and (min-width: 1440px) {
     .paginationjs {
         margin-top: 32px;
     }
 }
 
+
+/* Styles for small desktop */
 @media screen and (min-width: 992px) {
 
     .biller-result.list-view .biller-result-card {
@@ -111,7 +118,6 @@
         height: auto;
         padding: 12px 0;
         border: 0;
-        border-bottom: 1px solid rgba(238, 242, 249, 1);
     }
 
     .biller-result.list-view .biller-card-content {
@@ -148,20 +154,23 @@
 
 }
 
-/* Styles for screens between 768px and 991px */
+/* Styles for small tablet */
 @media screen and (max-width: 991px) {
     .biller-table-header.list-view {
         display: none;
     }
 
     .biller-result.list-view .biller-result-card {
-        padding: 8px 0 16px;
         border: 0;
         border-radius: 0;
-        border-bottom: 1px solid rgba(238, 242, 249, 1);
+    }
+
+    .biller-result.list-view>.biller-result-card:last-of-type {
+        border-bottom: 0px;
     }
 }
 
+/* Styles for Mobile */
 @media screen and (max-width: 478px) {
     .paginationjs {
         flex-direction: column;
